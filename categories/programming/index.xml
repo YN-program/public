@@ -6,7 +6,17 @@
     <description>Recent content in programming on 学びと実践</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 27 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Apr 2022 17:01:04 +0900</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django Simple Captcha</title>
+      <link>https://progress-advance.com/programming/django-simple-captcha/</link>
+      <pubDate>Wed, 13 Apr 2022 17:01:04 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/django-simple-captcha/</guid>
+      <description>&lt;p&gt;ボットによる不正アカウント作成の防止、スパム対策のための「CAPTCHA」。&lt;/p&gt;
+&lt;p&gt;Google reCAPTCHA は、クレジットカードの登録が必要なのと、100万件を超えると課金されるので、Google reCAPTCHA ではなく、django-simple-captcha を試しにインストールしてみました。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>「django-axes」 でログイン試行回数を制限する</title>
       <link>https://progress-advance.com/programming/django-axes%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E8%A9%A6%E8%A1%8C%E5%9B%9E%E6%95%B0%E3%82%92%E5%88%B6%E9%99%90%E3%81%99%E3%82%8B/</link>

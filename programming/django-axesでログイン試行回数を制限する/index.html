@@ -133,13 +133,9 @@
     #Axes app can be in any position in the INSTALLED_APPS list.
     &#39;axes&#39;,
 ]    
-</code></pre><p>&lsquo;axes&rsquo;は、どこに記載してもいいようですが、&lsquo;allath&rsquo;や&rsquo;rest_framework&rsquo;, &lsquo;django_cleanup&rsquo;などの上に記載すると、エラーがでたので、一番下に記載するのが良さそうです。</p>
-<p>エラー例：</p>
-<pre tabindex="0"><code>ModuleNotFoundError: No module named &#39;axesdjango&#39;
-
-ModuleNotFoundError: No module named &#39;axesrest_framework&#39;
-
-ModuleNotFoundError: No module named &#39;axesdjango_cleanup&#39;
+</code></pre><p>&lsquo;axes&rsquo;は、どこに記載してもいいようです。
+ただ、一番下に記載しない場合、&lsquo;axes&rsquo;, の「,」を忘れると、以下のようにエラーが出ます。</p>
+<pre tabindex="0"><code>ModuleNotFoundError: No module named &#39;axesrest_framework&#39;
 </code></pre><p>次に、settings.py の AUTHENTICATION_BACKENDS の一番上に「axes.backends.AxesBackend」</p>
 <pre tabindex="0"><code>AUTHENTICATION_BACKENDS = [
     # AxesBackend should be the first backend in the AUTHENTICATION_BACKENDS list.
@@ -176,7 +172,7 @@ ModuleNotFoundError: No module named &#39;axesdjango_cleanup&#39;
 <p>AXES_IP_WHITELIST：ホワイトリストにするIPアドレスを指定。</p>
 <p>AXES_RESET_ON_SUCCESS：Trueのとき、ログイン成功で失敗回数リセット。</p>
 <p><a href="https://django-axes.readthedocs.io/en/latest/4_configuration.html">4. Configuration</a></p>
-<p>Django REST Framework, Django Allauth, Django Simple Captcha, Django OAuth Toolkit, Django Reversion と Axes を併用するには、幾つかの設定が必要なようですが、別の機会に記載したいと思います。詳細は、「6.Integration」 をご確認ください。</p>
+<p>Axes と Django REST Framework, Django Allauth, Django Simple Captcha, Django OAuth Toolkit, Django Reversion を併用するには、幾つかの設定が必要なようですが、別の機会に記載したいと思います。詳細は、「6.Integration」 をご確認ください。</p>
 <p><a href="https://django-axes.readthedocs.io/en/latest/6_integration.html">6. Integration</a></p>
 <p>その他、参考にしたサイト。</p>
 <p><a href="https://create-it-myself.com/know-how/how-to-use-django-axes/">Djangoでログイン試行回数制限を付けられる「django-axes」の使い方</a></p>
@@ -203,6 +199,14 @@ ModuleNotFoundError: No module named &#39;axesdjango_cleanup&#39;
 	</div>
 </div>
 
+<nav class="pager flex">
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/programming/django-simple-captcha/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Django Simple Captcha</p>
+		</a>
+	</div>
+</nav>
 
 
 			</div>
@@ -219,6 +223,7 @@ ModuleNotFoundError: No module named &#39;axesdjango_cleanup&#39;
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/django-simple-captcha/">Django Simple Captcha</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine/">コロナパンデミックとコロナワクチン</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/%E6%80%A5%E6%80%A7%E8%83%86%E5%9A%A2%E7%82%8E/%E6%80%A5%E6%80%A7%E8%83%86%E5%9A%A2%E7%82%8E%E3%81%AEct/">急性胆嚢炎のCT</a></li>
 			<li class="widget__item"><a class="widget__link" href="/programming/django-axes%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E8%A9%A6%E8%A1%8C%E5%9B%9E%E6%95%B0%E3%82%92%E5%88%B6%E9%99%90%E3%81%99%E3%82%8B/">「django-axes」 でログイン試行回数を制限する</a></li>
@@ -239,7 +244,7 @@ ModuleNotFoundError: No module named &#39;axesdjango_cleanup&#39;
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A/" title="コロナ">コロナ (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%83%86%E5%9A%A2%E7%82%8E/" title="急性胆嚢炎">急性胆嚢炎 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%85%B9%E7%97%87/" title="急性腹症">急性腹症 (1)</a>
