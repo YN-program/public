@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>学びと実践</title>
+    <title>ImageDiagnosis &amp; Program</title>
     <link>https://progress-advance.com/</link>
-    <description>Recent content on 学びと実践</description>
+    <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 13 Apr 2022 17:01:04 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About us</title>
+      <link>https://progress-advance.com/about_us/</link>
+      <pubDate>Thu, 14 Apr 2022 12:32:31 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/about_us/</guid>
+      <description>画像診断歴20年、プログラミング歴1年。 学んで実践。 このブログでは、学んだことをひたすら書いていこうと思います。 お薦め RAPT Blog RAPT理論＋α RAPT氏の Instagram</description>
+    </item>
+    
+    <item>
+      <title>プライバシーポリシー</title>
+      <link>https://progress-advance.com/privacy/</link>
+      <pubDate>Thu, 14 Apr 2022 11:54:58 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/privacy/</guid>
+      <description>アクセス解析 このサイトでは利用状況を分析するために Google アナリティクス を使用しています。 Google アナリティクスはCookieを使用してここの Google アナリティクスはデータの収集のためにCookieを使用して、このサイトへのアクセス情報を Google に送信しています。</description>
+    </item>
+    
     <item>
       <title>Django Simple Captcha</title>
       <link>https://progress-advance.com/programming/django-simple-captcha/</link>
@@ -43,15 +61,6 @@
       <guid>https://progress-advance.com/programming/django-axes%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E8%A9%A6%E8%A1%8C%E5%9B%9E%E6%95%B0%E3%82%92%E5%88%B6%E9%99%90%E3%81%99%E3%82%8B/</guid>
       <description>&lt;p&gt;Webサイトにて、不正ログインを防ぐための django-axes。
 ブルートフォース攻撃やパスワードリスト攻撃、辞書攻撃などの対策になる。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://progress-advance.com/about/</link>
-      <pubDate>Tue, 25 Jan 2022 14:00:00 +0000</pubDate>
-      
-      <guid>https://progress-advance.com/about/</guid>
-      <description>画像診断歴20年、プログラミング歴1年。 学び、実践、悟りの繰り返し。 このブログでは、学んだことをひたすら書いていこうと思います。 そこで、わたしはあなたがたに最高の道を教えます。 たとえ、人々の異言、天使たちの異言を語ろうとも、愛がなければ、わ</description>
     </item>
     
   </channel>
