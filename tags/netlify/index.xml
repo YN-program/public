@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netlify on ImageDiagnosis &amp; Program</title>
+    <link>https://progress-advance.com/tags/netlify/</link>
+    <description>Recent content in Netlify on ImageDiagnosis &amp; Program</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 21 Apr 2022 18:29:19 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/netlify/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo &#43; Netlify &#43; Github によるブログ構築</title>
+      <link>https://progress-advance.com/programming/hugonetlify/</link>
+      <pubDate>Thu, 21 Apr 2022 18:29:19 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/hugonetlify/</guid>
+      <description>&lt;p&gt;静的サイトジェネレーター Hugo と Netlify, GitHub を使って、ブログを構築。&lt;/p&gt;
+&lt;p&gt;いろんなサイトを見ると簡単にできそうに書いてありましたが、色々と設定で苦戦したので、取り敢えず上手くいった方法を記載します。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

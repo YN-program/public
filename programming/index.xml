@@ -6,7 +6,17 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 18 Apr 2022 19:12:01 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Apr 2022 18:29:19 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo &#43; Netlify &#43; Github によるブログ構築</title>
+      <link>https://progress-advance.com/programming/hugonetlify/</link>
+      <pubDate>Thu, 21 Apr 2022 18:29:19 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/hugonetlify/</guid>
+      <description>&lt;p&gt;静的サイトジェネレーター Hugo と Netlify, GitHub を使って、ブログを構築。&lt;/p&gt;
+&lt;p&gt;いろんなサイトを見ると簡単にできそうに書いてありましたが、色々と設定で苦戦したので、取り敢えず上手くいった方法を記載します。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>for ループで id が重複するとき</title>
       <link>https://progress-advance.com/programming/how2django1/</link>
