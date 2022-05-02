@@ -6,7 +6,16 @@
     <description>Recent content in django on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 16 Apr 2022 20:49:42 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 May 2022 13:06:02 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Django】AND 検索 OR 検索</title>
+      <link>https://progress-advance.com/programming/django-and-or-filter/</link>
+      <pubDate>Mon, 02 May 2022 13:06:02 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/django-and-or-filter/</guid>
+      <description>&lt;p&gt;検索機能に and 検索と or 検索の両方を付けて、ミュートした単語とリクエストユーザーをブロックしているユーザーのコンテンツを除外する機能を付けたくて、試行錯誤してみました。ついでに、複数のモデルでやってみました。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【django】テンプレートからjQueryに複数の値を渡す方法</title>
       <link>https://progress-advance.com/programming/how2django/</link>
