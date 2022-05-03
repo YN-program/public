@@ -4,20 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>【django】テンプレートからjQueryに複数の値を渡す方法 - ImageDiagnosis &amp; Program</title>
+	<title>肺炎 - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="【django】テンプレートからjQueryに複数の値を渡す方法" />
-<meta property="og:description" content="djangoのテンプレートからjQueryに複数の値を渡したいときがあります。その方法を一つ思いついたので、記載しておきます。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/how2django/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-04-16T20:49:42+09:00" />
-<meta property="article:modified_time" content="2022-04-16T20:49:42+09:00" />
+		<meta property="og:title" content="肺炎" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://progress-advance.com/tags/%E8%82%BA%E7%82%8E/" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="【django】テンプレートからjQueryに複数の値を渡す方法"/>
-<meta name="twitter:description" content="djangoのテンプレートからjQueryに複数の値を渡したいときがあります。その方法を一つ思いついたので、記載しておきます。"/>
+<meta name="twitter:title" content="肺炎"/>
+<meta name="twitter:description" content=""/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -26,6 +24,7 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/custom.css">
+	<link rel="alternate" type="application/rss+xml" href="/tags/%E8%82%BA%E7%82%8E/index.xml" title="ImageDiagnosis & Program">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
@@ -111,94 +110,41 @@ if (!doNotTrack) {
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="post__title">【django】テンプレートからjQueryに複数の値を渡す方法</h1>
-			<div class="post__meta meta">
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">肺炎</h1>
+	</header><article class="list__item post">
+	
+	<figure class="list__thumbnail thumbnail">
+		<a class="thumbnail__link" href="/medical/covid-19/covid_pneumonia_ct/">
+		<img class="thumbnail__image" src="/img/covid-ct/covid5.png" alt="so-called COVID-19 pneumonia">
+		</a>
+	</figure>
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/medical/covid-19/covid_pneumonia_ct/" rel="bookmark">
+			so-called COVID-19 pneumonia
+			</a>
+		</h2>
+		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-04-16T20:49:42&#43;09:00">April 16, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-05-03T12:54:52&#43;09:00">May 03, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/medical/" rel="category">medical</a>
 	</span>
 </div></div>
-		</header>
-		
-	<figure class="post__thumbnail thumbnail">
-		
-		<img class="thumbnail__image" src="/img/send_value.png" alt="【django】テンプレートからjQueryに複数の値を渡す方法">
-		
-	</figure><div class="content post__content clearfix">
-			<p>djangoのテンプレートから<code>jQuery</code>に複数の値を渡したいときがあります。その方法を一つ思いついたので、記載しておきます。</p>
-<p><code>models.py</code>では、uuid4を使用しています。</p>
-<pre tabindex="0"><code>class Sample(models.Model):
-
-  id       = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False )
-  comment  = models.CharField(verbose_name=&#34;コメント&#34;, max_length=200)
-  target   = models.ForeignKey(&#34;self&#34;,verbose_name=&#34;コメント先&#34;,on_delete=models.CASCADE, null=True, blank=True)
-</code></pre><p><code>template</code></p>
-<pre tabindex="0"><code>&lt;input id=&#34;sample&#34; class=&#34;sample&#34; type=&#34;button&#34; value=&#34;{{ sample.target.id }}_{{ sample.id }}&#34;&gt;
-&lt;label for=&#34;sample&#34;&gt;&lt;/label&gt;
-</code></pre><p><code>jQuery</code>に送られてきたvalueはuuid4の連結なので、36文字で前後から切り取って2つの<code>id</code>を取り出すことができます。</p>
-<pre tabindex="0"><code>window.addEventListener(&#34;load&#34; , function (){
-    $(document).on(&#34;click&#34;,&#34;.sample&#34;, function(){ sample( $(this).val() );});
-});
-
-function sample(pk){
-    var target_pk = pk.slice(0,36);
-    var pk        = pk.slice(-36);
-
-    (以下、略)
-</code></pre><p>他にも、次のような方法があります。
-<a href="http://ja.uwenku.com/question/p-vanqybsc-kw.html?msclkid=2cc35762bdf011ecaa76b9f86d589604">複数の値をonclick関数からjquery関数に送信</a>を参照。</p>
-<p><code>template</code></p>
-<pre tabindex="0"><code>&lt;a href=&#34;#&#34; id=&#34;button&#34; data-params=&#39;hello|world&#39;&gt;click&lt;/a&gt;
-</code></pre><p><code>jQuery</code></p>
-<pre tabindex="0"><code>$(function () {
-    $(&#34;#button&#34;).on(&#34;click&#34;, function() {
-        var data = $(this).data(&#39;params&#39;).split(&#39;|&#39;);
-        console.log(data[0]);
-        console.log(data[1]);
-    });
-});
-</code></pre><p>宜しければ、参考にしてください。</p>
-		</div>
-		<footer class="post__footer">
-			
-<div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
-	<ul class="tags__list">
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/django/" rel="tag">django</a>
-		</li>
-	</ul>
-</div>
-		</footer>
-	</article>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>いわゆるコロナ肺炎のCT像。</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/medical/covid-19/covid_pneumonia_ct/">Read more…</a>
+	</div>
+</article>
 </main>
-
-<div class="authorbox clearfix">
-	<div class="authorbox__header">
-		<span class="authorbox__name">About Harvest</span>
-	</div>
-</div>
-
-<nav class="pager flex">
-	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/django-simple-captcha/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Django Simple Captcha</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/how2django1/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">for ループで id が重複するとき</p>
-		</a>
-	</div>
-</nav>
 
 
 			</div>
-			<aside class="sidebar"><div class="widget-search widget">
+			
+<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com/">
 		<label>
 			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
