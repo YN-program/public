@@ -6,7 +6,16 @@
     <description>Recent content in django on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 May 2022 13:06:02 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Jun 2022 09:29:10 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>for文でのモーダルダイアログ</title>
+      <link>https://progress-advance.com/programming/modal/</link>
+      <pubDate>Fri, 03 Jun 2022 09:29:10 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/modal/</guid>
+      <description>&lt;p&gt;for文(django)でモーダルダイアログを使う事があるので、メモ。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Django】AND 検索 OR 検索</title>
       <link>https://progress-advance.com/programming/django-and-or-filter/</link>

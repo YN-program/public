@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://progress-advance.com/categories/</loc>
+    <lastmod>2022-06-03T09:29:10+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/django/</loc>
+    <lastmod>2022-06-03T09:29:10+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/programming/modal/</loc>
+    <lastmod>2022-06-03T09:29:10+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/</loc>
+    <lastmod>2022-06-03T09:29:10+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/modaldialog/</loc>
+    <lastmod>2022-06-03T09:29:10+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/categories/programming/</loc>
+    <lastmod>2022-06-03T09:29:10+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/programming/</loc>
+    <lastmod>2022-06-03T09:29:10+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/</loc>
+    <lastmod>2022-06-03T09:29:10+09:00</lastmod>
+  </url><url>
     <loc>https://progress-advance.com/tags/bootstrap/</loc>
     <lastmod>2022-06-02T08:38:40+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/bootstrap-modal/</loc>
-    <lastmod>2022-06-02T08:38:40+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/categories/</loc>
-    <lastmod>2022-06-02T08:38:40+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/</loc>
-    <lastmod>2022-06-02T08:38:40+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/categories/programming/</loc>
-    <lastmod>2022-06-02T08:38:40+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/programming/</loc>
-    <lastmod>2022-06-02T08:38:40+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/</loc>
     <lastmod>2022-06-02T08:38:40+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/tags/cocaine/</loc>
@@ -118,9 +127,6 @@
   </url><url>
     <loc>https://progress-advance.com/tags/%E8%82%BA%E7%82%8E/</loc>
     <lastmod>2022-05-03T12:54:52+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/django/</loc>
-    <lastmod>2022-05-02T13:06:02+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/tags/python/</loc>
     <lastmod>2022-05-02T13:06:02+09:00</lastmod>
