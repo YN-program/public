@@ -4,22 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>薬物による消化器系合併症 - ImageDiagnosis &amp; Program</title>
+	<title>C言語－超基本その2－ - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="薬物による消化器系合併症" />
-<meta property="og:description" content="現在、多くの方がコロナワクチンで史上最悪の薬害が起きていると、うすうす(？)感じていると思います。
-ワクチンだけでなく、普段よく飲む薬でも様々な合併症が起こります。今回は薬剤による消化器系合併症について論文を参考にして記載します。" />
+		<meta property="og:title" content="C言語－超基本その2－" />
+<meta property="og:description" content="今回もC言語の超基本のメモ。
+do while文、関数について。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/medical/druginducedcomplications/" /><meta property="article:section" content="medical" />
-<meta property="article:published_time" content="2022-04-18T10:34:40+09:00" />
-<meta property="article:modified_time" content="2022-04-18T10:34:40+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/c_2/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-06-06T08:59:35+09:00" />
+<meta property="article:modified_time" content="2022-06-06T08:59:35+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="薬物による消化器系合併症"/>
-<meta name="twitter:description" content="現在、多くの方がコロナワクチンで史上最悪の薬害が起きていると、うすうす(？)感じていると思います。
-ワクチンだけでなく、普段よく飲む薬でも様々な合併症が起こります。今回は薬剤による消化器系合併症について論文を参考にして記載します。"/>
+<meta name="twitter:title" content="C言語－超基本その2－"/>
+<meta name="twitter:description" content="今回もC言語の超基本のメモ。
+do while文、関数について。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -123,61 +123,80 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">薬物による消化器系合併症</h1>
+			<h1 class="post__title">C言語－超基本その2－</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-04-18T10:34:40&#43;09:00">April 18, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/medical/" rel="category">medical</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-06-06T08:59:35&#43;09:00">June 06, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
 	</span>
 </div></div>
 		</header>
-		
-	<figure class="post__thumbnail thumbnail">
-		
-		<img class="thumbnail__image" src="/img/Drug-induced_Complications/panc.png" alt="薬物による消化器系合併症">
-		
-	</figure><div class="content post__content clearfix">
-			<p>現在、多くの方がコロナワクチンで史上最悪の薬害が起きていると、うすうす(？)感じていると思います。
-ワクチンだけでなく、普段よく飲む薬でも様々な合併症が起こります。今回は薬剤による消化器系合併症について論文を参考にして記載します。</p>
-<p>薬物は、代謝と吸収のメカニズムから、消化器系と肝胆膵系に障害を及ぼします。</p>
-<p>消化器系では、食道炎・食道潰瘍、胃炎・胃潰瘍、十二指腸炎・十二指腸潰瘍、小腸炎・小腸潰瘍、大腸炎など。</p>
-<p>非ステロイド性抗炎症薬(NSAIDs)で潰瘍ができることは有名ですが、小腸膜様狭窄という病気を起こすこともあります。</p>
-<p>膵臓および肝胆道系への損傷は、膵炎、急性または慢性肝炎、胆汁うっ滞、あるいは脂肪肝および脂肪性肝炎（肝硬変に進行する場合がある）として現れることがあります。
-また、様々な薬剤が肝血管を侵し、バッド・キアリ症候群や類洞閉塞症候群を引き起こすことがあります。</p>
-<p><a href="https://pubs.rsna.org/doi/10.1148/rg.2016150132">Imaging of Drug-induced Complications in the Gastrointestinal System</a></p>
-<p>NSAIDsは世界で沢山処方されていますが、胃腸炎を起こします。</p>
-<p>以下の胃レントゲン写真では、矢印のところにびらんがあります。「タコイボ胃炎・タコイボびらん」と診断されることが多いと思うのですが、検診などで「タコイボ胃炎」といわれたら、内服薬をご確認ください。</p>
-<p><img src="/img/Drug-induced_Complications/GIF1.png" alt="GIF"></p>
-<p>(<a href="https://pubs.rsna.org/doi/10.1148/rg.2016150132">Imaging of Drug-induced Complications in the Gastrointestinal System</a> Figure 2aより）</p>
-<p>次に、小腸膜様狭窄という聞きなれない病気がありますが、これは小腸が部分的に狭くなり、腸閉塞を起こします。NSAIDｓの長期内服が原因といわれています。</p>
-<p>薬は、飲んだ直後だけでなく、長期内服でも副作用を起こすことがあります。</p>
-<p><a href="https://www.jstage.jst.go.jp/article/jjsa/69/10/69_10_2552/_pdf/-char/ja">NSAIDs長期投与中に腸閉塞を発症した小腸多発膜様狭窄の１例</a></p>
-<p><img src="/img/Drug-induced_Complications/small-bowel.png" alt="small-bowel"></p>
-<p>(<a href="https://pubs.rsna.org/doi/10.1148/rg.2016150132">Imaging of Drug-induced Complications in the Gastrointestinal System</a> Figure 6aより。→の部分に狭窄がある)</p>
-<p>バッド・キアリ症候群は、肝静脈が閉塞して、門脈圧亢進、静脈うっ滞、肝うっ血を起こし、血流障害で肝臓が障害されます。経口避妊薬は原因の一つです。</p>
-<p>類洞閉塞症候群という、これまた聞きなれない病気ですが、肝臓の小さな静脈が閉塞する病気のようです。症状は、バッド・キアリ症候群に似ているようです。</p>
-<p>画像所見は、腹水や肝腫大、肝実質の不均一な造影効果などで、他の肝障害と鑑別が難しそうです。</p>
-<p><img src="/img/Drug-induced_Complications/sos.png" alt="sos"></p>
-<p>(<a href="https://pubs.rsna.org/doi/10.1148/rg.2016150132">Imaging of Drug-induced Complications in the Gastrointestinal System</a> Figure 6aより）</p>
-<p>最後に、急性膵炎も薬が原因で起こることがあります。薬剤性膵炎は、急性膵炎の3~5%を占めると言われているそうですが、認識不足や報告不足があり、真の発生率は不明なようです。
-画像所見は、胆石やアルコールによる膵炎と同じです。</p>
-<p><img src="/img/Drug-induced_Complications/pancreatitis.png" alt="pancreatitis"></p>
-<p> </p>
-<h4 id="tips">Tips</h4>
-<p>日本では、沢山の人が、大量の薬を処方されています。高齢者の中には、服薬管理がままならず、処方された薬を飲んでいないということがよくあると思います。
-そして、例えば高血圧なら、薬を飲んでいないから基準値に達していないのですが、主治医はそうは考えずに、単に基準値に達していないということで、薬を追加するということがあります。そして、ある日、処方された通りに服薬して、ドーンと血圧が低下して大変なことになるということがあります。</p>
-<p>薬は基本的に毒ですし、複数の薬を飲み合わせると、どんな副作用が起こるか分かりません。</p>
-<p>厚生労働省や製薬会社は、数々の薬害を起こしていながら全く反省しておらず、むしろ人口削減に加担しています。そして、金儲けに走る医者、中国共産党・創価の手先となっている医者もいます。</p>
-<p>RAPT理論では、癌や高血圧、糖尿病、さらにコロナウイルスが嘘であることが暴かれています。</p>
-<p>また、コロナ禍が中国共産党のテロであること、医療利権に中国共産党が深く関わっていることも暴かれています。</p>
-<p>中国共産党は、人の命を命とも思わない、凶悪なカルト集団です。彼らの薬（毒）で、これ以上被害者が出ないことを願います。</p>
-<p><a href="https://rapt-plusalpha.com/25172/">創価企業ファイザーが、薬害によって多くの人々を殺害してきた歴史</a></p>
-<p><a href="https://rapt-plusalpha.com/23720/">【コロナだけではない】こんなにあった! 日本の薬害　その背後に731部隊（岸信介＝李家）の影</a></p>
-<p><a href="https://rapt-plusalpha.com/27226/">コロナワクチン接種を強要してきたヤブ医者たちが、一斉に過剰な感染対策をやめるよう呼びかけ　コロナ茶番を収束させ、ワクチンの薬害責任から逃れる準備か?</a></p>
-<p><a href="https://rapt-plusalpha.com/28761/">【コロナワクチンに関する厚労省のZOOM会議の映像が流出】副反応による死者が報告数よりも10倍多いと指摘するも、必死でごまかす厚労省職員</a></p>
-<p><a href="https://rapt-plusalpha.com/30487/">厚労省は戦後から人口 “抑制” 政策を推し進めていた!!</a></p>
-<p><a href="https://rapt-plusalpha.com/34519/">【第22回】ミナのラジオ – 「癌利権」「医療利権」にも中国共産党が関わっていた!! – ゲスト・KAWATAさん</a></p>
-<p><a href="https://rapt-plusalpha.com/35217/">中国共産党によるウイグル族弾圧は人間の常識を遙かに超えるおぞましさだった!!</a></p>
-<p><a href="https://rapt-plusalpha.com/34533/">【再掲】「警告!! 日本は既に中国共産党に乗っ取られている」の動画を再度アップいたしました</a></p>
+		<div class="content post__content clearfix">
+			<p>今回もC言語の超基本のメモ。</p>
+<p>do while文、関数について。</p>
+<h5 id="do-while">do while</h5>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+int main (void){
+  int i = 10;
+  while (i &lt; 5){
+    printf(&#34;while文です\n&#34;);
+  }
+  do{
+    printf(&#34;do while文です\n&#34;);
+  }while (i &lt; 5);
+  return 0;
+}
+</code></pre><p>do while文とwhile文の違い。</p>
+<blockquote>
+<p>「while」文と似たものとして「do .. while」文があります。大きな違いは「while」文が繰り返し処理が行われる前に条件式が評価されるのに対して「do .. while」文は繰り返し処理が行われた後に条件式が評価されます。その為「while」文では場合によっては一度も繰り返し処理が行われない可能性がありますが、「do .. while」文の場合は最低限1回は繰り返し処理を実行します。</p>
+<p><a href="https://www.javadrive.jp/cstart/for/index4.html">https://www.javadrive.jp/cstart/for/index4.html</a></p>
+</blockquote>
+<h5 id="関数">関数</h5>
+<p>引数なし</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+int hello(void);
+int main (void){
+  hello();
+  return 0;
+}
+
+int hello(void){
+  printf(&#34;thank you&#34;);
+  return 0;
+}
+</code></pre><p>引数あり</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+int fluits(int apple, int orange);
+int main (void){
+  fluits(5, 6);
+  return 0;
+}
+
+int fluits(int apple, int orange){
+  printf(&#34;%d&#34;, (apple*300)+(orange*200));
+  return 0;
+}
+
+#結果は、2700(5*300+6*200)になる。
+</code></pre><p>戻り値（関数の処理結果を別の場所で使える）</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+int fluits(int apple);
+int main (void){
+  int hoge; #戻り値を代入する変数
+  hoge = fruits(5);
+  if (hoge &lt; 3000){
+    printf(&#34;予算に収まりました。&#34;);
+  } else {
+    printf(&#34;予算オーバーです&#34;);
+  }
+  return 0;
+}
+
+int fluits(int apple){
+  int kingaku;
+  kingaku = apple * 300;
+  return kingaku;
+}
+</code></pre>
 		</div>
 		<footer class="post__footer">
 			
@@ -185,7 +204,7 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" rel="tag">薬害</a>
+			<a class="tags__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" rel="tag">C言語</a>
 		</li>
 	</ul>
 </div>
@@ -201,15 +220,9 @@ if (!doNotTrack) {
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/medical/covid-19/covid_pneumonia/" rel="prev">
+		<a class="pager__link" href="/programming/c_1/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">典型的なコロナ肺炎のCT所見はない</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/medical/druginducedgastritis/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">薬の副作用－胃腸障害－</p>
+			<p class="pager__title">C言語－超基本その1－</p>
 		</a>
 	</div>
 </nav>
