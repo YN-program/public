@@ -6,15 +6,25 @@
     <description>Recent content in C言語 on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Jun 2022 08:59:35 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/c%E8%A8%80%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jun 2022 10:54:54 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/c%E8%A8%80%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C言語－超基本その3－</title>
+      <link>https://progress-advance.com/programming/c_3/</link>
+      <pubDate>Tue, 07 Jun 2022 10:54:54 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/c_3/</guid>
+      <description>&lt;p&gt;C言語独学の超基本のメモ。&lt;/p&gt;
+&lt;p&gt;変数の有効範囲、配列について。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>C言語－超基本その2－</title>
       <link>https://progress-advance.com/programming/c_2/</link>
       <pubDate>Mon, 06 Jun 2022 08:59:35 +0900</pubDate>
       
       <guid>https://progress-advance.com/programming/c_2/</guid>
-      <description>&lt;p&gt;今回もC言語の超基本のメモ。&lt;/p&gt;
-&lt;p&gt;do while文、関数について。&lt;/p&gt;</description>
+      <description>&lt;p&gt;今回もC言語の超基本のメモ。
+do while文、関数について。&lt;/p&gt;</description>
     </item>
     
     <item>
