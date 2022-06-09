@@ -148,8 +148,8 @@ int main (void){
 </code></pre><h5 id="文字列を変数で扱う">文字列を変数で扱う</h5>
 <p>c言語で複数の文字を変数として扱うには、配列を利用する。</p>
 <p>char 変数名 [文字数+1] = {&lsquo;1文字目&rsquo;,&lsquo;2文字目&rsquo;,&rsquo;\0&rsquo;};</p>
-<p>配列の終わりには \n を付ける。
-\n：終端文字（end of statement）</p>
+<p>配列の終わりには \0 を付ける。
+\0：終端文字（end of statement）</p>
 <pre tabindex="0"><code>#include &lt;stdio.h&gt;
 int main (void){
   char str [5] = {&#39;l&#39;,&#39;u&#39;,&#39;k&#39;,&#39;a&#39;,&#39;\0&#39;};
