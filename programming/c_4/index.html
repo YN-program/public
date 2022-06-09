@@ -4,20 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RAPT ブログに出会い、世の中の出来事に振り回されなくなった。 - ImageDiagnosis &amp; Program</title>
+	<title>C言語－超基本その4－ - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="RAPT ブログに出会い、世の中の出来事に振り回されなくなった。" />
-<meta property="og:description" content="こんにちは。 今回は、箸休め記事になります。 コロナ禍や無意味な感染症対策のせいだと思いますが、世の中イライラしている人が増えているように思います。 一日中、マスクを着けていたり、消毒やソーシャルディスタンスを押し付けられたら、当然ですよね。 それ" />
+		<meta property="og:title" content="C言語－超基本その4－" />
+<meta property="og:description" content="C言語独学の超基本のメモ、4回目。
+文字列について。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/life/testimony1/" /><meta property="article:section" content="life" />
-<meta property="article:published_time" content="2022-05-09T12:04:56+09:00" />
-<meta property="article:modified_time" content="2022-05-09T12:04:56+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/c_4/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-06-09T09:15:42+09:00" />
+<meta property="article:modified_time" content="2022-06-09T09:15:42+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="RAPT ブログに出会い、世の中の出来事に振り回されなくなった。"/>
-<meta name="twitter:description" content="こんにちは。 今回は、箸休め記事になります。 コロナ禍や無意味な感染症対策のせいだと思いますが、世の中イライラしている人が増えているように思います。 一日中、マスクを着けていたり、消毒やソーシャルディスタンスを押し付けられたら、当然ですよね。 それ"/>
+<meta name="twitter:title" content="C言語－超基本その4－"/>
+<meta name="twitter:description" content="C言語独学の超基本のメモ、4回目。
+文字列について。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -121,34 +123,142 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">RAPT ブログに出会い、世の中の出来事に振り回されなくなった。</h1>
+			<h1 class="post__title">C言語－超基本その4－</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-05-09T12:04:56&#43;09:00">May 09, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/life/" rel="category">life</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-06-09T09:15:42&#43;09:00">June 09, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>こんにちは。</p>
-<p>今回は、箸休め記事になります。</p>
-<p>コロナ禍や無意味な感染症対策のせいだと思いますが、世の中イライラしている人が増えているように思います。</p>
-<p>一日中、マスクを着けていたり、消毒やソーシャルディスタンスを押し付けられたら、当然ですよね。</p>
-<p>それに、政治家のやることなすこと不公平で、不平や不満が溜まりますし、閉塞感も出てくると思います。</p>
-<p>こうした状況は、すぐには変えることはできないのですが、考え方を変えることで、そのようなネガティブな感情から抜け出すことができると RAPT 氏の御言葉から学び、その通りに実践することで、私は、世の中の出来事によって感情を左右されにくくなりました。</p>
-<p>突発的な出来事や、思い通りにいかない事があると、苛立ちや落胆という感情が湧いてきて苦しくなることがありますが、どうしてそのような事が起きたのか、自分に何か問題があるのかと考えて、神様にお祈りしていると、自分の考え方が根本的に間違っていたり、自分のミスでそのような事が起きたということに気付き、自分のせいで心が苦しくなっている事に気付くことができ、そのネガティブな感情を無くしていくことで、心がスーッと楽になっていきますし、ちょっとした事であれば、すぐに問題が解決します。</p>
-<p>このようなことは、RAPT 氏の御言葉に出会う前はあり得なかった事で、何か問題が起きると一日中イライラしたり落ち込んだりしていましたし、問題が解決されないということが多々ありました。</p>
-<p>RAPT 氏の御言葉は、イエス様から RAPT 氏の先生、そして RAPT 氏へと紡がれた悟りの集大成、神様の愛の歴史の集大成で、人類が神様の考えを身につけて、神様のようになって幸せに生きられるように、神様と疎通して、神様と愛し合って生きられるように、神様から祝福を受けて幸せに生きられるようにと、神様が RAPT 氏を通して与えて下さったものです。</p>
-<p>神様の御言葉ですから、何度読んでも新たな発見があり、御言葉や日々の出来事を通して、自分の間違いに気付かせて下さり、正しい方向へと成長させてくださっていることを感じ、この偉大な御言葉を与えて下さった神様と、御言葉を悟ってくださった RAPT 氏に本当に感謝しています。</p>
-<p>自分に起こる様々な出来事、世の中で起こる様々な出来事は、全て神様の手の中で起きていることであり、神様に反逆した悪魔がいるから起きていることであり、霊界の出来事がこの世に反映されているのだという、他では絶対に知ることができないことが、RAPT 氏の御言葉で伝えられています。</p>
-<p>そして、人生を変える方法、悪に染まった世の中を変える方法も RAPT 氏は伝えてくださっています。</p>
-<p>どうか、できるだけ沢山の方が、RAPT 氏の御言葉を通して神様に出会い、心の苦しみから解放され、幸せな人生を送られますようにお祈りします。</p>
-<p><a href="https://rapt-neo.com/?p=51465">RAPT有料記事397(2019年8月12日）世の人々は努力してもほとんど何も報われないが、私たち義人は努力した分だけ何倍にもなって報われる。これこそが主の救い、主の祝福だ。</a></p>
-<p><a href="https://rapt-neo.com/?p=53808">RAPT有料記事507(2020年10月24日）主はモーセとの契約、イエス様との契約を守って、預言者の言葉に聞き従う者には祝福を、聞き従わない者には裁きを下されてきた。そして、その契約が完全に成就されるのが今の時代だから、今の時代に送られた預言者が誰であるのかを、はっきりと悟りなさい。</a></p>
-<p><a href="https://rapt-neo.com/?p=12801">最大のうつ病対策は脳の回転を速くする努力をすること。</a></p>
-<p><a href="https://rapt-neo.com/?p=16134">人間の精神が崩壊するのはこの世のモラルの崩壊に最も大きな原因がある、と私は考えます。</a></p>
-<p><a href="https://rapt-plusalpha.com/category/life/">RAPT理論＋α</a></p>
-<p><a href="https://rapt-plusalpha.com/34533/">【警告!! 日本は既に中国共産党に乗っ取られている】</a></p>
+			<p>C言語独学の超基本のメモ、4回目。</p>
+<p>文字列について。</p>
+<p>C言語には、文字列型(string型)がないので、文字列を配列で扱う。</p>
+<h5 id="文字変数">文字変数</h5>
+<p>文字を1文字だけ格納できる変数。</p>
+<p>char 変数名 = &lsquo;アルファベット1文字&rsquo;; ←ここは「シングルクォーテーション」</p>
+<p>char と アルファベット1文字は1バイトになる。</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+int main (void){
+  char c = &#39;A&#39;;
+  printf(&#34;%c&#34;,c);
+  return 0;
+}
+//実行するとAが表示される。
+</code></pre><h5 id="文字列を変数で扱う">文字列を変数で扱う</h5>
+<p>c言語で複数の文字を変数として扱うには、配列を利用する。</p>
+<p>char 変数名 [文字数+1] = {&lsquo;1文字目&rsquo;,&lsquo;2文字目&rsquo;,&rsquo;\0&rsquo;};</p>
+<p>配列の終わりには \n を付ける。
+\n：終端文字（end of statement）</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+int main (void){
+  char str [5] = {&#39;l&#39;,&#39;u&#39;,&#39;k&#39;,&#39;a&#39;,&#39;\0&#39;};
+  printf(&#34;%s&#34;,str);
+  return 0;
+}
+//実行するとlukaが表示される。
+</code></pre><h5 id="文字列の初期化">文字列の初期化</h5>
+<p>配列の宣言と文字列の代入を同時にする。</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+int main (void){
+  char str1 [5] = {&#39;l&#39;,&#39;u&#39;,&#39;k&#39;,&#39;a&#39;,&#39;\0&#39;}; //こちらは手間。
+  printf(&#34;%s\n&#34;,str1);
+  char str2 [] = &#34;luka&#34;;　//こちらのほうが簡単だが、後から文字を変更できない。
+  printf(&#34;%s\n&#34;,str2);
+  return 0;
+}
+//実行するとlukaが表示される。
+</code></pre><h5 id="atoi関数">atoi関数</h5>
+<ul>
+<li>atoi関数：ASCII to Integer (int型の関数)</li>
+<li>atod関数：ASCII to Double (double型の関数)</li>
+<li>atof関数：ASCII to Float (float型の関数)</li>
+<li>atol関数：ASCII to Long (long型の整数)</li>
+</ul>
+<p>〇atoi関数
+int 数値へ変換する変数名 =  atoi（文字列だった変数名）;</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
 
+int main (void){
+  char str [] = &#34;200&#34;;
+  int suuti = atoi (str);
+  printf(&#34;%d&#34;,suuti);
+  return 0;
+}
+//実行すると200が表示される。
+</code></pre><pre tabindex="0"><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main (void){
+  char str [] = &#34;3.14&#34;;
+  double suuti = atoi (str);
+  printf(&#34;%f&#34;,suuti);
+  return 0;
+}
+//実行すると3.14が表示される。
+</code></pre><h5 id="strcpy関数">strcpy関数</h5>
+<p>string copy：文字列のコピーを行うための関数。</p>
+<p>strcpy (コピー先の配列名, コピー元の文字 or 配列);　//右側のテキストを左側の配列に代入</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main (void){
+  char str [10] ;
+  strcpy(str, &#34;LUKA&#34;); //LUKAをstrに代入
+  printf(&#34;%s&#34;,str);
+  return 0;
+}
+//実行するとLUKAが表示される。
+</code></pre><h5 id="strcat関数">strcat関数</h5>
+<p>string concatenate→文字列の連結を行う関数</p>
+<p>strcat(配列名1、配列名2)</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main (void){
+  char str1 [15] = &#34;Hello&#34;; //要素数を大き目に確保しておく
+  char str2 [] = &#34;World&#34;;
+  strcat(str1, str2); 
+  printf(&#34;%s&#34;,str1);
+  return 0;
+}
+//実行するとHelloWorldと表示される。
+</code></pre><h5 id="sprintf関数">sprintf関数</h5>
+<p>string print formatted(書式付きで文字列出力)→あらゆる文字列を合成できる万能関数</p>
+<p>sprintf(結果を格納する配列、&ldquo;変換指定子&rdquo;,変数,配列);</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main (void){
+  char str [20]:
+  char str1 [] = &#34;Hello&#34;;
+  char str2 [] = &#34;World&#34;;
+  int i = 2;
+  sprintf(str, &#34;%s%s%d&#34;, str1,str2,i); 
+  printf(&#34;%s&#34;,str);
+  return 0;
+}
+//実行するとHelloWorld2と表示される。
+</code></pre><h5 id="strlen関数">strlen関数</h5>
+<p>string length→文字列の長さをカウント</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main (void){
+  char str [256]:
+  scanf(&#34;%s&#34;, str);
+  int i;
+  i = strlen(str);
+  printf(&#34;%d&#34;,i);
+  return 0;
+}
+//キーボードで打ち込んだ文字数をカウントできる。
+</code></pre><p>今回も、こちらの動画を参照しました。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/UWI4ultTvI8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
 		</div>
 		<footer class="post__footer">
 			
@@ -156,7 +266,7 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/testimony/" rel="tag">testimony</a>
+			<a class="tags__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" rel="tag">C言語</a>
 		</li>
 	</ul>
 </div>
@@ -171,10 +281,10 @@ if (!doNotTrack) {
 </div>
 
 <nav class="pager flex">
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/life/music-notes/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">小さいけれどもなくてはならない存在</p>
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/programming/qrcode/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">QRコードの作り方 -Python, JavaScript(jQuery)-</p>
 		</a>
 	</div>
 </nav>
