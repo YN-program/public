@@ -6,7 +6,16 @@
     <description>Recent content in django on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 03 Jun 2022 09:29:10 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jun 2022 08:30:49 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Django】INSTALLED_APPS の適切な書き方</title>
+      <link>https://progress-advance.com/programming/django_installedapps/</link>
+      <pubDate>Tue, 21 Jun 2022 08:30:49 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/django_installedapps/</guid>
+      <description>&lt;p&gt;DjangoのINSTALLED_APPSは、最初に記載されているアプリケーションが優先されるため、記載する順番が重要なのだそうです。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>for文でのモーダルダイアログ</title>
       <link>https://progress-advance.com/programming/modal/</link>
