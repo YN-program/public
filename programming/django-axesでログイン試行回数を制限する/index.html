@@ -157,19 +157,24 @@ if (!doNotTrack) {
 <p><a href="https://django-axes.readthedocs.io/en/latest/1_requirements.html">1. Requirements</a></p>
 <p>settings.py の INSTALLED_APPS  に &lsquo;axes&rsquo;を追記。</p>
 <pre tabindex="0"><code>INSTALLED_APPS = [
+    #Axes app can be in any position in the INSTALLED_APPS list.
+    &#39;axes&#39;,
+
     &#39;django.contrib.admin&#39;,
     &#39;django.contrib.auth&#39;,
     &#39;django.contrib.contenttypes&#39;,
     &#39;django.contrib.sessions&#39;,
     &#39;django.contrib.messages&#39;,
     &#39;django.contrib.staticfiles&#39;,
-    #Axes app can be in any position in the INSTALLED_APPS list.
-    &#39;axes&#39;,
+
 ]    
-</code></pre><p>&lsquo;axes&rsquo;は、どこに記載してもいいようです。
-ただ、一番下に記載しない場合、&lsquo;axes&rsquo;, の「,」を忘れると、以下のようにエラーが出ます。</p>
-<pre tabindex="0"><code>ModuleNotFoundError: No module named &#39;axesrest_framework&#39;
-</code></pre><p>次に、settings.py の AUTHENTICATION_BACKENDS の一番上に「axes.backends.AxesBackend」</p>
+</code></pre><p>&lsquo;axes&rsquo;は、どこに記載してもいいようです。</p>
+<hr>
+<p>2022/6/21 追記</p>
+<p>INSTALLED_APPSには、記載順があるそうです。上記を一部変更しました。</p>
+<p><a href="https://progress-advance.com/programming/django_installedapps/">【Django】INSTALLED_APPS の適切な書き方</a></p>
+<hr>
+<p>次に、settings.py の AUTHENTICATION_BACKENDS の一番上に「axes.backends.AxesBackend」</p>
 <pre tabindex="0"><code>AUTHENTICATION_BACKENDS = [
     # AxesBackend should be the first backend in the AUTHENTICATION_BACKENDS list.
     &#39;axes.backends.AxesBackend&#39;,
