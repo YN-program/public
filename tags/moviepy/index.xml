@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moviepy on ImageDiagnosis &amp; Program</title>
+    <link>https://progress-advance.com/tags/moviepy/</link>
+    <description>Recent content in Moviepy on ImageDiagnosis &amp; Program</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 26 Jun 2022 09:32:32 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/moviepy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MoviePyでワイプ画面の追加</title>
+      <link>https://progress-advance.com/programming/moviepy/</link>
+      <pubDate>Sun, 26 Jun 2022 09:32:32 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/moviepy/</guid>
+      <description>&lt;p&gt;無料の動画編集ソフトでも動画にワイプ画面を追加できますが、MoviePyでもできるということで試してみました。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

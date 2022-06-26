@@ -6,7 +6,16 @@
     <description>Recent content in programming on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 23 Jun 2022 07:27:06 +0900</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jun 2022 09:32:32 +0900</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MoviePyでワイプ画面の追加</title>
+      <link>https://progress-advance.com/programming/moviepy/</link>
+      <pubDate>Sun, 26 Jun 2022 09:32:32 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/moviepy/</guid>
+      <description>&lt;p&gt;無料の動画編集ソフトでも動画にワイプ画面を追加できますが、MoviePyでもできるということで試してみました。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>ModuleNotFoundError:No module named &#39;&#39; </title>
       <link>https://progress-advance.com/programming/modulenotfounderror/</link>
