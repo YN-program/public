@@ -6,7 +6,16 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 26 Jun 2022 09:32:32 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 09:36:13 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ウェブカメラで撮影した動画を、直接サーバーに送る。</title>
+      <link>https://progress-advance.com/programming/webcamvideotoserver/</link>
+      <pubDate>Wed, 29 Jun 2022 09:36:13 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/webcamvideotoserver/</guid>
+      <description>&lt;p&gt;ウェブカメラで撮影した動画を直接サーバーに送る方法を調べてみました。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>MoviePyでワイプ画面の追加</title>
       <link>https://progress-advance.com/programming/moviepy/</link>
