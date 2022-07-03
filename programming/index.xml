@@ -6,7 +6,16 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 29 Jun 2022 09:36:13 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Jul 2022 12:02:25 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu20.10にnpmをインストールしようとして躓いたこと・気付いたこと。</title>
+      <link>https://progress-advance.com/programming/update_upgrade/</link>
+      <pubDate>Sun, 03 Jul 2022 12:02:25 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/update_upgrade/</guid>
+      <description>Ubuntuにnpmをインストールしようとするも、エラーがでてインストールができませんでした。 原因は極めて単純で、Ubuntuのupdate,upgradeをしていなかったからで、以下の記事と同じようなエラーが出ていました。 Ubuntu 20.10でa</description>
+    </item>
+    
     <item>
       <title>ウェブカメラで撮影した動画を、直接サーバーに送る。</title>
       <link>https://progress-advance.com/programming/webcamvideotoserver/</link>
