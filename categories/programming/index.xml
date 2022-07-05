@@ -6,7 +6,17 @@
     <description>Recent content in programming on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 29 Jun 2022 09:36:13 +0900</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jul 2022 22:42:34 +0900</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webm-Duration-Infinity</title>
+      <link>https://progress-advance.com/programming/webm-duration-infinity/</link>
+      <pubDate>Tue, 05 Jul 2022 22:42:34 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/webm-duration-infinity/</guid>
+      <description>&lt;p&gt;先日、&lt;a href=&#34;https://progress-advance.com/programming/webcamvideotoserver/&#34;&gt;ウェブカメラで撮影した動画を、直接サーバーに送る&lt;/a&gt;記事を記載しました。&lt;/p&gt;
+&lt;p&gt;動画をアップロードするまでは良かったのですが、MediaRecorder で録画した webm の duration が Infinity になり、MoviePy で読み込むことができず、動画を編集することができませんでした。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>ウェブカメラで撮影した動画を、直接サーバーに送る。</title>
       <link>https://progress-advance.com/programming/webcamvideotoserver/</link>
