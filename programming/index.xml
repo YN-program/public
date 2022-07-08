@@ -6,7 +6,17 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 05 Jul 2022 22:42:34 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 09:35:31 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pythonでディレクトリ内のファイルをモデルに保存する方法</title>
+      <link>https://progress-advance.com/programming/how-to-move-files-in-python/</link>
+      <pubDate>Fri, 08 Jul 2022 09:35:31 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/how-to-move-files-in-python/</guid>
+      <description>&lt;p&gt;本題の前に、前回記事にてサーバーにアップロードした webm ファイルを ffmpeg を使って mp4 に変換する際に、&lt;code&gt;subprocess.call(&#39;&#39;, shell=True)&lt;/code&gt;のコードを紹介しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://progress-advance.com/programming/webm-duration-infinity/&#34;&gt;ウェブカメラで撮影した動画(webmファイル)のdurationがInfinityになる問題&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>ウェブカメラで撮影した動画(webmファイル)のdurationがInfinityになる問題</title>
       <link>https://progress-advance.com/programming/webm-duration-infinity/</link>
