@@ -6,7 +6,16 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 15 Jul 2022 11:26:43 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jul 2022 10:41:09 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【ffmpeg】画像と音源から動画作成・動画と動画の合成・動画と音声の合成</title>
+      <link>https://progress-advance.com/programming/ffmpeg-add-audio2video/</link>
+      <pubDate>Sun, 24 Jul 2022 10:41:09 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/ffmpeg-add-audio2video/</guid>
+      <description>&lt;p&gt;1枚の画像 hiyo.jpg とオーディオファイル hiyo.mp3 から動画 hiyo.mp4 を作成（画像は&lt;a href=&#34;https://www.photo-ac.com/&#34;&gt;写真のフリー素材サイト&lt;/a&gt;から、音源は&lt;a href=&#34;https://soundeffect-lab.info/sound/animal/&#34;&gt;効果音ラボ&lt;/a&gt;から）。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Python Pillow を使った画像の合成</title>
       <link>https://progress-advance.com/programming/pillow-resize-paste/</link>
