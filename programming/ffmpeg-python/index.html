@@ -4,22 +4,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Django Simple Captcha - ImageDiagnosis &amp; Program</title>
+	<title>【Python】ffmpeg での動画の重ね合わせ、動画とオーディオファイルの合成 - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Django Simple Captcha" />
-<meta property="og:description" content="ボットによる不正アカウント作成の防止、スパム対策のための「CAPTCHA」。
-Google reCAPTCHA は、クレジットカードの登録が必要なのと、100万件を超えると課金されるので、Google reCAPTCHA ではなく、django-simple-captcha を試しにインストールしてみました。" />
+		<meta property="og:title" content="【Python】ffmpeg での動画の重ね合わせ、動画とオーディオファイルの合成" />
+<meta property="og:description" content="以前 ffmpeg で動画・音声を合成する記事を記載しました。
+【ffmpeg】音声付き動画の合成
+今回は python の環境で ffmpeg を使用して動画の重ね合わせ、動画と音声の合成をやってみました。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/django-simple-captcha/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-04-13T17:01:04+09:00" />
-<meta property="article:modified_time" content="2022-04-13T17:01:04+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/ffmpeg-python/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-08-05T14:19:47+09:00" />
+<meta property="article:modified_time" content="2022-08-05T14:19:47+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Django Simple Captcha"/>
-<meta name="twitter:description" content="ボットによる不正アカウント作成の防止、スパム対策のための「CAPTCHA」。
-Google reCAPTCHA は、クレジットカードの登録が必要なのと、100万件を超えると課金されるので、Google reCAPTCHA ではなく、django-simple-captcha を試しにインストールしてみました。"/>
+<meta name="twitter:title" content="【Python】ffmpeg での動画の重ね合わせ、動画とオーディオファイルの合成"/>
+<meta name="twitter:description" content="以前 ffmpeg で動画・音声を合成する記事を記載しました。
+【ffmpeg】音声付き動画の合成
+今回は python の環境で ffmpeg を使用して動画の重ね合わせ、動画と音声の合成をやってみました。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,88 +132,81 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Django Simple Captcha</h1>
+			<h1 class="post__title">【Python】ffmpeg での動画の重ね合わせ、動画とオーディオファイルの合成</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-04-13T17:01:04&#43;09:00">April 13, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-08-05T14:19:47&#43;09:00">August 05, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
 	</span>
 </div></div>
 		</header>
 		
-	<figure class="post__thumbnail thumbnail">
 		
-		<img class="thumbnail__image" src="/img/captcha3.png" alt="Django Simple Captcha">
-		
-	</figure><div class="content post__content clearfix">
-			<p>ボットによる不正アカウント作成の防止、スパム対策のための「CAPTCHA」。</p>
-<p>Google reCAPTCHA は、クレジットカードの登録が必要なのと、100万件を超えると課金されるので、Google reCAPTCHA ではなく、django-simple-captcha を試しにインストールしてみました。</p>
-<p>google reCAPTCHA を使用する場合は、こちらから (<a href="https://github.com/torchbox/django-recaptcha#installation">Django reCAPTCHA</a>)。</p>
-<h4 id="django-simple-captcha">Django Simple Captcha</h4>
-<p><a href="https://django-simple-captcha.readthedocs.io/en/latest/?msclkid=ca0f265bbaff11ec8d5dcbe24d6aab37">Django Simple Captcha</a></p>
-<h4 id="インストール">インストール</h4>
-<pre tabindex="0"><code>pip install django-simple-captcha
-</code></pre><p>次に、settings.py の INSATALED_APPS に 「&lsquo;captcha&rsquo;,」 と記載します。</p>
-<pre tabindex="0"><code>INSTALLED_APPS = [
- (中略)
-  &#39;axes&#39;,
-  &#39;captcha&#39;,
-]
-</code></pre><p>前回記事でも書きましたが、「&lsquo;axes&rsquo;,」の「,」を忘れると、以下のようなエラーが出ます。</p>
-<pre tabindex="0"><code>ModuleNotFoundError: No module named &#39;axescaptcha&#39;
-</code></pre><p>で、「python manage.py check」で問題なければ、「python manage.py migrate」を実行します。</p>
-<p>次に、urls.py に</p>
-<pre tabindex="0"><code>urlpatterns += [
-    path(&#39;captcha/&#39;, include(&#39;captcha.urls&#39;)),
-]
-</code></pre><p>と記載します。</p>
-<p>ちなみに、Pillow も必要なので、インストールしておきます。</p>
-<p><a href="https://django-simple-captcha.readthedocs.io/en/latest/usage.html#installation">instration</a></p>
-<p><a href="https://pypi.org/project/Pillow/">Pillow</a></p>
-<h4 id="django-axes-との併用">django-axes との併用</h4>
-<p>django-axes と django simple captcha の併用には、幾つか設定が必要ですので、以下のドキュメントからコピー。</p>
-<p><a href="https://django-axes.readthedocs.io/en/latest/6_integration.html#integration-with-django-simple-captcha">Integration with Django Simple Captcha</a></p>
-<blockquote>
-<p>settings.py:</p>
-<pre tabindex="0"><code>AXES_LOCKOUT_URL = &#39;/locked&#39;
-</code></pre><p>example/urls.py:</p>
-<pre tabindex="0"><code>url(r&#39;^locked/$&#39;, locked_out, name=&#39;locked_out&#39;),
-</code></pre><p>example/forms.py:</p>
-<pre tabindex="0"><code>class AxesCaptchaForm(forms.Form):
-   captcha = CaptchaField()
-</code></pre><p>example/views.py:</p>
-<pre tabindex="0"><code>from axes.utils import reset_request
-from django.http.response import HttpResponseRedirect
-from django.shortcuts import render
-from django.urls import reverse_lazy
+		<div class="content post__content clearfix">
+			<p>以前 ffmpeg で動画・音声を合成する記事を記載しました。</p>
+<p><a href="https://progress-advance.com/programming/ffmpeg-watermark-video-audio-mix/">【ffmpeg】音声付き動画の合成</a></p>
+<p>今回は python の環境で ffmpeg を使用して動画の重ね合わせ、動画と音声の合成をやってみました。</p>
+<p>音声付き動画とオーディオファイルの合成。</p>
+<pre tabindex="0"><code>import subprocess
 
-from .forms import AxesCaptchaForm
+# javascriptで動画とオーディオのボリューム、音声の合成スタート時間を取得し、POSTで送信後。
+# 動画とオーディオファイルは、バリデーションして保存済み。
+
+video_volume = request.POST[&#34;parent_volume&#34;]
+audio_volume = request.POST[&#34;audio_volume&#34;]
+delay_time   = request.POST[&#34;audio_delay&#34;]
+
+cmd_list1 = [&#39;ffmpeg&#39;, &#39;-i&#39;, video_path, &#39;-ss&#39;, delay_time ,&#39;-accurate_seek&#39;, &#39;-i&#39;, audio_path, &#39;-c:v&#39;, &#39;copy&#39;, &#39;-filter_complex&#39;,
+              &#39;[0:a] volume=&#39;+ video_volume + &#39;[m];[1:a] volume=&#39; + audio_volume + &#39;[m2];[m][m2] amix=inputs=2:duration=longest [audio_out]&#39;,
+              &#39;-map&#39;, &#39;0:v&#39;, &#39;-map&#39;, &#39;[audio_out]&#39;, &#39;-y&#39;, &#39;output.mp4&#39;]
+subprocess.call(cmd_list1, shell=False)
+
+output = &#39;output.mp4&#39;
+
+# ffmpeg-normalize で音量調節
+
+cmd_list2 = [&#39;ffmpeg-normalize&#39;, output, &#39;-o&#39;, &#39;final.mp4&#39;, &#39;-c:a&#39;,&#39;aac&#39;,&#39;-b:a&#39;,&#39;192k&#39;]
+subprocess.call(cmd_list2, shell=False)
+</code></pre><p>2つの音声付き動画ファイルの重ね合わせ。</p>
+<pre tabindex="0"><code>import subprocess
+
+# javascriptで動画のボリューム、ワイプ動画の合成スタート時間、ワイプ動画の位置、サイズを取得し、POSTで送信後。
+# 動画ファイルは、バリデーションして保存済み。
+
+wipe_video_path, video_path = # それぞれの動画のpath
+video_volume = request.POST[&#34;video_volume&#34;]
+wipe_volume  = request.POST[&#34;wipe_volume&#34;]
+delay_time = request.POST[&#34;video_delay&#34;]
+
+wipe_x, wipe_y = # ワイプ動画の左上のx,y座標。
+w,h = # ワイプ動画のwidth, height。背景の動画のサイズに合わせて変更。
 
 
-def locked_out(request):
-   if request.POST:
-       form = AxesCaptchaForm(request.POST)
-       if form.is_valid():
-           reset_request(request)
-           return HttpResponseRedirect(reverse_lazy(&#39;auth_login&#39;))
-   else:
-       form = AxesCaptchaForm()
+cmd_list1 = [&#39;ffmpeg&#39;, &#39;-i&#39;, wipe_video_path, &#39;-vf&#39;, &#39;pad=iw+20:ih+20:10:10:random@1&#39;,&#39;-s&#39;, w + &#39;*&#39; + h, &#39;resized.mp4&#39; ]
+subprocess.call(cmd_list1, shell=False)
 
-   return render(request, &#39;accounts/captcha.html&#39;, {&#39;form&#39;: form})
-</code></pre><p>example/templates/example/captcha.html:</p>
-<pre tabindex="0"><code>&lt;form action=&#34;&#34; method=&#34;post&#34;&gt;
-   {% csrf_token %}
+resized_video = &#39;resized.mp4&#39;
 
-   {{ form.captcha.errors }}
-   {{ form.captcha }}
+cmd_list2 = [&#39;ffmpeg&#39;,&#39;-i&#39;, video_path, &#39;-ss&#39;, delay_time ,&#39;-accurate_seek&#39;, &#39;-i&#39;, resized_video,
+            &#39;-filter_complex&#39;,&#39;overlay=x=&#39; + wipe_x + &#39;:y=&#39; + wipe_y + &#39;;[0:a] volume=&#39; + video_volume + &#39;[m];[1:a] volume=&#39; + wipe_volume + &#39;[m2];[m][m2] amix=inputs=2:duration=longest [audio_out]&#39;,
+            &#39;-map&#39;, &#39;0:v&#39;, &#39;-map&#39;,&#39;[audio_out]&#39;, &#39;-y&#39;, &#39;mixed.mp4&#39;]
+subprocess.call(cmd_list2, shell=False)
 
-   &lt;div class=&#34;form-actions&#34;&gt;
-       &lt;input type=&#34;submit&#34; value=&#34;Submit&#34; /&gt;
-   &lt;/div&gt;
-&lt;/form&gt;
-</code></pre></blockquote>
-<p>試しに実装してみたものの、使用した印象としてはユーザビリティをかなり損なうので、もっと使いやすいものがあればそちらのほうが良いかもしれません。
-今後の課題となりそうです。</p>
-<p><a href="https://f-tra.com/ja/blog/column/4448">CAPTCHA、音声、スライダーetc…フォームのスパム対策方法まとめ</a></p>
+mixed_video = &#39;mixed.mp4&#39;
+
+cmd_list3 = [&#39;ffmpeg-normalize&#39;, mixed_video, &#39;-o&#39;, &#39;final.mp4&#39;, &#39;-c:a&#39;,&#39;aac&#39;,&#39;-b:a&#39;,&#39;192k&#39;]
+subprocess.call(cmd_list3, shell=False)
+</code></pre><p>以上になります。</p>
+<h5 id="参考記事">参考記事</h5>
+<p><a href="https://opty-life.com/study/program/ffmpeg-normalize/">ffmpeg-normalize でMP3ファイルの音量を平均化</a></p>
+<p><a href="https://qastack.jp/superuser/323119/how-can-i-normalize-audio-using-ffmpeg">ffmpegを使用してオーディオを正規化するにはどうすればよいですか？</a></p>
+<h5 id="お薦め記事">お薦め記事</h5>
+<p><a href="https://rapt-plusalpha.com/50214/">【ロシア】ウクライナ騒乱を巡る「偽情報」や未成年者に有害な情報を含むコンテンツの削除要請に応じなかったとして、米Googleに罰金500億円を科す</a></p>
+<p><a href="https://rapt-plusalpha.com/50243/">【カナダ・アルバータ州】コロナワクチン接種を実施した結果、2021年の死因ランキング1位が「死因不明」に　</a></p>
+<p><a href="https://rapt-plusalpha.com/50227/">【北海道】札幌禎心会病院が「mRNAワクチンそのものに欠陥があることが判明した」としてコロナワクチン接種中止を宣言 ファイザーの隠蔽する副反応のデータにも言及</a></p>
+<p><a href="https://rapt-plusalpha.com/50183/">RAPTさんが神様と完全に一体になられていることをはっきりと目の当たりにした不思議な体験（十二弟子・KAWATAさんの証）</a></p>
+<p><a href="https://rapt-plusalpha.com/50162/">【安倍晋三銃撃事件は茶番】「奈良県立医科大学」が安倍晋三元首相の死亡を証明する行政文書の開示決定を延長</a></p>
+<p><a href="https://rapt-plusalpha.com/50120/">「南京大虐殺」は、中国人による日本人虐殺「通州事件」を隠蔽するために捏造された架空の事件だった!!</a></p>
+<p><a href="https://rapt-plusalpha.com/50166/">【東京・武蔵野】外国人住民投票権についてTwitterで反対意見を述べた「金井米穀店」が、抗議者から迷惑デモ行為を受ける</a></p>
 		</div>
 		<footer class="post__footer">
 			
@@ -219,7 +214,10 @@ def locked_out(request):
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/django/" rel="tag">django</a>
+			<a class="tags__link btn" href="/tags/ffmpeg/" rel="tag">ffmpeg</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
 		</li>
 	</ul>
 </div>
@@ -235,15 +233,9 @@ def locked_out(request):
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/django-axes%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E8%A9%A6%E8%A1%8C%E5%9B%9E%E6%95%B0%E3%82%92%E5%88%B6%E9%99%90%E3%81%99%E3%82%8B/" rel="prev">
+		<a class="pager__link" href="/programming/ffmpeg-watermark-video-audio-mix/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">「django-axes」 でログイン試行回数を制限する</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/how2django/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【django】テンプレートからjQueryに複数の値を渡す方法</p>
+			<p class="pager__title">【ffmpeg】音声付き動画の合成</p>
 		</a>
 	</div>
 </nav>
