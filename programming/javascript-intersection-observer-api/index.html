@@ -4,22 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Hugo &#43; Netlify &#43; Github によるブログ構築 - ImageDiagnosis &amp; Program</title>
+	<title>【JavaScript】Intersection-Observer-Apiを使い、特定の要素が画面に入ったら「id」を取得 - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Hugo &#43; Netlify &#43; Github によるブログ構築" />
-<meta property="og:description" content="静的サイトジェネレーター Hugo と Netlify, GitHub を使って、ブログを構築。
-いろんなサイトを見ると簡単にできそうに書いてありましたが、色々と設定で苦戦したので、取り敢えず上手くいった方法を記載します。" />
+		<meta property="og:title" content="【JavaScript】Intersection-Observer-Apiを使い、特定の要素が画面に入ったら「id」を取得" />
+<meta property="og:description" content="特定の要素が画面に表示されたら、その要素の id を取得し、POST で views.py に値を渡す方法について。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/hugonetlify/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-04-21T18:29:19+09:00" />
-<meta property="article:modified_time" content="2022-04-21T18:29:19+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/javascript-intersection-observer-api/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-08-08T10:30:51+09:00" />
+<meta property="article:modified_time" content="2022-08-08T10:30:51+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hugo &#43; Netlify &#43; Github によるブログ構築"/>
-<meta name="twitter:description" content="静的サイトジェネレーター Hugo と Netlify, GitHub を使って、ブログを構築。
-いろんなサイトを見ると簡単にできそうに書いてありましたが、色々と設定で苦戦したので、取り敢えず上手くいった方法を記載します。"/>
+<meta name="twitter:title" content="【JavaScript】Intersection-Observer-Apiを使い、特定の要素が画面に入ったら「id」を取得"/>
+<meta name="twitter:description" content="特定の要素が画面に表示されたら、その要素の id を取得し、POST で views.py に値を渡す方法について。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,62 +128,108 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Hugo &#43; Netlify &#43; Github によるブログ構築</h1>
+			<h1 class="post__title">【JavaScript】Intersection-Observer-Apiを使い、特定の要素が画面に入ったら「id」を取得</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-04-21T18:29:19&#43;09:00">April 21, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-08-08T10:30:51&#43;09:00">August 08, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
 	</span>
 </div></div>
 		</header>
+		
+		
 		<div class="content post__content clearfix">
-			<p>静的サイトジェネレーター Hugo と Netlify, GitHub を使って、ブログを構築。</p>
-<p>いろんなサイトを見ると簡単にできそうに書いてありましたが、色々と設定で苦戦したので、取り敢えず上手くいった方法を記載します。</p>
-<h5 id="hugoのインストールから設定まで">Hugoのインストールから設定まで</h5>
-<p>これについては、以下のサイトに詳しく書いてありますので、その通りにすれば初めてでもできます。</p>
-<p><a href="https://blog-dai.com/hugo-windows-install-howto/">Hugo でのブログの作り方・使い方（Windows） 初心者向け手順解説</a></p>
-<p>なお、Hugo のインストール後に環境変数の PATH の設定をしますが、設定が確実に反映されるようにパソコンを再起動したほうが良さそうです。</p>
-<p><a href="https://www.tipsfound.com/windows10/11011">Windows 10 環境変数の設定と反映する方法</a></p>
-<p>また、Hugo のテーマが沢山公開されていますが、Hugo のバージョンアップにより動かないテーマもあるそうですから、updated が最近の日付になっているテーマを選ぶほうが良さそうです。</p>
-<p><a href="https://noauto-nolife.com/post/hugo-install-latest/">【HUGO】最新版をインストールして、サイトを作り、テーマを当ててビルドするまで</a></p>
-<h5 id="githubアカウント作成">GitHubアカウント作成</h5>
-<p>Netlify と GitHu を連携させるので、GitHub のアカウントを持っていない場合は、先に作成しておきます。</p>
-<p><a href="https://qiita.com/ayatokura/items/9eabb7ae20752e6dc79d">GitHubアカウントの作成方法 (2021年版)</a></p>
-<h5 id="netlify-と-github-の連携設定">Netlify と GitHub の連携・設定</h5>
-<p>以下のサイトにその方法が書いてあります。
-ムームードメインの DNS を使用する場合は、こちら。</p>
-<p><a href="https://noauto-nolife.com/post/startup-netlify/">Netlifyと静的サイトジェネレーターHUGOで1ヶ月約100円でブログ運営をする方法【独自ドメイン使用】</a></p>
-<p>Netlify の DNS を使用する場合は、こちらに手順が書いてあります（Xserver使用）。</p>
-<p><a href="https://ysmlog.net/posts/blog-domain-exchange/">Netlifyにカスタムドメインを適用する手順</a></p>
-<p>Netlify の設定途中で、次のような画面に出くわします。</p>
-<p><img src="/img/netlify2.jpg" alt="netlify2"></p>
-<p>Hugo でブログを作るときに、コマンドプロンプト（windows）で<code>hugo</code>というコマンドを実行すると、public という名前のフォルダが作られますが（<a href="https://blog-dai.com/hugo-windows-install-howto/">Hugo でのブログの作り方・使い方（Windows） 初心者向け手順解説</a>）、GitHub に public フォルダをアップロードするのか、中身だけをアップロードするのかで、設定内容が変わります。</p>
-<p>この Publish directory に関しては、public の中身だけをアップロードする場合は、何も記載しなくても良いと思いますが、public のフォルダをアップロードした場合は、以下のように「public」と記載する必要があると思います(試していないので多分です)。</p>
-<p><img src="/img/netlify.png" alt="netlify1"></p>
-<p>私は GitHub に public の中身だけをアップロードしたので、Publish directory に public と記載すると、「public がない」とエラーが出ました。</p>
-<p><code> Failed during stage 'building site': Deploy directory 'public' does not exist</code></p>
-<p>また、自分のパソコンで<code>hugo</code>コマンドを実行し、公開用ファイルを生成して 、GitHub にアップロードするのか、GitHub にソースファイルを置いて、Netlify で<code>hugo</code>コマンドを実行するのかで、Build Command に「hugo」と記載するかどうかが変わってくると思います。
-ここでも、私は public の中身だけをアップロードしていたからか、エラーが出まくりました。</p>
-<p><code>Failing build: Failed to build site</code></p>
-<p><code>Failed during stage 'building site': Build script returned non-zero exit code: 1 </code></p>
-<p>結局、Publish directory と Build Command には何も書かないことで、Netlify と GitHub の設定が上手くいきました。</p>
-<p><a href="https://www.tech-ek.com/post/hugo-manage-in-github-netlify/">Hugo + Github + Netlifyで簡単サイト・ブログ作成（GitHubで全て管理）</a></p>
-<p>後、公開記事が一つもない場合も、Netlify と GitHub の連携に失敗すると、どこかのサイトに書いてありました。</p>
-<h5 id="記事の書き方">記事の書き方</h5>
-<p>これも最初に紹介したサイトに記載されていますが、マークダウン記法で記事を書きます。</p>
-<p><a href="https://blog-dai.com/hugo-windows-install-howto/">Hugo でのブログの作り方・使い方（Windows） 初心者向け手順解説</a></p>
-<p><a href="https://notepm.jp/help/how-to-markdown">Markdown記法/書き方（見出し・表・リンク・画像・文字色など）</a></p>
-<p>ただ、マークダウン記法の一部が反映されないテーマがあったので、テーマを選んだら試しに一つ記事を書いてみたほうが良いかもしれません。</p>
-<h5 id="マークダウンエディタ">マークダウンエディタ</h5>
-<p><a href="https://notepm.jp/blog/724">【2022年版】Markdown(マークダウン)エディタ厳選まとめ＜Win/Mac/iOS/Android＞</a></p>
-<p>以下の動画を参考にして、マークダウンでの記事の記載から GitHub へのアップロードまでが簡単にできる Visual Studio Code を使うことにしました。</p>
+			<p>特定の要素が画面に表示されたら、その要素の id を取得し、POST で views.py に値を渡す方法について。</p>
+<pre tabindex="0"><code>&lt;div id=&#34;a&#34; class=&#34;sample&#34;&gt;Sample&lt;/div&gt;
+&lt;div id=&#34;b&#34; class=&#34;sample&#34;&gt;Sample&lt;/div&gt;
+&lt;div id=&#34;c&#34; class=&#34;sample&#34;&gt;Sample&lt;/div&gt;
+&lt;div id=&#34;d&#34; class=&#34;sample&#34;&gt;Sample&lt;/div&gt;
+&lt;div id=&#34;e&#34; class=&#34;sample&#34;&gt;Sample&lt;/div&gt;
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/hdpMw3hyQq4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+&lt;form id=&#34;idSetForm&#34; action=&#34;{% url &#39;&#39; %}&#34; method=&#34;POST&#34;&gt;
+    {% csrf_token %}
+&lt;/form&gt;
+</code></pre><pre tabindex="0"><code>window.addEventListener(&#34;load&#34; , function (){
+    let array = [];
+    const options = {
+        rootMargin: &#39;-50px&#39;,
+    }
+    const check = document.querySelectorAll(&#39;.sample&#39;);
 
-<p> </p>
-<p>Hugo の<code>config.toml</code>の設定など、他にもすることはありますが、取り敢えずこれで記事の作成から公開までできると思います。</p>
-<p><a href="https://ysmlog.net/posts/mainroad-init/">Hugoでブログ構築＆Mainroadテーマを適用</a></p>
+    const observer = new IntersectionObserver(idCheck);
+    check.forEach(check =&gt; {
+        observer.observe(check);
+    });
+
+    function idCheck(entries){
+
+        entries.forEach(entry =&gt; {
+            if (entry.isIntersecting) {
+                let attr = entry.target.getAttribute(&#34;id&#34;);
+                array.push(id);
+                observer.unobserve(document.getElementById(attr)); // 要素の監視を解除。
+
+//                要素の監視を解除しない場合。               
+//                if ( !array.includes(id) ) {
+//                array.push(id);
+//                }                
+            };
+        });
+    };
+
+    window.addEventListener(&#39;beforeunload&#39;, function(e) {
+        submit(array);　//ページ遷移時に転送
+    }, false);
+
+});
+
+function submit(array){
+
+    let form_elem   = &#34;#idSetForm&#34;; //formを取得するか、javascript で作って転送。
+
+    let data    = new FormData( $(form_elem).get(0) );
+    let url     = $(form_elem).prop(&#34;action&#34;);
+    let method  = $(form_elem).prop(&#34;method&#34;);
+    data.set(&#39;id_list&#39;, JSON.stringify(array));
+
+    for (let v of data.entries() ){ console.log(v); }
+
+    $.ajax({
+        url: url,
+        type: method,
+        data: data,
+        processData: false,
+        contentType: false,
+        dataType: &#39;json&#39;
+    }).done( function(data, status, xhr ) {
+        if (data.error){
+            console.log(&#34;ERROR&#34;);
+        }
+        else{
+            console.log(&#34;SUCCESS&#34;);
+        }
+
+    }).fail( function(xhr, status, error) {
+        console.log(status + &#34;:&#34; + error );
+    });
+
+}
+</code></pre><p>views.pyに届いた id_list は、 &lsquo;id_list&rsquo;: [&rsquo;[&ldquo;a&rdquo;,&ldquo;b&rdquo;,&ldquo;c&rdquo;]&rsquo;] のように id のリストが文字列になっているのでリストに変換。</p>
+<pre tabindex="0"><code>import ast
+
+class idCheckView(views.APIView):
+    def post(self,request, *args,**kwargs):      
+        id_list = ast.literal_eval(request.data[&#34;id_list&#34;])
+        for id in id_list:
+            print(id)
+</code></pre><h5 id="参考記事">参考記事</h5>
+<p><a href="https://clicklyquickly.com/2021/05/16/javascript-intersection-observer-api/">【JavaScript】特定の要素が画面に見えているかどうかを判定する方法【Intersection Observer API】</a></p>
+<p><a href="https://www.fenet.jp/dotnet/column/language/7818/">ythonでのeval関数の使い方｜基本的な使い方からコマンド実行まで解説</a></p>
+<h5 id="お薦め記事">お薦め記事</h5>
+<p><a href="https://rapt-plusalpha.com/50451/">YouTubeが「南京大虐殺はなかった」とする真実の動画を次々と削除　中国共産党の反日工作に加担する創価企業Google</a></p>
+<p><a href="https://rapt-plusalpha.com/50385/">【李家の孫正義、人望も人材も失う】ソフトバンクグループ傘下の「ビジョン・ファンド」から幹部クラスの人材流出が深刻化</a></p>
+<p><a href="https://rapt-plusalpha.com/50486/">コロナを5類相当へ引き下げるよう求める声が高まるも「5類に落とすと、7〜8万円のコロナ治療薬を3割負担で国民が購入しなければならない」とヤブ医者らが脅し、コロナ利権を確保</a></p>
+<p><a href="https://rapt-plusalpha.com/50396/">「習近平」が中国共産党の存続を脅かす企業や国民を弾圧しつづけた結果、中国経済が崩壊、“心肺停止”状態に</a></p>
+<p><a href="https://rapt-plusalpha.com/50370/">【北海道札幌市】大病院が続々とコロナワクチン接種の中止を宣言 「禎心会病院」「徳洲会病院」「手稲渓仁会病院」「市立札幌病院」</a></p>
 		</div>
 		<footer class="post__footer">
 			
@@ -193,10 +237,7 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/hugo/" rel="tag">Hugo</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/netlify/" rel="tag">Netlify</a>
+			<a class="tags__link btn" href="/tags/javascript/" rel="tag">javascript</a>
 		</li>
 	</ul>
 </div>
@@ -212,15 +253,9 @@ if (!doNotTrack) {
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/how2django1/" rel="prev">
+		<a class="pager__link" href="/programming/js-reload/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">for ループで id が重複するとき</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/django-and-or-filter/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【Django】AND 検索 OR 検索</p>
+			<p class="pager__title">【JavaScript】ページ移動・更新の検知方法</p>
 		</a>
 	</div>
 </nav>
