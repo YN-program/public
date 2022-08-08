@@ -3,24 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://progress-advance.com/categories/</loc>
-    <lastmod>2022-08-05T14:19:47+09:00</lastmod>
+    <lastmod>2022-08-08T09:38:24+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/</loc>
+    <lastmod>2022-08-08T09:38:24+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/javascript/</loc>
+    <lastmod>2022-08-08T09:38:24+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/categories/programming/</loc>
+    <lastmod>2022-08-08T09:38:24+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/programming/</loc>
+    <lastmod>2022-08-08T09:38:24+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/</loc>
+    <lastmod>2022-08-08T09:38:24+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/programming/js-reload/</loc>
+    <lastmod>2022-08-08T09:38:24+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/tags/ffmpeg/</loc>
     <lastmod>2022-08-05T14:19:47+09:00</lastmod>
   </url><url>
-    <loc>https://progress-advance.com/</loc>
-    <lastmod>2022-08-05T14:19:47+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/categories/programming/</loc>
-    <lastmod>2022-08-05T14:19:47+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/programming/</loc>
-    <lastmod>2022-08-05T14:19:47+09:00</lastmod>
-  </url><url>
     <loc>https://progress-advance.com/tags/python/</loc>
-    <lastmod>2022-08-05T14:19:47+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/</loc>
     <lastmod>2022-08-05T14:19:47+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/ffmpeg-python/</loc>
@@ -106,9 +112,6 @@
   </url><url>
     <loc>https://progress-advance.com/programming/update_upgrade/</loc>
     <lastmod>2022-07-03T12:02:25+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/javascript/</loc>
-    <lastmod>2022-06-29T09:36:13+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/webcamvideotoserver/</loc>
     <lastmod>2022-06-29T09:36:13+09:00</lastmod>

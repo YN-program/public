@@ -6,7 +6,16 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 05 Aug 2022 14:19:47 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 09:38:24 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【JavaScript】ページ移動・更新の検知方法</title>
+      <link>https://progress-advance.com/programming/js-reload/</link>
+      <pubDate>Mon, 08 Aug 2022 09:38:24 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/js-reload/</guid>
+      <description>&lt;p&gt;javascript でのページ移動、更新を検知する方法のメモ。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Python】ffmpeg での動画の重ね合わせ、動画とオーディオファイルの合成</title>
       <link>https://progress-advance.com/programming/ffmpeg-python/</link>
