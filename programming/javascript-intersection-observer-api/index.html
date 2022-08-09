@@ -152,10 +152,11 @@ if (!doNotTrack) {
     let array = [];
     const options = {
         rootMargin: &#39;-50px&#39;,
+        threshold : 0.5        // 2022/08/09 threshold を追記しました。
     }
     const check = document.querySelectorAll(&#39;.sample&#39;);
 
-    const observer = new IntersectionObserver(idCheck);
+    const observer = new IntersectionObserver(idCheck, options); // 2022/08/09 options を追記しました。
     check.forEach(check =&gt; {
         observer.observe(check);
     });
