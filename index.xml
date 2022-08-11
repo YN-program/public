@@ -6,7 +6,16 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 08 Aug 2022 10:30:51 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Aug 2022 10:19:43 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【HUGO】Shortcode で文字色、背景の変更、動画の埋め込み</title>
+      <link>https://progress-advance.com/programming/shortcode/</link>
+      <pubDate>Wed, 10 Aug 2022 10:19:43 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/shortcode/</guid>
+      <description>&lt;p&gt;ショートコードを作り、HUGOの記事の文字色や背景の変更、動画を埋め込む方法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【JavaScript】Intersection-Observer-Apiを使い、特定の要素が画面に入ったら「id」を取得</title>
       <link>https://progress-advance.com/programming/javascript-intersection-observer-api/</link>
