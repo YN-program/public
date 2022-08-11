@@ -6,7 +6,16 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 10 Aug 2022 10:19:43 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Aug 2022 05:57:54 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Page Visibility API でページ離脱時にイベントを発生させる</title>
+      <link>https://progress-advance.com/programming/js-visibilitychange-useragent/</link>
+      <pubDate>Fri, 12 Aug 2022 05:57:54 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/js-visibilitychange-useragent/</guid>
+      <description>&lt;p&gt;先日、&lt;a href=&#34;https://progress-advance.com/programming/javascript-intersection-observer-api/&#34;&gt;Intersection-Observer-Api に関する記事&lt;/a&gt;にて、ページ遷移時にイベントを発生させるために&lt;code&gt;beforeunload&lt;/code&gt;を使用しましたが、ブラウザ間で挙動が異なっていたり、&lt;code&gt;event.returnValue&lt;/code&gt;を記載しないと期待した通りに動かなかったりしました。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【HUGO】Shortcode で文字色、背景の変更、動画の埋め込み</title>
       <link>https://progress-advance.com/programming/shortcode/</link>
