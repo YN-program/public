@@ -3,24 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://progress-advance.com/categories/</loc>
-    <lastmod>2022-08-12T05:57:54+09:00</lastmod>
+    <lastmod>2022-08-13T10:34:44+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/defaultdict/</loc>
+    <lastmod>2022-08-13T10:34:44+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/</loc>
-    <lastmod>2022-08-12T05:57:54+09:00</lastmod>
+    <lastmod>2022-08-13T10:34:44+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/categories/programming/</loc>
+    <lastmod>2022-08-13T10:34:44+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/programming/</loc>
+    <lastmod>2022-08-13T10:34:44+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/python/</loc>
+    <lastmod>2022-08-13T10:34:44+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/</loc>
+    <lastmod>2022-08-13T10:34:44+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/programming/python-defaultdict/</loc>
+    <lastmod>2022-08-13T10:34:44+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/tags/javascript/</loc>
     <lastmod>2022-08-12T05:57:54+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/js-visibilitychange-useragent/</loc>
-    <lastmod>2022-08-12T05:57:54+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/categories/programming/</loc>
-    <lastmod>2022-08-12T05:57:54+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/programming/</loc>
-    <lastmod>2022-08-12T05:57:54+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/</loc>
     <lastmod>2022-08-12T05:57:54+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/categories/medical/</loc>
@@ -48,9 +57,6 @@
     <lastmod>2022-08-08T09:38:24+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/tags/ffmpeg/</loc>
-    <lastmod>2022-08-05T14:19:47+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/python/</loc>
     <lastmod>2022-08-05T14:19:47+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/ffmpeg-python/</loc>

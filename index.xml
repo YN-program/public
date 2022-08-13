@@ -6,7 +6,16 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 12 Aug 2022 05:57:54 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Aug 2022 10:34:44 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Python】辞書の重複した値のキーの数を取得する</title>
+      <link>https://progress-advance.com/programming/python-defaultdict/</link>
+      <pubDate>Sat, 13 Aug 2022 10:34:44 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/python-defaultdict/</guid>
+      <description>例えば、次のようなモデルがあったときに、毎日いくつのデータが作られたのか知りたい。 そんな時に、defaultdictが便利だった。 class Test(models.Model): class Meta: db_table = &amp;#34;test&amp;#34; #同じクラスを外部キーとして指定しているのでフィールドオプションとしてrelated_nameを</description>
+    </item>
+    
     <item>
       <title>Page Visibility API でページ離脱時にイベントを発生させる</title>
       <link>https://progress-advance.com/programming/js-visibilitychange-useragent/</link>
