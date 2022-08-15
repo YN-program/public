@@ -13,7 +13,8 @@
       <pubDate>Sat, 13 Aug 2022 10:34:44 +0900</pubDate>
       
       <guid>https://progress-advance.com/programming/python-defaultdict/</guid>
-      <description>例えば、次のようなモデルがあったときに、毎日いくつのデータが作られたのか知りたい。 そんな時に、defaultdictが便利だった。 class Test(models.Model): class Meta: db_table = &amp;#34;test&amp;#34; #同じクラスを外部キーとして指定しているのでフィールドオプションとしてrelated_nameを</description>
+      <description>&lt;p&gt;例えば、次のようなモデルがあったときに、毎日いくつのデータが作られたのか知りたい。&lt;/p&gt;
+&lt;p&gt;そんな時に、&lt;code&gt;defaultdict&lt;/code&gt;が便利だった。&lt;/p&gt;</description>
     </item>
     
     <item>

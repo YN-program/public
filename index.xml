@@ -6,14 +6,25 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 13 Aug 2022 10:34:44 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Aug 2022 23:22:03 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAPTブログに出会い、この世のカラクリを知り、霊界の存在を知り、何も分からない状態から抜け出すことが出来た。</title>
+      <link>https://progress-advance.com/life/testimony2/</link>
+      <pubDate>Sun, 14 Aug 2022 23:22:03 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/life/testimony2/</guid>
+      <description>&lt;p&gt;安倍晋三の銃撃事件以降、政治家と統一教会の繋がりが多くの人に知れ渡り、私のブログでも沢山の方がこちらの記事を読んでくださっています。ありがとうございます。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://progress-advance.com/politics/farce-abe-was-shot/&#34;&gt;「安倍晋三(影武者) 銃撃されるも、あっという間に茶番とバレる。」&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Python】辞書の重複した値のキーの数を取得する</title>
       <link>https://progress-advance.com/programming/python-defaultdict/</link>
       <pubDate>Sat, 13 Aug 2022 10:34:44 +0900</pubDate>
       
       <guid>https://progress-advance.com/programming/python-defaultdict/</guid>
-      <description>例えば、次のようなモデルがあったときに、毎日いくつのデータが作られたのか知りたい。 そんな時に、defaultdictが便利だった。 class Test(models.Model): class Meta: db_table = &amp;#34;test&amp;#34; #同じクラスを外部キーとして指定しているのでフィールドオプションとしてrelated_nameを</description>
+      <description>&lt;p&gt;例えば、次のようなモデルがあったときに、毎日いくつのデータが作られたのか知りたい。&lt;/p&gt;
+&lt;p&gt;そんな時に、&lt;code&gt;defaultdict&lt;/code&gt;が便利だった。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -164,7 +175,7 @@
     </item>
     
     <item>
-      <title>安倍晋三(影武者)が銃撃されるも、あっという間に茶番とバレる。</title>
+      <title>安倍晋三(影武者) 銃撃されるも、あっという間に茶番とバレる。</title>
       <link>https://progress-advance.com/politics/farce-abe-was-shot/</link>
       <pubDate>Sat, 09 Jul 2022 11:05:35 +0900</pubDate>
       
