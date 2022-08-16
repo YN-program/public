@@ -145,7 +145,6 @@ if (!doNotTrack) {
     class Meta:
         db_table    = &#34;test&#34;
 
-    #同じクラスを外部キーとして指定しているのでフィールドオプションとしてrelated_nameを指定する。
     id   = models.UUIDField( default=uuid.uuid4, primary_key=True, editable=False )
     dt   = models.DateTimeField(verbose_name=&#34;&#34;,default=timezone.now)
     test = models.CharField(verbose_name=&#34;&#34;, max_length=50)
