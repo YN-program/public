@@ -6,7 +6,16 @@
     <description>Recent content in Tags on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 16 Aug 2022 16:22:21 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Aug 2022 05:46:57 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://progress-advance.com/tags/hugo/</link>
+      <pubDate>Thu, 18 Aug 2022 05:46:57 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>pandas</title>
       <link>https://progress-advance.com/tags/pandas/</link>
@@ -58,15 +67,6 @@
       <pubDate>Thu, 11 Aug 2022 11:19:15 +0900</pubDate>
       
       <guid>https://progress-advance.com/tags/%E7%B5%90%E6%A0%B8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://progress-advance.com/tags/hugo/</link>
-      <pubDate>Wed, 10 Aug 2022 10:19:43 +0900</pubDate>
-      
-      <guid>https://progress-advance.com/tags/hugo/</guid>
       <description></description>
     </item>
     

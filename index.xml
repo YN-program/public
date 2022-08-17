@@ -6,7 +6,25 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 16 Aug 2022 16:22:21 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Aug 2022 05:46:57 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About us</title>
+      <link>https://progress-advance.com/about_us/</link>
+      <pubDate>Thu, 18 Aug 2022 06:42:36 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/about_us/</guid>
+      <description>画像診断歴20年、プログラミング歴1年。 学んで実践。 これまで学んできたこと、新しく学んだことを発信していきたいと思います。 過去のブログはこちらになります。 お薦めブログ RAPT Blogは、全ての人の悩みを解決し、人生を正しい方向に導いてくれる、この</description>
+    </item>
+    
+    <item>
+      <title>【HUGO】Odyseeの動画埋め込み</title>
+      <link>https://progress-advance.com/programming/shortcode-odysee/</link>
+      <pubDate>Thu, 18 Aug 2022 05:46:57 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/shortcode-odysee/</guid>
+      <description>&lt;p&gt;ショートコードを作り、Odyseeの動画をブログに埋め込む方法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Pandas】ある一定の期間のデータを取り出して、欠損する日付を埋めて、存在しないデータを0で埋める</title>
       <link>https://progress-advance.com/programming/how-to-make-df/</link>
@@ -653,15 +671,6 @@ do while文、関数について。&lt;/p&gt;</description>
       <guid>https://progress-advance.com/medical/covid-19/covid_pneumonia/</guid>
       <description>&lt;p&gt;現在流行っている（といわれている）、COVID-19肺炎。&lt;/p&gt;
 &lt;p&gt;CTで、「コロナに特徴的な画像所見です！」と患者さんに説明している人がいますが、大丈夫でしょうか。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About us</title>
-      <link>https://progress-advance.com/about_us/</link>
-      <pubDate>Thu, 14 Apr 2022 12:32:31 +0900</pubDate>
-      
-      <guid>https://progress-advance.com/about_us/</guid>
-      <description>画像診断歴20年、プログラミング歴1年。 学んで実践。 これまで学んできたこと、新しく学んだことを発信していきたいと思います。 過去のブログはこちらになります。 お薦めブログ RAPT Blogは、全ての人の悩みを解決し、人生を正しい方向に導いてくれる、この</description>
     </item>
     
     <item>

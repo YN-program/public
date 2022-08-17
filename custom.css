@@ -7,7 +7,9 @@ body {
 }
 
 .logo__title {
-	color:#946c45;
+	/* color:#946c45; */
+	color: rgb(255,190,101);
+	color: linear-gradient(45deg, rgba(255,190,101,1) 0%, rgba(255,199,127,1) 50%, rgba(255,212,86,1) 100%);
 }
 .post__title {
 	color:#be8f68;
@@ -25,8 +27,31 @@ body {
 .widget__title {
 	color: #946c45;
 }
+.main__title{
+	color:#be8f68;
+}
+.menu{
+	border-bottom:5px solid #87FABF;	
+}
 .menu__list {
-	background:#e6bfb2;
+	/* background:#e6bfb2; */
+	background: rgb(255,247,139);
+	background: linear-gradient(45deg, rgba(255,247,139,1) 0%, rgba(213,254,147,1) 30%,rgba(177,255,223,1) 100%);
+}
+.menu__text {
+	color:rgba(185,202,255,1);
+}
+.menu__text:hover {
+	color:white;
+}
+
+.menu__item:hover{
+	background-color: #87FABF;
+	color: white;
+}
+.menu__item:active{
+	background-color: #87FABF;
+	color: white;
 }
 .btn {
 	background:#ffe5e5;
@@ -34,6 +59,16 @@ body {
 }
 .btn:hover {
 	background:#ffa8a8;
+}
+.menu__btn {
+	background: rgb(255,247,139);
+	background: linear-gradient(45deg, rgba(255,247,139,1) 0%, rgba(177,255,223,1) 50%, rgba(213,254,147,1) 100%);
+	color:rgba(185,202,255,1);
+}
+.menu__btn:hover {
+	background: rgb(255,247,139);
+	background: linear-gradient(45deg, rgba(255,247,139,1) 0%, rgba(177,255,223,1) 50%, rgba(213,254,147,1) 100%);
+	color:#A1A1FF;
 }
 .footer {
 	background:#e6bfab;
