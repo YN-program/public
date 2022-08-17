@@ -6,7 +6,17 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 14 Aug 2022 23:22:03 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Aug 2022 16:22:21 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Pandas】ある一定の期間のデータを取り出して、欠損する日付を埋めて、存在しないデータを0で埋める</title>
+      <link>https://progress-advance.com/programming/how-to-make-df/</link>
+      <pubDate>Tue, 16 Aug 2022 16:22:21 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/how-to-make-df/</guid>
+      <description>&lt;p&gt;先日、python の defaultdict を用いて辞書の重複した値のキーの数を取得しました。&lt;/p&gt;
+&lt;p&gt;今回は pandas、django-pandas で、データをDataFrame形式にし、重複するデータの数を出して、飛び飛びになっている時系列データの欠損を埋めてみました。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>RAPTブログに出会い、この世のカラクリを知り、霊界の存在を知り、何も分からない状態から抜け出すことが出来た。</title>
       <link>https://progress-advance.com/life/testimony2/</link>
