@@ -4,20 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MoviePyで動画の切出し/結合・リサイズ・スローモーション - ImageDiagnosis &amp; Program</title>
+	<title>【JavaScript】演算や要素の有無の確認の備忘録 - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="MoviePyで動画の切出し/結合・リサイズ・スローモーション" />
-<meta property="og:description" content="MoviePy で動画が編集できるということで、少し触ってみた。" />
+		<meta property="og:title" content="【JavaScript】演算や要素の有無の確認の備忘録" />
+<meta property="og:description" content="タイトルの通り、JavaScript での演算の方法や、要素の有無の確認の備忘録です。
+JavaScript で数値の足し算をするとき、文字列が含まれていると上手くいきません。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/moviepy2/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-07-12T11:41:10+09:00" />
-<meta property="article:modified_time" content="2022-07-12T11:41:10+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/javascript-memo/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-08-19T19:43:47+09:00" />
+<meta property="article:modified_time" content="2022-08-19T19:43:47+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="MoviePyで動画の切出し/結合・リサイズ・スローモーション"/>
-<meta name="twitter:description" content="MoviePy で動画が編集できるということで、少し触ってみた。"/>
+<meta name="twitter:title" content="【JavaScript】演算や要素の有無の確認の備忘録"/>
+<meta name="twitter:description" content="タイトルの通り、JavaScript での演算の方法や、要素の有無の確認の備忘録です。
+JavaScript で数値の足し算をするとき、文字列が含まれていると上手くいきません。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -128,83 +130,95 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">MoviePyで動画の切出し/結合・リサイズ・スローモーション</h1>
+			<h1 class="post__title">【JavaScript】演算や要素の有無の確認の備忘録</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-07-12T11:41:10&#43;09:00">July 12, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-08-19T19:43:47&#43;09:00">August 19, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
 	</span>
 </div></div>
 		</header>
-		
-	<figure class="post__thumbnail thumbnail">
-		
-		<img class="thumbnail__image" src="/img/thumb/abeShot.png" alt="MoviePyで動画の切出し/結合・リサイズ・スローモーション">
-		
-	</figure><div class="content post__content clearfix">
-			<p>MoviePy で動画が編集できるということで、少し触ってみた。</p>
-<pre tabindex="0"><code>from moviepy.editor import *
+		<div class="content post__content clearfix">
+			<p>タイトルの通り、JavaScript での演算の方法や、要素の有無の確認の備忘録です。</p>
+<p>JavaScript で数値の足し算をするとき、文字列が含まれていると上手くいきません。</p>
+<p>文字列の「1」と「1」を足すと「11」という答えが返ってきます。</p>
+<p>これは、文字列には足し算があり、文字列同士を足すと文字列の連結と見なされるからです。</p>
+<p>解決方法としては、parseIntを使って、文字列を整数に変換します。</p>
+<pre tabindex="0"><code>str1 = &#34;1&#34;;
+str2 = &#34;1&#34;;
 
-file_path = &#34;file/to/path.mp4&#34; # 動画のパス
+num1 = parseInt(str1);
+num2 = parseInt(str2);
 
+// num1 + num2 の結果が 11 ではなくて 2 になる。
+</code></pre><p>掛け算や割り算、引き算には文字列同士の計算はないので、暗黙のルールとして数値型に変換されて計算されます。</p>
+<p>parseInt()の他にも、Number(), parseFloat()を使って文字列を数値に変換することができます。</p>
+<blockquote>
+<p>Number()は簡単に使えて便利ですが、数字以外を含む文字列を引数に指定するとNaNを返すので注意が必要です。</p>
+<p>parseInt()は文字列を整数に変換し、実数の場合は小数点以下を切り捨てます。また、第2引数で変換時の基数を指定することができ、省略した場合は10進数として変換します。基数が10の場合は引数に数字以外の文字が含まれていても無視します。</p>
+<p>parseFloat()は文字列を実数に変換します。引数に数字以外の文字が含まれている場合は無視します。</p>
+<p><a href="https://uxmilk.jp/11582">JavaScriptで文字列を数値に変換する：Number(), parseInt(), parseFloat()</a></p>
+</blockquote>
+<pre tabindex="0"><code>Number(&#39;12345&#39;);          // 12345
+Number(&#39;12345abc&#39;);       // NaN
+parseInt(&#39;12345&#39;, 10);    // 12345（10進数の整数）
+parseInt(&#39;ff&#39;, 16);       // 255(16進数の整数）
+parseInt(&#39;2.9&#39;, 10);      // 2（小数点以下を切り捨てる）
+parseInt(&#39;12345abc&#39;, 10); // 12345（数字以外は無視）
+parseFloat(&#39;2.9&#39;);        // 2.9（実数）
+parseFloat(&#39;12345abc&#39;);   // 12345（数字以外は無視）
+</code></pre><hr>
+<h5 id="javascriptjqueryで要素の存在の確認方法">JavaScript/jQueryで要素の存在の確認方法</h5>
+<pre tabindex="0"><code>document.getElementById(&#34;id&#34;) != null
+$(&#34;selector&#34;)[0]
+$(&#34;selector&#34;).get(0)	
+$(&#34;selector&#34;).size()
+$(&#34;selector&#34;).length
+$(&#34;selector&#34;).is(&#34;*&#34;)
+</code></pre><p><a href="http://kihon-no-ki.com/check-existence-element-by-javascript-and-jquery">[JS][jQuery] 要素の存在を確認する6通りのコードと実行速度</a></p>
+<p>または、</p>
+<pre tabindex="0"><code>//要素が存在するかどうか
 
-video = VideoFileClip(file_path) # 動画をロード
-w,h = moviesize = video.size     # 動画サイズを取得
-print(w,h)
+var elem = document.getElementById(&#34;test&#34;);
 
-## speedxの関数は公式ページから引用
-## https://zulko.github.io/moviepy/_modules/moviepy/video/fx/speedx.html#speedx
+if (elem === null){
+	// 存在しない場合の処理
+} else {
+	// 存在する場合の処理
+}
 
-def speedx(clip, factor=None, final_duration=None):
+//要素が存在する場合のみ
 
-  if final_duration:
-    factor = 1.0 * clip.duration / final_duration
-
-  newclip = clip.fl_time(lambda t: factor * t, apply_to=[&#39;mask&#39;, &#39;audio&#39;])
-
-  if clip.duration is not None:
-    newclip = newclip.set_duration(1.0 * clip.duration / factor)
-
-  return newclip
-
-# 動画の切り出し（10~20秒、16~18秒、18~25秒を切り出した）
-clip1 = video.subclip(10, 20)
-clip2 = video.subclip(16, 18)
-clip3 = video.subclip(18, 25)
-
-# clip2 から動画を切り出し(開始地点(x1,x2)、横幅 x2、高さ y2)
-clip4 = clip2.crop(x1=230, y1=108, x2=454, y2=234)
-
-# 切り出した動画を、元の動画と同じサイズ(w = 640, h = 360)にリサイズ
-# width=640 とすることで、アスペクト比を保ったまま width 640pxの動画が書き出される
-clip5 = clip4.fx(vfx.resize, width=640)
-
-# clip5 のスローモーション
-clip6 = speedx(clip5, 0.2, 10)
-
-# clip5 を更に切り出して、スローモーション
-clip7 = clip5.subclip(0.5, 2)
-clip8 = speedx(clip7, 0.2, 10)
-
-# 動画の結合、書き出し
-final_clip = concatenate_videoclips([clip1, clip5, clip6, clip8, clip3])
-final_clip.write_videofile(&#34;final.mp4&#34;)
-</code></pre><p>出来た動画（安倍晋三銃撃動画）は、ツイッターに投稿。</p>
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">安倍晋三銃撃は茶番。<a href="https://t.co/Mffq37biBA">https://t.co/Mffq37biBA</a><br><br>画質は悪いけど、何も当たっていないのは明らか。<br><br>【ハニートラップの重要拠点】楽天・三木谷会長と岸田首相の側近・木原誠二とパソナが、結託して中共のためにスパイ活動を行っている可能性大<a href="https://t.co/K9YjGOdInK">https://t.co/K9YjGOdInK</a><a href="https://twitter.com/hashtag/%E5%AE%89%E5%80%8D%E6%99%8B%E4%B8%89%E9%8A%83%E6%92%83?src=hash&amp;ref_src=twsrc%5Etfw">#安倍晋三銃撃</a> <a href="https://t.co/AqRnRzo2sL">https://t.co/AqRnRzo2sL</a> <a href="https://t.co/zMK1VUX45n">pic.twitter.com/zMK1VUX45n</a></p>&mdash; Harvest7 (@GLnoIrjwa7omiK7) <a href="https://twitter.com/GLnoIrjwa7omiK7/status/1546683779322097664?ref_src=twsrc%5Etfw">July 12, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p> </p>
-<p>テキストの挿入は、MoviPy の場合、ImageMagick のインストール及び PATH の設定が必要だったので、今回はパスして手元にある動画編集ソフトを使用しました(/ω＼)</p>
-<p>まだまだ色々なことが出来そうなので、機会があれば触ってみようと思います。</p>
-<h5 id="参考記事">参考記事</h5>
-<p><a href="https://qiita.com/hosokawaR/items/ae349122be575b5e546c">MoviePyを使ってPythonで動画編集をする</a></p>
-<p><a href="https://plantprogramer.com/python_moviepy/">【Python】動画へのテロップ挿入【MoviePy】</a></p>
-<p><a href="https://gadgelaun.com/?p=25112">Python/MoviePyで動画編集【カット・トリミング・テキスト挿入】をする！</a></p>
+if (elem !== null){
+	// 存在する場合の処理
+}
+</code></pre><p><a href="https://step-learn.com/article/javascript/164-element-existence.html">JavaScript: 要素の存在を確認する</a></p>
+<h5 id="演算子--と----と--の違い">演算子 === と == , !== と != の違い</h5>
+<blockquote>
+<p>==(等値演算子)は左右の値が同じ場合にtrueを返す。 型変換はJavaScript側で自動的に行ってくれる。</p>
+<p>===(同値演算子)の方が厳密な比較をする。 値だけでなく、型も同じ場合にtrueを返す。</p>
+<p>!=(不等演算子)は==(等値演算子)の逆で、 !==(非同値演算子)は===(同値演算子)の逆となる。</p>
+<p>条件式で=(代入演算子)を使ってしまうとバグになる。<code>if (a=b) 処理</code></p>
+<p><a href="https://step-learn.com/article/javascript/011-equal.html">JavaScript: ==(等値演算子)と===(同値演算子)の違い</a></p>
+</blockquote>
+<p><a href="https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/Math">JavaScriptでの基本演算 — 数値と演算子</a>によると、<code>===</code>や<code>!==</code>を使ったほうが良いとのこと。</p>
+<blockquote>
+<p>メモ: もしかしたら == や != といった演算子を同値かどうかの判定に使用する人を見かけることがあるかもしれません。これらも JavaScript の有効な演算子ですが、=== や !== とは異なります。前者のバージョンは値が同様であるかを判定しますが、データ型が同様かは判定しません。後者は厳格なバージョンで値とデータ型の両方を判定します。厳格なバージョンはエラーとなることが少ないため後者を使用することをお勧めします。</p>
+</blockquote>
 <h5 id="お薦め記事">お薦め記事</h5>
-<p><a href="https://rapt-plusalpha.com/48169/">【資金難か？】イーロン・マスクが米Twitter社の買収撤回を表明 はしごを外されたTwitter社は提訴する構え</a></p>
-<p><a href="https://rapt-plusalpha.com/47999/">【ハニートラップの重要拠点】楽天・三木谷会長と岸田首相の側近・木原誠二とパソナが、結託して中共のためにスパイ活動を行っている可能性大</a></p>
-<p><a href="https://rapt-plusalpha.com/48144/">【じげもんの常識をブッ壊せ!!】Vol.15 – かつての日本には二つの国が存在していた!!　群馬人脈のルーツは古代東日本の「日本王国」</a></p>
-<p><a href="https://rapt-plusalpha.com/45160/">【第30回】ミナのラジオ – X JAPANの闇を暴く　Toshiの洗脳も、hideとTAIJIの死も、中国共産党の犯行だった‼︎ – ゲスト・RAPTさん&amp;エリカさん</a></p>
-<p><a href="https://rapt-plusalpha.com/44667/">【第29回】ミナのラジオ – 地下鉄サリン事件を計画・実行したのも実は中国共産党だった‼︎ – ゲスト・KAWATAさん</a></p>
+<p><a href="https://rapt-plusalpha.com/51572/">子供のために真心から祈ることで、子供自ら専門分野を極め、専門学校の先生から教える側になってほしいとまで言われた不思議な体験（十二弟子・ミナさんの証）</a></p>
+<p><a href="https://rapt-plusalpha.com/51578/">【コロナウイルスは存在しない】日本人がマスク着用とワクチン接種を徹底した結果、感染者数が4週連続で世界一に BCGがコロナ感染の予防に効果的との新たなデマも拡散される</a></p>
+<p><a href="https://rapt-plusalpha.com/51375/">【グローバルダイニング裁判】東京都が実施した営業時間の短縮命令を「違法」とした判決が確定</a></p>
+<p> </p>
+<p>
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/8/2b598c7845f10b8f0a550aa65a60f47f973b80b3?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+
+ </p>
+<p>
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/03/8f93e98f37bf3eb81aafe72ad2e7f0423a4560a6?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+
+ </p>
+
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/7/b54bf0d4d8050d14751fbb184a7b3357745a7169?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
 		</div>
 		<footer class="post__footer">
 			
@@ -212,10 +226,7 @@ final_clip.write_videofile(&#34;final.mp4&#34;)
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/moviepy/" rel="tag">MoviePy</a>
+			<a class="tags__link btn" href="/tags/javascript/" rel="tag">Javascript</a>
 		</li>
 	</ul>
 </div>
@@ -231,15 +242,9 @@ final_clip.write_videofile(&#34;final.mp4&#34;)
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/how-to-move-files-in-python/" rel="prev">
+		<a class="pager__link" href="/programming/shortcode-odysee/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Pythonでディレクトリ内のファイルをモデルに保存する方法</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/pillow-resize-paste/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Python Pillow を使った画像の合成</p>
+			<p class="pager__title">【HUGO】Odyseeの動画埋め込み</p>
 		</a>
 	</div>
 </nav>

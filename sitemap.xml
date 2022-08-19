@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://progress-advance.com/categories/</loc>
+    <lastmod>2022-08-19T19:43:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/</loc>
+    <lastmod>2022-08-19T19:43:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/javascript/</loc>
+    <lastmod>2022-08-19T19:43:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/categories/programming/</loc>
+    <lastmod>2022-08-19T19:43:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/programming/</loc>
+    <lastmod>2022-08-19T19:43:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/</loc>
+    <lastmod>2022-08-19T19:43:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/programming/javascript-memo/</loc>
+    <lastmod>2022-08-19T19:43:47+09:00</lastmod>
+  </url><url>
     <loc>https://progress-advance.com/about_us/</loc>
     <lastmod>2022-08-18T06:42:36+09:00</lastmod>
   </url><url>
-    <loc>https://progress-advance.com/categories/</loc>
-    <lastmod>2022-08-18T05:46:57+09:00</lastmod>
-  </url><url>
     <loc>https://progress-advance.com/tags/hugo/</loc>
-    <lastmod>2022-08-18T05:46:57+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/</loc>
-    <lastmod>2022-08-18T05:46:57+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/categories/programming/</loc>
-    <lastmod>2022-08-18T05:46:57+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/programming/</loc>
-    <lastmod>2022-08-18T05:46:57+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/</loc>
     <lastmod>2022-08-18T05:46:57+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/shortcode-odysee/</loc>
@@ -52,9 +58,6 @@
   </url><url>
     <loc>https://progress-advance.com/programming/python-defaultdict/</loc>
     <lastmod>2022-08-13T10:34:44+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/javascript/</loc>
-    <lastmod>2022-08-12T05:57:54+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/js-visibilitychange-useragent/</loc>
     <lastmod>2022-08-12T05:57:54+09:00</lastmod>
