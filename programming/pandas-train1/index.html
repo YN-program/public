@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>【Pandas】備忘録-その1- - ImageDiagnosis &amp; Program</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="【Pandas】備忘録-その1-" />
+<meta property="og:description" content="以前、pandas の使い方を勉強しましたが、使っていないと忘れてしまうので備忘録を書くことにしました。 環境：jupyter notebook import pandas as pd import numpy as np from matplotlib import pyplot as plt %matplotlib inline データの読み込み。データは以前、インストラクターから頂いたものです。 train= pd.read_csv(&#34;C:file/to/train.csv&#34;) train データの先" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://progress-advance.com/programming/pandas-train1/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-08-21T07:50:31+09:00" />
+<meta property="article:modified_time" content="2022-08-21T07:50:31+09:00" />
+
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【Pandas】備忘録-その1-"/>
+<meta name="twitter:description" content="以前、pandas の使い方を勉強しましたが、使っていないと忘れてしまうので備忘録を書くことにしました。 環境：jupyter notebook import pandas as pd import numpy as np from matplotlib import pyplot as plt %matplotlib inline データの読み込み。データは以前、インストラクターから頂いたものです。 train= pd.read_csv(&#34;C:file/to/train.csv&#34;) train データの先"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120164090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+	
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M5T5SG5');</script>
+    
+
+
+</head>
+<body class="body">
+	
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5T5SG5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+	
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="ImageDiagnosis &amp; Programming" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">ImageDiagnosis &amp; Programming</div>
+					<div class="logo__tagline">学んだことをひたすら書くブログ</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">ホーム</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/programming/">
+				
+				<span class="menu__text">プログラミング</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/medical/">
+				
+				<span class="menu__text">医療</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/life/">
+				
+				<span class="menu__text">Life</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/politics/">
+				
+				<span class="menu__text">政治経済</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about_us/">
+				
+				<span class="menu__text">About us</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">【Pandas】備忘録-その1-</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-08-21T07:50:31&#43;09:00">August 21, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>以前、pandas の使い方を勉強しましたが、使っていないと忘れてしまうので備忘録を書くことにしました。</p>
+<p>環境：jupyter notebook</p>
+<pre tabindex="0"><code>import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+%matplotlib inline
+</code></pre><p>データの読み込み。データは以前、インストラクターから頂いたものです。</p>
+<pre tabindex="0"><code>train= pd.read_csv(&#34;C:file/to/train.csv&#34;)
+
+train
+</code></pre><p><img src="/img/pandas/data.png" alt="data">
+ </p>
+<p>データの先頭行を見る。</p>
+<pre tabindex="0"><code>train.head(n=1)
+</code></pre><p>データの最終行を見る。</p>
+<pre tabindex="0"><code>train.tail(n=1)
+</code></pre><p>行数と列数を確認したい場合:shapeは関数ではないのでカッコは要らない。</p>
+<pre tabindex="0"><code>train.shape
+</code></pre><p>out:(207, 12)</p>
+<pre tabindex="0"><code>train.shape[0]
+</code></pre><p>out:207</p>
+<pre tabindex="0"><code>train.shape[1]
+</code></pre><p>out:12</p>
+<p>基本統計量の確認</p>
+<pre tabindex="0"><code>train.describe()
+</code></pre><p><img src="/img/pandas/data1.png" alt="data2"></p>
+<p> 
+データの型の確認</p>
+<pre tabindex="0"><code>train.info()
+</code></pre><p>&lt;class &lsquo;pandas.core.frame.DataFrame&rsquo;&gt;
+RangeIndex: 207 entries, 0 to 206
+Data columns (total 12 columns):</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Column</th>
+<th>Non-Null Count</th>
+<th>Dtype</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>datetime</td>
+<td>207  non-null</td>
+<td>object</td>
+</tr>
+<tr>
+<td>1</td>
+<td>y</td>
+<td>207  non-null</td>
+<td>int64</td>
+</tr>
+<tr>
+<td>2</td>
+<td>week</td>
+<td>207  non-null</td>
+<td>object</td>
+</tr>
+<tr>
+<td>3</td>
+<td>soldout</td>
+<td>207  non-null</td>
+<td>int64</td>
+</tr>
+<tr>
+<td>4</td>
+<td>name</td>
+<td>207  non-null</td>
+<td>object</td>
+</tr>
+<tr>
+<td>5</td>
+<td>kcal</td>
+<td>166  non-null</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>6</td>
+<td>remarks</td>
+<td>21  non-null</td>
+<td>object</td>
+</tr>
+<tr>
+<td>7</td>
+<td>event</td>
+<td>14  non-null</td>
+<td>object</td>
+</tr>
+<tr>
+<td>8</td>
+<td>payday</td>
+<td>10  non-null</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>9</td>
+<td>weather</td>
+<td>207  non-null</td>
+<td>object</td>
+</tr>
+<tr>
+<td>10</td>
+<td>precipitation</td>
+<td>207  non-null</td>
+<td>object</td>
+</tr>
+<tr>
+<td>11</td>
+<td>temperature</td>
+<td>207  non-null</td>
+<td>float64</td>
+</tr>
+</tbody>
+</table>
+<p>dtypes: float64(3), int64(2), object(7)
+memory usage: 19.5+ KB</p>
+<p>一つのカラムに注目
+例:&ldquo;y&rdquo;</p>
+<pre tabindex="0"><code>train[&#39;y&#39;]
+
+（二つのカラムを選択する場合は、train[[&#39;y&#39;,&#39;soldout&#39;]]）
+</code></pre><p>out:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>90</td>
+</tr>
+<tr>
+<td>1</td>
+<td>101</td>
+</tr>
+<tr>
+<td>2</td>
+<td>118</td>
+</tr>
+<tr>
+<td>3</td>
+<td>120</td>
+</tr>
+<tr>
+<td>4</td>
+<td>130</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td></td>
+</tr>
+<tr>
+<td>202</td>
+<td>59</td>
+</tr>
+<tr>
+<td>203</td>
+<td>50</td>
+</tr>
+<tr>
+<td>204</td>
+<td>45</td>
+</tr>
+<tr>
+<td>205</td>
+<td>56</td>
+</tr>
+<tr>
+<td>206</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+<p>Name: y, Length: 207, dtype: int64</p>
+<p>yの平均と中央値を見る。</p>
+<p>・平均値はmean関数、中央値はmedian関数を使う</p>
+<pre tabindex="0"><code>train[&#39;y&#39;].mean()
+</code></pre><p>out : 86.6231884057971</p>
+<pre tabindex="0"><code>train[&#39;y&#39;].median()
+</code></pre><p>out : 78.0</p>
+<p>yの値が150以上のデータを見る(平均値以上を見る)。</p>
+<pre tabindex="0"><code>train[train[&#39;y&#39;] &gt; 150]
+
+（train[train[&#39;y&#39;] &gt; train[&#39;y&#39;].mean()]）
+</code></pre><p>out:</p>
+<table>
+<thead>
+<tr>
+<th>datetim</th>
+<th>y</th>
+<th>week</th>
+<th>soldout</th>
+<th>name</th>
+<th>kcal</th>
+<th>remarks</th>
+<th>event</th>
+<th>payday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8</td>
+<td>2013-11-28</td>
+<td>151</td>
+<td>木</td>
+<td>0</td>
+<td>ハンバーグ</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>10</td>
+<td>2013-12-2</td>
+<td>151</td>
+<td>月</td>
+<td>1</td>
+<td>マーボ豆腐</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>11</td>
+<td>2013-12-3</td>
+<td>153</td>
+<td>火</td>
+<td>1</td>
+<td>厚揚げ豚生姜炒め</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>12</td>
+<td>2013-12-4</td>
+<td>151</td>
+<td>水</td>
+<td>1</td>
+<td>クリームチーズ入りメンチ</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>13</td>
+<td>2013-12-5</td>
+<td>171</td>
+<td>木</td>
+<td>0</td>
+<td>鶏のカッシュナッツ炒め</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>15</td>
+<td>2013-12-9</td>
+<td>165</td>
+<td>月</td>
+<td>1</td>
+<td>ハンバーグデミソース</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>16</td>
+<td>2013-12-10</td>
+<td>155</td>
+<td>火</td>
+<td>0</td>
+<td>やわらかロースのサムジョン</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>17</td>
+<td>2013-12-11</td>
+<td>157</td>
+<td>水</td>
+<td>0</td>
+<td>五目御飯</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>20</td>
+<td>2013-12-16</td>
+<td>160</td>
+<td>月</td>
+<td>0</td>
+<td>カキフライタルタル</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>23</td>
+<td>2013-12-19</td>
+<td>151</td>
+<td>木</td>
+<td>0</td>
+<td>ポーク味噌焼き</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+<p>曜日が&quot;月&quot;となっているデータのみを見る。</p>
+<pre tabindex="0"><code>train[train[&#39;week&#39;] ==&#39;月&#39;]
+</code></pre><table>
+<thead>
+<tr>
+<th></th>
+<th>datetime</th>
+<th>y</th>
+<th>week</th>
+<th>soldout</th>
+<th>name</th>
+<th>kcal</th>
+<th>remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>2013-11-18</td>
+<td>90</td>
+<td>月</td>
+<td>0</td>
+<td>厚切りイカフライ</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2013-11-25</td>
+<td>135</td>
+<td>月</td>
+<td>1</td>
+<td>鶏の唐揚</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>10</td>
+<td>2013-12-2</td>
+<td>151</td>
+<td>月</td>
+<td>1</td>
+<td>マーボ豆腐</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>15</td>
+<td>2013-12-9</td>
+<td>165</td>
+<td>月</td>
+<td>1</td>
+<td>ハンバーグデミソース</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>20</td>
+<td>2013-12-16</td>
+<td>160</td>
+<td>月</td>
+<td>0</td>
+<td>カキフライタルタル</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>-</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>177</td>
+<td>2014-8-18</td>
+<td>56</td>
+<td>月</td>
+<td>0</td>
+<td>洋食屋さんのメンチカツ</td>
+<td>396.0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>182</td>
+<td>2014-8-25</td>
+<td>55</td>
+<td>月</td>
+<td>0</td>
+<td>白身魚の南部焼き</td>
+<td>412.0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>187</td>
+<td>2014-9-1</td>
+<td>65</td>
+<td>月</td>
+<td>1</td>
+<td>ビーフシチュー</td>
+<td>380.0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>192</td>
+<td>2014-9-8</td>
+<td>68</td>
+<td>月</td>
+<td>1</td>
+<td>鶏肉の山賊焼き</td>
+<td>385.0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>201</td>
+<td>2014-9-22</td>
+<td>29</td>
+<td>月</td>
+<td>0</td>
+<td>筑前煮</td>
+<td>395.0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>205</td>
+<td>2014-9-29</td>
+<td>56</td>
+<td>月</td>
+<td>1</td>
+<td>豚肉と玉子の炒め</td>
+<td>404.0</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+<p>曜日が&quot;火&quot;となっているデータを&quot;y&quot;で昇順・降順にする。</p>
+<ul>
+<li>ソートはsort_values関数を使います。sort_values(by=&ldquo;XXX&rdquo;)と書く。</li>
+<li>降順にしたい場合はカッコの中にオプションとしてascending=Falseを書く。</li>
+</ul>
+<pre tabindex="0"><code>train[train[&#39;week&#39;] ==&#39;火&#39;].sort_values(by=&#39;y&#39;,ascending=False)
+</code></pre><p>曜日が月曜日の時のyの平均値を見る。</p>
+<pre tabindex="0"><code>train[train[&#39;week&#39;] == &#39;月&#39;].mean()
+</code></pre><p>曜日が月曜日の時のyの平均値。</p>
+<pre tabindex="0"><code>train[train[&#39;week&#39;] == &#39;月&#39;].mean()
+</code></pre><p>y                        94.051282</p>
+<p>soldout            0.487179</p>
+<p>kcal                   398.970588</p>
+<p>remarks           NaN</p>
+<p>payday             1.000000</p>
+<p>temperature   19.656410</p>
+<p>dtype:               float64</p>
+<pre tabindex="0"><code>train[train[&#39;week&#39;] == &#39;月&#39;][&#39;y&#39;].mean()
+</code></pre><p>out: 94.05128205128206</p>
+<p>次回に続きます。</p>
+<h5 id="お薦め">お薦め</h5>
+<p><a href="https://rapt-plusalpha.com/51652/">国連が掲げる「SDGs（持続可能な開発目標）」はカール・マルクスの「共産主義宣言」の丸写しだった!!　国際機関を乗っ取り、世界を共産主義に染めていく中国共産党</a></p>
+<p><a href="https://rapt-plusalpha.com/51636/">東京都が発表した「外国人起業支援事業」にパソナが関与　外国人を優遇した融資制度に対し、東京都に抗議の電話が殺到</a></p>
+<p><a href="https://rapt-plusalpha.com/51624/">コロナワクチンの副反応を発症し、運動や日常生活ができなくなる子供が続出 海外では「小児認知症」と診断される子供たちが急増</a></p>
+<p><a href="https://rapt-plusalpha.com/51616/">中国のスパイ「小池百合子」都知事が、4回目のコロナワクチン接種の対象にエッセンシャルワーカー（警察、消防、教員、物流業者等）を加えるよう政府に要望　都民を殺戮し、さらなる外国人受け入れを画策</a></p>
+<p><a href="https://rapt-plusalpha.com/51594/">【イギリス】数千の企業が「脱中国依存」を目指す　次期首相有力候補のスナク前財務相もイギリス国内の全ての孔子学院を閉鎖すると宣言</a>
+ </p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/gNaZBg3jl9g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+ 
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ebyUeIGqgds" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+ </p>
+
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/Mina%E3%83%A9%E3%82%B8%E3%82%AA2/06bafba746f29b1106b31819bc48cba1e41690f1?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/pandas/" rel="tag">pandas</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Harvest</span>
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/programming/javascript-memo/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">【JavaScript】演算や要素の有無の確認の備忘録</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://progress-advance.com" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/pandas-train1/">【Pandas】備忘録-その1-</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/javascript-memo/">【JavaScript】演算や要素の有無の確認の備忘録</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/shortcode-odysee/">【HUGO】Odyseeの動画埋め込み</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/how-to-make-df/">【Pandas】ある一定の期間のデータを取り出して、欠損する日付を埋めて、存在しないデータを0で埋める</a></li>
+			<li class="widget__item"><a class="widget__link" href="/life/testimony2/">RAPTブログに出会い、この世のカラクリを知り、霊界の存在を知り、何も分からない状態から抜け出すことが出来た。</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/life/">life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/medical/">medical</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/politics/">Politics</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/programming/">programming</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cocaine/" title="Cocaine">Cocaine (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/covid19/" title="COVID19">COVID19 (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" title="C言語">C言語 (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/defaultdict/" title="defaultdict">defaultdict (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ffmpeg/" title="ffmpeg">ffmpeg (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="javascript">javascript (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mediarecorder/" title="MediaRecorder">MediaRecorder (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/modaldialog/" title="modaldialog">modaldialog (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/moviepy/" title="MoviePy">MoviePy (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/netlify/" title="Netlify">Netlify (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pandas/" title="pandas">pandas (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pillow/" title="Pillow">Pillow (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/testimony/" title="testimony">testimony (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webm/" title="Webm">Webm (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%81%8C%E3%82%93/" title="がん">がん (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF/" title="エナジードリンク">エナジードリンク (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A/" title="コロナ">コロナ (17)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="コロナワクチン">コロナワクチン (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BF%E3%82%B3%E3%82%A4%E3%83%9C%E8%83%83%E7%82%8E/" title="タコイボ胃炎">タコイボ胃炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9D%E3%83%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%BC/" title="ポリファーマシー">ポリファーマシー (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88/" title="ワクチンハラスメント">ワクチンハラスメント (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%8B%95%E8%84%88%E7%A1%AC%E5%8C%96/" title="動脈硬化">動脈硬化 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B0%8F%E5%85%90%E5%A4%9A%E7%B3%BB%E7%B5%B1%E7%82%8E%E7%97%87%E6%80%A7%E7%97%87%E5%80%99%E7%BE%A4/" title="小児多系統炎症性症候群">小児多系統炎症性症候群 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B7%9D%E5%B4%8E%E7%97%85/" title="川崎病">川崎病 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%83%86%E5%9A%A2%E7%82%8E/" title="急性胆嚢炎">急性胆嚢炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%85%B9%E7%97%87/" title="急性腹症">急性腹症 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%B5%90%E6%A0%B8/" title="結核">結核 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%9D%E6%A9%9F%E8%83%BD%E9%9A%9C%E5%AE%B3/" title="肝機能障害">肝機能障害 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%BA%E7%82%8E/" title="肺炎">肺炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%B3%E5%8D%92%E4%B8%AD/" title="脳卒中">脳卒中 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" title="薬害">薬害 (25)</a>
+	</div>
+</div><div style="height:50vh; overflow-y:auto;">
+    <a class="twitter-timeline" href="https://twitter.com/GLnoIrjwa7omiK7?ref_src=twsrc%5Etfw">Tweets by GLnoIrjwa7omiK7</a>
+</div>    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	<a class="footer__link" href="/privacy/">Privacy</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2022 ImageDiagnosis &amp; Program.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
