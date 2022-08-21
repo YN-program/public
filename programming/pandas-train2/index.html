@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>【Pandas】備忘録-その2- - ImageDiagnosis &amp; Program</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="【Pandas】備忘録-その2-" />
+<meta property="og:description" content="前回記事の続きで、pandas, matplotlib の使い方の備忘録です。
+環境：jupyter notebook" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://progress-advance.com/programming/pandas-train2/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-08-21T22:40:03+09:00" />
+<meta property="article:modified_time" content="2022-08-21T22:40:03+09:00" />
+
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【Pandas】備忘録-その2-"/>
+<meta name="twitter:description" content="前回記事の続きで、pandas, matplotlib の使い方の備忘録です。
+環境：jupyter notebook"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120164090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+	
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M5T5SG5');</script>
+    
+
+
+</head>
+<body class="body">
+	
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5T5SG5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+	
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="ImageDiagnosis &amp; Programming" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">ImageDiagnosis &amp; Programming</div>
+					<div class="logo__tagline">学んだことをひたすら書くブログ</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">ホーム</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/programming/">
+				
+				<span class="menu__text">プログラミング</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/medical/">
+				
+				<span class="menu__text">医療</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/life/">
+				
+				<span class="menu__text">Life</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/politics/">
+				
+				<span class="menu__text">政治経済</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about_us/">
+				
+				<span class="menu__text">About us</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">【Pandas】備忘録-その2-</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-08-21T22:40:03&#43;09:00">August 21, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>前回記事の続きで、pandas, matplotlib の使い方の備忘録です。</p>
+<p>環境：jupyter notebook</p>
+<pre tabindex="0"><code>import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+%matplotlib inline
+</code></pre><p>データの読み込み。</p>
+<pre tabindex="0"><code>train= pd.read_csv(&#34;C:file/to/train.csv&#34;)
+
+train
+</code></pre><p><img src="/img/pandas/data.png" alt="data">
+ </p>
+<h5 id="yの折れ線グラフを描く">yの折れ線グラフを描く</h5>
+<ul>
+<li>折れ線グラフは plot 関数を使う。</li>
+</ul>
+<pre tabindex="0"><code>train[&#39;y&#39;].plot()
+</code></pre><p><img src="/img/pandas/plotY.png" alt="data">
+ </p>
+<h5 id="グラフを大きくする">グラフを大きくする</h5>
+<ul>
+<li>カッコの中にオプションとしてfigsize=(12,4)と書く。</li>
+</ul>
+<pre tabindex="0"><code>train[&#39;y&#39;].plot(figsize=(12,4))
+</code></pre><p><img src="/img/pandas/plotYsize.png" alt="data">
+ </p>
+<h5 id="グラフにタイトルを付ける">グラフにタイトルを付ける</h5>
+<ul>
+<li>カッコの中に、title=&ldquo;&ldquo;を記載。</li>
+</ul>
+<pre tabindex="0"><code>train[&#39;y&#39;].plot(figsize=(12,4), title=&#34;y&#34;)
+</code></pre><p><img src="/img/pandas/plotYtitle.png" alt="data">
+ </p>
+<h5 id="グラフのx軸とy軸に名前を付ける">グラフのx軸とy軸に名前を付ける</h5>
+<pre tabindex="0"><code>#日本語文字化け対応
+from matplotlib import rcParams
+plt.rcParams[&#34;font.family&#34;] = &#34;MS Gothic&#34;
+
+ax = train[&#39;y&#39;].plot(figsize=(12,4), title=&#34;y&#34;)
+ax.set_xlabel(&#34;X軸&#34;, size=20)
+ax.set_ylabel(&#34;Y&#34;, size=20)
+</code></pre><p><img src="/img/pandas/plotYxylabel.png" alt="data">
+ </p>
+<h5 id="trainのyのヒストグラム">trainのyのヒストグラム</h5>
+<pre tabindex="0"><code>train[&#39;y&#39;].plot.hist()
+</code></pre><p><img src="/img/pandas/hist.png" alt="data">
+ </p>
+<h5 id="グリッド線を引く">グリッド線を引く</h5>
+<pre tabindex="0"><code>train[&#39;y&#39;].plot.hist(grid=True)
+</code></pre><p><img src="/img/pandas/hist-grid.png" alt="data">
+ </p>
+<h5 id="ヒストグラム上に平均値中央値を表す線を引く">ヒストグラム上に平均値、中央値を表す線を引く。</h5>
+<pre tabindex="0"><code>train[&#39;y&#39;].plot.hist(grid=True)
+plt.axvline(x=train[&#39;y&#39;].mean(), color=&#34;red&#34;)
+plt.axvline(x=train[&#39;y&#39;].median(), color=&#34;green&#34;)
+</code></pre><p><img src="/img/pandas/hist-median.png" alt="data">
+ </p>
+<h5 id="ヒストグラムのアレンジ">ヒストグラムのアレンジ</h5>
+<pre tabindex="0"><code>train[&#39;y&#39;].plot.hist(bins=50, color=&#34;orange&#34;, grid=True, figsize=(12,4), label=&#34;pandas-hist&#34;)
+plt.ylim(0,20)
+plt.ylabel(&#39;frequency&#39;)
+plt.xlim(20, 180)
+plt.xlabel(&#39;Y&#39;)
+plt.legend(bbox_to_anchor=(1, -0.1), loc=&#39;upper right&#39;,  borderaxespad=0, fontsize=18)
+plt.title(&#39;pandas_histgram&#39;)
+</code></pre><p><img src="/img/pandas/hist-arrange.png" alt="data">
+ </p>
+<h5 id="pltlegend-の-loc-の候補">plt.legend() の loc の候補</h5>
+<ul>
+<li>best</li>
+<li>upper right</li>
+<li>upper left</li>
+<li>lower left</li>
+<li>lower right</li>
+<li>right</li>
+<li>center left</li>
+<li>center right</li>
+<li>lower center</li>
+<li>upper center</li>
+<li>center</li>
+</ul>
+<p><a href="https://qiita.com/matsui-k20xx/items/291400ed56a39ed63462">matplotlib の legend(凡例) の 位置を調整する</a></p>
+<h5 id="legend凡例について">legend(凡例)について</h5>
+<p><a href="https://www.yutaka-note.com/entry/matplotlib_legend">Matplotlib plt.legend() | 凡例の位置とスタイル設定完璧ガイド！</a>より、ほぼ引用。</p>
+<p>新しくsin,cos カーブのグラフを描きます。</p>
+<pre tabindex="0"><code>x = np.linspace(0, 2*np.pi)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+plt.plot(x, y1, label=&#34;sin(x)&#34;)
+plt.plot(x, y2, label=&#34;cos(x)&#34;)
+ 
+plt.legend(loc=&#39;upper center&#39;, bbox_to_anchor=(0.5, -0.1), ncol=2)
+plt.show()
+</code></pre><p><img src="/img/pandas/sincos.png" alt="data">
+ </p>
+<pre tabindex="0"><code>x = np.linspace(0, 2*np.pi)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+fig, ax = plt.subplots()
+ax.plot(x, y1, label=&#34;sin(x)&#34;, color=&#34;red&#34;)
+ax.plot(x, y2, label=&#34;cos(x)&#34;, color=(1, 0.1, 1, 0.2))
+ 
+plt.legend()
+plt.show()
+</code></pre><p><img src="/img/pandas/sincos2.png" alt="data">
+ </p>
+<pre tabindex="0"><code>locs = [&#39;upper left&#39;, &#39;upper center&#39;, &#39;upper right&#39;,
+        &#39;center left&#39;, &#39;center&#39;, &#39;center right&#39;, 
+        &#39;lower left&#39;, &#39;lower center&#39;,&#39;lower right&#39; ]
+ 
+# 描画領域の調整、サブプロットのレイアウト自動調整
+plt.figure(figsize = (8,10), tight_layout=True)
+ 
+for i, loc in enumerate(locs):
+  # サブプロット作成
+  plt.subplot(4, 3, i+1)
+  plt.plot(x, y1, label=&#34;sin(x)&#34;, color =(1, 0.1, 1, 0.7))
+ 
+  # グラフタイトルの表示
+  plt.title(loc)
+ 
+  # 軸ラベルの非表示
+  plt.xticks([])
+  plt.yticks([])
+ 
+  # 凡例の表示
+  plt.legend(loc = loc)
+ 
+plt.show()
+</code></pre><p><img src="/img/pandas/legend.png" alt="data">
+ </p>
+<p>以上になります。</p>
+<h5 id="お薦め">お薦め</h5>
+<p><a href="https://rapt-plusalpha.com/51734/">【コロナは茶番】中国人スパイの岸田首相、4回目のコロナワクチン接種9日後にコロナ感染　ゴルフ・温泉旅行を満喫、タイミングよく静養に入り夏休み延長</a></p>
+<p>
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/Mina%E3%83%A9%E3%82%B8%E3%82%AA2/06bafba746f29b1106b31819bc48cba1e41690f1?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+
+ </p>
+<p>
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/04/a1fa0266a675a42f6c3026fc0e127e1e615669ce?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+
+ </p>
+
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/01/20971499ac41177428aba9520a5309d4eaaa5750?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/pandas/" rel="tag">pandas</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Harvest</span>
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/programming/pandas-train1/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">【Pandas】備忘録-その1-</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://progress-advance.com" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/pandas-train2/">【Pandas】備忘録-その2-</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/pandas-train1/">【Pandas】備忘録-その1-</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/javascript-memo/">【JavaScript】演算や要素の有無の確認の備忘録</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/shortcode-odysee/">【HUGO】Odyseeの動画埋め込み</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/how-to-make-df/">【Pandas】ある一定の期間のデータを取り出して、欠損する日付を埋めて、存在しないデータを0で埋める</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/life/">life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/medical/">medical</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/politics/">Politics</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/programming/">programming</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cocaine/" title="Cocaine">Cocaine (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/covid19/" title="COVID19">COVID19 (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" title="C言語">C言語 (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/defaultdict/" title="defaultdict">defaultdict (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ffmpeg/" title="ffmpeg">ffmpeg (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="javascript">javascript (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mediarecorder/" title="MediaRecorder">MediaRecorder (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/modaldialog/" title="modaldialog">modaldialog (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/moviepy/" title="MoviePy">MoviePy (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/netlify/" title="Netlify">Netlify (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pandas/" title="pandas">pandas (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pillow/" title="Pillow">Pillow (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/testimony/" title="testimony">testimony (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webm/" title="Webm">Webm (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%81%8C%E3%82%93/" title="がん">がん (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF/" title="エナジードリンク">エナジードリンク (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A/" title="コロナ">コロナ (17)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="コロナワクチン">コロナワクチン (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BF%E3%82%B3%E3%82%A4%E3%83%9C%E8%83%83%E7%82%8E/" title="タコイボ胃炎">タコイボ胃炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9D%E3%83%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%BC/" title="ポリファーマシー">ポリファーマシー (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88/" title="ワクチンハラスメント">ワクチンハラスメント (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%8B%95%E8%84%88%E7%A1%AC%E5%8C%96/" title="動脈硬化">動脈硬化 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B0%8F%E5%85%90%E5%A4%9A%E7%B3%BB%E7%B5%B1%E7%82%8E%E7%97%87%E6%80%A7%E7%97%87%E5%80%99%E7%BE%A4/" title="小児多系統炎症性症候群">小児多系統炎症性症候群 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B7%9D%E5%B4%8E%E7%97%85/" title="川崎病">川崎病 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%83%86%E5%9A%A2%E7%82%8E/" title="急性胆嚢炎">急性胆嚢炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%85%B9%E7%97%87/" title="急性腹症">急性腹症 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%B5%90%E6%A0%B8/" title="結核">結核 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%9D%E6%A9%9F%E8%83%BD%E9%9A%9C%E5%AE%B3/" title="肝機能障害">肝機能障害 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%BA%E7%82%8E/" title="肺炎">肺炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%B3%E5%8D%92%E4%B8%AD/" title="脳卒中">脳卒中 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" title="薬害">薬害 (25)</a>
+	</div>
+</div><div style="height:50vh; overflow-y:auto;">
+    <a class="twitter-timeline" href="https://twitter.com/GLnoIrjwa7omiK7?ref_src=twsrc%5Etfw">Tweets by GLnoIrjwa7omiK7</a>
+</div>    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	<a class="footer__link" href="/privacy/">Privacy</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2022 ImageDiagnosis &amp; Program.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

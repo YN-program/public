@@ -6,14 +6,25 @@
     <description>Recent content in pandas on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 21 Aug 2022 07:50:31 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Aug 2022 22:40:03 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Pandas】備忘録-その2-</title>
+      <link>https://progress-advance.com/programming/pandas-train2/</link>
+      <pubDate>Sun, 21 Aug 2022 22:40:03 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/pandas-train2/</guid>
+      <description>&lt;p&gt;前回記事の続きで、pandas, matplotlib の使い方の備忘録です。&lt;/p&gt;
+&lt;p&gt;環境：jupyter notebook&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Pandas】備忘録-その1-</title>
       <link>https://progress-advance.com/programming/pandas-train1/</link>
       <pubDate>Sun, 21 Aug 2022 07:50:31 +0900</pubDate>
       
       <guid>https://progress-advance.com/programming/pandas-train1/</guid>
-      <description>以前、pandas の使い方を勉強しましたが、使っていないと忘れてしまうので備忘録を書くことにしました。 環境：jupyter notebook import pandas as pd import numpy as np from matplotlib import pyplot as plt %matplotlib inline データの読み込み。データは以前、インストラクターから頂いたものです。 train= pd.read_csv(&amp;#34;C:file/to/train.csv&amp;#34;) train データの先</description>
+      <description>&lt;p&gt;以前、pandas の使い方を勉強しましたが、使っていないと忘れてしまうので備忘録を書くことにしました。&lt;/p&gt;
+&lt;p&gt;環境：jupyter notebook&lt;/p&gt;</description>
     </item>
     
     <item>
