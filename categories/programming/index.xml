@@ -6,7 +6,17 @@
     <description>Recent content in programming on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 21 Aug 2022 22:40:03 +0900</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Sep 2022 11:56:24 +0900</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>累積和の求め方-Numpy,Pandas,itertools-</title>
+      <link>https://progress-advance.com/programming/np-cumsum/</link>
+      <pubDate>Sun, 04 Sep 2022 11:56:24 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/np-cumsum/</guid>
+      <description>&lt;p&gt;リスト型のデータから、累積和を求める方法。&lt;/p&gt;
+&lt;p&gt;環境は python で、for文 で記載するとコードがスッキリしなかったので、いい方法がないか調べてみました。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Pandas】備忘録-その2-</title>
       <link>https://progress-advance.com/programming/pandas-train2/</link>
