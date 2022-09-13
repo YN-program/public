@@ -141,7 +141,7 @@ if (!doNotTrack) {
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		月間データ分析をするために、月初めと月末の取得方法。 datetime型の場合 import datetime import calendar today = datetime.date.today() first_day=today.replace(day=1) eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 2022-09-30 timezone.now()を使う場合。 from django.utils import timezone today = timezone.now() t = today.replace(day=1, hour=0, minute=0, second=0) first_day = datetime.datetime(t.year, t.month, t.day, 0, 0, 0, 0, tzinfo=datetime.timezone(datetime.timedelta(hours=9))) #月始め eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 00:00:00+09:00 2022-09-30 00:00:00+09:00 一応上
+		<p>月間データ分析をするために、月初めと月末の取得方法。</p>
 	</div>
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/programming/monthly-data-analysis/">Read more…</a>

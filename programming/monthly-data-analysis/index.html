@@ -8,7 +8,7 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="【Python】月初め、月末の取得方法" />
-<meta property="og:description" content="月間データ分析をするために、月初めと月末の取得方法。 datetime型の場合 import datetime import calendar today = datetime.date.today() first_day=today.replace(day=1) eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 2022-09-30 timezone.now()を使う場合。 from django.utils import timezone today = timezone.now() t = today.replace(day=1, hour=0, minute=0, second=0) first_day = datetime.datetime(t.year, t.month, t.day, 0, 0, 0, 0, tzinfo=datetime.timezone(datetime.timedelta(hours=9))) #月始め eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 00:00:00&#43;09:00 2022-09-30 00:00:00&#43;09:00 一応上" />
+<meta property="og:description" content="月間データ分析をするために、月初めと月末の取得方法。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://progress-advance.com/programming/monthly-data-analysis/" /><meta property="article:section" content="programming" />
 <meta property="article:published_time" content="2022-09-13T16:51:45+09:00" />
@@ -17,7 +17,7 @@
 
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="【Python】月初め、月末の取得方法"/>
-<meta name="twitter:description" content="月間データ分析をするために、月初めと月末の取得方法。 datetime型の場合 import datetime import calendar today = datetime.date.today() first_day=today.replace(day=1) eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 2022-09-30 timezone.now()を使う場合。 from django.utils import timezone today = timezone.now() t = today.replace(day=1, hour=0, minute=0, second=0) first_day = datetime.datetime(t.year, t.month, t.day, 0, 0, 0, 0, tzinfo=datetime.timezone(datetime.timedelta(hours=9))) #月始め eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 00:00:00&#43;09:00 2022-09-30 00:00:00&#43;09:00 一応上"/>
+<meta name="twitter:description" content="月間データ分析をするために、月初めと月末の取得方法。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -212,8 +212,6 @@ eom2 = eom1 - datetime.timedelta(seconds=1) ## 追加
  </p>
 
 <iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/8/2b598c7845f10b8f0a550aa65a60f47f973b80b3?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
-
-
 		</div>
 		<footer class="post__footer">
 			
