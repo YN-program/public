@@ -178,9 +178,18 @@ eom2 = eom1 - datetime.timedelta(seconds=1) ## 追加
 
 ## 一行で書くとこうなります。
 ## eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1])  + datetime.timedelta(days=1)  - datetime.timedelta(seconds=1)
+</code></pre><p>追記：2022/09/13 22:10</p>
+<p>更に別の方法が見つかったので、追記します。</p>
+<p>月単位で絞り込みをする場合、以下のようなシンプルなものでもOK。月初め、月末を求める必要がないので楽です。</p>
+<pre tabindex="0"><code>Sample.objects.filter(date__year = &#39;2022&#39;, 
+                      date__month = &#39;09&#39;)
+</code></pre><p>先に書いた方法で、月初め、月末を求めて絞り込みをする場合は、以下のように書くことができます。</p>
+<pre tabindex="0"><code>Sample.objects.filter(date__range = [first_day, eom])
+</code></pre><pre tabindex="0"><code>Sample.objects.filter(date__gte = first_day, date__lte = eom ])
 </code></pre><h5 id="参考記事">参考記事</h5>
 <p><a href="https://qol-kk.com/wp2/blog/2020/12/11/post-2327/">【Python】今月の集計をしたい時に使う月初の取得方法</a></p>
 <p><a href="https://note.nkmk.me/python-datetime-pytz-timezone/">Python, datetime, pytzでタイムゾーンを設定・取得・変換・削除</a></p>
+<p><a href="https://stackoverflow.com/questions/4668619/how-do-i-filter-query-objects-by-date-range-in-django">How do I filter query objects by date range in Django?</a></p>
 <h5 id="お薦め">お薦め</h5>
 <p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
