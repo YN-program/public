@@ -6,7 +6,16 @@
     <description>Recent content in django on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 21 Jun 2022 08:30:49 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Sep 2022 16:51:45 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Python】月初め、月末の取得方法</title>
+      <link>https://progress-advance.com/programming/monthly-data-analysis/</link>
+      <pubDate>Tue, 13 Sep 2022 16:51:45 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/monthly-data-analysis/</guid>
+      <description>月間データ分析をするために、月初めと月末の取得方法。 datetime型の場合 import datetime import calendar today = datetime.date.today() first_day=today.replace(day=1) eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 2022-09-30 timezone.now()を使う場合。 from django.utils import timezone today = timezone.now() t = today.replace(day=1, hour=0, minute=0, second=0) first_day = datetime.datetime(t.year, t.month, t.day, 0, 0, 0, 0, tzinfo=datetime.timezone(datetime.timedelta(hours=9))) #月始め eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 00:00:00+09:00 2022-09-30 00:00:00+09:00 一応上</description>
+    </item>
+    
     <item>
       <title>【Django】INSTALLED_APPS の適切な書き方</title>
       <link>https://progress-advance.com/programming/django_installedapps/</link>

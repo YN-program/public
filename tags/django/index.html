@@ -131,6 +131,26 @@ if (!doNotTrack) {
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
+			<a href="/programming/monthly-data-analysis/" rel="bookmark">
+			【Python】月初め、月末の取得方法
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-09-13T16:51:45&#43;09:00">September 13, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		月間データ分析をするために、月初めと月末の取得方法。 datetime型の場合 import datetime import calendar today = datetime.date.today() first_day=today.replace(day=1) eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 2022-09-30 timezone.now()を使う場合。 from django.utils import timezone today = timezone.now() t = today.replace(day=1, hour=0, minute=0, second=0) first_day = datetime.datetime(t.year, t.month, t.day, 0, 0, 0, 0, tzinfo=datetime.timezone(datetime.timedelta(hours=9))) #月始め eom = first_day.replace(day=calendar.monthrange(first_day.year, first_day.month)[1]) print(first_day,eom) ## 結果 ## 2022-09-01 00:00:00+09:00 2022-09-30 00:00:00+09:00 一応上
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/programming/monthly-data-analysis/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
 			<a href="/programming/django_installedapps/" rel="bookmark">
 			【Django】INSTALLED_APPS の適切な書き方
 			</a>
@@ -278,11 +298,11 @@ if (!doNotTrack) {
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/monthly-data-analysis/">【Python】月初め、月末の取得方法</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine-sequela/">【厚生労働省 副反応検討部会】ワクチン副反応の判定は、統計で!!</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/hiv/">エイズに感染した中国人 日本人を道連れにするためにエイズをばら撒く</a></li>
 			<li class="widget__item"><a class="widget__link" href="/programming/np-cumsum/">累積和の求め方-Numpy,Pandas,itertools-</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/syphilis-hg/">梅毒は重金属中毒の可能性</a></li>
-			<li class="widget__item"><a class="widget__link" href="/medical/mercury-std/">【ウイルスは存在しない】HIV,HPV,HBC,HCV...etc ウイルス性性感染症も存在しない 梅毒も</a></li>
 		</ul>
 	</div>
 </div>
@@ -309,7 +329,7 @@ if (!doNotTrack) {
 		<a class="widget-taglist__link widget__link btn" href="/tags/covid19/" title="COVID19">COVID19 (10)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" title="C言語">C言語 (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/defaultdict/" title="defaultdict">defaultdict (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ffmpeg/" title="ffmpeg">ffmpeg (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="javascript">javascript (6)</a>
@@ -320,7 +340,7 @@ if (!doNotTrack) {
 		<a class="widget-taglist__link widget__link btn" href="/tags/numpy/" title="numpy">numpy (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pandas/" title="pandas">pandas (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pillow/" title="Pillow">Pillow (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (13)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/rapt-blog/" title="RAPT BLOG">RAPT BLOG (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/testimony/" title="testimony">testimony (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/webm/" title="Webm">Webm (1)</a>
