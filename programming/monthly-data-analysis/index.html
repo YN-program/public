@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>【Python】月初め、月末の取得方法 - ImageDiagnosis &amp; Program</title>
+	<title>【Python】月初め、月末の取得方法　ー訂正ー - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="【Python】月初め、月末の取得方法" />
+		<meta property="og:title" content="【Python】月初め、月末の取得方法　ー訂正ー" />
 <meta property="og:description" content="月間データ分析をするための、月初めと月末の取得方法。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://progress-advance.com/programming/monthly-data-analysis/" /><meta property="article:section" content="programming" />
@@ -16,7 +16,7 @@
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="【Python】月初め、月末の取得方法"/>
+<meta name="twitter:title" content="【Python】月初め、月末の取得方法　ー訂正ー"/>
 <meta name="twitter:description" content="月間データ分析をするための、月初めと月末の取得方法。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -128,7 +128,7 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">【Python】月初め、月末の取得方法</h1>
+			<h1 class="post__title">【Python】月初め、月末の取得方法　ー訂正ー</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-09-13T16:51:45&#43;09:00">September 13, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
@@ -160,7 +160,7 @@ print(first_day,eom)
 
 ## 結果 ##
 2022-09-01 00:00:00+09:00 2022-09-30 00:00:00+09:00
-</code></pre><p>一応上手くいくが、月末の時間が 23:59:59+09:00 になってほしいので、更に追加。</p>
+</code></pre><p>一応上手くいくが、月末の時間が 23:59:59+09:00 になってほしいので、更に追加。（この部分を訂正しました（文末））</p>
 <pre tabindex="0"><code>today = timezone.now()
 t = today.replace(day=1, hour=0, minute=0, second=0)
 first_day = datetime.datetime(t.year, t.month, t.day, 0, 0, 0, 0,
@@ -186,7 +186,31 @@ eom2 = eom1 - datetime.timedelta(seconds=1) ## 追加
 </code></pre><p>先に書いた方法で、月初め、月末を求めて絞り込みをする場合は、以下のように書くことができます。</p>
 <pre tabindex="0"><code>Sample.objects.filter(date__range = [first_day, eom])
 </code></pre><pre tabindex="0"><code>Sample.objects.filter(date__gte = first_day, date__lte = eom ])
-</code></pre><h5 id="参考記事">参考記事</h5>
+</code></pre><p>訂正記事</p>
+<pre tabindex="0"><code>today = timezone.now()
+
+t = today.replace(day=1, hour=0, minute=0, second=0)
+this_month = datetime.datetime(t.year, t.month, t.day, 0, 0, 0, 0,
+                              tzinfo=datetime.timezone(datetime.timedelta(hours=9)))  # 今月1日のタイムゾーン付き
+
+last_month = this_month.replace(month=t.month - 1)　# 先月1日
+
+## this_month 含まない絞り込み。
+sample = Sample.objects.filter(dt__gte=last_month, dt__lt=this_month) 
+
+## this_month を含む絞り込み。
+sample = Sample.objects.filter(dt__range=[last_month, this_month])
+
+## または、
+sample = Sample.objects.filter(dt__gte=last_month, dt__lte=this_month) 
+</code></pre><p>この方法では、最初の t の day を、例えば10に設定すると、先月の10日から今月の10日の間で絞り込むことが出来ます。</p>
+<p>ただし、1月の場合、1月から1を引くことはできないので、if文で切り分けます。</p>
+<pre tabindex="0"><code>if t.month !=1:
+    last_month = this_month.replace(month=t.month - 1)
+else:
+    last_month = this_month.replace(year=t.year - 1, month=12)
+</code></pre><p>度々の訂正、失礼しました。</p>
+<h5 id="参考記事">参考記事</h5>
 <p><a href="https://qol-kk.com/wp2/blog/2020/12/11/post-2327/">【Python】今月の集計をしたい時に使う月初の取得方法</a></p>
 <p><a href="https://note.nkmk.me/python-datetime-pytz-timezone/">Python, datetime, pytzでタイムゾーンを設定・取得・変換・削除</a></p>
 <p><a href="https://stackoverflow.com/questions/4668619/how-do-i-filter-query-objects-by-date-range-in-django">How do I filter query objects by date range in Django?</a></p>
@@ -269,7 +293,7 @@ eom2 = eom1 - datetime.timedelta(seconds=1) ## 追加
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/programming/monthly-data-analysis/">【Python】月初め、月末の取得方法</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/monthly-data-analysis/">【Python】月初め、月末の取得方法　ー訂正ー</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine-sequela/">【厚生労働省 副反応検討部会】ワクチン副反応の判定は、統計で!!</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/hiv/">エイズに感染した中国人 日本人を道連れにするためにエイズをばら撒く</a></li>
 			<li class="widget__item"><a class="widget__link" href="/programming/np-cumsum/">累積和の求め方-Numpy,Pandas,itertools-</a></li>
