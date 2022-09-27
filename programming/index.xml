@@ -6,7 +6,16 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Sep 2022 16:51:45 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Sep 2022 09:14:21 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>「世界三大感染症」マラリアは嘘の可能性大</title>
+      <link>https://progress-advance.com/programming/malaria/</link>
+      <pubDate>Tue, 27 Sep 2022 09:14:21 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/malaria/</guid>
+      <description>マラリアやデング熱、黄熱病など、アフリカで危険といわれている病気があります。 マラリアはマラリア原虫、デング熱はデングウイルス、黄熱病は黄熱ウイルスによる感染症と言われており、蚊に刺されることで感染すると言われています。 しかし、ウイルスは存在</description>
+    </item>
+    
     <item>
       <title>【Python】月初め、月末の取得方法　ー訂正ー</title>
       <link>https://progress-advance.com/programming/monthly-data-analysis/</link>
