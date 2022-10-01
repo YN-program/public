@@ -3,18 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://progress-advance.com/categories/</loc>
-    <lastmod>2022-09-27T09:14:21+09:00</lastmod>
+    <lastmod>2022-10-01T15:31:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/django/</loc>
+    <lastmod>2022-10-01T15:31:47+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/</loc>
-    <lastmod>2022-09-27T09:14:21+09:00</lastmod>
+    <lastmod>2022-10-01T15:31:47+09:00</lastmod>
   </url><url>
-    <loc>https://progress-advance.com/categories/medical/</loc>
-    <lastmod>2022-09-27T09:14:21+09:00</lastmod>
+    <loc>https://progress-advance.com/tags/pandas/</loc>
+    <lastmod>2022-10-01T15:31:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/categories/programming/</loc>
+    <lastmod>2022-10-01T15:31:47+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/</loc>
-    <lastmod>2022-09-27T09:14:21+09:00</lastmod>
+    <lastmod>2022-10-01T15:31:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/tags/python/</loc>
+    <lastmod>2022-10-01T15:31:47+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/tags/</loc>
+    <lastmod>2022-10-01T15:31:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/programming/dropna/</loc>
+    <lastmod>2022-10-01T15:31:47+09:00</lastmod>
+  </url><url>
+    <loc>https://progress-advance.com/categories/medical/</loc>
     <lastmod>2022-09-27T09:14:21+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/malaria/</loc>
@@ -53,15 +68,6 @@
     <loc>https://progress-advance.com/life/testimony4/</loc>
     <lastmod>2022-09-17T10:31:50+09:00</lastmod>
   </url><url>
-    <loc>https://progress-advance.com/tags/django/</loc>
-    <lastmod>2022-09-13T16:51:45+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/categories/programming/</loc>
-    <lastmod>2022-09-13T16:51:45+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/python/</loc>
-    <lastmod>2022-09-13T16:51:45+09:00</lastmod>
-  </url><url>
     <loc>https://progress-advance.com/programming/monthly-data-analysis/</loc>
     <lastmod>2022-09-13T16:51:45+09:00</lastmod>
   </url><url>
@@ -97,9 +103,6 @@
   </url><url>
     <loc>https://progress-advance.com/medical/statins/</loc>
     <lastmod>2022-08-25T08:12:38+09:00</lastmod>
-  </url><url>
-    <loc>https://progress-advance.com/tags/pandas/</loc>
-    <lastmod>2022-08-21T22:40:03+09:00</lastmod>
   </url><url>
     <loc>https://progress-advance.com/programming/pandas-train2/</loc>
     <lastmod>2022-08-21T22:40:03+09:00</lastmod>

@@ -6,7 +6,16 @@
     <description>Recent content in programming on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Sep 2022 16:51:45 +0900</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Oct 2022 15:31:47 +0900</lastBuildDate><atom:link href="https://progress-advance.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>リストからNoneを削除</title>
+      <link>https://progress-advance.com/programming/dropna/</link>
+      <pubDate>Sat, 01 Oct 2022 15:31:47 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/dropna/</guid>
+      <description>&lt;p&gt;python, pandas でリストから None を削除する方法メモ。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Python】月初め、月末の取得方法　ー訂正ー</title>
       <link>https://progress-advance.com/programming/monthly-data-analysis/</link>
