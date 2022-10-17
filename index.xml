@@ -6,7 +6,16 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 17 Oct 2022 10:35:00 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Oct 2022 12:32:08 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【HUGO】twitter のショートコードの修正</title>
+      <link>https://progress-advance.com/programming/tweet-shortcode/</link>
+      <pubDate>Mon, 17 Oct 2022 12:32:08 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/tweet-shortcode/</guid>
+      <description>Hugo のtwitter のショートコードについて、&amp;ldquo;The &amp;ldquo;tweet&amp;rdquo; shortcode will soon require two named parameters: user and id.&amp;rdquo; というメッセージが出るようになりました。 config.toml のbaseurlやtitleが書いてあるところに、ignoreErrors = [&amp;ldquo;error-remo</description>
+    </item>
+    
     <item>
       <title>ワクチンに含まれている水銀（チメロサール） 開発以降、一度も安全性を診断されていないことが判明</title>
       <link>https://progress-advance.com/medical/mercury-thimerosal/</link>
