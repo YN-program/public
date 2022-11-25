@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>javascript on ImageDiagnosis &amp; Program</title>
+    <title>Javascript on ImageDiagnosis &amp; Program</title>
     <link>https://progress-advance.com/tags/javascript/</link>
-    <description>Recent content in javascript on ImageDiagnosis &amp; Program</description>
+    <description>Recent content in Javascript on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 07 Oct 2022 15:29:19 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Nov 2022 08:23:37 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Javascript】class操作のまとめ</title>
+      <link>https://progress-advance.com/programming/javascript-css/</link>
+      <pubDate>Fri, 25 Nov 2022 08:23:37 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/javascript-css/</guid>
+      <description>&lt;p&gt;Javascriptでclassの追加や削除、置換などを行う方法のメモです。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>JavaScriptで要素のIDを取得</title>
       <link>https://progress-advance.com/programming/js-onclick-getid/</link>

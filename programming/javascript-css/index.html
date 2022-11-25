@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>【Django】AND 検索 OR 検索 - ImageDiagnosis &amp; Program</title>
+	<title>【Javascript】class操作のまとめ - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="【Django】AND 検索 OR 検索" />
-<meta property="og:description" content="検索機能に and 検索と or 検索の両方を付けて、ミュートした単語とリクエストユーザーをブロックしているユーザーのコンテンツを除外する機能を付けたくて、試行錯誤してみました。ついでに、複数のモデルでやってみました。" />
+		<meta property="og:title" content="【Javascript】class操作のまとめ" />
+<meta property="og:description" content="Javascriptでclassの追加や削除、置換などを行う方法のメモです。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/django-and-or-filter/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-05-02T13:06:02+09:00" />
-<meta property="article:modified_time" content="2022-05-02T13:06:02+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/javascript-css/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-11-25T08:23:37+09:00" />
+<meta property="article:modified_time" content="2022-11-25T08:23:37+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="【Django】AND 検索 OR 検索"/>
-<meta name="twitter:description" content="検索機能に and 検索と or 検索の両方を付けて、ミュートした単語とリクエストユーザーをブロックしているユーザーのコンテンツを除外する機能を付けたくて、試行錯誤してみました。ついでに、複数のモデルでやってみました。"/>
+<meta name="twitter:title" content="【Javascript】class操作のまとめ"/>
+<meta name="twitter:description" content="Javascriptでclassの追加や削除、置換などを行う方法のメモです。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -128,151 +128,106 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">【Django】AND 検索 OR 検索</h1>
+			<h1 class="post__title">【Javascript】class操作のまとめ</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-05-02T13:06:02&#43;09:00">May 02, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-11-25T08:23:37&#43;09:00">November 25, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
 	</span>
 </div></div>
 		</header>
+		
+		
 		<div class="content post__content clearfix">
-			<p>検索機能に and 検索と or 検索の両方を付けて、ミュートした単語とリクエストユーザーをブロックしているユーザーのコンテンツを除外する機能を付けたくて、試行錯誤してみました。ついでに、複数のモデルでやってみました。</p>
-<p><code>sample/search.html</code></p>
-<pre tabindex="0"><code>&lt;div&gt;
-    &lt;form action=&#34;{% url &#39;sample:search&#39; %}&#34; method=&#34;GET&#34;&gt;
-        &lt;input type=&#34;text&#34; name=&#34;search&#34;  placeholder=&#34;キーワード検索&#34; &gt;
-        &lt;button type=&#34;submit&#34; &gt;検索&lt;/button&gt;
-    &lt;/form&gt;
-&lt;/div&gt;
-</code></pre><p>モデル例。</p>
-<p><code>sample/models.py</code></p>
-<pre tabindex="0"><code>class Sample1(models.Model):
+			<p>Javascriptでclassの追加や削除、置換などを行う方法のメモです。</p>
+<p>〇classの追加</p>
+<pre tabindex="0"><code>const target = document.ElementById(&#39;id&#39;);
 
-    class Meta:
+target.classList.add(&#39;classA&#39;);
 
-        db_table = &#34;sample1&#34;
+//複数追加する場合
+target.classList.add(&#39;classA&#39;,&#39;classB&#39;,&#39;classC&#39;);
 
-    id           = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False )
-    title        = models.CharField(verbose_name=&#34;タイトル&#34;, max_length=50)
-    description  = models.CharField(verbose_name=&#34;説明文&#34;, max_length=500)
-    user         = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name=&#34;ユーザー&#34;, on_delete=models.CASCADE)
+//別の方法(この場合、classDの前にスペースが必要)
+target.className += &#39; classD&#39;;
+</code></pre><p>〇classの削除</p>
+<pre tabindex="0"><code>const target = document.ElementById(&#39;id&#39;);
 
+target.classList.remove(&#39;classA&#39;);
 
-class Sample2(models.Model):
+//複数削除する場合
+target.classList.remove(&#39;classA&#39;,&#39;classB&#39;,&#39;classC&#39;);
+</code></pre><p>〇classの切り替え</p>
+<pre tabindex="0"><code>const target = document.ElementById(&#39;id&#39;);
 
-    class Meta:
+target.classList.toggle(&#39;classA&#39;);
+//classAがあれば削除、なければ追加になる。
+</code></pre><p>〇classの置換</p>
+<pre tabindex="0"><code>const target = document.ElementById(&#39;id&#39;);
 
-        db_table = &#34;sample2&#34;
+//classAをclassBに置き換える。
+target.classList.replace(&#39;classA&#39;,&#39;classB&#39;);
 
-    id           = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False )
-    title        = models.CharField(verbose_name=&#34;タイトル&#34;, max_length=50)
-    description  = models.CharField(verbose_name=&#34;説明文&#34;, max_length=500)
-    user         = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name=&#34;ユーザー&#34;, on_delete=models.CASCADE)
+//ある要素のクラスを完全に置き換える。元々 classA, classBであった場合、classC, classDに置き換わる。
+target.className = &#34;classC classD&#34;;
+</code></pre><p>〇classの存在確認</p>
+<pre tabindex="0"><code>const target = document.ElementById(&#39;id&#39;);
 
-class Mute(models.Model)    :
+target.classList.contains(&#39;classA&#39;);
+</code></pre><p>〇classの数を取得</p>
+<pre tabindex="0"><code>const target = document.ElementById(&#39;id&#39;);
 
-    class Meta:
-        db_table = &#34;mute&#34;
-        
-    id           = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False )
-    mute         = models.CharField(verbose_name=&#34;ミュートする単語&#34;, max_length=50)
-    user         = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name=&#34;ユーザー&#34;, on_delete=models.CASCADE) 
-       
-</code></pre><p>ユーザーモデル例。</p>
-<p><code>users/models.py</code></p>
-<pre tabindex="0"><code>class CustomUser(AbstractBaseUser, PermissionsMixin):
-    id        =
-    username  = 
-    ~~~~中略~~~~
-    blocked   = models.ManyToManyField(&#34;self&#34;,through=&#34;BlockUser&#34; ,through_fields=(&#39;to_user&#39;, &#39;from_user&#39;), verbose_name=&#34;ブロック&#34;,blank=True)
+target.classList.length;
+</code></pre><p>〇class属性に指定されている文字列の取得</p>
+<pre tabindex="0"><code>const target = document.ElementById(&#39;id&#39;);
 
+target.classList.value;
+</code></pre><p>〇class名の取得</p>
+<pre tabindex="0"><code>const target = document.ElementById(&#39;id&#39;);
 
-class BlockUser(models.Model):
+target.className;
+</code></pre><p>〇例</p>
+<pre tabindex="0"><code>if (target.classList.contains(&#39;classA&#39;) ){
+    target.classList.replace(&#39;classA&#39;,&#39;classB&#39;);
+} else {
+    target.classList.replace(&#39;classB&#39;,&#39;classA&#39;);
+}
+</code></pre><h5 id="参考記事">参考記事</h5>
+<p><a href="https://eclair.blog/javascript-classlist-methods/#JavaScript-6">【JavaScript】クラス操作まとめ（追加、削除、トグル、置換など）</a></p>
+<p><a href="https://www.javascripttutorial.net/javascript-dom/javascript-classname/">JavaScript className</a></p>
+<p><a href="https://www.w3schools.com/jsref/prop_html_classname.asp">HTML DOM Element className</a></p>
+<h5 id="お薦め">お薦め</h5>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「こびナビ」は「厚労省」の言論統制機関だった!!　YouTube上のコロナワクチンに関する情報検閲に最も大きく加担していたことが発覚<a href="https://t.co/N4iHYU46ec">https://t.co/N4iHYU46ec</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1595380387458347008?ref_src=twsrc%5Etfw">November 23, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    class Meta:
-        db_table    = &#34;blockuser&#34;
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RAPTブログとの出会いによって、真に成功するための努力の方法が分かり、意欲的に生きられるようになった!!（十二弟子・サキさんの証）<a href="https://t.co/rs3uKya5dr">https://t.co/rs3uKya5dr</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1595368117881929730?ref_src=twsrc%5Etfw">November 23, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    id          = models.UUIDField( default=uuid.uuid4, primary_key=True, editable=False )
-    dt          = models.DateTimeField(verbose_name=&#34;ブロックした日時&#34;,default=timezone.now)
-    from_user   = models.ForeignKey(CustomUser,verbose_name=&#34;ブロック元のユーザー&#34;,on_delete=models.CASCADE,related_name=&#34;block_from_user&#34;)
-    to_user     = models.ForeignKey(CustomUser,verbose_name=&#34;ブロック対象のユーザー&#34;,on_delete=models.CASCADE,related_name=&#34;block_to_user&#34;)
-</code></pre><p><code>settings.py</code></p>
-<p>検索数の上限を記載しておく。</p>
-<pre tabindex="0"><code>DEFAULT_AMOUNT = 100
-</code></pre><p><code>views.py</code></p>
-<pre tabindex="0"><code>from django.db.models import Q
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【崩壊する中国】世界最大のiPhone工場で大規模な暴動　長期間の封鎖措置やボーナスの未払いなどに従業員らが反発<a href="https://t.co/QqJwlgQJVi">https://t.co/QqJwlgQJVi</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1595775124393062400?ref_src=twsrc%5Etfw">November 24, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-class SearchView(views.APIView):
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">石原良純、東京都の太陽光パネルの設置義務化に強く反対「再生可能エネルギーの限界をみんな分かってない」<a href="https://t.co/630CNwOsHx">https://t.co/630CNwOsHx</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1595746829668585472?ref_src=twsrc%5Etfw">November 24, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    def get(self, request, *args, **kwargs):
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【2022FIFAワールドカップ・カタール大会】中国企業の参画したスタジアム建設やインフラ整備事業で6500人以上もの労働者が死亡　賃金の未払いも<a href="https://t.co/QJpSxzfa6S">https://t.co/QJpSxzfa6S</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1595732057702993923?ref_src=twsrc%5Etfw">November 24, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-        context = {}
-        if &#34;search&#34; in request.GET:
-            search = request.GET[&#34;search&#34;]
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「RAPTさんと少しでも距離が離れると、スラム街のような霊界に放り出される」ことを実感した不思議な体験（十二弟子・NANAさんの証）<a href="https://t.co/Fjor24JumF">https://t.co/Fjor24JumF</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1595723087051300864?ref_src=twsrc%5Etfw">November 24, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-            if search == &#34;&#34; or search.isspace():
-                return render(request, &#34;sample/search.html&#34;, context)
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【崩壊する教育現場】都内の公立小学校で深刻な教員不足　夏休み明けに欠員が50人から130人に増加<a href="https://t.co/htXO3uGR14">https://t.co/htXO3uGR14</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1595717085883404290?ref_src=twsrc%5Etfw">November 24, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-        search_split = search.replace(&#34;　&#34;, &#34; &#34;).split(&#34; &#34;)
-        search_list = [s for s in search_split if s != &#34;&#34;]
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【厚労省】塩野義製薬のコロナ治療薬「ゾコーバ」を、動物実験で催奇性が認められた危険な毒物であるにもかかわらず緊急承認<a href="https://t.co/JxejEAg7q9">https://t.co/JxejEAg7q9</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1595415593259511809?ref_src=twsrc%5Etfw">November 23, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-        query_and = Q()
-        query_or  = Q()
-        query_ex  = Q()
-
-        for s in search_list:
-            query_and &amp;= Q( Q(title__icontains=s) | Q(description__icontains=s) | Q(user__handle_name__icontains=s) )
-            query_or  |= Q( Q(title__icontains=s) | Q(description__icontains=s) | Q(user__handle_name__icontains=s) )
-
-        if request.user.is_authenticated:
-             # リクエストユーザーをブロックしているユーザーのid
-            block_list = list(BlockUser.objects.filter(to_user=request.user.id).values_list(&#34;from_user_id&#34;, flat=True)) 
-
-            #ミュートした単語          
-            Mute_list = list( Mute.objects.filter(user=request.user.id).values_list(&#39;mute&#39;, flat=True) )
-            if Mute_list:
-                for m in Mute_list:
-                    query_ex |= Q( Q(title__icontains=m) | Q(description__icontains=m) | Q(user__handle_name__icontains=m) )
-              
-            #sample_1 は、or 検索のみで、ミュートした単語は除外。
-            context[&#34;sample_1&#34;] = Sample1.objects.filter(query_or &amp; ~query_ex).exclude(user__id__in=block_list).order_by(&#34;-dt&#34;)
-
-            #sample_2は、and 検索の後、or 検索を追加。どちらもミュートした単語は除外。ログイン状態では、リクエストユーザーをブロックしている人のものは検索対象外に。
-
-            sample_2_and = list( Sample2.objects.filter(query_and &amp; ~query_ex).exclude( user__id__in=block_list) )
-
-            if len(sample_2_and) &lt; settings.DEFAULT_AMOUNT:
-                sample_2_or = list( Sample2.objects.filter(query_or &amp; ~query_ex).exclude(user__id__in=block_list) )
-                s        = sample_2_and + sample_2_or
-                sample_2 = sorted( list(set(s)), key=s.index)
-
-        else:
-            context[&#34;sample_1&#34;] = Sample1.objects.filter(query_and | query_or).order_by(&#34;-dt&#34;)
-
-            sample_2_and = liset( Sample2.objects.filter(query_and) )
-
-            if len(sample_2_and) &lt; settings.DEFAULT_AMOUNT:
-                sample_2_or = list( Sample2.objects.filter(query_or) )
-                s        = sample_2_and + sample_2_or
-                sample_2 = sorted( list(set(s)), key=s.index)
-
-        context[&#34;sample_2&#34;] = sample_2
-
-
-        return render(request, &#34;sample/search.html&#34;, context)
-
-search = SearchView.as_view()
-</code></pre><p>これで、2つのモデルで検索ができる。</p>
-<p><code>sample_1</code>は or 検索のみになっているが、必要に応じて and 検索も追加できる。</p>
-<p><code>sample_2</code>は、and 検索の結果の後に、or 検索の結果が来るようになっている。</p>
-<p>また、ミュートした単語とリクエストユーザーをブロックしているユーザーのコンテンツは除外できる。</p>
-<p>and 検索に or 検索の結果が追加されて、リストの要素数が際限なく増える可能性があるときは、インデックスを使って必要な分だけ取り出すようにする。</p>
-<p>参考にしたサイト。</p>
-<p><a href="https://noauto-nolife.com/post/django-or-and-search-revision/">【Django】スペース区切りでOR・AND検索を改定する</a></p>
-<p><a href="https://noauto-nolife.com/post/django-m2m-usermodel/">【Django】カスタムユーザーモデルでユーザーブロック機能を実装させる【ManyToManyFieldでユーザーモデル自身を指定】</a></p>
-<p><a href="https://dot-blog.jp/news/django-queryset-or-filter/">Django入門｜OR 条件でクエリセットを取得する方法</a></p>
-<p><a href="https://lanchesters.site/python-list-uniq/">【python】listをuniqueにする方法【重複要素の削除】</a></p>
-<p><a href="https://atmarkit.itmedia.co.jp/ait/articles/2012/08/news013.html">［解決！Python］リスト（配列）の要素にインデックスやスライスを使ってアクセスするには</a></p>
+ </p>
 		</div>
 		<footer class="post__footer">
 			
@@ -280,10 +235,7 @@ search = SearchView.as_view()
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/django/" rel="tag">django</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
+			<a class="tags__link btn" href="/tags/javascript/" rel="tag">Javascript</a>
 		</li>
 	</ul>
 </div>
@@ -299,15 +251,9 @@ search = SearchView.as_view()
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/hugonetlify/" rel="prev">
+		<a class="pager__link" href="/programming/id-duplication/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Hugo &#43; Netlify &#43; Github によるブログ構築</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/bootstrap-modal/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">BootstrapのModalの使い方</p>
+			<p class="pager__title">HTMLでid属性の重複を防ぐ</p>
 		</a>
 	</div>
 </nav>

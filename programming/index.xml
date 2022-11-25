@@ -6,7 +6,16 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 20 Nov 2022 10:47:33 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Nov 2022 08:23:37 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Javascript】class操作のまとめ</title>
+      <link>https://progress-advance.com/programming/javascript-css/</link>
+      <pubDate>Fri, 25 Nov 2022 08:23:37 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/javascript-css/</guid>
+      <description>&lt;p&gt;Javascriptでclassの追加や削除、置換などを行う方法のメモです。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>HTMLでid属性の重複を防ぐ</title>
       <link>https://progress-advance.com/programming/id-duplication/</link>
