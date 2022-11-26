@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>【がん】治療しなければ長生きする - ImageDiagnosis &amp; Program</title>
+	<title>【Javascript】ラジオボタン・チェックボックスのチェックの判定や、要素のid属性取得・変更、前後の要素の取得など - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="【がん】治療しなければ長生きする" />
-<meta property="og:description" content="現在、約38万人が毎年「がん」と診断されて亡くなっています。 しかし、RAPT理論により、「がん」は嘘の病気だと暴かれています。 「がん」は無限に増えるものではなく単なるデキモノであること、イルミナティの儲けの種だということが判明しています。 そ" />
+		<meta property="og:title" content="【Javascript】ラジオボタン・チェックボックスのチェックの判定や、要素のid属性取得・変更、前後の要素の取得など" />
+<meta property="og:description" content="Javascriptでのラジオボタンやチェックボックスのチェックの判定や、要素のid属性の取得・変更、ある要素の前後の要素を取得する方法などのまとめです。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/medical/cancer/" /><meta property="article:section" content="medical" />
-<meta property="article:published_time" content="2022-07-31T19:10:30+09:00" />
-<meta property="article:modified_time" content="2022-07-31T19:10:30+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/javascript-elem/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-11-26T18:53:51+09:00" />
+<meta property="article:modified_time" content="2022-11-26T18:53:51+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="【がん】治療しなければ長生きする"/>
-<meta name="twitter:description" content="現在、約38万人が毎年「がん」と診断されて亡くなっています。 しかし、RAPT理論により、「がん」は嘘の病気だと暴かれています。 「がん」は無限に増えるものではなく単なるデキモノであること、イルミナティの儲けの種だということが判明しています。 そ"/>
+<meta name="twitter:title" content="【Javascript】ラジオボタン・チェックボックスのチェックの判定や、要素のid属性取得・変更、前後の要素の取得など"/>
+<meta name="twitter:description" content="Javascriptでのラジオボタンやチェックボックスのチェックの判定や、要素のid属性の取得・変更、ある要素の前後の要素を取得する方法などのまとめです。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -128,84 +128,172 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">【がん】治療しなければ長生きする</h1>
+			<h1 class="post__title">【Javascript】ラジオボタン・チェックボックスのチェックの判定や、要素のid属性取得・変更、前後の要素の取得など</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-07-31T19:10:30&#43;09:00">July 31, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/medical/" rel="category">medical</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-11-26T18:53:51&#43;09:00">November 26, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
 	</span>
 </div></div>
 		</header>
 		
 		
 		<div class="content post__content clearfix">
-			<p>現在、約38万人が毎年「がん」と診断されて亡くなっています。</p>
-<p>しかし、RAPT理論により、「がん」は嘘の病気だと暴かれています。</p>
-<p>「がん」は無限に増えるものではなく単なるデキモノであること、イルミナティの儲けの種だということが判明しています。</p>
-<p>そのデキモノは自然に治るか、治らなくてもそれで死ぬことはないと、RAPT氏は仰っています。</p>
-<p>「がん」で死亡したと報告されている人達は、実際には抗がん剤の副作用や別の病気で亡くなっています。</p>
-<p>抗がん剤は「増がん剤」と言われています。</p>
-<p>つまり、抗がん剤は体のあちこちにデキモノを作ってしまうわけです。</p>
-<blockquote>
-<p>抗癌剤がマスタードガスから作られた発癌性物質であることは説明書にも書いてある常識だった。</p>
-<p>今や日本人の死因の第１位となっている癌の治療について、こちらの医師のページに記載されているアメリカ議会ガン問題調査委員会「OTA」（Office of Technology Assessment)レポートによると、現在の癌の抗癌剤による通常療法は、</p>
-<ul>
-<li>「抗ガン剤・多剤投与グループほど”命に関わる副作用”は7～10倍」</li>
-<li>「腫瘍が縮んでも5～8ヶ月で再増殖」</li>
-<li>「多剤投与グループは腫瘍は縮んでも生存期間が短い」</li>
-<li>「腫瘍を治療しないほうが長生きする」・・・・と現代の治療”常識”を覆す治験結果が記されており、さらには「抗ガン剤では患者は救えない」「投与でガンは悪性化する」と結論している。</li>
-</ul>
-<p>（中略）</p>
-<p>（OTAレポートの後に、抗ガン剤が「増ガン剤」になるという問題は1988年（平成元年）の日本癌学会大会でも大きな問題となり、本家NCIでも同年に通常療法による癌治療が新たなガンを生むことを3000頁もの報告書「ガンの病因学」で認めているのです。</p>
-<p>1988年のNCIリポート『ガンの病因学』で15万人の抗ガン剤治療を受けた患者を調べた結果、抗ガン剤は、ガンを何倍にも増やす増ガン剤だと断定している。</p>
-<p>なんと抗癌剤は実は増癌剤だというのか！</p>
-<p>抗癌剤の副作用情報を確認してみると、ちゃんと二次発癌と書いてある。</p>
-<p>抗癌剤が増癌剤であることは薬の添付文書、説明書であるインタビューフォーム、薬の辞典なども書いてある常識だったのだ。</p>
-<p>一番上の抗癌剤はナイトロジェンマスタードと書いてある。
-もしかして、ベトナム戦争で枯葉剤としてまかれ、多くの癌や奇形を出したマスタードガスに関係するのかと思い調べてみると、上の表の１行目のナイトロジェンマスタードや２行目のシクロホスファミドについて塩野義製薬の以下の説明を見つけた。</p>
-<p>（中略）</p>
-<p>なんと抗癌剤は本当に発癌性物質のマスタードガスから作られていた。</p>
-<p>シクロホスファミドとマスタードガスの化学式の配列を見比べたら、シクロホスファミドはマスタードガスに殺虫剤や農薬や神経ガスに使うPのリンを付け足したものであり、シクロホスファミドの致死量は1500mg。これはマスタードガスと同じであり、シクロホスファミドはマスタードガスと同等の毒物であることがわかる。</p>
-<p>シクロホスファミドは日本で一番使用量の多い抗癌剤だそうだが、万有製薬の提供する以下の情報では、抗癌剤の近くで作業するだけでも、不妊、流産、先天性障害、白血病、癌等を引き起こす可能性があるという。</p>
-<p><a href="https://www.rui.jp/ruinet.html?i=200&amp;c=400&amp;m=267879&amp;g=220106">https://www.rui.jp/ruinet.html?i=200&amp;c=400&amp;m=267879&amp;g=220106</a></p>
-</blockquote>
-<p>これを裏付けるような話を、元外科医から聞いたことがあります。</p>
-<p>この元外科医ともう一人の外科医が、10年ほど一緒に手術をしていたそうです。</p>
-<p>その元外科医は、抗がん剤は効かないと思っていたので、「がん」の手術後に抗がん剤を使用しませんでしたが、もう一人の外科医は手術後に抗がん剤を使用していました。</p>
-<p>その結果、元外科医の患者は殆ど再発しませんでしたが、もう一人の外科医の患者は再発していました。</p>
-<p>統計を取ったわけではないが、そういう印象を受けたそうです。</p>
-<p>私が大学で研修医をしていたころ、病院で亡くなった人のカルテとCTなどの画像を見て学ぶ機会がありました。</p>
-<p>そこでは、「がん」がどんどん進行して、あっという間に人が衰弱していき亡くなっているように見えて、「がん」は恐ろしい病気だと思ったのですが、「がん」が嘘だと分かって振り返って考えてみると、抗がん剤を使用していたから多臓器不全になり、衰弱して亡くなっていたのだと思います。</p>
-<p>ということで、本当に恐ろしいのは「がん」ではなくて抗がん剤です。</p>
-<p>施設などに入所している高齢者に「進行がん」が見つかっても、高齢で治療できないから放置します。</p>
-<p>そのような場合、2，3年経っても何も起きません。「進行がん」といっても殆ど変化しません。</p>
-<p>沢山デキモノができても、単にデキモノがあるだけです。</p>
-<p>治療をするとあっという間に衰弱して死亡しますが、治療しなければ何も起きません。</p>
-<p>また、現在沢山の人が「がん保険」に入っておられると思いますが、保険に入っておられる方が亡くなったときには、死亡診断書の死因に「がん」と書いてもらう遺族が多いのではないでしょうか。</p>
-<p>医者が忖度して「がん」と書くことがあるでしょうし、遺族の要請で「がん」と書くこともあると思います。</p>
-<p>そういう背景もあり、「がん」が死因のトップになっていると思います。</p>
-<p>日本では人が亡くなった後に検査したり解剖することは少ないですから、本当の死因は分かりません。</p>
-<p>そういう訳で、実際に「がん」で亡くなっている人は殆どいないと思います。</p>
-<p><a href="https://rapt-plusalpha.com/26985/">【動画】ガン利権に騙されるな！癌という病気は存在しない</a>
- 
+			<p>Javascriptでのラジオボタンやチェックボックスのチェックの判定や、要素のid属性の取得・変更、ある要素の前後の要素を取得する方法などのまとめです。</p>
+<p>〇どのラジオボタンがチェックされているか調べる方法。</p>
+<pre tabindex="0"><code>&lt;form id=&#34;Form&#34; name=&#34;Form&#34;&gt;
+  &lt;label&gt;&lt;input type=&#34;radio&#34; name=&#34;radioBtn&#34; value=&#34;1&#34;&gt;1&lt;/label&gt;&lt;br&gt;
+  &lt;label&gt;&lt;input type=&#34;radio&#34; name=&#34;radioBtn&#34; value=&#34;2&#34;&gt;2&lt;/label&gt;&lt;br&gt;
+  &lt;label&gt;&lt;input type=&#34;radio&#34; name=&#34;radioBtn&#34; value=&#34;3&#34;&gt;3&lt;/label&gt;&lt;br&gt;
+  &lt;label&gt;&lt;input type=&#34;radio&#34; name=&#34;radioBtn&#34; value=&#34;4&#34;&gt;4&lt;/label&gt;&lt;br&gt;
+  &lt;input type=&#34;button&#34; id=&#34;checkButton&#34; value=&#34;チェック&#34;&gt;
+&lt;/form&gt;
+&lt;div id=&#34;result&#34;&gt;結果：&lt;/div&gt;
+~~~~~~~~
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/6W9hPx3hH5s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+&lt;script&gt;
+window.onload = function(){
+  document.getElementById(&#34;checkButton&#34;).onclick = function(){
+    var radioList = document.getElementsByName(&#34;radioBtn&#34;);
+    var str = &#34;none&#34;;
+    for(var i=0; i&lt;radioList.length; i++){
+      if (radioList[i].checked) {
+        str = radioList[i].value;
+        break;
+      }
+    }
+    document.getElementById(&#34;result&#34;).innerHTML = str;
+  }
+}
+&lt;/script&gt;
+</code></pre><p><a href="http://www.openspc2.org/reibun/JavaScript_technique/sample/03_form/019/">http://www.openspc2.org/reibun/JavaScript_technique/sample/03_form/019/</a></p>
+<p><a href="https://www.ipentec.com/document/javascript-get-radiobutton-value">ラジオボタンのチェック状態を取得する (JavaScript プログラミング)
+</a></p>
+<p>〇JavaScript または jQuery でラジオボタンをチェックする方法</p>
+<pre tabindex="0"><code>&lt;div id=&#34;radio-area&#34;&gt;
+    &lt;label&gt;&lt;input type=&#34;radio&#34; id=&#34;radio1&#34; name=&#34;radioBtn&#34; value=&#34;1&#34;&gt;1&lt;/label&gt;&lt;br&gt;
+    &lt;label&gt;&lt;input type=&#34;radio&#34; id=&#34;radio2&#34; name=&#34;radioBtn&#34; value=&#34;2&#34;&gt;2&lt;/label&gt;&lt;br&gt;
+    &lt;label&gt;&lt;input type=&#34;radio&#34; id=&#34;radio3&#34; name=&#34;radioBtn&#34; value=&#34;3&#34;&gt;3&lt;/label&gt;&lt;br&gt;
+    &lt;label&gt;&lt;input type=&#34;radio&#34; id=&#34;radio4&#34; name=&#34;radioBtn&#34; value=&#34;4&#34;&gt;4&lt;/label&gt;&lt;br&gt;
+&lt;/div&gt;
+~~~~~
 
- 
+//javacript
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/dZusTa6srSw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+//idから
+document.querySelector(&#39;#radio1&#39;).checked = true;
 
- 
+//valueから
+document.querySelector(&#39;#radio-area &gt; [value=&#34;2&#34;]&#39;).checked = true;	
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/e5l96B7bBLY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+//valueの重複がない場合、valueのみで要素を選択可能
+document.querySelector(&#39;[value=&#34;3&#34;]&#39;).checked = true;
+
+//jQuery（バージョン1.6以上）
+$(&#34;#radio4&#34;).prop(&#34;checked&#34;, true);
+
+//jQuery（バージョン1.6未満）
+$(&#34;#radio4&#34;).attr(&#39;checked&#39;, &#39;checked&#39;);   
+
+//valueから
+$(&#34;input[name=radioBtn][value=&#39;1&#39;]&#34;).prop(&#34;checked&#34;,true);
+</code></pre><p>〇javascriptで要素のid属性を取得、変更</p>
+<pre tabindex="0"><code>var element = ***;
+
+var elem_id = element.id;
+//要素にid属性がない場合は空の文字列が返る
+
+//id属性の変更
+element.id = &#34;sample&#34;; 
+</code></pre><p><a href="https://syncer.jp/javascript-reference/element/id">Element.id - id属性を取得、変更する</a></p>
+<p>〇javascriptで前の要素を取得する　― previousElementSibling ―</p>
+<pre tabindex="0"><code>&lt;input value=&#34;1&#34;&gt;
+&lt;input id=&#34;target&#34; value=&#34;2&#34;&gt;
+&lt;input value=&#34;3&#34;&gt;
+
+~~~~~
+
+var element = document.getElementById( &#34;target&#34; ) ;
+
+var pre = element.previousElementSibling ;
+console.log(pre.value); //結果: 1
+
+//previousSibling という似たものがある。詳細は以下のリンク。
+</code></pre><p><a href="https://syncer.jp/javascript-reference/element/previouselementsibling">Element.previousElementSibling - 前の要素を取得する</a></p>
+<p>〇javascriptで次の要素を取得する　― nextElementSibling  ―</p>
+<pre tabindex="0"><code>&lt;input value=&#34;1&#34;&gt;
+&lt;input id=&#34;target&#34; value=&#34;2&#34;&gt;
+&lt;input value=&#34;3&#34;&gt;
+
+~~~~~
+
+var element = document.getElementById( &#34;target&#34; ) ;
+
+var next = element.nextElementSibling ;
+console.log(next.value); //結果: 3
+
+//nextSibling  という似たものがある。詳細は以下のリンク。
+</code></pre><p><a href="https://syncer.jp/javascript-reference/element/nextelementsibling">Element.nextElementSibling - 次の要素を取得する</a></p>
+<p>〇複数のチェックボックスのチェックの有無を確認する方法</p>
+<pre tabindex="0"><code>&lt;div&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;checkbox1&#34; name=&#34;checkbox-multi&#34;&gt;
+  &lt;label for=&#34;checkbox1&#34;&gt;チェックボックス1&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;checkbox2&#34; name=&#34;checkbox-multi&#34;&gt;
+  &lt;label for=&#34;checkbox2&#34;&gt;チェックボックス2&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;checkbox3&#34; name=&#34;checkbox-multi&#34;&gt;
+  &lt;label for=&#34;checkbox3&#34;&gt;チェックボックス3&lt;/label&gt;
+  
+  &lt;p&gt;チェックボックス1の状態：&lt;span class=&#34;output-status&#34;&gt;未選択&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;チェックボックス2の状態：&lt;span class=&#34;output-status&#34;&gt;未選択&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;チェックボックス3の状態：&lt;span class=&#34;output-status&#34;&gt;未選択&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+window.addEventListener(&#39;DOMContentLoaded&#39;,function(){
+  const outputStatus = document.getElementsByClassName(&#39;output-status&#39;);
+  const checkboxMulti = document.getElementsByName(&#39;checkbox-multi&#39;);
+  
+  for(let i = 0; i &lt; checkboxMulti.length; i++){ // ←重要なポイント！
+    checkboxMulti[i].addEventListener(&#39;change&#39;,function(){ // ←重要なポイント！
+      if(this.checked) {
+        outputStatus[i].textContent = &#34;選択済&#34;;
+      } else{
+        outputStatus[i].textContent = &#34;未選択&#34;;
+      } 
+    });
+  }
+});
+&lt;/script&gt;
+</code></pre><p><a href="https://web-engineer-wiki.com/javascript/checkbox-checked/">【JavaScript】チェックボックスにチェックが入っているか判定する方法</a></p>
+<p>今回の記事は、参考記事から殆ど引用させて頂きました。</p>
+<h5 id="お薦め">お薦め</h5>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">（連載マンガ）成約のあの日へ To The Complete Testament Age 「第2話・二度目の台風」<a href="https://t.co/7uHOzvoaTH">https://t.co/7uHOzvoaTH</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1596457823776346112?ref_src=twsrc%5Etfw">November 26, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">（新連載マンガ）成約のあの日へ ～ To The Complete Testament Age<a href="https://t.co/OFjFF9h4k6">https://t.co/OFjFF9h4k6</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1591416188713992194?ref_src=twsrc%5Etfw">November 12, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RAPTブログによって、どこまでも理知的に知能を高めて問題を解決し、世の中の嘘を見抜いて幸福に生きていく方法を知った（十二弟子・サキさんの証）<a href="https://t.co/dt4TT0O3kI">https://t.co/dt4TT0O3kI</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1596456009555329024?ref_src=twsrc%5Etfw">November 26, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">元厚労省官僚が、『東日本大震災』を遥かに超える超過死亡とコロナワクチン接種の相関関係を指摘　厚労省による印象操作の実態を暴露<a href="https://t.co/fNzQvrEo3C">https://t.co/fNzQvrEo3C</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1596453699081363457?ref_src=twsrc%5Etfw">November 26, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【イギリス】中国製の監視カメラ排除へ　政府中枢での使用停止・他社製品への早急な交換を命令<a href="https://t.co/YWCy0oSoZ5">https://t.co/YWCy0oSoZ5</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1596437032913731584?ref_src=twsrc%5Etfw">November 26, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【中国人スパイ・岸田総理】5回目のコロナワクチン接種をパフォーマンス 「大事な人と自分自身を守ることにつなげてもらいたい」と呼びかけ批判殺到<a href="https://t.co/xazpyEyYRw">https://t.co/xazpyEyYRw</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1596434766118912000?ref_src=twsrc%5Etfw">November 26, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「こびナビ」は「厚労省」の言論統制機関だった!!　YouTube上のコロナワクチンに関する情報検閲に最も大きく加担していたことが発覚<a href="https://t.co/N4iHYU46ec">https://t.co/N4iHYU46ec</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1595380387458347008?ref_src=twsrc%5Etfw">November 23, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
 		</div>
 		<footer class="post__footer">
 			
@@ -213,7 +301,7 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/%E3%81%8C%E3%82%93/" rel="tag">がん</a>
+			<a class="tags__link btn" href="/tags/javascript/" rel="tag">Javascript</a>
 		</li>
 	</ul>
 </div>
@@ -229,15 +317,9 @@ if (!doNotTrack) {
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/medical/death-certificate/" rel="prev">
+		<a class="pager__link" href="/programming/javascript-css/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">死亡診断書に虚偽の内容を記載するのは犯罪です。</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/medical/tuberculosis/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【厚生労働省】結核が人から人に感染する科学的根拠を持っていない。</p>
+			<p class="pager__title">【Javascript】class操作のまとめ</p>
 		</a>
 	</div>
 </nav>
