@@ -6,7 +6,17 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 26 Nov 2022 18:53:51 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Nov 2022 18:45:39 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Javascript】横スライダー(forloop内で使用可)</title>
+      <link>https://progress-advance.com/programming/slider/</link>
+      <pubDate>Sun, 27 Nov 2022 18:45:39 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/slider/</guid>
+      <description>&lt;p&gt;forloop内での横スライダー(自作)。&lt;/p&gt;
+&lt;p&gt;環境：python&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Javascript】ラジオボタン・チェックボックスのチェックの判定や、要素のid属性取得・変更、前後の要素の取得など</title>
       <link>https://progress-advance.com/programming/javascript-elem/</link>
