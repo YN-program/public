@@ -192,7 +192,7 @@ class ObjImage
       &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div class=&#34;w-100 mx-auto text-center imgBtn_area&#34;&gt;
+  &lt;div class=&#34;w-100 mx-auto text-center&#34;&gt;
       {% with range=&#39;&#39;|center:obj.image_len %}
       {% for r in range %}
           &lt;input id=&#34;imgBtn_{{ forloop.counter }}_{{ forloop.parentloop.counter }}&#34; class=&#34;imgBtn&#34; type=&#34;checkbox&#34; name=&#34;imgBtn&#34; value=&#34;{{ forloop.parentloop.counter }}&#34; {% if forloop.first %} checked {% endif %}&gt;
@@ -279,18 +279,18 @@ input[type=checkbox].imgBtn:checked + .imgBtnLabel{
 </code></pre><p><code>javascript</code></p>
 <pre tabindex="0"><code>window.addEventListener(&#34;load&#34; , function (){
 
-  $(document).on(&#34;click&#34;, &#34;.previous_button&#34; ,function(e){e.stopPropagation(); Scroll(this, $(this).attr(&#34;id&#34;).replace(&#34;previousBtn_&#34;,&#34;&#34;)  ,false); });
-  $(document).on(&#34;click&#34;, &#34;.next_button&#34;, function(e){e.stopPropagation(); Scroll(this, $(this).attr(&#34;id&#34;).replace(&#34;nextBtn_&#34;,&#34;&#34;), true); });
+  $(document).on(&#34;click&#34;, &#34;.previous_button&#34; ,function(e){e.stopPropagation(); Scroll($(this).attr(&#34;id&#34;).replace(&#34;previousBtn_&#34;,&#34;&#34;)  ,false); });
+  $(document).on(&#34;click&#34;, &#34;.next_button&#34;, function(e){e.stopPropagation(); Scroll($(this).attr(&#34;id&#34;).replace(&#34;nextBtn_&#34;,&#34;&#34;), true); });
 
   //e.stopPropagation();は必要に応じて。
 
 });
 
-function Scroll(elem, pk, next){
+function Scroll(pk, next){
 
     //pkは親ループの値
 
-    let target  = $(elem).siblings(&#34;#data_preview_area_&#34; + pk);
+    let target  = $(&#34;#data_preview_area_&#34; + pk);
     let imgBtn  = document.querySelectorAll(&#39;[value=&#39; + &#39;&#34;&#39; + pk + &#39;&#34;&#39; + &#39;]&#39;);  //valueからtarget の checkboxを取得
 
     let single_width    = target.outerWidth();  //ブラウザ幅
@@ -320,19 +320,19 @@ function Scroll(elem, pk, next){
         }
     }
 
-    //スライダーが左右の端に達した時は、cssを入れ替えてhoverの効果を消しています。
-
     if (next){
         if ( l.classList.contains(&#34;control_button_hide&#34;) ){
             l.classList.replace(&#34;control_button_hide&#34;,&#34;control_button&#34;);
-        } else if ( imgBtn.length === Number(ID) ){
+        }
+        if ( imgBtn.length === Number(ID) ){
             r.classList.replace(&#34;control_button&#34;,&#34;control_button_hide&#34;);
         }
     } else {
+        if (r.classList.contains(&#34;control_button_hide&#34;)){
+            r.classList.replace(&#34;control_button_hide&#34;,&#34;control_button&#34;);
+        }
         if ( ID === &#34;1&#34; ){
             l.classList.replace(&#34;control_button&#34;,&#34;control_button_hide&#34;);
-        } else if (r.classList.contains(&#34;control_button_hide&#34;)){
-            r.classList.replace(&#34;control_button_hide&#34;,&#34;control_button&#34;);
         }
     }
 }
