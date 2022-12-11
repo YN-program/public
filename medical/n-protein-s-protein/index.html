@@ -4,22 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Hugo &#43; Netlify &#43; Github によるブログ構築 - ImageDiagnosis &amp; Program</title>
+	<title>コロナウイルスのNタンパクとSタンパク - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Hugo &#43; Netlify &#43; Github によるブログ構築" />
-<meta property="og:description" content="静的サイトジェネレーター Hugo と Netlify, GitHub を使って、ブログを構築。
-いろんなサイトを見ると簡単にできそうに書いてありましたが、色々と設定で苦戦したので、取り敢えず上手くいった方法を記載します。" />
+		<meta property="og:title" content="コロナウイルスのNタンパクとSタンパク" />
+<meta property="og:description" content="前回記事で少し触れましたが、コロナウイルスのスパイクタンパク質（Sタンパク）とNタンパク質（Nタンパク）について。 SタンパクとNタンパクについては、以下のようにいわれています。 ※ Ｎタンパク（ヌクレオシドタンパク）：コロナウイルスの遺伝子を包" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/hugonetlify/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-04-21T18:29:19+09:00" />
-<meta property="article:modified_time" content="2022-04-21T18:29:19+09:00" />
+<meta property="og:url" content="https://progress-advance.com/medical/n-protein-s-protein/" /><meta property="article:section" content="medical" />
+<meta property="article:published_time" content="2022-12-11T10:27:54+09:00" />
+<meta property="article:modified_time" content="2022-12-11T10:27:54+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hugo &#43; Netlify &#43; Github によるブログ構築"/>
-<meta name="twitter:description" content="静的サイトジェネレーター Hugo と Netlify, GitHub を使って、ブログを構築。
-いろんなサイトを見ると簡単にできそうに書いてありましたが、色々と設定で苦戦したので、取り敢えず上手くいった方法を記載します。"/>
+<meta name="twitter:title" content="コロナウイルスのNタンパクとSタンパク"/>
+<meta name="twitter:description" content="前回記事で少し触れましたが、コロナウイルスのスパイクタンパク質（Sタンパク）とNタンパク質（Nタンパク）について。 SタンパクとNタンパクについては、以下のようにいわれています。 ※ Ｎタンパク（ヌクレオシドタンパク）：コロナウイルスの遺伝子を包"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,62 +128,64 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Hugo &#43; Netlify &#43; Github によるブログ構築</h1>
+			<h1 class="post__title">コロナウイルスのNタンパクとSタンパク</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-04-21T18:29:19&#43;09:00">April 21, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-12-11T10:27:54&#43;09:00">December 11, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/medical/" rel="category">medical</a>
 	</span>
 </div></div>
 		</header>
+		
+		
 		<div class="content post__content clearfix">
-			<p>静的サイトジェネレーター Hugo と Netlify, GitHub を使って、ブログを構築。</p>
-<p>いろんなサイトを見ると簡単にできそうに書いてありましたが、色々と設定で苦戦したので、取り敢えず上手くいった方法を記載します。</p>
-<h5 id="hugoのインストールから設定まで">Hugoのインストールから設定まで</h5>
-<p>これについては、以下のサイトに詳しく書いてありますので、その通りにすれば初めてでもできます。</p>
-<p><a href="https://blog-dai.com/hugo-windows-install-howto/">Hugo でのブログの作り方・使い方（Windows） 初心者向け手順解説</a></p>
-<p>なお、Hugo のインストール後に環境変数の PATH の設定をしますが、設定が確実に反映されるようにパソコンを再起動したほうが良さそうです。</p>
-<p><a href="https://www.tipsfound.com/windows10/11011">Windows 10 環境変数の設定と反映する方法</a></p>
-<p>また、Hugo のテーマが沢山公開されていますが、Hugo のバージョンアップにより動かないテーマもあるそうですから、updated が最近の日付になっているテーマを選ぶほうが良さそうです。</p>
-<p><a href="https://noauto-nolife.com/post/hugo-install-latest/">【HUGO】最新版をインストールして、サイトを作り、テーマを当ててビルドするまで</a></p>
-<h5 id="githubアカウント作成">GitHubアカウント作成</h5>
-<p>Netlify と GitHu を連携させるので、GitHub のアカウントを持っていない場合は、先に作成しておきます。</p>
-<p><a href="https://qiita.com/ayatokura/items/9eabb7ae20752e6dc79d">GitHubアカウントの作成方法 (2021年版)</a></p>
-<h5 id="netlify-と-github-の連携設定">Netlify と GitHub の連携・設定</h5>
-<p>以下のサイトにその方法が書いてあります。
-ムームードメインの DNS を使用する場合は、こちら。</p>
-<p><a href="https://noauto-nolife.com/post/startup-netlify/">Netlifyと静的サイトジェネレーターHUGOで1ヶ月約100円でブログ運営をする方法【独自ドメイン使用】</a></p>
-<p>Netlify の DNS を使用する場合は、こちらに手順が書いてあります（Xserver使用）。</p>
-<p><a href="https://ysmlog.net/posts/blog-domain-exchange/">Netlifyにカスタムドメインを適用する手順</a></p>
-<p>Netlify の設定途中で、次のような画面に出くわします。</p>
-<p><img src="/img/netlify2.jpg" alt="netlify2"></p>
-<p>Hugo でブログを作るときに、コマンドプロンプト（windows）で<code>hugo</code>というコマンドを実行すると、public という名前のフォルダが作られますが（<a href="https://blog-dai.com/hugo-windows-install-howto/">Hugo でのブログの作り方・使い方（Windows） 初心者向け手順解説</a>）、GitHub に public フォルダをアップロードするのか、中身だけをアップロードするのかで、設定内容が変わります。</p>
-<p>この Publish directory に関しては、public の中身だけをアップロードする場合は、何も記載しなくても良いと思いますが、public のフォルダをアップロードした場合は、以下のように「public」と記載する必要があると思います(試していないので多分です)。</p>
-<p><img src="/img/netlify.png" alt="netlify1"></p>
-<p>私は GitHub に public の中身だけをアップロードしたので、Publish directory に public と記載すると、「public がない」とエラーが出ました。</p>
-<p><code> Failed during stage 'building site': Deploy directory 'public' does not exist</code></p>
-<p>また、自分のパソコンで<code>hugo</code>コマンドを実行し、公開用ファイルを生成して 、GitHub にアップロードするのか、GitHub にソースファイルを置いて、Netlify で<code>hugo</code>コマンドを実行するのかで、Build Command に「hugo」と記載するかどうかが変わってくると思います。
-ここでも、私は public の中身だけをアップロードしていたからか、エラーが出まくりました。</p>
-<p><code>Failing build: Failed to build site</code></p>
-<p><code>Failed during stage 'building site': Build script returned non-zero exit code: 1 </code></p>
-<p>結局、Publish directory と Build Command には何も書かないことで、Netlify と GitHub の設定が上手くいきました。</p>
-<p><a href="https://www.tech-ek.com/post/hugo-manage-in-github-netlify/">Hugo + Github + Netlifyで簡単サイト・ブログ作成（GitHubで全て管理）</a></p>
-<p>後、公開記事が一つもない場合も、Netlify と GitHub の連携に失敗すると、どこかのサイトに書いてありました。</p>
-<h5 id="記事の書き方">記事の書き方</h5>
-<p>これも最初に紹介したサイトに記載されていますが、マークダウン記法で記事を書きます。</p>
-<p><a href="https://blog-dai.com/hugo-windows-install-howto/">Hugo でのブログの作り方・使い方（Windows） 初心者向け手順解説</a></p>
-<p><a href="https://notepm.jp/help/how-to-markdown">Markdown記法/書き方（見出し・表・リンク・画像・文字色など）</a></p>
-<p>ただ、マークダウン記法の一部が反映されないテーマがあったので、テーマを選んだら試しに一つ記事を書いてみたほうが良いかもしれません。</p>
-<h5 id="マークダウンエディタ">マークダウンエディタ</h5>
-<p><a href="https://notepm.jp/blog/724">【2022年版】Markdown(マークダウン)エディタ厳選まとめ＜Win/Mac/iOS/Android＞</a></p>
-<p>以下の動画を参考にして、マークダウンでの記事の記載から GitHub へのアップロードまでが簡単にできる Visual Studio Code を使うことにしました。</p>
+			<p>前回記事で少し触れましたが、コロナウイルスのスパイクタンパク質（Sタンパク）とNタンパク質（Nタンパク）について。</p>
+<p>SタンパクとNタンパクについては、以下のようにいわれています。</p>
+<blockquote>
+<p>※ Ｎタンパク（ヌクレオシドタンパク）：コロナウイルスの遺伝子を包む殻のことを指します。Nタンパク質は現在使用されているmRNAワクチンからは人工的に生成することができず、ワクチンとの関連がない部分です。</p>
+<p>Ｓタンパク（スパイクタンパク）：細胞表面のトゲトゲタンパク。Sタンパク質の主な役割は、ヒトの細胞表面にある受容体と結合して感染を起こすことです。Sタンパク質が受容体と結合することでウイルス本体がヒトの細胞と融合し、コロナウイルスの遺伝子がヒトの細胞内に移行して感染が成立します。</p>
+<p><a href="https://k-doujou.com/choice-424/">https://k-doujou.com/choice-424/</a></p>
+</blockquote>
+<p>ワクチン接種後に亡くなった場合、剖検で得た組織を免疫染色して、NタンパクとSタンパクが両方とも検出されたらコロナ感染による死亡で、NタンパクがなくSタンパクだけが検出されたらワクチンによる死亡と判断できるといって、研究が進められているそうです。</p>
+<p>これに対して、「これはウイルスが存在するという前提に基づいている気がするんだけど、ウイルスの存在を証明できておらず病気の原因が何なのか分からないのに、検査キットを作ることは可能なんだろうか？」「コロナに感染した後にワクチンを打って死亡した場合はどうなるの？」という意見がツイッターで上がっています。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ウイルスが原因で死亡したとされる人にはSタンパクとNタンパクがあり、ワクチンが原因で死亡したとされる人にはSタンパクのみがありNタンパクはない、というのは確認されているの？<br>コロナに感染した後にワクチンを打って死亡した場合はどうなるの？</p>&mdash; matatabi (@matatabi_catnip) <a href="https://twitter.com/matatabi_catnip/status/1600303415250370561?ref_src=twsrc%5Etfw">December 7, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/hdpMw3hyQq4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+ </p>
+<p>繰り返しになりますが、ウイルスは存在していないので、コロナウイルスによる死亡はありません。</p>
+<p>この方法では、ワクチンによる死亡が隠蔽されるだけです。</p>
+<p>ワクチン接種後に死亡された方でSタンパクが検出されなかった事例がありますし、SタンパクやNタンパクの検出キットに細工をすれば、&ldquo;科学的&quot;にワクチン死を否定することができます。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">鹿先生 JPSikaDoctor の動画<br><br>2022/10/6にThrombosis Journalに掲載された大分大学法医学教室と病理学教室による「法医学論文」の解説です。<br>これでも因果関係不明ってどういうことですか？<br><br>鹿先生の解説を書き起こします。<a href="https://t.co/yvxXbCabuM">https://t.co/yvxXbCabuM</a></p>&mdash; kazuchan-cocone (@kazuchancocone) <a href="https://twitter.com/kazuchancocone/status/1599613203289616384?ref_src=twsrc%5Etfw">December 5, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<p> </p>
-<p>Hugo の<code>config.toml</code>の設定など、他にもすることはありますが、取り敢えずこれで記事の作成から公開までできると思います。</p>
-<p><a href="https://ysmlog.net/posts/mainroad-init/">Hugoでブログ構築＆Mainroadテーマを適用</a></p>
+ </p>
+<p>上記の研究をしている東京理科大学名誉教授「村上康文」博士は、コロナウイルスの予防薬や治療薬として実用化が期待できる「murak抗体」を開発したそうですが、残念ながら期待外れに終わりそうです。</p>
+<p>かねてよりコロナワクチンの危険性を訴えてきたファイザー元副社長のマイケル・イードン博士も、ウイルスは存在していないと仰っています。</p>
+<p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dr Mike Yeadon concludes: <a href="https://t.co/mpJO1ze4Vi">pic.twitter.com/mpJO1ze4Vi</a></p>&mdash; Dr Kevin Corbett MSc PhD (@KPCResearch) <a href="https://twitter.com/KPCResearch/status/1554797767817666560?ref_src=twsrc%5Etfw">August 3, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><a href="http://rapt-plusalpha.com/20213/">ファイザー元副社長のマイケル・イードン博士が警告「３回目のコロナワクチン接種に近づいてはいけない」</a></p>
+<p>世界中の人がウイルスは存在していないということに気付き、イルミナティ（中国共産党）の洗脳から抜け出すことができますようにお祈りします。</p>
+<h5 id="お薦め">お薦め</h5>
+<p>
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/@rapt-plusalpha:6/04:a1?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+
+ </p>
+<p>
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/@rapt-plusalpha:6/Minaラジオ2:0?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+
+ </p>
+<p><a href="https://rapt-plusalpha.com/11932/">シュタイナー「ウイルスは存在しない」 「ワクチンを打つと、人間は霊的なものを知覚できないロボットと化す」</a></p>
+<p><a href="https://rapt-plusalpha.com/23607/">世界中の国々がコロナウイルスの存在を証明できないと認める</a></p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【アメリカ】「今年の単語」に『ガスライティング』が選ばれる　検索回数が前年比1740%増加　三浦春馬もガスライティング被害に遭っていた<a href="https://t.co/saufraTbJN">https://t.co/saufraTbJN</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1601557481947557888?ref_src=twsrc%5Etfw">December 10, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">『浜崎あゆみ』FNS歌謡祭で“影武者疑惑”が浮上　コロナワクチン接種でアナフィラキシーショックを起こし、体調が回復しない可能性も<a href="https://t.co/W6lDgWF1Tb">https://t.co/W6lDgWF1Tb</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1601515064841760769?ref_src=twsrc%5Etfw">December 10, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+
 		</div>
 		<footer class="post__footer">
 			
@@ -193,10 +193,10 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/hugo/" rel="tag">Hugo</a>
+			<a class="tags__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" rel="tag">コロナワクチン</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/netlify/" rel="tag">Netlify</a>
+			<a class="tags__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" rel="tag">薬害</a>
 		</li>
 	</ul>
 </div>
@@ -212,15 +212,9 @@ if (!doNotTrack) {
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/how2django1/" rel="prev">
+		<a class="pager__link" href="/medical/covid-19/no-mrna-no-spikeprotein/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">for ループで id が重複するとき</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/django-and-or-filter/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【Django】AND 検索 OR 検索</p>
+			<p class="pager__title">スパイクタンパク質は存在しない。免疫染色はインチキの可能性大。</p>
 		</a>
 	</div>
 </nav>
