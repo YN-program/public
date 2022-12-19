@@ -141,6 +141,7 @@ if (!doNotTrack) {
 
 
 <style>
+body { -webkit-text-size-adjust: 100％; }
 
 audio {
     width:100%;
@@ -161,6 +162,7 @@ audio {
     border:none;
     border-radius:50%;
     margin:0.25rem;
+    -webkit-appearance: none;
 }
 .audio_btn:hover{
     background-image: linear-gradient(45deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
@@ -219,18 +221,10 @@ audio {
 
 <div id="wrapper" class="audio_wrapper d-none">
     <div class=audio_area>
-        <button type="button" id="stop_button" class="audio_btn">
-          stop
-        </button>
-        <button type="button" id="pause_button" class="audio_btn normal-line-height">
-          pause
-        </button>
-        <button type="button" id="skip_backward" class="audio_btn normal-line-height">
-          skip -10
-        </button>
-        <button type="button" id="skip_forward" class="audio_btn normal-line-height">
-          skip+10
-        </button>
+        <button type="button" id="stop_button" class="audio_btn">stop</button>
+        <button type="button" id="pause_button" class="audio_btn normal-line-height">pause</button>
+        <button type="button" id="skip_backward" class="audio_btn normal-line-height">skip&nbsp;-10</button>
+        <button type="button" id="skip_forward" class="audio_btn normal-line-height">skip+10</button>
         <button type="button" id="vol_up_btn" class="audio_btn normal-line-height"><span>vol</span><br><span>+</span></button>
         <button type="button" id="vol_down_btn" class="audio_btn normal-line-height"><span>vol</span><br><span>-</span></button>
         <button type="button" id="muteBtn" class="audio_btn">Vol</button>
