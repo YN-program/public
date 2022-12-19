@@ -142,7 +142,11 @@ if (!doNotTrack) {
 
 <style>
 body { -webkit-text-size-adjust: 100％; }
-
+p {
+    overflow: hidden;
+    white-space: nowrap;
+    margin:0;
+  }
 audio {
     width:100%;
 }
@@ -152,7 +156,7 @@ audio {
     padding:0.25rem 0.5rem;
 }
 .audio_btn {
-    font-size:1rem;
+    font-size:0.8rem;
     width:3rem;
     height:3rem;
     text-align:center;
@@ -221,18 +225,18 @@ audio {
 
 <div id="wrapper" class="audio_wrapper d-none">
     <div class=audio_area>
-        <button type="button" id="stop_button" class="audio_btn">stop</button>
-        <button type="button" id="pause_button" class="audio_btn normal-line-height">pause</button>
-        <button type="button" id="skip_backward" class="audio_btn normal-line-height">skip&nbsp;-10</button>
-        <button type="button" id="skip_forward" class="audio_btn normal-line-height">skip+10</button>
-        <button type="button" id="vol_up_btn" class="audio_btn normal-line-height"><span>vol</span><br><span>+</span></button>
-        <button type="button" id="vol_down_btn" class="audio_btn normal-line-height"><span>vol</span><br><span>-</span></button>
-        <button type="button" id="muteBtn" class="audio_btn">Vol</button>
+        <button type="button" id="stop_button" class="audio_btn"><p>stop</p></button>
+        <button type="button" id="pause_button" class="audio_btn normal-line-height"><p>pause</p></button>
+        <button type="button" id="skip_backward" class="audio_btn normal-line-height"><p>skip</p><p>-10</p></button>
+        <button type="button" id="skip_forward" class="audio_btn normal-line-height"><p>skip</p><p>+10</p></button>
+        <button type="button" id="vol_up_btn" class="audio_btn normal-line-height"><p>vol</p><p>+</p></button>
+        <button type="button" id="vol_down_btn" class="audio_btn normal-line-height"><p>vol</p><p>-</p></button>
+        <button type="button" id="muteBtn" class="audio_btn"><p>Vol</p></button>
         <button type="button" id="rateUp" class="audio_btn normal-line-height">
-          <span>rate</span><br><span>+</span>
+          <p>rate</p><p>+</p>
         </button>
         <button type="button" id="rateDown" class="audio_btn normal-line-height">
-          <span>rate</span><br><span>-</span>
+          <p>rate</p><p>-</p>
         </button>
     </div>
     <div class="w-100">
