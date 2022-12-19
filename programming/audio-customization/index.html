@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>【Javascript】オーディオタグのカスタマイズ - ImageDiagnosis &amp; Program</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="【Javascript】オーディオタグのカスタマイズ" />
+<meta property="og:description" content="オーディオタグを Javascript で自作してみました。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://progress-advance.com/programming/audio-customization/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2022-12-18T14:38:30+09:00" />
+<meta property="article:modified_time" content="2022-12-18T14:38:30+09:00" />
+
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【Javascript】オーディオタグのカスタマイズ"/>
+<meta name="twitter:description" content="オーディオタグを Javascript で自作してみました。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120164090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+	
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M5T5SG5');</script>
+    
+
+
+</head>
+<body class="body">
+	
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5T5SG5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+	
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="ImageDiagnosis &amp; Programming" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">ImageDiagnosis &amp; Programming</div>
+					<div class="logo__tagline">学んだことをひたすら書くブログ</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">ホーム</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/programming/">
+				
+				<span class="menu__text">プログラミング</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/medical/">
+				
+				<span class="menu__text">医療</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/life/">
+				
+				<span class="menu__text">Life</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/politics/">
+				
+				<span class="menu__text">政治経済</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about_us/">
+				
+				<span class="menu__text">About us</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">【Javascript】オーディオタグのカスタマイズ</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-12-18T14:38:30&#43;09:00">December 18, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>オーディオタグを Javascript で自作してみました。</p>
+<style>
+
+audio {
+    width:100%;
+}
+.audio_area {
+    display:flex;
+    flex-wrap:wrap;
+    padding:0.25rem 0.5rem;
+}
+.audio_btn {
+    font-size:1rem;
+    width:3rem;
+    height:3rem;
+    text-align:center;
+    color:#fff;
+    background: rgba(254, 220, 64, 1);
+    background-image: linear-gradient(90deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
+    border:none;
+    border-radius:50%;
+    margin:0.25rem;
+}
+.audio_btn:hover{
+    background-image: linear-gradient(45deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
+    color:#424242;
+}
+.audio_text {
+    font-size:1.2rem;
+}
+.normal-line-height {line-height:normal;}
+.audio_skip_forward {
+    position: relative;
+    margin-left:0.7rem;
+    color: #fff;
+    font-size:1.4rem;
+    transform:rotate(180deg);
+}
+.audio_skip_backward {
+    position: relative;
+    margin-left:0.6rem;
+    color: #fff;
+    font-size:1.4rem;
+    transform:scale(1,-1);
+}
+.audio_wrapper {
+    background: inherit;
+    width:100%;
+    padding:0.25rem 0;
+    border:solid 1px rgba(255, 223, 74, 1);
+    border-radius:0.25rem;
+    height:auto;
+}
+
+.audio_time_bar_area {
+    width:100%;
+    height:1rem;
+    background:#f2f2f2;
+    cursor:pointer;
+}
+.audio_time_bar{
+    height:1rem;
+    background-image: linear-gradient(90deg, rgba(255, 146, 179, 1), rgba(255, 223, 74, 1));
+    cursor:pointer;
+}
+.d-none { display:none;}
+.text-center {text-align:center;}
+.container { padding:0.5rem;}
+.row {display:flex;}
+.col8{width:80%;}
+.col4{width:20%;}
+</style>
+
+
+<audio id="audio" src="/img/audio/MusMus-BGM-154.mp3" type="audio/mp3"></audio>
+
+<button type="button" id="start_button" class="audio_btn startAudio">play</button>
+
+<div id="wrapper" class="audio_wrapper d-none">
+    <div class=audio_area>
+        <button type="button" id="stop_button" class="audio_btn">
+          stop
+        </button>
+        <button type="button" id="pause_button" class="audio_btn normal-line-height">
+          pause
+        </button>
+        <button type="button" id="skip_backward" class="audio_btn normal-line-height">
+          skip -10
+        </button>
+        <button type="button" id="skip_forward" class="audio_btn normal-line-height">
+          skip+10
+        </button>
+        <button type="button" id="vol_up_btn" class="audio_btn normal-line-height"><span>vol</span><br><span>+</span></button>
+        <button type="button" id="vol_down_btn" class="audio_btn normal-line-height"><span>vol</span><br><span>-</span></button>
+        <button type="button" id="muteBtn" class="audio_btn">Vol</button>
+        <button type="button" id="rateUp" class="audio_btn normal-line-height">
+          <span>rate</span><br><span>+</span>
+        </button>
+        <button type="button" id="rateDown" class="audio_btn normal-line-height">
+          <span>rate</span><br><span>-</span>
+        </button>
+    </div>
+    <div class="w-100">
+        <div id="volText" class="text-center d-none"></div>
+        <div id="audioRate" class="text-center d-none"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="timeSlider" class="audio_time_bar_area col8">
+                <div id="audio_time_bar"></div>
+            </div>
+            <div class="text-center col4">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+                /<span id="audioMinutes"></span>:<span id="audioSeconds"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+window.addEventListener("load" , function (){
+    let startBtn = document.getElementById("start_button");
+    startBtn.onclick = () => {
+        const audio = document.getElementById('audio');
+        audio.currentTime = 0;
+        setAudio(audio);
+    }
+});
+
+function setAudio(audio){
+
+    const wrapper       = document.getElementById('wrapper' );
+    wrapper.classList.remove("d-none");
+    const startButton   = document.getElementById('start_button' );
+    const stopButton    = document.getElementById('stop_button');
+    const pauseButton   = document.getElementById('pause_button');
+    const skipForward   = document.getElementById('skip_forward');
+    const skipBackward  = document.getElementById('skip_backward');
+    const volUpButton   = document.getElementById('vol_up_btn');
+    const volDownButton = document.getElementById('vol_down_btn');
+    const volText       = document.getElementById('volText');
+    const muteBtn       = document.getElementById('muteBtn');
+    const rateUp        = document.getElementById('rateUp');
+    const rateDown      = document.getElementById('rateDown');
+    const audioMinutes  = document.getElementById("audioMinutes");
+    const audioSeconds  = document.getElementById("audioSeconds");
+    const audioRateTxt  = document.getElementById("audioRate");
+
+    var minutes         = document.getElementById("minutes");
+    var seconds         = document.getElementById("seconds");
+    var audioTime       = 0;
+    var audioTimeBar    = document.getElementById("audio_time_bar");
+    var slider          = document.getElementById('timeSlider');
+
+    let paused     = false;
+    let changeRate = false;
+    let interval;
+
+    function pad(val) { return val > 9 ? val : "0" + val; }
+    audioMinutes.innerHTML = pad(Math.floor(audio.duration / 60));
+    audioSeconds.innerHTML = pad(Math.floor(audio.duration % 60));
+
+    startButton.classList.add("d-none");
+
+    if( audio.volume === 0){
+        muteBtn.innerHTML = 'Mute';
+    }
+
+    audio.onended = () => {
+        stopAudio();
+        paused = true;
+        audioCounter();
+    }
+    stopButton.onclick = (e) => {
+        e.stopPropagation();
+        audio.pause();
+        stopAudio();
+        paused = true;
+        audioCounter();
+    }
+    pauseButton.onclick = (e) => {
+        e.stopPropagation();
+        if ( paused ) {
+            audio.play();
+            pauseButton.innerHTML = 'pause';
+            paused = false;
+            audioCounter();
+        } else {
+            audio.pause();
+            pauseButton.innerHTML = 'play';
+            paused = true;
+        }
+    }
+    skipForward.onclick = (e) => {
+        e.stopPropagation();
+        audioTime += 10;
+        if (audioTime > audio.duration){
+            audioTime = audio.duration;
+        }
+        audio.currentTime = audioTime;
+        setCounter();
+    }
+    skipBackward.onclick = (e) => {
+        e.stopPropagation();
+        audioTime -= 10;
+        if (audioTime < 0){
+            audioTime = 0;
+        }
+        audio.currentTime = audioTime;
+        setCounter();
+    }
+    volUpButton.onclick = (e) => {
+        e.stopPropagation();
+        if(audio.volume <= 0.9){
+        audio.volume += 0.1;
+        volText.textContent = "vol : " + Math.round((audio.volume * 10)) / 10;
+        audioText(volText);
+        }else{;}
+    }
+    volDownButton.onclick = (e) => {
+        e.stopPropagation();
+        if(audio.volume >= 0.1){
+            audio.volume -= 0.1;
+            volText.textContent = "vol : " + Math.round((audio.volume * 10)) / 10;
+            audioText(volText);
+        }else{
+            audio.volume = 0;
+            volText.textContent = "vol : " + 0;
+            audioText(volText);
+        }
+    }
+    muteBtn.onclick = (e) => {
+        e.stopPropagation();
+        if( audio.muted ){
+            muteBtn.innerHTML = 'Vol';
+            audio.muted = false;
+            volText.textContent = "vol : " + Math.round((audio.volume * 10)) / 10;
+            audioText(volText);
+        } else {
+            muteBtn.innerHTML = 'Mute';
+            audio.muted = true;
+            volText.textContent = "vol : " + 0;
+            audioText(volText);
+        }
+    }
+    rateUp.onclick = (e) => {
+        e.stopPropagation();
+        audio.playbackRate += 0.1;
+        audioRateTxt.textContent = Math.round((audio.playbackRate * 10)) / 10 + "×";
+        audioText(audioRateTxt);
+    }
+    rateDown.onclick = (e) => {
+        e.stopPropagation();
+        if(audio.playbackRate > 0.1){
+            audio.playbackRate -= 0.1;
+        }
+        audioRateTxt.textContent = Math.round((audio.playbackRate * 10)) / 10  + "×";
+        audioText(audioRateTxt);
+    }
+    slider.onclick = (e) => {
+        e.stopPropagation();
+//        var click_x = e.pageX ;
+//        var client_rect = slider.getBoundingClientRect();
+//        var position_x = client_rect.left + window.pageXOffset;
+//        var x = click_x - position_x ;
+//        audioTime = Math.round( audio.duration * (x / client_rect.width) );
+        audioTime = Math.round( audio.duration * e.offsetX /  slider.clientWidth)
+        audio.currentTime = audioTime;
+        setCounter();
+    }
+
+    function stopAudio() {
+        startButton.classList.remove("d-none");
+        minutes.innerHTML = "00";
+        seconds.innerHTML = "00";
+        wrapper.classList.add("d-none");
+        if( paused ){
+            pauseButton.innerHTML = 'pause';
+        }
+    }
+    function setAudioTimeBar () {
+        audio.ontimeupdate = () =>{
+            var Width = (audio.currentTime / audio.duration * 100) + '%';
+            audioTimeBar.style.width = Width;
+            audioTimeBar.classList.add("audio_time_bar");
+        }
+    }
+    function audioCounter(){
+        let interval = setInterval( function(){
+            if (!paused){
+                audioTime += audio.playbackRate;
+                setCounter();
+            }else{
+                clearInterval(interval);
+                delete interval;
+            }
+        }, 1000);
+    }
+    function setCounter(){
+        minutes.innerHTML = pad(Math.floor(audioTime / 60));
+        seconds.innerHTML = pad(Math.floor(audioTime % 60));
+
+    }
+    function audioText(elem){
+        elem.classList.remove("d-none");
+        var showText = setTimeout( function(){
+            elem.classList.add("d-none");
+            clearTimeout( showText );
+        }, 700);
+    }
+    audioCounter();
+    audio.play();
+    setAudioTimeBar();
+}
+
+</script>
+
+
+<p>*音量注意</p>
+<p>音楽サンプルは「<a href="https://musmus.main.jp/music_img2.html">フリーBGM・音楽素材MusMus</a>」から</p>
+<p>template は、django/python 環境下で、forloop内のオーディオタグに対して。</p>
+<p>一部にbootstrapとfont awesome使用しています。</p>
+<p><code>template</code></p>
+<pre tabindex="0"><code>
+&lt;audio id=&#34;audio_{{ forloop.counter }}&#34; src=&#34;&#34;&gt;&lt;/audio&gt;
+&lt;button type=&#34;button&#34; id=&#34;start_button_{{ forloop.counter }}&#34; class=&#34;audio_btn startAudio&#34;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&lt;/button&gt;
+
+&lt;div id=&#34;wrapper_{{ forloop.counter }}&#34; class=&#34;audio_wrapper d-none&#34;&gt;
+    &lt;div class=audio_area&gt;
+        &lt;button type=&#34;button&#34; id=&#34;stop_button_{{ forloop.counter }}&#34; class=&#34;audio_btn&#34;&gt;
+          &lt;i class=&#34;fas fa-stop&#34;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;pause_button_{{ forloop.counter }}&#34; class=&#34;audio_btn&#34;&gt;
+          &lt;i class=&#34;fas fa-pause&#34;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;skip_backward_{{ forloop.counter }}&#34; class=&#34;audio_btn position-relative&#34;&gt;
+            &lt;svg class=&#34;audio_skip_backward&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; version=&#34;1.1&#34; id=&#34;_x32_&#34; x=&#34;0px&#34; y=&#34;0px&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;width:1.2rem;&#34; xml:space=&#34;preserve&#34;&gt;
+            &lt;style type=&#34;text/css&#34;&gt;
+                .st0{fill:#4B4B4B;}
+            &lt;/style&gt;
+            &lt;g&gt;
+                &lt;path class=&#34;st0&#34; d=&#34;M446.025,92.206c-40.762-42.394-97.487-69.642-160.383-72.182c-15.791-0.638-29.114,11.648-29.752,27.433   c-0.638,15.791,11.648,29.114,27.426,29.76c47.715,1.943,90.45,22.481,121.479,54.681c30.987,32.235,49.956,75.765,49.971,124.011   c-0.015,49.481-19.977,94.011-52.383,126.474c-32.462,32.413-76.999,52.368-126.472,52.382   c-49.474-0.015-94.025-19.97-126.474-52.382c-32.405-32.463-52.368-76.992-52.382-126.474c0-3.483,0.106-6.938,0.302-10.364   l34.091,16.827c3.702,1.824,8.002,1.852,11.35,0.086c3.362-1.788,5.349-5.137,5.264-8.896l-3.362-149.834   c-0.114-4.285-2.88-8.357-7.094-10.464c-4.242-2.071-9.166-1.809-12.613,0.738L4.008,182.45c-3.05,2.221-4.498,5.831-3.86,9.577   c0.61,3.759,3.249,7.143,6.966,8.974l35.722,17.629c-1.937,12.166-3.018,24.602-3.018,37.279   c-0.014,65.102,26.475,124.31,69.153,166.944C151.607,465.525,210.8,492.013,275.91,492   c65.095,0.014,124.302-26.475,166.937-69.146c42.678-42.635,69.167-101.842,69.154-166.944   C512.014,192.446,486.844,134.565,446.025,92.206z&#34; style=&#34;fill: rgb(255, 255, 255);&#34;/&gt;
+            &lt;/g&gt;
+            &lt;/svg&gt;
+            &lt;span class=&#34;skip_btn_text&#34;&gt;10&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;skip_forward_{{ forloop.counter }}&#34; class=&#34;audio_btn position-relative&#34;&gt;
+            &lt;svg class=&#34;audio_skip_forward&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; version=&#34;1.1&#34; id=&#34;_x32_&#34; x=&#34;0px&#34; y=&#34;0px&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;width:1.2rem;&#34; xml:space=&#34;preserve&#34;&gt;
+            &lt;style type=&#34;text/css&#34;&gt;
+                .st0{fill:#4B4B4B;}
+            &lt;/style&gt;
+            &lt;g&gt;
+                &lt;path class=&#34;st0&#34; d=&#34;M446.025,92.206c-40.762-42.394-97.487-69.642-160.383-72.182c-15.791-0.638-29.114,11.648-29.752,27.433   c-0.638,15.791,11.648,29.114,27.426,29.76c47.715,1.943,90.45,22.481,121.479,54.681c30.987,32.235,49.956,75.765,49.971,124.011   c-0.015,49.481-19.977,94.011-52.383,126.474c-32.462,32.413-76.999,52.368-126.472,52.382   c-49.474-0.015-94.025-19.97-126.474-52.382c-32.405-32.463-52.368-76.992-52.382-126.474c0-3.483,0.106-6.938,0.302-10.364   l34.091,16.827c3.702,1.824,8.002,1.852,11.35,0.086c3.362-1.788,5.349-5.137,5.264-8.896l-3.362-149.834   c-0.114-4.285-2.88-8.357-7.094-10.464c-4.242-2.071-9.166-1.809-12.613,0.738L4.008,182.45c-3.05,2.221-4.498,5.831-3.86,9.577   c0.61,3.759,3.249,7.143,6.966,8.974l35.722,17.629c-1.937,12.166-3.018,24.602-3.018,37.279   c-0.014,65.102,26.475,124.31,69.153,166.944C151.607,465.525,210.8,492.013,275.91,492   c65.095,0.014,124.302-26.475,166.937-69.146c42.678-42.635,69.167-101.842,69.154-166.944   C512.014,192.446,486.844,134.565,446.025,92.206z&#34; style=&#34;fill: rgb(255, 255, 255);&#34;/&gt;
+            &lt;/g&gt;
+            &lt;/svg&gt;
+            &lt;span class=&#34;skip_btn_text&#34;&gt;10&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;vol_up_btn_{{ forloop.counter }}&#34; class=&#34;audio_btn normal-line-height&#34;&gt;&lt;span&gt;vol&lt;/span&gt;&lt;br&gt;&lt;span&gt;+&lt;/span&gt;&lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;vol_down_btn_{{ forloop.counter }}&#34; class=&#34;audio_btn normal-line-height&#34;&gt;&lt;span&gt;vol&lt;/span&gt;&lt;br&gt;&lt;span&gt;-&lt;/span&gt;&lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;muteBtn_{{ forloop.counter }}&#34; class=&#34;audio_btn&#34;&gt;
+          &lt;i class=&#34;fas fa-volume-up&#34;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;rateUp_{{ forloop.counter }}&#34; class=&#34;audio_btn normal-line-height&#34;&gt;
+          &lt;span&gt;rate&lt;/span&gt;&lt;br&gt;&lt;span&gt;+&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;rateDown_{{ forloop.counter }}&#34; class=&#34;audio_btn normal-line-height&#34;&gt;
+          &lt;span&gt;rate&lt;/span&gt;&lt;br&gt;&lt;span&gt;-&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;w-100&#34;&gt;
+        &lt;div id=&#34;volText_{{ forloop.counter }}&#34; class=&#34;text-center d-none&#34;&gt;&lt;/div&gt;
+        &lt;div id=&#34;audioRate_{{ forloop.counter }}&#34; class=&#34;text-center d-none&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;container&#34;&gt;
+        &lt;div class=&#34;row no-gutters&#34;&gt;
+            &lt;div id=&#34;timeSlider_{{ forloop.counter }}&#34; class=&#34;audio_time_bar_area col-8&#34;&gt;
+                &lt;div id=&#34;audio_time_bar_{{ forloop.counter }}&#34;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;col-4 text-center&#34;&gt;
+                &lt;span id=&#34;minutes_{{ forloop.counter }}&#34;&gt;00&lt;/span&gt;:&lt;span id=&#34;seconds_{{ forloop.counter }}&#34;&gt;00&lt;/span&gt;
+                /&lt;span id=&#34;audioMinutes_{{ forloop.counter }}&#34;&gt;&lt;/span&gt;:&lt;span id=&#34;audioSeconds_{{ forloop.counter }}&#34;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p><code>css</code></p>
+<pre tabindex="0"><code>
+audio {
+    width:100%;
+}
+.audio_area {
+    display:flex;
+    flex-wrap:wrap;
+    padding:0.25rem 0.5rem;
+}
+.audio_btn {
+    font-size:1rem;
+    width:3rem;
+    height:3rem;
+    text-align:center;
+    color:#fff;
+    background: rgb(204,255,232);
+    background-image: linear-gradient(90deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
+    border:none;
+    border-radius:50%;
+    margin:0.25rem;
+}
+.audio_btn:hover{
+    background-image: linear-gradient(45deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
+    color:#7f7fff;
+}
+.audio_text {
+    font-size:1.2rem;
+}
+.normal-line-height {line-height:normal;}
+.audio_skip_forward {
+    position: relative;
+    margin-left:0.7rem;
+    color: #fff;
+    font-size:1.4rem;
+    transform:rotate(180deg);
+}
+.audio_skip_backward {
+    position: relative;
+    margin-left:0.6rem;
+    color: #fff;
+    font-size:1.4rem;
+    transform:scale(1,-1);
+}
+.skip_btn_text {
+    position:absolute;
+    font-size:0.8rem;
+    transform:translate(-50%,-100%);
+    color:#7f7fff;
+}
+.audio_wrapper {
+    background: inherit;
+    width:100%;
+    padding:0.25rem 0;
+    border:solid 1px #dbdbff;
+    border-radius:0.25rem;
+    height:auto;
+}
+
+.audio_time_bar_area {
+    width:100%;
+    height:1rem;
+    background:#f2f2f2;
+    cursor:pointer;
+}
+.audio_time_bar{
+    height:1rem;
+    background-image: linear-gradient(90deg, rgba(255, 146, 179, 1), rgba(255, 223, 74, 1));
+    cursor:pointer;
+}
+</code></pre><p><code>javascript</code></p>
+<p><code>off(&quot;click&quot;)</code>と<code>e.stopPropagation();</code>は必要に応じて。</p>
+<pre tabindex="0"><code>
+window.addEventListener(&#34;load&#34; , function (){
+
+    $(&#34;.startAudio&#34;).off(&#34;click&#34;).on(&#34;click&#34;, function(e){
+        e.stopPropagation();
+        const pk = $(this).attr(&#34;id&#34;).replace(&#34;start_button_&#34;,&#34;&#34;);
+        const audio = document.getElementById(&#39;audio_&#39; + pk);
+        audio.currentTime = 0;
+        setAudio(pk,audio);
+    });
+});
+
+function setAudio(pk,audio){
+
+    const wrapper       = document.getElementById(&#39;wrapper_&#39; + pk);
+    wrapper.classList.remove(&#34;d-none&#34;);
+    const startButton   = document.getElementById(&#39;start_button_&#39; + pk);
+    const stopButton    = document.getElementById(&#39;stop_button_&#39; + pk);
+    const pauseButton   = document.getElementById(&#39;pause_button_&#39; + pk);
+    const skipForward   = document.getElementById(&#39;skip_forward_&#39; + pk);
+    const skipBackward  = document.getElementById(&#39;skip_backward_&#39; + pk);
+    const volUpButton   = document.getElementById(&#39;vol_up_btn_&#39; + pk);
+    const volDownButton = document.getElementById(&#39;vol_down_btn_&#39; + pk);
+    const volText       = document.getElementById(&#39;volText_&#39; + pk);
+    const muteBtn       = document.getElementById(&#39;muteBtn_&#39; + pk);
+    const rateUp        = document.getElementById(&#39;rateUp_&#39; + pk);
+    const rateDown      = document.getElementById(&#39;rateDown_&#39; + pk);
+    const audioMinutes  = document.getElementById(&#34;audioMinutes_&#34; + pk);
+    const audioSeconds  = document.getElementById(&#34;audioSeconds_&#34; + pk);
+    const audioRateTxt  = document.getElementById(&#34;audioRate_&#34; + pk);
+
+    var minutes         = document.getElementById(&#34;minutes_&#34; + pk);
+    var seconds         = document.getElementById(&#34;seconds_&#34; + pk);
+    var audioTime       = 0;
+    var audioTimeBar    = document.getElementById(&#34;audio_time_bar_&#34; + pk);
+    var slider          = document.getElementById(&#39;timeSlider_&#39; + pk);
+
+    let paused     = false;
+    let changeRate = false;
+    let interval;
+
+    function pad(val) { return val &gt; 9 ? val : &#34;0&#34; + val; }
+    audioMinutes.innerHTML = pad(Math.floor(audio.duration / 60));
+    audioSeconds.innerHTML = pad(Math.floor(audio.duration % 60));
+
+    startButton.classList.add(&#34;d-none&#34;);
+
+    if( audio.volume === 0){
+        muteBtn.innerHTML = &#39;&lt;i class=&#34;fas fa-volume-mute&#34;&gt;&lt;/i&gt;&#39;;
+    }
+
+    audio.onended = () =&gt; {
+        stopAudio();
+        paused = true;
+        audioCounter();
+    }
+    stopButton.onclick = (e) =&gt; {
+        e.stopPropagation();
+        audio.pause();
+        stopAudio();
+        paused = true;
+        audioCounter();
+    }
+    pauseButton.onclick = (e) =&gt; {
+        e.stopPropagation();
+        if ( paused ) {
+            audio.play();
+            pauseButton.innerHTML = &#39;&lt;i class=&#34;fas fa-pause&#34;&gt;&lt;/i&gt;&#39;;
+            paused = false;
+            audioCounter();
+        } else {
+            audio.pause();
+            pauseButton.innerHTML = &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;;
+            paused = true;
+        }
+    }
+    skipForward.onclick = (e) =&gt; {
+        e.stopPropagation();
+        audioTime += 10;
+        if (audioTime &gt; audio.duration){
+            audioTime = audio.duration;
+        }
+        audio.currentTime = audioTime;
+        setCounter();
+    }
+    skipBackward.onclick = (e) =&gt; {
+        e.stopPropagation();
+        audioTime -= 10;
+        if (audioTime &lt; 0){
+            audioTime = 0;
+        }
+        audio.currentTime = audioTime;
+        setCounter();
+    }
+    volUpButton.onclick = (e) =&gt; {
+        e.stopPropagation();
+        if(audio.volume &lt;= 0.9){
+        audio.volume += 0.1;
+        volText.textContent = &#34;vol : &#34; + Math.round((audio.volume * 10)) / 10;
+        audioText(volText);
+        }else{;}
+    }
+    volDownButton.onclick = (e) =&gt; {
+        e.stopPropagation();
+        if(audio.volume &gt;= 0.1){
+            audio.volume -= 0.1;
+            volText.textContent = &#34;vol : &#34; + Math.round((audio.volume * 10)) / 10;
+            audioText(volText);
+        }else{
+            audio.volume = 0;
+            volText.textContent = &#34;vol : &#34; + 0;
+            audioText(volText);
+        }
+    }
+    muteBtn.onclick = (e) =&gt; {
+        e.stopPropagation();
+        if( audio.muted ){
+            muteBtn.innerHTML = &#39;&lt;i class=&#34;fas fa-volume-up&#34;&gt;&lt;/i&gt;&#39;;
+            audio.muted = false;
+            volText.textContent = &#34;vol : &#34; + Math.round((audio.volume * 10)) / 10;
+            audioText(volText);
+        } else {
+            muteBtn.innerHTML = &#39;&lt;i class=&#34;fas fa-volume-mute&#34;&gt;&lt;/i&gt;&#39;;
+            audio.muted = true;
+            volText.textContent = &#34;vol : &#34; + 0;
+            audioText(volText);
+        }
+    }
+    rateUp.onclick = (e) =&gt; {
+        e.stopPropagation();
+        audio.playbackRate += 0.1;
+        audioRateTxt.textContent = Math.round((audio.playbackRate * 10)) / 10 + &#34;×&#34;;
+        audioText(audioRateTxt);
+    }
+    rateDown.onclick = (e) =&gt; {
+        e.stopPropagation();
+        if(audio.playbackRate &gt; 0.1){
+            audio.playbackRate -= 0.1;
+        }
+        audioRateTxt.textContent = Math.round((audio.playbackRate * 10)) / 10  + &#34;×&#34;;
+        audioText(audioRateTxt);
+    }
+    slider.onclick = (e) =&gt; {
+        e.stopPropagation();
+//        var click_x = e.pageX ;
+//        var client_rect = slider.getBoundingClientRect();
+//        var position_x = client_rect.left + window.pageXOffset;
+//        var x = click_x - position_x ;
+//        audioTime = Math.round( audio.duration * (x / client_rect.width) );
+        audioTime = Math.round( audio.duration * e.offsetX /  slider.clientWidth)
+        audio.currentTime = audioTime;
+        setCounter();
+    }
+
+    function stopAudio() {
+        startButton.classList.remove(&#34;d-none&#34;);
+        minutes.innerHTML = &#34;00&#34;;
+        seconds.innerHTML = &#34;00&#34;;
+        wrapper.classList.add(&#34;d-none&#34;);
+        if( paused ){
+            pauseButton.innerHTML = &#39;&lt;i class=&#34;fas fa-pause&#34;&gt;&lt;/i&gt;&#39;;
+        }
+    }
+    function setAudioTimeBar () {
+        audio.ontimeupdate = () =&gt;{
+            var Width = (audio.currentTime / audio.duration * 100) + &#39;%&#39;;
+            audioTimeBar.style.width = Width;
+            audioTimeBar.classList.add(&#34;audio_time_bar&#34;);
+        }
+    }
+    function audioCounter(){
+        let interval = setInterval( function(){
+            if (!paused){
+                audioTime += audio.playbackRate;
+                setCounter();
+            }else{
+                clearInterval(interval);
+                delete interval;
+            }
+        }, 1000);
+    }
+    function setCounter(){
+        minutes.innerHTML = pad(Math.floor(audioTime / 60));
+        seconds.innerHTML = pad(Math.floor(audioTime % 60));
+    }
+    function audioText(elem){
+        elem.classList.remove(&#34;d-none&#34;);
+        var showText = setTimeout( function(){
+            elem.classList.add(&#34;d-none&#34;);
+            clearTimeout( showText );
+        }, 700);
+    }
+    audioCounter();
+    audio.play();
+    setAudioTimeBar();
+}
+</code></pre><h5 id="参考記事">参考記事</h5>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/floor">〇Math.floor()</a></p>
+<p>与えられた数値以下の最大の整数を返す。</p>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/round">〇Math.round()</a></p>
+<p>引数として与えた数を四捨五入して、もっとも近似の整数を返す。</p>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/parseInt">〇parseInt()</a></p>
+<p>文字列の引数を解析し、指定された基数 (数学的記数法の底) の整数値を返す。(parseIntをMath.floor()の代用として使用してはいけない。）</p>
+<p><a href="https://techplay.jp/column/548">〇setTimeout,setInterval</a></p>
+<p><a href="https://www.delftstack.com/ja/howto/javascript/javascript-count-up-timer/">〇JavaScript カウントアップタイマー</a></p>
+<p><a href="https://teratail.com/questions/329788">〇addeventListener　要素数に応じてイベントが重複する</a></p>
+<h5 id="お薦め">お薦め</h5>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【イーロン・マスク】複数記者のTwitterアカウントを停止し批判殺到　国連も懸念を表明「メディアの声は封じられるべきではなく、これは危険な前例となる」<a href="https://t.co/JODYEgYdfv">https://t.co/JODYEgYdfv</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1604424547159011328?ref_src=twsrc%5Etfw">December 18, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">米上院で政府機器上での『TikTok』使用禁止法案が可決　インディアナ州はTikTokを「羊の皮を被った狼」と批判し提訴<a href="https://t.co/C534HZQOYl">https://t.co/C534HZQOYl</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1604420441031839744?ref_src=twsrc%5Etfw">December 18, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【大阪市】パナソニックコネクトと『スマートシティ』実現に向け、連携協定　市民のプライバシーが中国に筒抜けになる恐れ<a href="https://t.co/Yu5tCAvxTp">https://t.co/Yu5tCAvxTp</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1604098755124682752?ref_src=twsrc%5Etfw">December 17, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">11歳男児が3回目のコロナワクチン接種後に死亡　浴槽に顔が浸かった状態で発見される<a href="https://t.co/3uT7mpbl8l">https://t.co/3uT7mpbl8l</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1604086070009659393?ref_src=twsrc%5Etfw">December 17, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【WHO】中国の「ゼロコロナ政策」による厳しい行動制限は感染拡大防止に効果がなかったとの見解を示す<a href="https://t.co/9HIhevHjZ6">https://t.co/9HIhevHjZ6</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1604058845521006592?ref_src=twsrc%5Etfw">December 17, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【中国人スパイ・岸田総理】米Appleのティム・クックCEOと面会し、iPhoneにマイナンバーカード機能を実装するよう要請　Androidは来年5月から使用開始<a href="https://t.co/PKp5AKEUVj">https://t.co/PKp5AKEUVj</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1604057319188615168?ref_src=twsrc%5Etfw">December 17, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「RAPTさんは、どうしてそんなに深くて深い愛をお持ちなのか？どのようにしてその愛は作られたのか？」をはっきりと悟った瞬間!!（十二弟子・NANAさんの証）<a href="https://t.co/khIUJKjdTg">https://t.co/khIUJKjdTg</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1603714497608183808?ref_src=twsrc%5Etfw">December 16, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RAPTブログに出会って真実の愛を知り、人間にとって力の源は『愛』だと深く悟った体験（十二弟子・KAWATAさんの証）<a href="https://t.co/y2x3UaDhnO">https://t.co/y2x3UaDhnO</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1603341600389677056?ref_src=twsrc%5Etfw">December 15, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/javascript/" rel="tag">Javascript</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Harvest</span>
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/programming/slider/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">【Javascript】横スライダー(forloop内で使用可)</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://progress-advance.com" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/audio-customization/">【Javascript】オーディオタグのカスタマイズ</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/no-mrna-no-spikeprotein2/">コロナワクチンのmRNAやスパイクタンパク質が危険というデマ</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/n-protein-s-protein/">コロナウイルスのNタンパクとSタンパク</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/no-mrna-no-spikeprotein/">スパイクタンパク質は存在しない。免疫染色はインチキの可能性大。</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine-thrombus/">血栓症の原因</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/life/">life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/medical/">medical</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/politics/">Politics</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/programming/">programming</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cocaine/" title="Cocaine">Cocaine (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/covid19/" title="COVID19">COVID19 (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" title="C言語">C言語 (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/defaultdict/" title="defaultdict">defaultdict (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ffmpeg/" title="ffmpeg">ffmpeg (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="Javascript">Javascript (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mediarecorder/" title="MediaRecorder">MediaRecorder (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/modaldialog/" title="modaldialog">modaldialog (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/moviepy/" title="MoviePy">MoviePy (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/netlify/" title="Netlify">Netlify (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/numpy/" title="numpy">numpy (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pandas/" title="pandas">pandas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pillow/" title="Pillow">Pillow (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (17)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rapt-blog/" title="RAPT BLOG">RAPT BLOG (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/testimony/" title="testimony">testimony (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webm/" title="Webm">Webm (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%81%8C%E3%82%93/" title="がん">がん (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A2%E3%83%9E%E3%83%AB%E3%82%AC%E3%83%A0/" title="アマルガム">アマルガム (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF/" title="エナジードリンク">エナジードリンク (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A/" title="コロナ">コロナ (19)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="コロナワクチン">コロナワクチン (24)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BF%E3%82%B3%E3%82%A4%E3%83%9C%E8%83%83%E7%82%8E/" title="タコイボ胃炎">タコイボ胃炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9D%E3%83%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%BC/" title="ポリファーマシー">ポリファーマシー (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9E%E3%83%A9%E3%83%AA%E3%82%A2/" title="マラリア">マラリア (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="ワクチン">ワクチン (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88/" title="ワクチンハラスメント">ワクチンハラスメント (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%8B%95%E8%84%88%E7%A1%AC%E5%8C%96/" title="動脈硬化">動脈硬化 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B0%8F%E5%85%90%E5%A4%9A%E7%B3%BB%E7%B5%B1%E7%82%8E%E7%97%87%E6%80%A7%E7%97%87%E5%80%99%E7%BE%A4/" title="小児多系統炎症性症候群">小児多系統炎症性症候群 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B7%9D%E5%B4%8E%E7%97%85/" title="川崎病">川崎病 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%BF%83%E7%AD%8B%E7%82%8E/" title="心筋炎">心筋炎 (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%83%86%E5%9A%A2%E7%82%8E/" title="急性胆嚢炎">急性胆嚢炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%85%B9%E7%97%87/" title="急性腹症">急性腹症 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A7%E6%84%9F%E6%9F%93%E7%97%87/" title="性感染症">性感染症 (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%B5%90%E6%A0%B8/" title="結核">結核 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%9D%E6%A9%9F%E8%83%BD%E9%9A%9C%E5%AE%B3/" title="肝機能障害">肝機能障害 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%BA%E7%82%8E/" title="肺炎">肺炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%82%E8%B3%AA%E7%95%B0%E5%B8%B8%E7%97%87/" title="脂質異常症">脂質異常症 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%B3%E5%8D%92%E4%B8%AD/" title="脳卒中">脳卒中 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" title="薬害">薬害 (47)</a>
+	</div>
+</div><div style="height:50vh; overflow-y:auto;">
+    
+    <a class="twitter-timeline" href="https://twitter.com/GLnoIrjwa7omiK7?ref_src=twsrc%5Etfw">Tweets by GLnoIrjwa7omiK7</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	<a class="footer__link" href="/privacy/">Privacy</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2022 ImageDiagnosis &amp; Program.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
