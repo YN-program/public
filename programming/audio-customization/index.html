@@ -138,7 +138,17 @@ if (!doNotTrack) {
 		<div class="content post__content clearfix">
 			<p>オーディオタグを Javascript で自作してみました。</p>
 <p>(追記：iosでのボタンの表記が乱れています。またiOSではJSでのボリューム変更ができないようです（<a href="https://mizominton.hatenablog.jp/entry/ios-safari-volume">こちら</a>）。)</p>
-
+<p>（追記：2022/12/22　javascript では、iOSでボリューム変更ができないようなので、ブログ用にjavascriptに以下のコードを追加して、safari, iphone ipadでボリューム操作のボタンを隠しています。web audio APIを使うと出来そうですが、試行錯誤中です。）</p>
+<pre tabindex="0"><code>
+    const ua = navigator.userAgent.toLowerCase();
+    const isSafari = (ua.indexOf(&#39;safari&#39;) &gt; -1) &amp;&amp; (ua.indexOf(&#39;chrome&#39;) == -1);
+    const isiPhone = (ua.indexOf(&#39;iphone&#39;) &gt; -1);
+    const isiPad = (ua.indexOf(&#39;ipad&#39;) &gt; -1);
+    if (isSafari || isiPhone || isiPad){
+        volUpButton.classList.add(&#34;d-none&#34;);
+        volDownButton.classList.add(&#34;d-none&#34;);
+    }
+</code></pre>
 
 <style>
 body { -webkit-text-size-adjust: 100％; }
