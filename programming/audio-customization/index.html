@@ -137,8 +137,11 @@ if (!doNotTrack) {
 		</header>
 		<div class="content post__content clearfix">
 			<p>オーディオタグを Javascript で自作してみました。</p>
-<p>(追記：iosでのボタンの表記が乱れています。またiOSではJSでのボリューム変更ができないようです（<a href="https://mizominton.hatenablog.jp/entry/ios-safari-volume">こちら</a>）。)</p>
-<p>（追記：2022/12/22　javascript では、iOSでボリューム変更ができないようなので、ブログ用にjavascriptに以下のコードを追加して、safari, iphone ipadでボリューム操作のボタンを隠しています。web audio APIを使うと出来そうですが、試行錯誤中です。）</p>
+<p>(追記：iosでのボタンの表記が乱れています。</p>
+<p>またiOSではJSでのボリューム変更ができないようです（<a href="https://mizominton.hatenablog.jp/entry/ios-safari-volume">こちら</a>）。)</p>
+<p>(追記：2022/12/22　javascript では、iOSでボリューム変更ができないようなので、</p>
+<p>ブログ用にjavascriptに以下のコードを追加して、iOSでのボリューム操作のボタンを隠しています。</p>
+<p>web audio APIを使うと出来そうですが、試行錯誤中です。）</p>
 <pre tabindex="0"><code>
     const ua = navigator.userAgent.toLowerCase();
     const isSafari = (ua.indexOf(&#39;safari&#39;) &gt; -1) &amp;&amp; (ua.indexOf(&#39;chrome&#39;) == -1);
@@ -818,7 +821,8 @@ function setAudio(pk,audio){
 <p><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/round">〇Math.round()</a></p>
 <p>引数として与えた数を四捨五入して、もっとも近似の整数を返す。</p>
 <p><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/parseInt">〇parseInt()</a></p>
-<p>文字列の引数を解析し、指定された基数 (数学的記数法の底) の整数値を返す。(parseIntをMath.floor()の代用として使用してはいけない。）</p>
+<p>文字列の引数を解析し、指定された基数 (数学的記数法の底) の整数値を返す。</p>
+<p>parseIntをMath.floor()の代用として使用してはいけない。</p>
 <p><a href="https://techplay.jp/column/548">〇setTimeout,setInterval</a></p>
 <p><a href="https://www.delftstack.com/ja/howto/javascript/javascript-count-up-timer/">〇JavaScript カウントアップタイマー</a></p>
 <p><a href="https://teratail.com/questions/329788">〇addeventListener　要素数に応じてイベントが重複する</a></p>
