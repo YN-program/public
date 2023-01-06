@@ -131,6 +131,192 @@ if (!doNotTrack) {
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
+			<a href="/programming/input-range/" rel="bookmark">
+			【CSS】input type=&#39;range&#39; のカスタマイズ
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-04T14:56:00&#43;09:00">January 04, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>input rangeを自作しました。</p>
+<p><code>::-webkit-slider-thumb</code>は非推奨のようなので、スライダーの&quot;ポチ&quot;も自作。</p>
+
+<meta name="viewport" content="width=device-width">
+
+<style>
+
+.range_wrapper {
+  width:70%;
+  position:relative;
+  margin:20px;
+}
+.sub_wrapper {
+  display: block;
+  width: 100%;
+  height:50px;
+  padding: 0px;
+  text-decoration: none;
+  background: ;
+
+}
+.range_balloon {
+  position: absolute; 
+  display: none;
+  text-align:center;
+  padding: 0 2px; 
+  background-color: rgba(82, 82, 82, 0.5);
+  color:#fff;
+  width:40px;
+  left : 47%;
+  bottom : 100%;
+  margin-bottom : 5px;
+  font-size:;
+  border-radius:7px;
+}
+.range_wrapper:hover .range_balloon {
+  display:block;
+}
+.range_thumb {
+  position: absolute; 
+  display: block;
+  text-align:center;
+  background-color: #c1ffea;
+  width:25px;
+  height:25px;
+  left : 50%;
+  top : -3%;
+  border-radius:50%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  cursor:pointer;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  height: 14px;
+  width: 100%;
+  border: solid 2px #C6FFFF;
+  border-radius:10px;
+  content:"";
+  padding:0;
+}
+
+
+</style>
+&nbsp;
+<div class="range_wrapper">
+  <span id="range_balloon" class="range_balloon"></span>
+  <div id="sub_wrapper" class="sub_wrapper">
+    <span id="range_thumb" class="range_thumb"></span>
+    <input id="range" type="range" value="50" min="0" max="100">
+  </div>
+</div>
+
+<script>
+
+const range = document.getElementById("range"),
+      text  = document.getElementById("range_balloon"),
+      thumb = document.getElementById("range_thumb"),
+      sub_wrapper = document.getElementById("sub_wrapper");
+let value;
+let mousePosition;
+let x = 0;
+let rect;
+let mouseFlag = false;
+
+const rate = Math.round(range.clientWidth / ( range.clientWidth + thumb.clientWidth) * 100) / 100;
+
+let start = (e) =>{
+  e.preventDefault();
+  mouseFlag = true;
+  rect = range.getBoundingClientRect();
+  if (e.touches && e.touches[0]) {
+    x = (e.touches[0].clientX - window.pageXOffset - rect.left) 
+  } else if (e.clientX && e.clientY) {
+    x =  (e.clientX - window.pageXOffset - rect.left)  //e.offsetX;
+  }
+  range.value = Math.round( x / range.clientWidth * 100 );
+  range.style.background = `linear-gradient(to right, #ffffe0 0%, #ffffb2 ${range.value}%, #fff ${range.value}%, #fff 100%)`
+  thumb.style.left = (range.value - 0.5) * rate + "%";
+}
+
+let move = (e) => {  
+  e.preventDefault();
+  rect = range.getBoundingClientRect();
+  if (e.touches && e.touches[0]) {
+    x = (e.touches[0].clientX - window.pageXOffset - rect.left) 
+  } else if (e.clientX && e.clientY) {
+    x = (e.clientX - window.pageXOffset - rect.left)   //e.offsetX;
+  }
+  if ( x < 0 ){
+    mousePosition = 0
+  } else if ( x > range.clientWidth){
+    mousePosition = 100
+  } else {
+    mousePosition = Math.round(x / range.clientWidth * 100);
+  }
+  text.style.left = mousePosition + "%"
+  text.innerText  = mousePosition;
+  
+  range.style.background = `linear-gradient(to right, #ffffe0 0%, #ffffb2 ${range.value}%, #ffffb2 ${mousePosition}%, #fff ${mousePosition}%, #fff 100%)`
+  if (mouseFlag){
+    range.value = mousePosition;
+    thumb.style.left = (mousePosition - 0.5) * rate + "%";
+  }
+}
+
+let end = (e) => {
+  e.preventDefault();
+  mouseFlag = false;
+  range.style.background = `linear-gradient(to right, #ffffe0 0%, #ffffb2 ${range.value}%, #fff ${range.value}%, #fff 100%)`
+}
+
+let range_input = (e) => {
+  e.preventDefault();
+  mouseFlag = false;
+  range.style.background = `linear-gradient(to right, #ffffe0 0%, #ffffb2 ${range.value}%, #fff ${range.value}%, #fff 100%)`
+  text.style.left  = range.value + "%";
+  text.innerText   = range.value;
+  thumb.style.left = (range.value - 0.5) * rate + "%";
+}
+
+sub_wrapper.ontouchstart =
+sub_wrapper.onmousedown  = start;
+
+sub_wrapper.onmouseenter = 
+sub_wrapper.ontouchmove  =
+sub_wrapper.onmousemove  = move; 
+
+sub_wrapper.ontouchend    =
+sub_wrapper.ontouchcancel =
+sub_wrapper.ontouchend    =
+sub_wrapper.ontouchcancel =
+sub_wrapper.onmouseleave  = end;
+
+sub_wrapper.onclick   =
+sub_wrapper.onmouseup =
+range.oninput =
+range.onchange = range_input;
+
+range.style.background = `linear-gradient(to right, #ffffe0 0%, #ffffb2 ${range.value}%, #fff ${range.value}%, #fff 100%)`
+thumb.style.left = (range.value - 0.5) * rate + "%";
+
+
+</script>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/programming/input-range/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
 			<a href="/programming/audio-customization/" rel="bookmark">
 			【Javascript】オーディオタグのカスタマイズ
 			</a>
@@ -335,26 +521,6 @@ if (!doNotTrack) {
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/programming/dropna/">Read more…</a>
 	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/programming/monthly-data-analysis/" rel="bookmark">
-			【Python】月初め、月末の取得方法　ー訂正ー
-			</a>
-		</h2>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-09-13T16:51:45&#43;09:00">September 13, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>月間データ分析をするための、月初めと月末の取得方法。</p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/programming/monthly-data-analysis/">Read more…</a>
-	</div>
 </article>
 </main>
 
@@ -378,11 +544,11 @@ if (!doNotTrack) {
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/input-range/">【CSS】input type=&#39;range&#39; のカスタマイズ</a></li>
 			<li class="widget__item"><a class="widget__link" href="/life/testimony7/">神様の見えざる手</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine-neuroleptic-malignant-syndrome/">コロナワクチン接種後の悪性症候群</a></li>
 			<li class="widget__item"><a class="widget__link" href="/life/christmas/">Christmas だからこそ</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/vaccine-hyperthermia/">ワクチン接種後の高体温と覚醒剤</a></li>
-			<li class="widget__item"><a class="widget__link" href="/programming/audio-customization/">【Javascript】オーディオタグのカスタマイズ</a></li>
 		</ul>
 	</div>
 </div>
@@ -407,6 +573,7 @@ if (!doNotTrack) {
 		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cocaine/" title="Cocaine">Cocaine (8)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/covid19/" title="COVID19">COVID19 (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" title="C言語">C言語 (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/defaultdict/" title="defaultdict">defaultdict (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (10)</a>
@@ -462,7 +629,7 @@ if (!doNotTrack) {
 	<a class="footer__link" href="/privacy/">Privacy</a>
 </div>
 		<div class="footer__copyright">
-			&copy; 2022 ImageDiagnosis &amp; Program.
+			&copy; 2023 ImageDiagnosis &amp; Program.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>
