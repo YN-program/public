@@ -185,7 +185,7 @@ if (!doNotTrack) {
   padding: 0px;
   text-decoration: none;
   background: ;
-
+  touch-action:pan-x;
 }
 .range_balloon {
   position: absolute; 
@@ -201,7 +201,8 @@ if (!doNotTrack) {
   font-size:;
   border-radius:7px;
 }
-.range_wrapper:hover .range_balloon {
+.range_wrapper:hover .range_balloon,
+.sub_wrapper:active .range_balloon {
   display:block;
 }
 .range_thumb {
@@ -209,10 +210,10 @@ if (!doNotTrack) {
   display: block;
   text-align:center;
   background-color: #c1ffea;
-  width:25px;
-  height:25px;
+  width:20px;
+  height:20px;
   left : 50%;
-  top : -3%;
+  top : 4%;
   border-radius:50%;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   cursor:pointer;
@@ -295,6 +296,7 @@ let start = (e) =>{
   range.value = Math.round( x / range.clientWidth * 100 );
   range.style.background = `linear-gradient(to right, #ffffe0 0%, #ffffb2 ${range.value}%, #fff ${range.value}%, #fff 100%)`
   thumb.style.left = (range.value - 0.5) * rate + "%";
+  text.innerText  = range.value;
 }
 
 let move = (e) => {  
