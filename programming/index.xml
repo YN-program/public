@@ -6,7 +6,16 @@
     <description>Recent content in Programmings on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 04 Jan 2023 14:56:00 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Jan 2023 11:22:46 +0900</lastBuildDate><atom:link href="https://progress-advance.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【CSS】要素幅、高さをコントロールするプロパティのメモ</title>
+      <link>https://progress-advance.com/programming/vw-vh-vmin-vmax/</link>
+      <pubDate>Sun, 08 Jan 2023 11:22:46 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/vw-vh-vmin-vmax/</guid>
+      <description>&lt;p&gt;&lt;code&gt;max-content&lt;/code&gt;, &lt;code&gt;min-content&lt;/code&gt;, &lt;code&gt;fit-content&lt;/code&gt;, &lt;code&gt;min-width&lt;/code&gt;, &lt;code&gt;max-width&lt;/code&gt;, &lt;code&gt;min-height&lt;/code&gt;, &lt;code&gt;max-height&lt;/code&gt;, &lt;code&gt;vw&lt;/code&gt;, &lt;code&gt;vh&lt;/code&gt;, &lt;code&gt;vmax&lt;/code&gt;, &lt;code&gt;vmin、&lt;/code&gt;aspect-ratio`についてのメモです。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【CSS】input type=&#39;range&#39; のカスタマイズ</title>
       <link>https://progress-advance.com/programming/input-range/</link>
@@ -140,6 +149,7 @@ let start = (e) =&gt;{
   } else if (e.clientX &amp;&amp; e.clientY) {
     x =  (e.clientX - window.pageXOffset - rect.left)  //e.offsetX;
   }
+  
   range.value = Math.round( x / range.clientWidth * 100 );
   range.style.background = `linear-gradient(to right, #ffffe0 0%, #ffffb2 ${range.value}%, #fff ${range.value}%, #fff 100%)`
   thumb.style.left = (range.value - 0.5) * rate + &#34;%&#34;;

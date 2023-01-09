@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>【CSS】要素幅、高さをコントロールするプロパティのメモ - ImageDiagnosis &amp; Program</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="【CSS】要素幅、高さをコントロールするプロパティのメモ" />
+<meta property="og:description" content="max-content, min-content, fit-content, min-width, max-width, min-height, max-height, vw, vh, vmax, vmin、aspect-ratio`についてのメモです。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://progress-advance.com/programming/vw-vh-vmin-vmax/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2023-01-08T11:22:46+09:00" />
+<meta property="article:modified_time" content="2023-01-08T11:22:46+09:00" />
+
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【CSS】要素幅、高さをコントロールするプロパティのメモ"/>
+<meta name="twitter:description" content="max-content, min-content, fit-content, min-width, max-width, min-height, max-height, vw, vh, vmax, vmin、aspect-ratio`についてのメモです。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120164090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+	
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M5T5SG5');</script>
+    
+
+
+</head>
+<body class="body">
+	
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5T5SG5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+	
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="ImageDiagnosis &amp; Programming" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">ImageDiagnosis &amp; Programming</div>
+					<div class="logo__tagline">学んだことをひたすら書くブログ</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">ホーム</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/programming/">
+				
+				<span class="menu__text">プログラミング</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/medical/">
+				
+				<span class="menu__text">医療</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/life/">
+				
+				<span class="menu__text">Life</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/politics/">
+				
+				<span class="menu__text">政治経済</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about_us/">
+				
+				<span class="menu__text">About us</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">【CSS】要素幅、高さをコントロールするプロパティのメモ</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-08T11:22:46&#43;09:00">January 08, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p><code>max-content</code>, <code>min-content</code>, <code>fit-content</code>, <code>min-width</code>, <code>max-width</code>, <code>min-height</code>, <code>max-height</code>, <code>vw</code>, <code>vh</code>, <code>vmax</code>, <code>vmin、</code>aspect-ratio`についてのメモです。</p>
+<p><code>max-content</code></p>
+<ul>
+<li>コンテンツの本質的な最大幅または最大高さを表す。テキストコンテンツの場合、コンテンツがオーバーフローを起こしても折り返されない。</li>
+<li><code>margin:0 auto;</code>で要素を中央寄せできる。</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-content">https://developer.mozilla.org/en-US/docs/Web/CSS/max-content</a></p>
+<p>
+
+<style>
+#blog-container {
+  background: #f7f7f7;
+  padding: 1rem;
+  width: 20rem;
+}
+
+.blog-item {
+  width: max-content;
+  background: lightgray;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  /* margin:0 auto; */
+  border-bottom:2px solid black;
+}
+
+#blog2-container {
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  grid-gap: 0.5rem;
+  box-sizing: border-box;
+  height: 10rem;
+  width: 100%;
+  background: #f7f7f7;
+  padding: 1rem;
+}
+
+#blog2-container > div {
+  background: lightgray;
+  padding: 0.5rem;
+}
+
+</style>
+
+<div id="blog-container">
+  <div class="blog-item">要素</div>
+  <div class="blog-item">
+    widthにmax-contentを指定しているので、テキストが折り返されずに親要素からはみ出す。
+  </div>
+</div>
+
+<br>
+<div id="blog2-container">
+  <div>要素</div>
+  <div>長いテキスト。長いテキスト。</div>
+  <div>フレキシブルな要素</div>
+</div>
+
+
+
+ </p>
+<pre tabindex="0"><code>&lt;style&gt;
+#blog-container {
+  background: #f7f7f7;
+  padding: 1rem;
+  width: 20rem;
+}
+
+ /* margin:0 auto; で要素が中央にくる。*/
+ /* borderは要素幅になる。*/
+.blog-item {
+  width: max-content;
+  background: lightgray;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+   /* margin:0 auto; */
+  border-bottom:2px solid black;
+}
+
+#blog2-container {
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  grid-gap: 0.5rem;
+  box-sizing: border-box;
+  height: 10rem;
+  width: 100%;
+  background: #f7f7f7;
+  padding: 1rem;
+}
+
+#blog2-container &gt; div {
+  background: lightgray;
+  padding: 0.5rem;
+}
+
+&lt;/style&gt;
+
+&lt;div id=&#34;blog-container&#34;&gt;
+  &lt;div class=&#34;blog-item&#34;&gt;要素&lt;/div&gt;
+  &lt;div class=&#34;blog-item&#34;&gt;
+    widthにmax-contentを指定しているので、テキストが折り返されずに親要素からはみ出す。
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;div id=&#34;blog2-container&#34;&gt;
+  &lt;div&gt;要素&lt;/div&gt;
+  &lt;div&gt;長いテキスト。長いテキスト。&lt;/div&gt;
+  &lt;div&gt;フレキシブルな要素&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>grid-template-columnsについては<a href="https://www.w3schools.com/cssref/pr_grid-template-columns.php">こちら</a></p>
+<p><code>min-content</code></p>
+<ul>
+<li>コンテンツの内在的な最小幅を表す。テキストでは最も長い単語の幅と等しくなる。</li>
+</ul>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/min-content">https://developer.mozilla.org/ja/docs/Web/CSS/min-content</a></p>
+<p>
+
+<style>
+
+#min-container {
+  background: #f7f7f7;
+  padding: 1rem;
+  width: 20rem;
+}
+.min-item {
+  width: min-content;
+  background: lightgray;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#min2-container {
+  display: grid;
+  grid-template-columns: min-content min-content min-content 1fr;
+  grid-gap: 0.5rem;
+  box-sizing: border-box;
+  height: 10rem;
+  width: 100%;
+  background: #f7f7f7;
+  padding: 1rem;
+}
+
+#min2-container > div {
+  background: lightgray;
+  padding: 0.5rem;
+}
+
+</style>
+<div id="min-container">
+  <div class="min-item">要素</div>
+  <div class="min-item">widthにmin-contentを指定している。</div>
+</div>
+
+<br>
+<div id="min2-container">
+  <div>要素</div>
+  <div>アイテム</div>
+  <div>abcdefghijklmn</div>
+  <div>grid-template-columns: min-content min-content min-content 1fr; 高さが親要素をはみ出す可能性あり。</div>
+</div>
+
+
+
+ </p>
+<pre tabindex="0"><code>
+&lt;style&gt;
+
+#min-container {
+  background: #f7f7f7;
+  padding: 1rem;
+  width: 20rem;
+}
+.min-item {
+  width: min-content;
+  background: lightgray;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#min2-container {
+  display: grid;
+  grid-template-columns: min-content min-content min-content 1fr;
+  grid-gap: 0.5rem;
+  box-sizing: border-box;
+  height: 10rem;
+  width: 100%;
+  background: #f7f7f7;
+  padding: 1rem;
+}
+
+#min2-container &gt; div {
+  background: lightgray;
+  padding: 0.5rem;
+}
+
+&lt;/style&gt;
+&lt;div id=&#34;min-container&#34;&gt;
+  &lt;div class=&#34;min-item&#34;&gt;要素&lt;/div&gt;
+  &lt;div class=&#34;min-item&#34;&gt;widthにmin-contentを指定している。&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;div id=&#34;min2-container&#34;&gt;
+  &lt;div&gt;要素&lt;/div&gt;
+  &lt;div&gt;アイテム&lt;/div&gt;
+  &lt;div&gt;abcdefghijklmn&lt;/div&gt;
+  &lt;div&gt;grid-template-columns: min-content min-content min-content 1fr; 高さが親要素をはみ出す可能性あり。&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p><code>fit-content</code></p>
+<ul>
+<li>画面の幅に応じて、max-content, min-contentを適用したい場合は、fit-contentを使用する。</li>
+</ul>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/fit-content">https://developer.mozilla.org/ja/docs/Web/CSS/fit-content</a></p>
+
+<style>
+.fit-container {
+  padding: 1rem;
+  width: 100%;
+  background:#f7f7f7
+}
+
+.fit-item {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: lightgray;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+</style>
+
+<div class="fit-container">
+  <div class="fit-item">要素</div>
+  <div class="fit-item">長いテキスト</div>
+  <div class="fit-item">fit-contentを適用。画面幅が狭くなると、テキストは折り返される。</div>
+</div>
+
+
+<pre tabindex="0"><code>&lt;style&gt;
+.fit-container {
+  padding: 1rem;
+  width: 100%;
+  background:#f7f7f7
+}
+
+.fit-item {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: lightgray;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+&lt;/style&gt;
+
+&lt;div class=&#34;fit-container&#34;&gt;
+  &lt;div class=&#34;fit-item&#34;&gt;要素&lt;/div&gt;
+  &lt;div class=&#34;fit-item&#34;&gt;長いテキスト&lt;/div&gt;
+  &lt;div class=&#34;fit-item&#34;&gt;fit-contentを適用。テキストが折り返されることを期待して、無駄に長いテキストを書いています。&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><hr>
+<p><code>vw</code>: viewport widthの略。1vw はviewportの幅の1%。viewportの幅は1000pxであれば、1vwは10pxになる。</p>
+<p><code>vh</code>: viewport heightの略。1vh はviewportの高さの1%。</p>
+<ul>
+<li>メモ：height にvwを指定することで、要素の比率を変えずにサイズを変化させることができる。</li>
+</ul>
+<p><code>vmin</code>: viewport minimumの略。viewportの高さと幅の小さいほうのサイズに基づく。幅＞高さの場合、1vminはviewportの高さの1%に、幅＜高さの場合、1vminはviewportの幅の1%に相当する。
+<code>height: 80vmin;</code>のように指定する。</p>
+<p><code>vmax</code>: viewport maximumの略。viewportの高さと幅の大きいほうのサイズに基づく。幅＞高さの場合、1vminはviewportの幅の1%に、幅＜高さの場合、1vminはviewportの高さの1%に相当する。
+<code>height: 80vmax;</code>のように指定する。</p>
+<p>viewportは、webサイトの表示領域のこと。</p>
+<hr>
+<p><code>min-width</code></p>
+<ul>
+<li>要素の最小幅を定義する。</li>
+<li>コンテンツが最小幅より小さい場合、最小幅が適用される。</li>
+<li>コンテンツが最小幅より大きい場合、min-widthプロパティは影響を与えない。</li>
+<li>widthプロパティの値がmin-widthより小さくなるのを防ぐためのもの。</li>
+</ul>
+<p><code>max-width</code></p>
+<ul>
+<li>要素の最大幅を定義する。</li>
+<li>コンテンツが最大幅より大きい場合、要素の高さが自動的に変更されます。</li>
+<li>コンテンツが最大幅より小さい場合、max-width プロパティは何の効果もない。</li>
+<li>max-widthプロパティの値は、widthプロパティより優先される。</li>
+</ul>
+<p><code>min-height</code></p>
+<ul>
+<li>要素の高さの最小値を定義する。</li>
+<li>コンテンツが最小の高さより小さい場合、最小の高さが適用される。</li>
+<li>コンテンツが最小の高さより大きい場合、min-height プロパティは影響を及ぼさない。</li>
+<li>heightプロパティの値がmin-heightより小さくなるのを防ぐためのもの。</li>
+</ul>
+<p><code>max-height</code></p>
+<ul>
+<li>要素の最大高さを定義する</li>
+<li>コンテンツが最大高さより大きい場合、コンテンツはオーバーフローする。コンテナが溢れた内容をどのように処理するかは、overflow プロパティで定義される。</li>
+<li>コンテンツが最大高さより小さい場合、max-height プロパティは何の影響も及ぼさない。</li>
+<li>max-heightプロパティの値は、heightプロパティより優先されます。</li>
+</ul>
+<p><code>aspect-ratio</code></p>
+<ul>
+<li>要素の幅と高さの比率を指定することができる。</li>
+<li>要素に<code>width</code>が指定されていると、高さは指定されたアスペクト比に従う。</li>
+</ul>
+<pre tabindex="0"><code>aspect-ratio:auto;
+
+aspect-ratio: 1/1;
+
+aspect-ratio:16/9;
+
+aspect-ratio:0.5;
+
+aspect-ratio:2;
+</code></pre><h5 id="お薦め">お薦め</h5>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/_Rdwgjp8W88" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【岸田総理】コロナの恐怖を煽り、ワクチン接種を推奨する一方、10日から「全国旅行支援」の再開を表明　矛盾した政府の方針に批判殺到<a href="https://t.co/2mLLGWxMgV">https://t.co/2mLLGWxMgV</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1612058290216923137?ref_src=twsrc%5Etfw">January 8, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【神戸市議会議員・上畠寛弘】「国民の税金をなぜ外国人の方々に使わなければならないのか」と訴え　外国人への生活保護費が神戸市だけで59億円、全国で毎年1200億円支給<a href="https://t.co/sSX5GiBqxF">https://t.co/sSX5GiBqxF</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1612055127581683712?ref_src=twsrc%5Etfw">January 8, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">賛美歌を通して、神様の愛の教育を毎日24時間受けられている祝福を深く実感した感動的な体験！（十二弟子・NANAさんの証）<a href="https://t.co/IFArtBtYnh">https://t.co/IFArtBtYnh</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1612042758218473473?ref_src=twsrc%5Etfw">January 8, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">日本の実質賃金が3.8%減、8年6ヶ月ぶりの下落率　最低賃金はオーストラリアの半分に<a href="https://t.co/ZnSKwl2S0W">https://t.co/ZnSKwl2S0W</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1612031051223945218?ref_src=twsrc%5Etfw">January 8, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">（連載マンガ）成約のあの日へ – To The Completed Testament Age 「第5話・胸騒ぎ」<a href="https://t.co/7BowfYiXjh">https://t.co/7BowfYiXjh</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1611690904271880192?ref_src=twsrc%5Etfw">January 7, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">神様は義人が祈ったことを全て聞いてくださり、必ず叶えてくださる!!　料理を通して深く悟った体験（十二弟子・KAWATAさんの証）<a href="https://t.co/GihD2xiPkO">https://t.co/GihD2xiPkO</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1611680868350980097?ref_src=twsrc%5Etfw">January 7, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/css/" rel="tag">CSS</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Harvest</span>
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/programming/input-range/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">【CSS】input type=&#39;range&#39; のカスタマイズ</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://progress-advance.com" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/vw-vh-vmin-vmax/">【CSS】要素幅、高さをコントロールするプロパティのメモ</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/input-range/">【CSS】input type=&#39;range&#39; のカスタマイズ</a></li>
+			<li class="widget__item"><a class="widget__link" href="/life/testimony7/">神様の見えざる手</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine-neuroleptic-malignant-syndrome/">コロナワクチン接種後の悪性症候群</a></li>
+			<li class="widget__item"><a class="widget__link" href="/life/christmas/">Christmas だからこそ</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/life/">life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/medical/">medical</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/politics/">Politics</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/programming/">programming</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cocaine/" title="Cocaine">Cocaine (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/covid19/" title="COVID19">COVID19 (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" title="C言語">C言語 (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/defaultdict/" title="defaultdict">defaultdict (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ffmpeg/" title="ffmpeg">ffmpeg (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="Javascript">Javascript (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mediarecorder/" title="MediaRecorder">MediaRecorder (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/modaldialog/" title="modaldialog">modaldialog (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/moviepy/" title="MoviePy">MoviePy (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/netlify/" title="Netlify">Netlify (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/numpy/" title="numpy">numpy (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pandas/" title="pandas">pandas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pillow/" title="Pillow">Pillow (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (17)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rapt-blog/" title="RAPT BLOG">RAPT BLOG (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/testimony/" title="testimony">testimony (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webm/" title="Webm">Webm (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%81%8C%E3%82%93/" title="がん">がん (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A2%E3%83%9E%E3%83%AB%E3%82%AC%E3%83%A0/" title="アマルガム">アマルガム (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF/" title="エナジードリンク">エナジードリンク (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A/" title="コロナ">コロナ (19)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="コロナワクチン">コロナワクチン (26)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BF%E3%82%B3%E3%82%A4%E3%83%9C%E8%83%83%E7%82%8E/" title="タコイボ胃炎">タコイボ胃炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9D%E3%83%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%BC/" title="ポリファーマシー">ポリファーマシー (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9E%E3%83%A9%E3%83%AA%E3%82%A2/" title="マラリア">マラリア (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="ワクチン">ワクチン (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88/" title="ワクチンハラスメント">ワクチンハラスメント (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%8B%95%E8%84%88%E7%A1%AC%E5%8C%96/" title="動脈硬化">動脈硬化 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B0%8F%E5%85%90%E5%A4%9A%E7%B3%BB%E7%B5%B1%E7%82%8E%E7%97%87%E6%80%A7%E7%97%87%E5%80%99%E7%BE%A4/" title="小児多系統炎症性症候群">小児多系統炎症性症候群 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B7%9D%E5%B4%8E%E7%97%85/" title="川崎病">川崎病 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%BF%83%E7%AD%8B%E7%82%8E/" title="心筋炎">心筋炎 (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%83%86%E5%9A%A2%E7%82%8E/" title="急性胆嚢炎">急性胆嚢炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%85%B9%E7%97%87/" title="急性腹症">急性腹症 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A7%E6%84%9F%E6%9F%93%E7%97%87/" title="性感染症">性感染症 (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%B5%90%E6%A0%B8/" title="結核">結核 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%9D%E6%A9%9F%E8%83%BD%E9%9A%9C%E5%AE%B3/" title="肝機能障害">肝機能障害 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%BA%E7%82%8E/" title="肺炎">肺炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%82%E8%B3%AA%E7%95%B0%E5%B8%B8%E7%97%87/" title="脂質異常症">脂質異常症 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%B3%E5%8D%92%E4%B8%AD/" title="脳卒中">脳卒中 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" title="薬害">薬害 (49)</a>
+	</div>
+</div><div style="height:50vh; overflow-y:auto;">
+    
+    <a class="twitter-timeline" href="https://twitter.com/GLnoIrjwa7omiK7?ref_src=twsrc%5Etfw">Tweets by GLnoIrjwa7omiK7</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	<a class="footer__link" href="/privacy/">Privacy</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2023 ImageDiagnosis &amp; Program.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
