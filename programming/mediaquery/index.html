@@ -4,22 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>【Python】辞書の重複した値のキーの数を取得する - ImageDiagnosis &amp; Program</title>
+	<title>【CSS】メディアクエリ orientation,hover, etc. - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="【Python】辞書の重複した値のキーの数を取得する" />
-<meta property="og:description" content="例えば、次のようなモデルがあったときに、毎日いくつのデータが作られたのか知りたい。
-そんな時に、defaultdictが便利だった。" />
+		<meta property="og:title" content="【CSS】メディアクエリ orientation,hover, etc." />
+<meta property="og:description" content="メディアクエリは、画面サイズや画面解像度などの閲覧状況に応じて、cssを切り替えることができる。便利なところをメモ。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/python-defaultdict/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-08-13T10:34:44+09:00" />
-<meta property="article:modified_time" content="2022-08-13T10:34:44+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/mediaquery/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2023-01-10T09:52:59+09:00" />
+<meta property="article:modified_time" content="2023-01-10T09:52:59+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="【Python】辞書の重複した値のキーの数を取得する"/>
-<meta name="twitter:description" content="例えば、次のようなモデルがあったときに、毎日いくつのデータが作られたのか知りたい。
-そんな時に、defaultdictが便利だった。"/>
+<meta name="twitter:title" content="【CSS】メディアクエリ orientation,hover, etc."/>
+<meta name="twitter:description" content="メディアクエリは、画面サイズや画面解像度などの閲覧状況に応じて、cssを切り替えることができる。便利なところをメモ。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,82 +128,198 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">【Python】辞書の重複した値のキーの数を取得する</h1>
+			<h1 class="post__title">【CSS】メディアクエリ orientation,hover, etc.</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-08-13T10:34:44&#43;09:00">August 13, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-10T09:52:59&#43;09:00">January 10, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
 	</span>
 </div></div>
 		</header>
+		
+		
 		<div class="content post__content clearfix">
-			<p>例えば、次のようなモデルがあったときに、毎日いくつのデータが作られたのか知りたい。</p>
-<p>そんな時に、<code>defaultdict</code>が便利だった。</p>
-<pre tabindex="0"><code>class Test(models.Model):
+			<p>メディアクエリは、画面サイズや画面解像度などの閲覧状況に応じて、cssを切り替えることができる。便利なところをメモ。</p>
+<p><code>@media</code>で指定した条件のときに、cssを適用することができる。</p>
+<p>〇使用例</p>
+<pre tabindex="0"><code>/* 画面サイズ（横幅）が768px以上の場合に適用される */
+@media screen and (min-width: 768px) {
+   .sample { width: 100px; }
+}
 
-    class Meta:
-        db_table    = &#34;test&#34;
+/* 画面サイズ（横幅）が769～1024pxの場合に適用される */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+   .sample { width: 200px; }
+}
 
-    id   = models.UUIDField( default=uuid.uuid4, primary_key=True, editable=False )
-    dt   = models.DateTimeField(verbose_name=&#34;&#34;,default=timezone.now)
-    test = models.CharField(verbose_name=&#34;&#34;, max_length=50)
-</code></pre><pre tabindex="0"><code>from collections import defaultdict
+@media screen and (orientation: landscape) {
+   .sample { background: gray; }
+}
 
-test = Test.objects.all()
+@media screen and (orientation: portrait) {
+   .sample { background: lightgray; }
+}
+</code></pre><hr>
+<p><code>orientation</code>に指定できる値は、<code>landscape</code>と<code>portrait</code>。</p>
+<p><code>portrait</code>:デバイスのviewportの高さが横幅よりも大きいか等しい。</p>
+<p><code>landscape</code>:デバイスのviewportの横幅が高さよりも大きい。</p>
 
-dic = { t:t.dt.date() for t in test }
+<style>
+  .sample{
+    background:lightgray;
+    width:100px;
+    height:100px;
+  }
+  @media screen and (orientation: landscape) {
+    .sample{
+      background:orangered;
+    }
+  }
+</style>
 
-d = defaultdict(list)
-for k, v in dic.items():
-    d[v].append(k)
+<div class=sample>画面幅が高さよりも大きいと赤色になる</div>
 
-//リストの場合
-result_list = [ (k, len(v)) for k,v in d.items()]
-print(result_list)
 
-//結果 [(datetime.date(2022, 8, 13), 1), (datetime.date(2022, 8, 7), 4), (datetime.date(2022, 8, 6), 3)]
+<pre tabindex="0"><code>&lt;style&gt;
+  .sample{
+    background:lightgray;
+    width:100px;
+    height:100px;
+  }
+  @media screen and (orientation: landscape) {
+    .sample{
+      background:orangered;
+    }
+  }
+&lt;/style&gt;
 
-//辞書の場合
-result_dict = { k:len(v) for k, v in d.items() }
-print(result_dict)
+&lt;div class=sample&gt;&lt;/div&gt;
+</code></pre><hr>
 
-//結果 {datetime.date(2022, 8, 13): 1, datetime.date(2022, 8, 7): 4, datetime.date(2022, 8, 6): 3}
-</code></pre><h5 id="参考記事">参考記事</h5>
-<p><a href="https://teratail.com/questions/196794">python 辞書の重複した値のキーを取り出す</a></p>
-<p><a href="https://qiita.com/xza/items/72a1b07fcf64d1f4bdb7">Python defaultdict の使い方</a></p>
-<h5 id="お薦め動画">お薦め動画</h5>
+<style>
+  .sample2{
+    background:lightgray;
+    width:300px;
+    height:50px;
+  }
+
+  /*
+  css level4　（最新のブラウザではサポートされている） では、@media (min-width: 768px) and (max-width: 1024px) の代わりに
+  以下のように記載できる。768～1024pxの間だけ、赤色になる。
+  */
+
+  @media (768px <= width <= 1024px) {
+    .sample2{
+      background:orangered;
+    }
+  }
+</style>
+
+<div class=sample2>
+ @media (768px <= width <= 1024px)
+ <br>768～1024pxの間だけ、赤色になる。
+</div>
+
+<pre tabindex="0"><code>&lt;style&gt;
+  .sample2{
+    background:lightgray;
+    width:300px;
+    height:50px;
+  }
+
+  /*
+  css level4　（最新のブラウザではサポートされている） では、
+  @media (min-width: 768px) and (max-width: 1024px) の代わりに
+  以下のように記載できる。768～1024pxの間だけ、赤色になる。
+  */
+
+  @media (768px &lt;= width &lt;= 1024px) {
+    .sample2{
+      background:orangered;
+    }
+  }
+&lt;/style&gt;
+
+&lt;div class=sample2&gt;&lt;/div&gt;
+</code></pre><hr>
+<p>〇ホバーができるデバイスだけホバーをさせる <code>@madia(hover:hover)</code></p>
+
+
+<style>
+.sample3 {
+  background: lightgray;
+  color: black;
+}
+.sample3:hover {
+  background: yellow;
+}
+@media (hover: hover) {
+  .sample3:hover {
+    color: white;
+    background: black;
+  }
+}
+</style>
+
+<div class="sample3">ホバーができるデバイスでは、ホバー時に背景が黒になる。</div>
+
+
+<pre tabindex="0"><code>&lt;style&gt;
+.sample3 {
+  background: lightgray;
+  color: black;
+}
+.sample3:hover {
+  background: yellow;
+}
+
+@media (hover: hover) {
+  .sample3:hover {
+    color: white;
+    background: black;
+  }
+}
+
+&lt;/style&gt;
+
+&lt;div class=&#34;sample3&#34;&gt;ホバーができるデバイスでは、ホバー時に背景が黒になる。&lt;/div&gt;
+</code></pre><h5 id="参考">参考</h5>
 <p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/-6BMQT_wmSc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/oUNOGZP4PVg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
- 
-
+ </p>
+<p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/gNaZBg3jl9g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/oUNOGZP4PVg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
- 
-
+ </p>
+<p><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">https://www.w3schools.com/css/css_rwd_mediaqueries.asp</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover">https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover</a></p>
+<h5 id="お薦め">お薦め</h5>
+<p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/SHDd4o7Kb2w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/_Rdwgjp8W88" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
- 
-
+ </p>
+<p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/zvac-dxonQM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/MXcQdZu7Fdw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
- 
-
+ </p>
+<p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/beqymEAlsKU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/1S7sU2wkmL4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
- 
-
+ </p>
+<p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/4zYsDE5XH6s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/ro9SyOrfWUk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
  </p>
@@ -216,10 +330,7 @@ print(result_dict)
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/python/" rel="tag">Python</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/defaultdict/" rel="tag">defaultdict</a>
+			<a class="tags__link btn" href="/tags/css/" rel="tag">CSS</a>
 		</li>
 	</ul>
 </div>
@@ -235,15 +346,9 @@ print(result_dict)
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/js-visibilitychange-useragent/" rel="prev">
+		<a class="pager__link" href="/programming/vw-vh-vmin-vmax/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Page Visibility API でページ離脱時にイベントを発生させる</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/how-to-make-df/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【Pandas】ある一定の期間のデータを取り出して、欠損する日付を埋めて、存在しないデータを0で埋める</p>
+			<p class="pager__title">【CSS】要素幅、高さをコントロールするプロパティのメモ</p>
 		</a>
 	</div>
 </nav>
