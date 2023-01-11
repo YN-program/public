@@ -273,15 +273,18 @@ audio {
 
 window.addEventListener("load" , function (){
     let startBtn = document.getElementById("start_button");
-    startBtn.onclick = () => {
-        const audio = document.getElementById('audio');
-        audio.currentTime = 0;
-        setAudio(audio);
-    }
+    startBtn.onclick = setAudio;
+    // startBtn.onclick = () => {
+    //     const audio = document.getElementById('audio');
+    //     audio.currentTime = 0;
+    //     setAudio();
+    // }
 });
 
-function setAudio(audio){
+function setAudio(){
 
+    const audio = document.getElementById('audio');
+    audio.currentTime = 0;
     const wrapper       = document.getElementById('wrapper' );
     wrapper.classList.remove("d-none");
     const startButton   = document.getElementById('start_button' );
@@ -619,20 +622,19 @@ audio {
 }
 </code></pre><p><code>javascript</code></p>
 <p><code>off(&quot;click&quot;)</code>と<code>e.stopPropagation();</code>は必要に応じて。</p>
+<p>(追記：2023/1/11　javascriptの<code>window.addEventListener(&quot;load&quot;~ });</code>を一部変更しました。)</p>
 <pre tabindex="0"><code>
 window.addEventListener(&#34;load&#34; , function (){
-
     $(&#34;.startAudio&#34;).off(&#34;click&#34;).on(&#34;click&#34;, function(e){
         e.stopPropagation();
         const pk = $(this).attr(&#34;id&#34;).replace(&#34;start_button_&#34;,&#34;&#34;);
-        const audio = document.getElementById(&#39;audio_&#39; + pk);
-        audio.currentTime = 0;
-        setAudio(pk,audio);
+        setAudio(pk);
     });
 });
 
-function setAudio(pk,audio){
-
+function setAudio(pk){
+    const audio = document.getElementById(&#39;audio_&#39; + pk);
+    audio.currentTime = 0;
     const wrapper       = document.getElementById(&#39;wrapper_&#39; + pk);
     wrapper.classList.remove(&#34;d-none&#34;);
     const startButton   = document.getElementById(&#39;start_button_&#39; + pk);
