@@ -334,14 +334,12 @@ function setAudio(){
     audio.onended = () => {
         stopAudio();
         paused = true;
-        audioCounter();
     }
     stopButton.onclick = (e) => {
         e.stopPropagation();
         audio.pause();
         stopAudio();
         paused = true;
-        audioCounter();
     }
     pauseButton.onclick = (e) => {
         e.stopPropagation();
@@ -354,6 +352,8 @@ function setAudio(){
             audio.pause();
             pauseButton.innerHTML = 'play';
             paused = true;
+            clearInterval(interval);
+            delete interval;
         }
     }
     skipForward.onclick = (e) => {
@@ -460,6 +460,7 @@ function setAudio(){
                 delete interval;
             }
         }, 1000);
+        console.log("delete")
     }
     function setCounter(){
         minutes.innerHTML = pad(Math.floor(audioTime / 60));
@@ -623,6 +624,8 @@ audio {
 </code></pre><p><code>javascript</code></p>
 <p><code>off(&quot;click&quot;)</code>と<code>e.stopPropagation();</code>は必要に応じて。</p>
 <p>(追記：2023/1/11　javascriptの<code>window.addEventListener(&quot;load&quot;~ });</code>を一部変更しました。)</p>
+<p>(追記：2023/1/13　javascriptの不要な部分を削除。</p>
+<p>停止ボタンの連打でintervalが無数に発行される可能性があるので、一部変更しました)</p>
 <pre tabindex="0"><code>
 window.addEventListener(&#34;load&#34; , function (){
     $(&#34;.startAudio&#34;).off(&#34;click&#34;).on(&#34;click&#34;, function(e){
@@ -675,14 +678,14 @@ function setAudio(pk){
     audio.onended = () =&gt; {
         stopAudio();
         paused = true;
-        audioCounter();
+        //audioCounter();　不要なので削除。
     }
     stopButton.onclick = (e) =&gt; {
         e.stopPropagation();
         audio.pause();
         stopAudio();
         paused = true;
-        audioCounter();
+        //audioCounter();　不要なので削除。
     }
     pauseButton.onclick = (e) =&gt; {
         e.stopPropagation();
@@ -695,6 +698,10 @@ function setAudio(pk){
             audio.pause();
             pauseButton.innerHTML = &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;;
             paused = true;
+            
+            //追記：ボタン連打でintervalが無数に発生する可能性があるので、ここで停止。
+            clearInterval(interval);
+            delete interval;
         }
     }
     skipForward.onclick = (e) =&gt; {
