@@ -110,7 +110,6 @@ const progressSlider    = document.getElementById(&#34;progress_slider&#34;),
 let WidthX, rect, thumbRate;
 let x = 0;
 let mousedownFlag = false;
-let mouseenter    = false;
 
 sliderSubWrapper.ontouchstart =
 sliderSubWrapper.onmousedown  = mousedownSlider;
