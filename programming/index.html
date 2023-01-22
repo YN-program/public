@@ -129,6 +129,201 @@ if (!doNotTrack) {
 		<h1 class="main__title">Programmings</h1>
 	</header><article class="list__item post">
 	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/programming/range-without-input/" rel="bookmark">
+			Inputタグを使わないrange slider
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-20T16:38:52&#43;09:00">January 20, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>inputタグを使わないレンジスライダーを自作しました。</p>
+<p> 
+
+
+<style>
+
+.slider_wrapper {
+    width:100%;
+    height:30px;
+    background:rgba(246,246,255,1);
+    border-radius:15px;
+    position:relative;
+    box-shadow:2px 5px 3px gray;
+}
+.slider_subwrapper {
+    width:90%;
+    height:30px;
+    display:block;
+    position:relative;
+    margin:0 auto;
+    cursor:pointer;
+    background:inherit;
+    z-index:200;
+}
+.slider_baloon {
+    position: absolute;
+    display: none;
+    text-align:center;
+    padding: 0 2px;
+    background-color: rgba(82, 82, 82, 0.5);
+    color:#fff;
+    left : 5%;
+    bottom : 100%;
+    margin-bottom : 5px;
+    font-size:;
+    border-radius:7px;
+}
+.slider_wrapper:hover .slider_baloon {
+    display:block;
+}
+.slider_thumb {
+    position: absolute;
+    display: block;
+    text-align:center;
+    background: rgba(163,163,255,1);
+    width:12px;
+    height:12px;
+    left : 0%;
+    top : 10px;
+    border-radius:50%;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+    z-index:100;
+}
+.slider {
+    width:100%;
+    height:4px;
+    background:#fff;
+    cursor:pointer;
+    position:absolute;
+    top:13px;
+    left:0%;
+}
+.slider_progress {
+    height:4px;
+    background: rgba(163,163,255,1);
+    cursor:pointer;
+}
+
+</style>
+<body>
+
+
+<div id="slider_wrapper"  class="slider_wrapper">
+    <div id="slider_subwrapper" class="slider_subwrapper">
+        <span id="slider_baloon" class="slider_baloon"></span>
+        <div id="slider" class="slider" role="slider">
+            <div id="progress_slider"></div>
+        </div>
+        <span id="slider_thumb" class="slider_thumb"></span>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+
+const progressSlider    = document.getElementById("progress_slider"),
+      slider            = document.getElementById("slider"),
+      sliderSubWrapper  = document.getElementById("slider_subwrapper"),
+      sliderThumb       = document.getElementById("slider_thumb"),
+      text              = document.getElementById("slider_baloon");
+
+let WidthX, rect, thumbRate;
+let x = 0;
+let mousedownFlag = false;
+let mouseenter    = false;
+
+sliderSubWrapper.ontouchstart =
+sliderSubWrapper.onmousedown  = mousedownSlider;
+
+sliderSubWrapper.ontouchend    =
+sliderSubWrapper.onmouseup     =
+sliderSubWrapper.onmouseleave  =
+sliderSubWrapper.ontouchcancel = mouseupSlider;
+
+sliderSubWrapper.onmouseenter =
+sliderSubWrapper.ontouchmove  =
+sliderSubWrapper.onmousemove  = moveSlider;
+
+
+function mouseX(e) {
+    rect = sliderSubWrapper.getBoundingClientRect();
+    if (e.touches && e.touches[0]) {
+        x = (e.touches[0].clientX - window.pageXOffset - rect.left)
+    } else if (e.clientX && e.clientY) {
+        x = (e.clientX - window.pageXOffset - rect.left) //e.offsetXではマウスがthumbの上にあるときにうまく行かない。
+    }
+    if ( x < 0 ){
+        WidthX = 0
+    } else if ( x > sliderSubWrapper.clientWidth){
+        WidthX = 100
+    } else {
+        WidthX = Math.round(x / sliderSubWrapper.clientWidth * 100);
+    }
+    return WidthX;
+}
+function setProgressSlider (WidthX) {
+    progressSlider.style.width =  WidthX + '%';
+    progressSlider.classList.add("slider_progress");
+    sliderThumb.style.left = WidthX * thumbRate + "%";
+}
+function mousedownSlider(e){
+    e.preventDefault();
+    slider.style.background = `#fff`;
+
+    mousedownFlag = true;
+    WidthX = mouseX(e);
+    setProgressSlider(WidthX);
+    text.style.left = WidthX + "%";
+    text.innerText  = WidthX + "%";
+}
+function mouseupSlider(e){
+    e.preventDefault();
+    mouseenter = false;
+    if (mousedownFlag){
+        mousedownFlag = false;
+        setProgressSlider(WidthX);
+    }else{
+        slider.style.background = `#fff`;
+        mousedownFlag = false;
+    }
+}
+function moveSlider(e){
+    e.preventDefault();
+    WidthX = mouseX(e);
+    if(mousedownFlag){
+        setProgressSlider(WidthX);
+        text.style.left = WidthX + "%";
+        text.innerText  = WidthX + "%";
+    } else {
+        mouseenter = true;
+        text.style.left = WidthX + "%";
+        text.innerText  = WidthX + "%";
+        slider.style.background = `linear-gradient(to right, rgba(163,163,255,0.4) 0%, rgba(163,163,255,0.4) ${WidthX}%, #fff ${WidthX}%, #fff 100%)`
+    }
+}
+
+thumbRate = sliderSubWrapper.clientWidth / ( sliderSubWrapper.clientWidth + sliderThumb.clientWidth);
+
+
+</script>
+
+
+</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/programming/range-without-input/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
 		
 		
 	<figure class="list__thumbnail thumbnail">
@@ -538,26 +733,6 @@ thumb.style.left = (range.value - 0.5) * rate + "%";
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/programming/multi-list/">Read more…</a>
 	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/programming/tweet-shortcode/" rel="bookmark">
-			【HUGO】twitter のショートコードの修正
-			</a>
-		</h2>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-10-17T12:32:08&#43;09:00">October 17, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Hugo のtwitter のショートコードについて、&ldquo;The &ldquo;tweet&rdquo; shortcode will soon require two named parameters: user and id.&rdquo; というメッセージが出るようになりました。 config.toml のbaseurlやtitleが書いてあるところに、ignoreErrors = [&ldquo;error-remo
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/programming/tweet-shortcode/">Read more…</a>
-	</div>
 </article>
 </main>
 
@@ -581,11 +756,11 @@ thumb.style.left = (range.value - 0.5) * rate + "%";
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/range-without-input/">Inputタグを使わないrange slider</a></li>
 			<li class="widget__item"><a class="widget__link" href="/programming/mediaquery/">【CSS】メディアクエリ orientation,hover, etc.</a></li>
 			<li class="widget__item"><a class="widget__link" href="/programming/vw-vh-vmin-vmax/">【CSS】要素幅、高さをコントロールするプロパティのメモ</a></li>
 			<li class="widget__item"><a class="widget__link" href="/programming/input-range/">【CSS】input type=&#39;range&#39; のカスタマイズ</a></li>
 			<li class="widget__item"><a class="widget__link" href="/life/testimony7/">神様の見えざる手</a></li>
-			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine-neuroleptic-malignant-syndrome/">コロナワクチン接種後の悪性症候群</a></li>
 		</ul>
 	</div>
 </div>
@@ -610,13 +785,13 @@ thumb.style.left = (range.value - 0.5) * rate + "%";
 		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cocaine/" title="Cocaine">Cocaine (8)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/covid19/" title="COVID19">COVID19 (10)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" title="C言語">C言語 (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/defaultdict/" title="defaultdict">defaultdict (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (10)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ffmpeg/" title="ffmpeg">ffmpeg (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (4)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="Javascript">Javascript (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="Javascript">Javascript (12)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/mediarecorder/" title="MediaRecorder">MediaRecorder (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/modaldialog/" title="modaldialog">modaldialog (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/moviepy/" title="MoviePy">MoviePy (3)</a>
