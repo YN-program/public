@@ -320,7 +320,6 @@ function setProgressSlider (WidthX) {
 function mousedownSlider(e){
     e.preventDefault();
     slider.style.background = `#fff`;
-
     mousedownFlag = true;
     WidthX = mouseX(e);
     setProgressSlider(WidthX);
@@ -329,7 +328,6 @@ function mousedownSlider(e){
 }
 function mouseupSlider(e){
     e.preventDefault();
-    mouseenter = false;
     if (mousedownFlag){
         mousedownFlag = false;
         setProgressSlider(WidthX);
@@ -341,14 +339,11 @@ function mouseupSlider(e){
 function moveSlider(e){
     e.preventDefault();
     WidthX = mouseX(e);
+    text.style.left = WidthX + "%";
+    text.innerText  = WidthX + "%";
     if(mousedownFlag){
         setProgressSlider(WidthX);
-        text.style.left = WidthX + "%";
-        text.innerText  = WidthX + "%";
     } else {
-        mouseenter = true;
-        text.style.left = WidthX + "%";
-        text.innerText  = WidthX + "%";
         slider.style.background = `linear-gradient(to right, rgba(163,163,255,0.4) 0%, rgba(163,163,255,0.4) ${WidthX}%, #fff ${WidthX}%, #fff 100%)`
     }
 }
