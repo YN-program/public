@@ -6,7 +6,16 @@
     <description>Recent content in CSS on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Jan 2023 16:38:52 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jan 2023 23:33:32 +0900</lastBuildDate><atom:link href="https://progress-advance.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【CSS】grid layout -その１-</title>
+      <link>https://progress-advance.com/programming/grid1/</link>
+      <pubDate>Mon, 30 Jan 2023 23:33:32 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/grid1/</guid>
+      <description>&lt;p&gt;グリッドレイアウトが便利なので、基本的なことから学んだことを複数回に分けて記載していきたいと思います。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Inputタグを使わないrange slider</title>
       <link>https://progress-advance.com/programming/range-without-input/</link>
