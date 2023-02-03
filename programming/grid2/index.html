@@ -4,20 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>【CSS】grid layout -その１- - ImageDiagnosis &amp; Program</title>
+	<title>【CSS】grid layout -その２- - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="【CSS】grid layout -その１-" />
-<meta property="og:description" content="グリッドレイアウトが便利なので、基本的なことから学んだことを複数回に分けて記載していきたいと思います。" />
+		<meta property="og:title" content="【CSS】grid layout -その２-" />
+<meta property="og:description" content="グリッドレイアウトの基本の続きです。
+各要素の名前、グリッド線名によるアイテムの配置、およびminmax()などについて。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/grid1/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2023-01-30T23:33:32+09:00" />
-<meta property="article:modified_time" content="2023-01-30T23:33:32+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/grid2/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2023-02-01T11:14:35+09:00" />
+<meta property="article:modified_time" content="2023-02-01T11:14:35+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="【CSS】grid layout -その１-"/>
-<meta name="twitter:description" content="グリッドレイアウトが便利なので、基本的なことから学んだことを複数回に分けて記載していきたいと思います。"/>
+<meta name="twitter:title" content="【CSS】grid layout -その２-"/>
+<meta name="twitter:description" content="グリッドレイアウトの基本の続きです。
+各要素の名前、グリッド線名によるアイテムの配置、およびminmax()などについて。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -128,52 +130,17 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">【CSS】grid layout -その１-</h1>
+			<h1 class="post__title">【CSS】grid layout -その２-</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-30T23:33:32&#43;09:00">January 30, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-02-01T11:14:35&#43;09:00">February 01, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>グリッドレイアウトが便利なので、基本的なことから学んだことを複数回に分けて記載していきたいと思います。</p>
-<h4 id="hahahugoshortcode-s0-hbhb"><span style="color:#ea5549;">〇 grid-containerの記載例</span></h4>
-<pre tabindex="0"><code>.grid-container {
-    grid-template-columns:;
-    /*
-    1fr 1fr 1f
-    minmax(100px, 1fr) 1fr
-    repeat(3, 1fr)
-    100px auto 100px 1fr
-    */
-
-    grid-template-rows:;
-    /*
-    min-content min-content 1fr
-    max-content 100px 1fr    
-    70% 30%
-    50% 100px auto
-    */
-
-    grid-template-areas:;
-    /*
-    &#34;header header header&#34;
-    &#34;main main . sidebar&#34;
-    &#34;footer footer footer&#34;;
-    */
-
-    gap: 20px 50px;
-}
-.item1 { grid-area: header;}
-.item2 { grid-area: main;}
-.item3 { grid-area: sidebar;}
-.item4 { grid-area: footer;}
-</code></pre><p>fr は外枠のサイズに合わせてグリッドを分割して、サイズを自動的に調節してくれる。</p>
-<p><code>1fr 1fr 1fr</code>は3分割になる。</p>
-<p>auto は、同じ行列にfrがある場合は、グリッド内のコンテンツに合わせてサイズを調節し、frがない場合は、1frと同じ働きをする。</p>
-<p><code>grid-template-areas</code>は、grid-area で指定されたグリッド領域の名前を参照し、グリッドテンプレートを定義する。グリッドエリア名を繰り返すと、そのセルにまたがってコンテンツが表示さる。ピリオドは空のセルを表す。</p>
-<p><code>gap</code>は<code>row-gap</code>, <code>column-gap</code>の短縮形で、値は一つでも可。<code>gap:20px 50px;</code> は<code>row-gap:20px; column-gap:50px;</code>と同じ。</p>
-<h4 id="hahahugoshortcode-s1-hbhb"><span style="color:#ea5549;">〇 使用例</span></h4>
+			<p>グリッドレイアウトの基本の続きです。</p>
+<p>各要素の名前、グリッド線名によるアイテムの配置、および<code>minmax()</code>などについて。</p>
+<h4 id="hahahugoshortcode-s0-hbhb"><span style="color:#ea5549;">〇 使用例</span></h4>
 
 
   <style>
@@ -184,7 +151,7 @@ if (!doNotTrack) {
               display: grid;
           }
       } 
-
+      li {list-style:none;}
       *, *::before, *::after{
           box-sizing: border-box;
       }
@@ -193,182 +160,305 @@ if (!doNotTrack) {
           place-items: center;
       }
 
-      .grid_container{
+      .grid_container1{
           display: grid; /* 又は inline-glid */
-          grid-template-columns:1fr 1fr 1fr;
-          grid-template-rows:repeat(3, 100px);
-          grid-template-areas:"a a c" "a a c" "b b c";
-          gap: 20px 50px;
-          background:#fff;
+          grid-template-columns:repeat(3, 1fr);
+          grid-template-rows:repeat(2, 1fr);
+          gap: 20px;
+          background:#fddbff;
           margin: 20px;
           padding:20px;
           text-align:center;
           position: relative;
-          overflow:scroll;
       }
-      .grid_container div {
-          font-size:20px;
+      .grid_container1 div {
           font-weight:bold;
-          overflow:hidden;
+          background:#fff;
       }
-      .grid_container .a {
-          background:#fff4ff;
-          grid-area:a;
+      .grid_container2{
+          display: grid;
+          grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4];
+          grid-template-rows: [row1] 50px [row2] 70px [row3] 100px [row4];
+          gap: 20px;
+          background:#fddbff;
+          margin: 20px;
+          padding:20px;
+          text-align:center;
+          position: relative;
       }
-      .grid_container .b {
-          grid-area:b;
-          background:#f9f4ff;
+      .grid_container2 li {
+          font-weight:bold;
+          background:#fff;
       }
-      .grid_container .c {
-          grid-area:c;
-          background:#f4f4ff;
+      .item1 {
+        grid-column:col1 / col4;
+        grid-row:row1 / row2;
+        /* 
+        grid-column-start: col1;
+        grid-column-end: col4;
+        grid-row-start: row1;
+        grid-row-end: row2;
+        */
+
       }
-      @media screen and (max-width:900px){
+      .item2 {
+        grid-column:col1 / col3;
+        grid-row:row2 / row3;
+        /* 
+        grid-column-start: col1;
+        grid-column-end: col3;
+        grid-row-start: row2;
+        grid-row-end: row3;
+        */
+      }
+      .item3 {
+        grid-column:col3;
+        grid-row:row2;        
+        /*
+        grid-column-start: col3;
+        grid-row-start: row2;
+        */
+      }
+      .item4 {
+        grid-column:col1 / col4;
+        grid-row:row3;        
+        /*
+        grid-column-start: col1;
+        grid-column-end: col4;
+        grid-row-start: row3;
+        */
+      }
+
+      /* @media screen and (max-width:900px){
           .grid_container{
               grid-template-rows:repeat(4, 100px);
               grid-template-columns:1fr;
               grid-template-areas:"a a a" "a a a" "b b b" "c c c";
-          }  
+          }   */
 
       }
   </style>
 
   <main>
-      <div class="grid_container">            
-          <div class="a">
-              <p>text1</p>
+      <div class="grid_container1">            
+          <div>
+              <p>アイテム１</p>
           </div>        
-          <div class="b">
-              <p>text2</p>
+          <div>
+              <p>アイテム２</p>
           </div>
-          <div class="c">
-              <p>text3</p>
+          <div>
+              <p>アイテム３</p>
+          </div>  
+          <div>
+              <p>アイテム４</p>
           </div>
+          <div>
+              <p>アイテム５</p>
+          </div>
+          <div>
+              <p>アイテム６</p>
+          </div>        
       </div>
+      <p>〇コンテナ：グリッド全体を囲む要素。</p>
+      <p>〇アイテム：コンテナ内の直接の子要素（孫要素はアイテムではない）。</p>
+      <p>〇ライン：グリッドを分ける線。左端あるいは上から1,2,3,4...と番号が振られる。また、右端あるいは下から-1,-2...と負の番号が振られる。</p>
+      <p>〇トラック：grid-template-columns および grid-template-rows で定義された行と列において、任意の 2 本の線の間にある空間。</p>
+      <p>〇セル：4つの交差するグリッド線に囲まれた領域のこと。cssグリッドの最小単位。</p>
+      <p>〇エリア：一つ以上のセルからなる長方形の領域のこと。T字型やL字型などの領域を作ることはできない。</p>
+
+      <hr>
+      <p> グリッド線には名前を付けることができる（全ての線に名前を付ける必要はない）。<br>
+          * grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4]; <br>
+          * grid-template-rows: [row1] 50px [row2] 70px [row3] 100px [row4];
+      </p>
+      <p>これにより、名前でアイテムを配置することができる。</p>
+
+      <ul class="grid_container2">
+          <li class="item1">col1~col4, row1~row2</li>
+          <li class="item2">col1~col3, row2~row3</li>
+          <li class="item3">col3~col4, row2~row3</li>
+          <li class="item4">col1~col4, row3~row4</li>
+      </ul>
+
   </main>
 
+<p>上記レイアウトのコード。</p>
 <p><code>html</code></p>
-<pre tabindex="0"><code>&lt;main&gt;
-    &lt;div class=&#34;grid_container&#34;&gt;            
-        &lt;div class=&#34;a&#34;&gt;
-            &lt;p&gt;text1&lt;/p&gt;
-        &lt;/div&gt;        
-        &lt;div class=&#34;b&#34;&gt;
-            &lt;p&gt;text2&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;c&#34;&gt;
-            &lt;p&gt;text3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/main&gt;
+<pre tabindex="0"><code>&lt;ul class=&#34;grid_container&#34;&gt;
+    &lt;li class=&#34;item1&#34;&gt;col1~col4, row1~row2&lt;/li&gt;
+    &lt;li class=&#34;item2&#34;&gt;col1~col3, row2~row3&lt;/li&gt;
+    &lt;li class=&#34;item3&#34;&gt;col3~col4, row2~row3&lt;/li&gt;
+    &lt;li class=&#34;item4&#34;&gt;col1~col4, row3~row4&lt;/li&gt;
+&lt;/ul&gt;
 </code></pre><p><code>css</code></p>
-<pre tabindex="0"><code>main {
-    margin:50px;
-    place-items: center;
-}
-
-.grid_container{
-    display: grid; /* 又は inline-glid */
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:repeat(3, 100px);
-    grid-template-areas:&#34;a a c&#34; &#34;a a c&#34; &#34;b b c&#34;;
-    gap: 20px 50px;
-    background:#fff;
+<pre tabindex="0"><code>.grid_container{
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4];
+    grid-template-rows: [row1] 50px [row2] 70px [row3] 100px [row4];
+    gap: 20px;
+    background:#fddbff;
     margin: 20px;
     padding:20px;
     text-align:center;
     position: relative;
-    overflow:scroll;
 }
-.grid_container div {
-    font-size:20px;
+.grid_container li {
     font-weight:bold;
     overflow:hidden;
+    background:#fff;
 }
-.grid_container .a {
-    background:#fff4ff;
-    grid-area:a;
+.item1 {
+  grid-column:col1 / col4;
+  grid-row:row1 / row2;
+  /* 
+  grid-column-start: col1;
+  grid-column-end: col4;
+  grid-row-start: row1;
+  grid-row-end: row2;
+  */
+
 }
-.grid_container .b {
-    grid-area:b;
-    background:#f9f4ff;
+.item2 {
+  grid-column:col1 / col3;
+  grid-row:row2 / row3;
+  /* 
+  grid-column-start: col1;
+  grid-column-end: col3;
+  grid-row-start: row2;
+  grid-row-end: row3;
+  */
 }
-.grid_container .c {
-    grid-area:c;
-    background:#f4f4ff;
+.item3 {
+  grid-column:col3;
+  grid-row:row2;        
+  /*
+  grid-column-start: col3;
+  grid-row-start: row2;
+  */
 }
-@media screen and (max-width:760px){
-    .grid_container{
-        grid-template-rows:repeat(4, 100px);
-        grid-template-columns:1fr;
-        grid-template-areas:&#34;a a a&#34; &#34;a a a&#34; &#34;b b b&#34; &#34;c c c&#34;;
-    }  
-}     
-</code></pre>
+.item4 {
+  grid-column:col1 / col4;
+  grid-row:row3;        
+  /*
+  grid-column-start: col1;
+  grid-column-end: col4;
+  grid-row-start: row3;
+  */
+}
+</code></pre><hr>
+<p><code>grid-template-columns</code>だけを指定すると、行は暗黙的に作られる。</p>
+<p><code>grid-auto-rows</code>で、暗黙的に作成された行のサイズを指定できる。（<code>grid-auto-columns</code>では、列のサイズを指定できる）</p>
+<p>以下は、<code>grid-template-columns: repeat(3, 1fr);</code>、<code>grid-auto-rows: 50px;</code>
+
+
 <style>
-    .sample{ 
-        width:min-content;
-        background:lightgray;
-        margin:0.25rem;
-    }
-    .sample2{
-        width:max-content;
-        background:lightgray;
-        margin:0.25rem;
-    }
-    .sample3{
-        width:fit-content;
-        background:lightgray;
-        margin:0.25rem;
-    }
+  .grid_container3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+    background:#fddbff;
+    gap: 10px;
+    margin: 20px;
+    padding:20px;
+    text-align:center;
+    position: relative;
+    counter-reset: number;
+  }
+  .grid_container3 li{
+    background:#fff;
+
+  }
+  .grid_container3 li::before{
+      counter-increment: number;
+      content:counter(number);
+    } 
+
 </style>
-<li>widthがmin-contentの場合、要素のコンテンツで最も長い単語の幅に合わせる。</li>
-<div class="sample">テキスト</div>
-<div class="sample">min-conten</div>
-<div class="sample">sample text</div>
+
+  <ul class="grid_container3">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+</p>
 <hr>
-<li>widthがmax-contentの場合、要素の幅はコンテンツの幅になる。コンテンツがオーバーフローしても、テキストは折り返されない。</li>
-<div class="sample2">テキスト</div>
-<div class="sample2">max-content</div>
-<div class="sample2">sample text.sample text.sample text.sample text.sample text.sample text.</div>
-<hr>
-<li>widthがfit-contentの場合、要素の幅はコンテンツの幅になる。利用可能な領域を使い、max-contentを超えることはない。</li>
-<li>width ・ height ・ min-width ・ min-height ・ max-width ・ max-height のレイアウトボックスサイズとして使う場合、 最大 ・ 最小サイズはコンテンツのサイズに対応する。</li>
-<div class="sample3">テキスト</div>
-<div class="sample3">fit-content</div>
-<div class="sample3">sample text. sample text. sample text. sample text. sample text. sample text. </div>
+<p><code>minmax()</code></p>
+<p>トラックのサイズ指定において、最小のサイズと内容物に合わせたサイズを同時に指定できる。</p>
+<p>以下は、<code>grid-template-columns: repeat(3, 1fr);</code>、<code>grid-auto-rows: minmax(20px, auto);</code></p>
 
 
-<p> </p>
+<style>
+  .grid_container4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    background:#fddbff;
+    gap: 10px;
+    margin: 20px;
+    padding:20px;
+    text-align:center;
+    position: relative;
+    counter-reset: number;
+  }
+  .grid_container4 li{
+    background:#fff;
+
+  }
+  .grid_container4 li::before{
+      counter-increment: number;
+      content:counter(number);
+    } 
+
+</style>
+
+  <ul class="grid_container4">
+    <li></li>
+    <li>：内容物に合わせて、高さが変化する。</li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+
 <h5 id="参考記事">参考記事</h5>
-<p><a href="https://kumonosublog.com/coding/css/grid_layout_fr_auto/">https://kumonosublog.com/coding/css/grid_layout_fr_auto/</a></p>
-<p><a href="https://css-tricks.com/snippets/css/complete-guide-grid/#top-of-site">A Complete Guide to CSS Grid</a></p>
-<p><a href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-content">https://developer.mozilla.org/en-US/docs/Web/CSS/min-content</a></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-content">https://developer.mozilla.org/en-US/docs/Web/CSS/max-content</a></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content">https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content</a></p>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_grid_container">https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_grid_container</a></p>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines">https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines</a></p>
 <h5 id="お薦め">お薦め</h5>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">太陽光発電への投資を募ってきた『竹田恒泰』、巨額詐欺容疑の『三浦瑠麗の夫』と懇意で「仕事の関係でご一緒する機会が多々ある」と明かしていたことが判明<a href="https://t.co/39QbRyPeoF">https://t.co/39QbRyPeoF</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1620053311394287617?ref_src=twsrc%5Etfw">January 30, 2023</a></blockquote>
+<p><a href="https://rapt-neo.com/?p=12236">この世が良心的な人の生活しやすい世界になってほしい。それが私の願いです。</a></p>
+<p><a href="https://rapt-neo.com/?p=9163">新しいアイデアと発想を生み出すために必要なたった一つのこと。</a></p>
+<p><a href="https://rapt-neo.com/?p=19013">悪魔崇拝者を根本的に滅ぼし尽くす方法。それは「霊界」の奥義を知ることから始まります。</a></p>
+<p><a href="https://rapt-neo.com/?p=16687">天皇がどこからどう見ても悪魔崇拝者であるという証拠。</a></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4zYsDE5XH6s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">移民反対を訴えてきた小野田紀美。<br><br>実は移民政策に賛成票を投じていた。<br><br>「党議拘束」を理由に。<br><br>だが、「党議拘束」があっても、国会を欠席して投票を棄権し、反対の意思を表明することは可能だった。<br><br>しかも……<br>続きは動画で<br><br>（参考リンク）<a href="https://t.co/njmOmwyrbY">https://t.co/njmOmwyrbY</a><a href="https://t.co/sgf6fINdQr">https://t.co/sgf6fINdQr</a> <a href="https://t.co/fBUWfhA2Ud">pic.twitter.com/fBUWfhA2Ud</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1618891557566038016?ref_src=twsrc%5Etfw">January 27, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今年2月に5463品目の食品や飲料が値上げ　度重なる値上げラッシュに国民が悲鳴「いつまでつづくの？」「また値上げ…お給料変わらないのに…」<a href="https://t.co/p5wlTcCjiM">https://t.co/p5wlTcCjiM</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1621116511195926528?ref_src=twsrc%5Etfw">February 2, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">年齢を重ねるごとに新しく生まれ変わり、進化されているRAPTさんから学んだこと（十二弟子・ミナさんの証）<a href="https://t.co/hpNzCBy7xu">https://t.co/hpNzCBy7xu</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1620036390242381825?ref_src=twsrc%5Etfw">January 30, 2023</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RAPTさんの下で神様の働きを成すことで、自然と神様の体質を身に着け、サタンに勝利する術を知り、神様と最高に愛を成す人生を送れるようになった！（十二弟子・NANAさんの証）<a href="https://t.co/yiTIX9ZvYS">https://t.co/yiTIX9ZvYS</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1621093652922769408?ref_src=twsrc%5Etfw">February 2, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">イギリス政府が50歳未満の追加ワクチン接種を中止すると発表　Googleがこのニュースを検索できないよう操作していたことも判明<a href="https://t.co/2CZ9nKFN1A">https://t.co/2CZ9nKFN1A</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1620024546727456768?ref_src=twsrc%5Etfw">January 30, 2023</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">『東京ガス』の2022年度決算で利益・売上高がいずれも過去最高となる見通し「値上げの必要あるの？」と批判殺到　一方、電力各社は過去最大の赤字<a href="https://t.co/n6ZIsW5Lot">https://t.co/n6ZIsW5Lot</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1621089024122454018?ref_src=twsrc%5Etfw">February 2, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">国民の味方のはずの自民党『小野田紀美』議員、Twitter上で国民のアカウントを次々とブロック　自ら『ブロック小野田』と名乗り開き直る　『ブロック太郎』とも昵懇<a href="https://t.co/a4QoxpCl6O">https://t.co/a4QoxpCl6O</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1620007146736992257?ref_src=twsrc%5Etfw">January 30, 2023</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【Twitter元社員が内部告発】4000人のエンジニアが『GodMode』を使って全てのアカウントからツイート・ツイートの削除・復元・DMの閲覧が可能な状態にあると暴露　10億円ドルの罰金が課される可能性も<a href="https://t.co/TGXslTck1R">https://t.co/TGXslTck1R</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1621084561643040769?ref_src=twsrc%5Etfw">February 2, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">前澤友作監修の『シングルマザー限定マッチングアプリ』が、幼児虐待を助長すると批判殺到　リリースからわずか1日で配信停止<a href="https://t.co/yaFrPfqKd6">https://t.co/yaFrPfqKd6</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1619683930025918464?ref_src=twsrc%5Etfw">January 29, 2023</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RAPT理論を知ることで、複雑な世の中のカラクリが理解できるようになり、あらゆる分野の要点を理解できるようになった（十二弟子・サキさんの証）<a href="https://t.co/3FAeLwavYO">https://t.co/3FAeLwavYO</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1619654744896856065?ref_src=twsrc%5Etfw">January 29, 2023</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">『堀江貴文』が巨額詐欺容疑の『三浦瑠麗』を全力で擁護「文句を垂れている人はFラン卒40代のハゲデブ」と決めつけ批判殺到　両者とも中国共産党のスパイ『北尾吉孝』とズブズブの関係<a href="https://t.co/jnwFCqKRYG">https://t.co/jnwFCqKRYG</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1620753941402365953?ref_src=twsrc%5Etfw">February 1, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
@@ -395,15 +485,9 @@ if (!doNotTrack) {
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/range-without-input/" rel="prev">
+		<a class="pager__link" href="/programming/grid1/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Inputタグを使わないrange slider</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/grid2/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【CSS】grid layout -その２-</p>
+			<p class="pager__title">【CSS】grid layout -その１-</p>
 		</a>
 	</div>
 </nav>
