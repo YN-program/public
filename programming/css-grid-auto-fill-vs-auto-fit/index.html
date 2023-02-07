@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>【CSS】grid layout -その３- auto-fillとauto-fit - ImageDiagnosis &amp; Program</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="【CSS】grid layout -その３- auto-fillとauto-fit" />
+<meta property="og:description" content="グリッドレイアウトのその３。
+repeat()とminmax()、auito-fit、auto-fillの使用例。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://progress-advance.com/programming/css-grid-auto-fill-vs-auto-fit/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2023-02-05T23:36:02+09:00" />
+<meta property="article:modified_time" content="2023-02-05T23:36:02+09:00" />
+
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【CSS】grid layout -その３- auto-fillとauto-fit"/>
+<meta name="twitter:description" content="グリッドレイアウトのその３。
+repeat()とminmax()、auito-fit、auto-fillの使用例。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120164090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+	
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M5T5SG5');</script>
+    
+
+
+</head>
+<body class="body">
+	
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5T5SG5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+	
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="ImageDiagnosis &amp; Programming" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">ImageDiagnosis &amp; Programming</div>
+					<div class="logo__tagline">学んだことをひたすら書くブログ</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">ホーム</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/programming/">
+				
+				<span class="menu__text">プログラミング</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/medical/">
+				
+				<span class="menu__text">医療</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/life/">
+				
+				<span class="menu__text">Life</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/politics/">
+				
+				<span class="menu__text">政治経済</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about_us/">
+				
+				<span class="menu__text">About us</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">【CSS】grid layout -その３- auto-fillとauto-fit</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-02-05T23:36:02&#43;09:00">February 05, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>グリッドレイアウトのその３。</p>
+<p><code>repeat()</code>と<code>minmax()</code>、<code>auito-fit</code>、<code>auto-fill</code>の使用例。</p>
+<p><code>grid-template-columns:repeat(auto-fill, minmax(50px, 1fr));</code>とすると、幅50px~1frのセルが作られる。グリッドコンテナの幅が拡大するにつれ、余白に新たな空のセルが追加される。コンテナ幅が小さくなると、アイテムは自動的に折り返される。</p>
+<p><code>grid-template-columns:repeat(auto-fit, minmax(50px, 1fr));</code>では、グリッドコンテナの幅に合わせてアイテム幅も拡大する。折り返されたときの空きスペースは、余白になる（セルは追加されない）。</p>
+<p><img src="/img/css/a.png" alt="auto-fill-auto-fit"></p>
+<p><img src="/img/css/b.png" alt="auto-fill-auto-fit"></p>
+
+
+  <style>
+      @charset "utf-8"
+      @supports (grid-area: auto) {
+          body {
+              display: grid;
+          }
+      } 
+      li {list-style:none;}
+      *, *::before, *::after{
+          box-sizing: border-box;
+      }
+      main {
+          margin:20px;
+          place-items: center;
+      }
+      .content ul {margin:0;}
+      .grid_container1{
+          display: grid;
+          grid-template-columns:repeat(auto-fill, minmax(50px, 1fr));
+          background:#f0f0f0;
+          margin: 20px;
+          padding:20px;
+          text-align:center;
+          position: relative;
+          counter-reset: number;
+      }
+      .grid_container1 li {
+          font-weight:bold;
+          background:#fff;
+          border:1px solid black;
+      }
+      .grid_container1 li::before{
+        counter-increment: number;
+        content:counter(number);
+      } 
+      .grid_container2{
+          display: grid;
+          grid-template-columns:repeat(auto-fit, minmax(50px, 1fr));
+          background:#f0f0f0;
+          margin: 20px;
+          padding:20px;
+          text-align:center;
+          position: relative;
+          counter-reset: number;
+      }
+      .grid_container2 li {
+          font-weight:bold;
+          background:#fff;
+          border:1px solid black;
+      }
+      .grid_container2 li::before{
+        counter-increment: number;
+        content:counter(number);
+      }
+      .mark_area {padding:0 0.25rem;}      
+  </style>
+
+  <main>
+    <mark class="mark_area"> grid-template-columns:repeat(auto-fill, minmax(50px, 1fr));</mark>
+      <ul class="grid_container1">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <br>
+    <mark class="mark_area"> grid-template-columns:repeat(auto-fit, minmax(50px, 1fr)); </mark>
+      <ul class="grid_container2">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+  </main>
+
+<p> </p>
+<p>簡単になりますが、以上です。</p>
+<h5 id="参考記事">参考記事</h5>
+<p><a href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/">Auto-Sizing Columns in CSS Grid: auto-fill vs auto-fit</a></p>
+<p><a href="https://webrandum.net/css-grid-auto-fill-auto-fit/">横幅が広がったときの挙動が変わる！CSS Gridの「auto-fill」と「auto-fit」の違い
+</a></p>
+<p><a href="https://shu-naka-blog.com/css/auto-fit-fill/">【CSS】auto-fit・auto-fillの使い方、トラックの幅の指定を繰り返す!
+</a></p>
+<h5 id="お薦め">お薦め</h5>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【愛知県知事選】現職・大村秀章が4回目の当選「愛知県の中国化がさらに進む」と嘆きの声<a href="https://t.co/6W2Oc9PjQ2">https://t.co/6W2Oc9PjQ2</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1622566802952982528?ref_src=twsrc%5Etfw">February 6, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今はまさに聖書に書かれた「終わりの時」この世の人々の愛が冷めていく中でも、神様と共にしているRAPTさんの周りには愛と祝福が満ち溢れている（十二弟子・ミナさんの証）<a href="https://t.co/vXc9WrcNBM">https://t.co/vXc9WrcNBM</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1622565446670249984?ref_src=twsrc%5Etfw">February 6, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【静岡県知事・川勝平太】リニア中央新幹線の工事を徹底妨害、2027年の開業は絶望的に　中共のスパイとして世界最大の経済圏「スーパー・メガリージョン」の形成を妨害か<a href="https://t.co/Y9gDF9ciWG">https://t.co/Y9gDF9ciWG</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1622556016184524807?ref_src=twsrc%5Etfw">February 6, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【じげもんの常識をブッ壊せ!!】Vol.45 – モーツァルトはフリーメーソンによって暗殺された!!　その幾つもの証拠<a href="https://t.co/NZXzxuXMyy">https://t.co/NZXzxuXMyy</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1622552123769769986?ref_src=twsrc%5Etfw">February 6, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【政府公式データ】小児用コロナワクチン接種が解禁されて以降、欧州での子供の超過死亡が698%増加<a href="https://t.co/wELOGMGJWr">https://t.co/wELOGMGJWr</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1622546290671489024?ref_src=twsrc%5Etfw">February 6, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">岸田総理肝入りの『リスキリング支援策』は、やはり創価企業への利益誘導だった!!　東京都の『DX人材リスキリング支援事業』を「ベネッセ」が受託したことが発覚し批判殺到<a href="https://t.co/1b8SSkrA7h">https://t.co/1b8SSkrA7h</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1622544866193571840?ref_src=twsrc%5Etfw">February 6, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【悪魔崇拝】1933年の『シカゴ万博』では幼児を悪魔に捧げる生贄儀式が行われていた!! 『2025年大阪・関西万博』でも身寄りのない子供を引き取る“赤ちゃんエキスポスト”を設立<a href="https://t.co/bRmfnhDgk8">https://t.co/bRmfnhDgk8</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1622543396765331457?ref_src=twsrc%5Etfw">February 6, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/css/" rel="tag">CSS</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Harvest</span>
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/programming/grid2/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">【CSS】grid layout -その２-</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://progress-advance.com" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/css-grid-auto-fill-vs-auto-fit/">【CSS】grid layout -その３- auto-fillとauto-fit</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/grid2/">【CSS】grid layout -その２-</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/grid1/">【CSS】grid layout -その１-</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/vaccine-baby-death/">【猛毒】コロナワクチンおよび4種類のワクチン接種の10日後に、赤ちゃんが突然死。</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/gout-vaccine/">ワクチン接種が痛風発作の引き金に。</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/life/">life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/medical/">medical</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/politics/">Politics</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/programming/">programming</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cocaine/" title="Cocaine">Cocaine (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/covid19/" title="COVID19">COVID19 (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" title="C言語">C言語 (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/defaultdict/" title="defaultdict">defaultdict (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ffmpeg/" title="ffmpeg">ffmpeg (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="Javascript">Javascript (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mediarecorder/" title="MediaRecorder">MediaRecorder (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/modaldialog/" title="modaldialog">modaldialog (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/moviepy/" title="MoviePy">MoviePy (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/netlify/" title="Netlify">Netlify (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/numpy/" title="numpy">numpy (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pandas/" title="pandas">pandas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pillow/" title="Pillow">Pillow (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (17)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rapt-blog/" title="RAPT BLOG">RAPT BLOG (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/testimony/" title="testimony">testimony (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webm/" title="Webm">Webm (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%81%8C%E3%82%93/" title="がん">がん (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A2%E3%83%9E%E3%83%AB%E3%82%AC%E3%83%A0/" title="アマルガム">アマルガム (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF/" title="エナジードリンク">エナジードリンク (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A/" title="コロナ">コロナ (19)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="コロナワクチン">コロナワクチン (26)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BF%E3%82%B3%E3%82%A4%E3%83%9C%E8%83%83%E7%82%8E/" title="タコイボ胃炎">タコイボ胃炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9D%E3%83%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%BC/" title="ポリファーマシー">ポリファーマシー (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9E%E3%83%A9%E3%83%AA%E3%82%A2/" title="マラリア">マラリア (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="ワクチン">ワクチン (16)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88/" title="ワクチンハラスメント">ワクチンハラスメント (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%8B%95%E8%84%88%E7%A1%AC%E5%8C%96/" title="動脈硬化">動脈硬化 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B0%8F%E5%85%90%E5%A4%9A%E7%B3%BB%E7%B5%B1%E7%82%8E%E7%97%87%E6%80%A7%E7%97%87%E5%80%99%E7%BE%A4/" title="小児多系統炎症性症候群">小児多系統炎症性症候群 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B7%9D%E5%B4%8E%E7%97%85/" title="川崎病">川崎病 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%BF%83%E7%AD%8B%E7%82%8E/" title="心筋炎">心筋炎 (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%83%86%E5%9A%A2%E7%82%8E/" title="急性胆嚢炎">急性胆嚢炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%85%B9%E7%97%87/" title="急性腹症">急性腹症 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A7%E6%84%9F%E6%9F%93%E7%97%87/" title="性感染症">性感染症 (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%B5%90%E6%A0%B8/" title="結核">結核 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%9D%E6%A9%9F%E8%83%BD%E9%9A%9C%E5%AE%B3/" title="肝機能障害">肝機能障害 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%BA%E7%82%8E/" title="肺炎">肺炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%82%E8%B3%AA%E7%95%B0%E5%B8%B8%E7%97%87/" title="脂質異常症">脂質異常症 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%B3%E5%8D%92%E4%B8%AD/" title="脳卒中">脳卒中 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" title="薬害">薬害 (51)</a>
+	</div>
+</div><div style="height:50vh; overflow-y:auto;">
+    <a class="twitter-timeline" href="https://twitter.com/GLnoIrjwa7omiK7?ref_src=twsrc%5Etfw">Tweets by GLnoIrjwa7omiK7</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	<a class="footer__link" href="/privacy/">Privacy</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2023 ImageDiagnosis &amp; Program.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
