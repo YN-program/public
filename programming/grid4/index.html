@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>JavaScriptで要素のIDを取得 - ImageDiagnosis &amp; Program</title>
+	<title>【CSS】grid layout -その４- justify-self, align-selfなど - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="JavaScriptで要素のIDを取得" />
-<meta property="og:description" content="ボタンや要素をクリックしたとき、動画、オーディオの終了時、あるいは querySelectorall() を用いて要素の ID を取得する方法のメモ。" />
+		<meta property="og:title" content="【CSS】grid layout -その４- justify-self, align-selfなど" />
+<meta property="og:description" content="marginやjustify-self, align-self, place-self, justify-items, align-items, place-itemsなどを使用して、グリッドアイテムを配置。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/js-onclick-getid/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-10-07T15:29:19+09:00" />
-<meta property="article:modified_time" content="2022-10-07T15:29:19+09:00" />
+<meta property="og:url" content="https://progress-advance.com/programming/grid4/" /><meta property="article:section" content="programming" />
+<meta property="article:published_time" content="2023-02-16T10:59:45+09:00" />
+<meta property="article:modified_time" content="2023-02-16T10:59:45+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="JavaScriptで要素のIDを取得"/>
-<meta name="twitter:description" content="ボタンや要素をクリックしたとき、動画、オーディオの終了時、あるいは querySelectorall() を用いて要素の ID を取得する方法のメモ。"/>
+<meta name="twitter:title" content="【CSS】grid layout -その４- justify-self, align-selfなど"/>
+<meta name="twitter:description" content="marginやjustify-self, align-self, place-self, justify-items, align-items, place-itemsなどを使用して、グリッドアイテムを配置。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -128,105 +128,309 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">JavaScriptで要素のIDを取得</h1>
+			<h1 class="post__title">【CSS】grid layout -その４- justify-self, align-selfなど</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-10-07T15:29:19&#43;09:00">October 07, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-02-16T10:59:45&#43;09:00">February 16, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/" rel="category">Categories</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>ボタンや要素をクリックしたとき、動画、オーディオの終了時、あるいは <code>querySelectorall()</code> を用いて要素の ID を取得する方法のメモ。</p>
-<p>以下のコードは、stack overflow から。</p>
-<pre tabindex="0"><code>&lt;button id=&#34;btn1&#34; onClick=&#34;reply_click(this.id)&#34;&gt;B1&lt;/button&gt;
-&lt;button id=&#34;btn2&#34; onClick=&#34;reply_click(this.id)&#34;&gt;B2&lt;/button&gt;
-&lt;button id=&#34;btn3&#34; onClick=&#34;reply_click(this.id)&#34;&gt;B3&lt;/button&gt;
-    
-&lt;script type=&#34;text/javascript&#34;&gt;
-  function reply_click(clicked_id)
-  {
-      alert(clicked_id);
-  }
-&lt;/script&gt;
-</code></pre><p><a href="https://stackoverflow.com/questions/4825295/onclick-to-get-the-id-of-the-clicked-button">onClick to get the ID of the clicked button</a></p>
-<p>python のテンプレートで、ID にオブジェクトの uuid を付与して、javascript で uuid を取り出す方法。</p>
-<pre tabindex="0"><code>&lt;button id=&#34;btn1_{{ test.id }}&#34; onClick=&#34;myFunction(this.id)&#34;&gt;B1&lt;/button&gt;
-&lt;button id=&#34;btn2_{{ test.id }}&#34; onClick=&#34;myFunction(this.id)&#34;&gt;B2&lt;/button&gt;
-&lt;button id=&#34;btn3_{{ test.id }}&#34; onClick=&#34;myFunction(this.id)&#34;&gt;B3&lt;/button&gt;
-    
-&lt;script type=&#34;text/javascript&#34;&gt;
-  function myFunction(id)
-  {
-    const target = id.slice(-36);
-    console.log(target); // test.id(uuid)
-  }
-&lt;/script&gt;
-</code></pre><p>その他、videoタグやaudioタグで、再生終了時や停止時に id を取得。</p>
-<pre tabindex="0"><code>&lt;video id=&#34;video&#34; controls onpause=&#34;myFunction(this.id)&#34; onended=&#34;myFunction(this.id)&#34;&gt;
-
-// &lt;audio id=&#34;audio&#34; controls onpause=&#34;myFunction(this.id)&#34; onended=&#34;myFunction(this.id)&#34;&gt;
-
-&lt;script&gt;
-function myFunction(pk) {
-    console.log(pk);
+			<p><code>margin</code>や<code>justify-self</code>, <code>align-self</code>, <code>place-self</code>, <code>justify-items</code>, <code>align-items</code>, <code>place-items</code>などを使用して、グリッドアイテムを配置。</p>
+<p><img src="/img/css/grid.png" alt="grid"></p>
+<ul>
+<li>item1: margin-left:auto;</li>
+<li>item2: margin-right:auto;</li>
+<li>item3: justify-self:start;</li>
+<li>item4: justify-self:end;</li>
+<li>item5: justify-self:center;</li>
+<li>item6: justify-self:stretch;</li>
+<li>item7: align-self:start;</li>
+<li>item8: align-self:end;</li>
+<li>item9: align-self:stretch;</li>
+<li>item10: align-self:stretch;</li>
+<li>item11: place-self:center;</li>
+<li>item12: place-self:start end;</li>
+</ul>
+<p><code>justify-self</code></p>
+<p>グリッドアイテムを行に沿って整列させる。一つ一つのアイテムに適用される。</p>
+<ul>
+<li>start：セルの開始位置にアイテムを設置。</li>
+<li>end：セルの終端にアイテムを設置。</li>
+<li>center:セルの中心にアイテムを設置。</li>
+<li>stretch：セルの幅に合わせてアイテムを設置（デフォルト）。</li>
+</ul>
+<p><code>align-self</code></p>
+<p>グリッドアイテムを列に沿って整列させる。一つ一つのアイテムに適用される。</p>
+<ul>
+<li>start：セルの開始位置にアイテムを設置。</li>
+<li>end：セルの終端にアイテムを設置。</li>
+<li>center:セルの中心にアイテムを設置。</li>
+<li>stretch：セルの高さに合わせてアイテムを設置（デフォルト）。</li>
+</ul>
+<p><code>place-self</code></p>
+<p>align-selfとjustify-selfの両方のプロパティを一度に設定できる。一つ一つのアイテムに適用される。</p>
+<pre tabindex="0"><code>// place-selfの例
+ 
+item1 {
+    place-self:start center;
+    ## 最初に align-self、次に justify-self。
 }
-&lt;/script&gt;
-</code></pre><p><code>querySelectorall()</code> を使用して、複数の要素のidを取得。</p>
-<pre tabindex="0"><code>&lt;div id=&#34;test1&#34; class=&#34;sample&#34;&gt;test1&lt;/div&gt;
-&lt;div id=&#34;test2&#34; class=&#34;sample&#34;&gt;test2&lt;/div&gt;
-&lt;div id=&#34;test3&#34; class=&#34;sample&#34;&gt;test3&lt;/div&gt;
-&lt;div id=&#34;test4&#34; class=&#34;sample&#34;&gt;test4&lt;/div&gt;
 
-&lt;script&gt;
-var t = document.querySelectorAll(&#34;.sample&#34;);
+item2 {
+    place-self:center;
+    ## 値が一つの場合、align-selfとjustify-selfの両方がこの値になる。
+}
+</code></pre><hr>
+<p>グリッドコンテナに対して、<code>justify-items</code>, <code>align-items</code>、<code>place-items</code>。</p>
+<p><code>justify-items</code>は、グリッドアイテムを行に沿って整列させる。コンテナ内の全てのアイテムに適用される。</p>
+<p><code>align-items</code>は、グリッドアイテムを列に沿って整列させる。コンテナ内の全てのアイテムに適用される。</p>
+<p><code>place-items</code>は、<code>justify-items</code>と <code>align-items</code>の両方のプロパティを単一の宣言で設定できる。</p>
+<p>最初の値は<code>align-items</code>、2番目の値は<code>justify-items</code>を設定する。2番目の値が省略された場合、最初の値が両方のプロパティに割り当てられる。</p>
 
-t.forEach(function(item){
-    let id = item.getAttribute(&#39;id&#39;);
-    console.log(id);
-});
 
-&lt;/script&gt;
-</code></pre><h5 id="参考記事">参考記事</h5>
-<p><a href="https://qiita.com/amamamaou/items/25e8b4e1b41c8d3211f4">要素の取得方法まとめ</a></p>
+<style>
+
+
+.grid_wrapper{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+    place-items: center;
+    color:black;
+}
+.grid_wrapper div{
+  margin-bottom:1rem;
+}
+.grid_wrapper li {
+    list-style: none;
+    font-size:1rem;
+    background:#fff;
+    border:solid 1px black;
+    margin:0;
+}
+.grid_wrapper ul { margin:0; }
+
+mark { margin:0.25rem;}
+.grid_container{
+    display: grid;
+    grid-template:100px 100px/100px 100px;
+    background:#f7f7f7;
+    text-align:center;
+    position: relative;
+}
+.grid_container1{
+    display: grid;
+    width:200px;
+    grid-template-columns:repeat(2,100px);
+    background:#f7f7f7;
+    text-align:center;
+    position: relative;
+}
+.item_width {width:70px;}
+
+.a { justify-items:start; }
+.b { justify-items:end; }
+.c { justify-items:center; }
+.d { justify-items:stretch; }
+.e { align-items:start; }
+.f { align-items:end; }
+.g { align-items:center; }
+.h { align-items:stretch; }
+.i { place-items:start; }
+.j { place-items:end; }
+.k { place-items:center; }
+.l { place-items:stretch; }
+.m { place-items:start end; }
+.n { place-items:end center; }
+.o { place-items:center start; }
+.p { place-items:center end; }
+
+</style>
+
+<div class="grid_wrapper">
+
+  <div>
+    <mark>justify-items: start;</mark>
+    <ul class="grid_container a">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>justify-items: end;</mark>
+    <ul class="grid_container b">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>justify-items: center;</mark>
+    <ul class="grid_container c">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>justify-items: stretch;</mark>
+    <ul class="grid_container d">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>align-items: start;</mark>
+    <ul class="grid_container e">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>align-items: end;</mark>
+    <ul class="grid_container f">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>align-items: center;</mark>
+    <ul class="grid_container g">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>align-items: stretch;</mark>
+    <ul class="grid_container h">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+
+  
+  <div>
+    <mark>place-items: start;</mark>
+    <ul class="grid_container i">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>place-items: end;</mark>
+    <ul class="grid_container j">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>place-items: center;</mark>
+    <ul class="grid_container k">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>place-items: stretch;</mark>
+    <ul class="grid_container l">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>place-items: start end;</mark>
+    <ul class="grid_container m">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>place-items: end center;</mark>
+    <ul class="grid_container n">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>place-items: center start;</mark>
+    <ul class="grid_container o">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+  <div>
+    <mark>place-items: center end;</mark>
+    <ul class="grid_container p">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+  </div>
+
+</div>
+
 <h5 id="お薦め">お薦め</h5>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【狙われる高齢者】大阪府などで65歳以上のインフルワクチン接種を無償化「まだまだ殺るつもりか」「タダほど怖いものはない」と批判殺到<a href="https://t.co/cNy0Q8Svsi">https://t.co/cNy0Q8Svsi</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1578015931372294145?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">竹中平蔵、自ら日本経済を破壊しておきながら「日本人が90歳まで働く時代が来る」「何もしないで給料があがるなんて甘えは通用しない」とリスキリングの重要性を訴え、批判殺到<a href="https://t.co/kdbi7TOloi">https://t.co/kdbi7TOloi</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1626190911150653441?ref_src=twsrc%5Etfw">February 16, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【コロナとインフル同時流行への政府対策案】発熱したら自己検査、陽性なら「コロナ患者」陰性なら「インフル患者」とする方針を発表 「発熱はコロナかインフルしかないのか」と批判殺到<a href="https://t.co/DRcH5TlpE5">https://t.co/DRcH5TlpE5</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1578004178852786177?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【昆虫食】コオロギを食べるリスクについて、内閣府が2018年に既に注意喚起していた!!　アレルギー問題、加熱しても殺菌できず、神経疾患を引き起こす重金属が体内に蓄積<a href="https://t.co/j4Wj0mymdy">https://t.co/j4Wj0mymdy</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1626181433479041026?ref_src=twsrc%5Etfw">February 16, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【CDCのデータ公開】コロナワクチン接種したアメリカ人1000万人中78万人が診察・救急治療・入院、約250万人以上が日常生活に支障を来す<a href="https://t.co/qHBP3D7jxG">https://t.co/qHBP3D7jxG</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577989205573394433?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">この世界は、RAPTさんが予言してくださった通りに動き、変化している!!（十二弟子・KAWATAさんの証）<a href="https://t.co/z4YK1xVmVc">https://t.co/z4YK1xVmVc</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1626173988811702275?ref_src=twsrc%5Etfw">February 16, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">聖書に書かれた「罪」をなくしていくことで、人生が180度変化し、どこまでも幸福に生きられるようになった（十二弟子・KAWATAさんの証）<a href="https://t.co/IYj6fXLf5T">https://t.co/IYj6fXLf5T</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577975622366040064?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【岡山県備前市】マイナンバーカードを取得した世帯にのみ、子供の保育料・給食費を無償にすると正式表明　差別行為だと批判殺到するも、河野デジタル大臣は容認<a href="https://t.co/G6h8hvCEBz">https://t.co/G6h8hvCEBz</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1626171014941130754?ref_src=twsrc%5Etfw">February 16, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【日本人最年長の宇宙詐欺師】宇宙が存在しないとバレても尚、「若田光一」が「イーロン・マスク」の宇宙船で5回目の宇宙飛行に成功<a href="https://t.co/NoHSg0oOx6">https://t.co/NoHSg0oOx6</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577967660134203393?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【中国崩壊】江沢民派の大富豪・郭文貴「中国には14億人もいない、多くて9億人だ」「建設業は少なくとも半分が崩壊し、不動産は間違いなく崩壊した」と暴露　2022年上半期に46万社が廃業、310万の個人事業主が倒産、8億人が借金<a href="https://t.co/B6GwIRjMgH">https://t.co/B6GwIRjMgH</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1626158455638884353?ref_src=twsrc%5Etfw">February 16, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">天国も地獄も存在している!! そしてズバリ、天国に行く方法を教えてくれるのはRAPTブログだけ!! （十二弟子・ミナさんの証）<a href="https://t.co/jMUi3ClM8V">https://t.co/jMUi3ClM8V</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577630300594925568?ref_src=twsrc%5Etfw">October 5, 2022</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【言論弾圧の報い】Googleが発表したAIチャットボット『Bard』が誤回答、致命的なミスで株式時価総額13兆円を消失<a href="https://t.co/Hpobq8AMU0">https://t.co/Hpobq8AMU0</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1625800365701742592?ref_src=twsrc%5Etfw">February 15, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">神様を信じて祈り求めることで、全ての不安や心配、絶望から解放され、「心の病」が治った奇跡の体験!!（十二弟子・ヒロさんの証）<a href="https://t.co/NnmxHSYgeV">https://t.co/NnmxHSYgeV</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577249469883523072?ref_src=twsrc%5Etfw">October 4, 2022</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【コロナワクチンの副反応の疑い】日本各地で過去最高を上回る「1月の超過死亡者数」福井市40.3%増・北九州市37%増・宮崎市28.6%増・姫路市26.9%増・富山市26.4%増…etc<a href="https://t.co/XZSF5hZwBr">https://t.co/XZSF5hZwBr</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1625797841309544449?ref_src=twsrc%5Etfw">February 15, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">神様の御言葉を実践することで、混乱に満ちたこの世の中でも、精神的にも経済的にも豊かに生きられるようになった!!（十二弟子・サキさんの証）<a href="https://t.co/C5T9kp3Cxe">https://t.co/C5T9kp3Cxe</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1625443477696966656?ref_src=twsrc%5Etfw">February 14, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-<p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/FXr2626vR58" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
- </p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ynhVt5evdDc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
 		</div>
 		<footer class="post__footer">
 			
@@ -234,13 +438,7 @@ t.forEach(function(item){
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/django/" rel="tag">django</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/javascript/" rel="tag">JavaScript</a>
+			<a class="tags__link btn" href="/tags//" rel="tag"></a>
 		</li>
 	</ul>
 </div>
@@ -256,15 +454,9 @@ t.forEach(function(item){
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/dropna/" rel="prev">
+		<a class="pager__link" href="/programming/css-grid-auto-fill-vs-auto-fit/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">リストからNoneを削除</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/tweet-shortcode/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【HUGO】twitter のショートコードの修正</p>
+			<p class="pager__title">【CSS】grid layout -その３- auto-fillとauto-fit</p>
 		</a>
 	</div>
 </nav>

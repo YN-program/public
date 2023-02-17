@@ -154,8 +154,8 @@ if (!doNotTrack) {
 </code></pre>
 
 <style>
-body { -webkit-text-size-adjust: 100％; }
-p {
+/* body { -webkit-text-size-adjust: 100％; } */
+.p {
     overflow: hidden;
     white-space: nowrap;
     margin:0;
@@ -238,18 +238,18 @@ audio {
 
 <div id="wrapper" class="audio_wrapper d-none">
     <div class=audio_area>
-        <button type="button" id="stop_button" class="audio_btn"><p>stop</p></button>
-        <button type="button" id="pause_button" class="audio_btn normal-line-height"><p>pause</p></button>
-        <button type="button" id="skip_backward" class="audio_btn normal-line-height"><p>skip</p><p>-10</p></button>
-        <button type="button" id="skip_forward" class="audio_btn normal-line-height"><p>skip</p><p>+10</p></button>
-        <button type="button" id="vol_up_btn" class="audio_btn normal-line-height"><p>vol</p><p>+</p></button>
-        <button type="button" id="vol_down_btn" class="audio_btn normal-line-height"><p>vol</p><p>-</p></button>
-        <button type="button" id="muteBtn" class="audio_btn"><p>Vol</p></button>
+        <button type="button" id="stop_button" class="audio_btn"><p class="p">stop</p></button>
+        <button type="button" id="pause_button" class="audio_btn normal-line-height"><p class="p">pause</p></button>
+        <button type="button" id="skip_backward" class="audio_btn normal-line-height"><p class="p">skip</p><p class="p">-10</p></button>
+        <button type="button" id="skip_forward" class="audio_btn normal-line-height"><p class="p">skip</p><p class="p">+10</p></button>
+        <button type="button" id="vol_up_btn" class="audio_btn normal-line-height"><p class="p">vol</p><p class="p">+</p></button>
+        <button type="button" id="vol_down_btn" class="audio_btn normal-line-height"><p class="p">vol</p><p class="p">-</p></button>
+        <button type="button" id="muteBtn" class="audio_btn"><p class="p">Vol</p></button>
         <button type="button" id="rateUp" class="audio_btn normal-line-height">
-          <p>rate</p><p>+</p>
+          <p class="p">rate</p><p class="p">+</p>
         </button>
         <button type="button" id="rateDown" class="audio_btn normal-line-height">
-          <p>rate</p><p>-</p>
+          <p class="p">rate</p><p class="p">-</p>
         </button>
     </div>
     <div class="w-100">
@@ -919,11 +919,11 @@ function setAudio(pk){
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/programming/grid4/">【CSS】grid layout -その４- justify-self, align-selfなど</a></li>
 			<li class="widget__item"><a class="widget__link" href="/programming/css-grid-auto-fill-vs-auto-fit/">【CSS】grid layout -その３- auto-fillとauto-fit</a></li>
 			<li class="widget__item"><a class="widget__link" href="/programming/grid2/">【CSS】grid layout -その２-</a></li>
 			<li class="widget__item"><a class="widget__link" href="/programming/grid1/">【CSS】grid layout -その１-</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/vaccine-baby-death/">【猛毒】コロナワクチンおよび4種類のワクチン接種の10日後に、赤ちゃんが突然死。</a></li>
-			<li class="widget__item"><a class="widget__link" href="/medical/gout-vaccine/">ワクチン接種が痛風発作の引き金に。</a></li>
 		</ul>
 	</div>
 </div>
@@ -931,6 +931,8 @@ function setAudio(pk){
 	<h4 class="widget__title">Categories</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/">Categories</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/life/">life</a></li>
 			<li class="widget__item">
