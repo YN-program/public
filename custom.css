@@ -10,7 +10,7 @@ h5 {
 	background: rgb(151,246,255);
 	background: linear-gradient(43deg, rgba(151,246,255,1) 0%, rgba(154,253,255,1) 50%, rgba(96,255,228,1) 100%);
 	color:#6F28EB;
-	padding:0.25rem;
+	padding:0.25rem 0.25em 0.25em 0.5em;
 }
 
 .logo__title {
@@ -41,7 +41,7 @@ h5 {
 .menu__list {
 	/* background:#e6bfb2; */
 	background: rgb(255,207,181);
-	background: linear-gradient(45deg, rgba(255,207,181,1) 0%, rgba(250,197,161,1) 50%, rgba(255,248,127,1) 100%);
+	background: linear-gradient(120deg, rgba(255,207,181,1) 0%, rgba(250,197,161,1) 20%, rgba(255,222,127,1) 100%);
 }
 
 
@@ -54,13 +54,17 @@ h5 {
 	background:#ffa8a8;
 }
 .menu__btn {
-	background: rgb(255,247,139);
-	background: linear-gradient(45deg, rgba(255,247,139,1) 0%, rgba(177,255,223,1) 50%, rgba(213,254,147,1) 100%);
+	background: rgb(255,207,181);
+	background: linear-gradient(120deg, rgba(255,207,181,1) 0%, rgba(250,197,161,1) 20%, rgba(255,222,127,1) 100%);
+	/* background: rgb(255,247,139);
+	background: linear-gradient(45deg, rgba(255,247,139,1) 0%, rgba(177,255,223,1) 50%, rgba(213,254,147,1) 100%); */
 	color:rgba(185,202,255,1);
 }
 .menu__btn:hover {
-	background: rgb(255,247,139);
-	background: linear-gradient(45deg, rgba(255,247,139,1) 0%, rgba(177,255,223,1) 50%, rgba(213,254,147,1) 100%);
+	background: rgb(255,207,181);
+	background: linear-gradient(120deg, rgba(255,207,181,1) 0%, rgba(250,197,161,1) 20%, rgba(255,222,127,1) 100%);
+	/* background: rgb(255,247,139);
+	background: linear-gradient(45deg, rgba(255,247,139,1) 0%, rgba(177,255,223,1) 50%, rgba(213,254,147,1) 100%); */
 	color:#A1A1FF;
 }
 .footer {
