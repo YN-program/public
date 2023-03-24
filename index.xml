@@ -6,7 +6,16 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 24 Mar 2023 10:25:56 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Mar 2023 14:44:52 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Netlify】HUGOのバージョンが古くて（?）デプロイに失敗</title>
+      <link>https://progress-advance.com/programming/netlify_build_error/</link>
+      <pubDate>Fri, 24 Mar 2023 14:44:52 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/programming/netlify_build_error/</guid>
+      <description>&lt;p&gt;NetlifyとHUGOを使用してブログを記載していますが、新しい記事が反映されなくなったので、原因の究明と解決に至るまで。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>コロナワクチンの副反応は、1200種類以上。</title>
       <link>https://progress-advance.com/medical/vaccine_injuries/</link>
