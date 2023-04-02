@@ -4,22 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>「django-axes」 でログイン試行回数を制限する - ImageDiagnosis &amp; Program</title>
+	<title>水銀の健康被害と性病 - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="「django-axes」 でログイン試行回数を制限する" />
-<meta property="og:description" content="Webサイトにて、不正ログインを防ぐための django-axes。
-ブルートフォース攻撃やパスワードリスト攻撃、辞書攻撃などの対策になる。" />
+		<meta property="og:title" content="水銀の健康被害と性病" />
+<meta property="og:description" content="水銀の害について。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/django-axes%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E8%A9%A6%E8%A1%8C%E5%9B%9E%E6%95%B0%E3%82%92%E5%88%B6%E9%99%90%E3%81%99%E3%82%8B/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-03-27T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-03-27T00:00:00+00:00" />
+<meta property="og:url" content="https://progress-advance.com/medical/mercury-std-2/" /><meta property="article:section" content="medical" />
+<meta property="article:published_time" content="2023-04-03T07:58:53+09:00" />
+<meta property="article:modified_time" content="2023-04-03T07:58:53+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="「django-axes」 でログイン試行回数を制限する"/>
-<meta name="twitter:description" content="Webサイトにて、不正ログインを防ぐための django-axes。
-ブルートフォース攻撃やパスワードリスト攻撃、辞書攻撃などの対策になる。"/>
+<meta name="twitter:title" content="水銀の健康被害と性病"/>
+<meta name="twitter:description" content="水銀の害について。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -132,99 +130,94 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">「django-axes」 でログイン試行回数を制限する</h1>
+			<h1 class="post__title">水銀の健康被害と性病</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-03-27T00:00:00Z">March 27, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-04-03T07:58:53&#43;09:00">April 03, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/medical/" rel="category">medical</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>Webサイトにて、不正ログインを防ぐための django-axes。
-ブルートフォース攻撃やパスワードリスト攻撃、辞書攻撃などの対策になる。</p>
-<p>ブルートフォース攻撃（総当たり攻撃）：パスワードや暗証番号に対して、可能性のある全ての組み合わせを総当たりで試す方法。</p>
-<p>パスワードリスト攻撃：流出したIDとパスワードをリストで管理し、リスト上のIDとパスワードを用いて標的システムへの侵入を試みる攻撃。異なるサービスで同じIDとパスワードを使用していた場合、パスワードリスト攻撃によりシステムへの侵入を許すことになる。</p>
-<p>辞書攻撃：辞書に掲載されているような語、一般的に良く知られている単語を用いてパスワードを試す方法。</p>
-<h4 id="django-axes-の機能">django-axes の機能</h4>
-<ol>
-<li>
-<p>Django を使ったサイトへのログイン試行を記録し、設定された試行回数を超えると、攻撃者がサイトへのさらなるログイン試行を阻止。</p>
-</li>
-<li>
-<p>ログイン試行を追跡し、データベースに無期限に保存することもできる。また、高速で DDoS 耐性のあるキャッシュの実装を使用することもできる。</p>
-</li>
-<li>
-<p>IP アドレス、ユーザー名、ユーザーエージェント、またはそれらの組み合わせでログイン試行を監視するように設定できる。</p>
-</li>
-<li>
-<p>クールオフ期間、IP アドレスのホワイトリストとブラックリスト、 ユーザアカウントのホワイトリスト、および Django のアクセス管理のためのその他の 機能をサポートしてくれる。</p>
-</li>
-</ol>
-<h4 id="実装方法">実装方法</h4>
-<pre tabindex="0"><code>pip install django-axes
-</code></pre><p>&ldquo;Axes requires a supported Django version and runs on Python versions 3.6 and above.&rdquo; ということですから、サポートされている Django と 3.6以降のpython が必要。</p>
-<p><a href="https://django-axes.readthedocs.io/en/latest/1_requirements.html">1. Requirements</a></p>
-<p>settings.py の INSTALLED_APPS  に &lsquo;axes&rsquo;を追記。</p>
-<pre tabindex="0"><code>INSTALLED_APPS = [
-    #Axes app can be in any position in the INSTALLED_APPS list.
-    &#39;axes&#39;,
+			<p>水銀の害について。</p>
+<blockquote>
+<ul>
+<li>精神錯乱、</li>
+<li>記憶障害、</li>
+<li>下血、</li>
+<li>口腔粘膜潰瘍、</li>
+<li>歯肉炎、</li>
+<li>手足の震え、</li>
+<li>中耳炎、</li>
+<li>頭痛、</li>
+<li>湿疹、</li>
+<li>結膜炎、</li>
+<li>下痢、</li>
+<li>鼻咽頭炎、</li>
+<li>膣炎、</li>
+<li>尿道炎、</li>
+<li>膀胱炎、</li>
+<li>腎臓障害など</li>
+</ul>
+<p><a href="https://smile72.com/2019/01/15/amalgam_dental_shikachiryou/">https://smile72.com/2019/01/15/amalgam_dental_shikachiryou/</a></p>
+</blockquote>
+<p>この中で、膣炎や尿道炎は、性感染症と疑われることがあります。</p>
+<p>コロンワクチン後に尿道炎や膣炎になった人がいるようですが、その他の水銀を含むワクチンでも発症する可能性があります。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">コロナワクチン摂取から3日目なんだけど<br>尿道炎？(排尿時激痛、残尿感ひどくて悶絶)、悪寒がすごくて<br>マジでトイレに引きこもってトイレから出られない。痛い痛い。<br>いつも膀胱炎気味になったときに飲む漢方の五淋散も全く効かない。<br>病院行く。<br>ワクチン打ったのとの関係は不明w</p>&mdash; なな (@ahnanak) <a href="https://twitter.com/ahnanak/status/1437987896712069120?ref_src=twsrc%5Etfw">September 15, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    &#39;django.contrib.admin&#39;,
-    &#39;django.contrib.auth&#39;,
-    &#39;django.contrib.contenttypes&#39;,
-    &#39;django.contrib.sessions&#39;,
-    &#39;django.contrib.messages&#39;,
-    &#39;django.contrib.staticfiles&#39;,
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">コロナワクチン一回目で<br>軽い微熱と倦怠感。<br>そんでカンジダ膣炎こんにちは。<br>免疫力下がるのね2回目悩むわ</p>&mdash; ぽぷ (@popumi__) <a href="https://twitter.com/popumi__/status/1440727110331494409?ref_src=twsrc%5Etfw">September 22, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-]    
-</code></pre><p>&lsquo;axes&rsquo;は、どこに記載してもいいようです。</p>
-<hr>
-<p>2022/6/21 追記</p>
-<p>INSTALLED_APPSには、記載順があるそうです。上記を一部変更しました。</p>
-<p><a href="https://progress-advance.com/programming/django_installedapps/">【Django】INSTALLED_APPS の適切な書き方</a></p>
-<hr>
-<p>次に、settings.py の AUTHENTICATION_BACKENDS の一番上に「axes.backends.AxesBackend」</p>
-<pre tabindex="0"><code>AUTHENTICATION_BACKENDS = [
-    # AxesBackend should be the first backend in the AUTHENTICATION_BACKENDS list.
-    &#39;axes.backends.AxesBackend&#39;,
+ </p>
+<p>梅毒だけでなく、これまで性病と診断されてきた人は、実はワクチンなどによる重金属中毒が原因なのかもしれないと思いました。</p>
+<p><a href="https://progress-advance.com/medical/mercury-std/">【ウイルスは存在しない】HIV,HPV,HBC,HCV&hellip;etc ウイルス性性感染症も存在しない 梅毒も</a></p>
+<p><a href="https://progress-advance.com/medical/syphilis-hg/">梅毒は重金属中毒の可能性</a></p>
+<p><a href="http://rapt-plusalpha.com/25593/">【アメリカ疾病予防管理センター（CDC)の職員による内部告発】インフルエンザワクチンには25mgの水銀、コロナワクチンには25〜30mgの水銀が入っている
+</a></p>
+<p><a href="http://rapt-plusalpha.com/14279/">ワクチンに含まれる「水銀」は脳を破壊する最強の毒 イルミナティによる人口削減の実態を専門家が暴露
+</a></p>
+<p>#####　お薦め</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">和田アキ子が痛々しい「杖つき姿」に　移動中はテレビに映らないよう配慮　コロナワクチンの副反応による持病悪化を疑う声<a href="https://t.co/Xulj7bpF9P">https://t.co/Xulj7bpF9P</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1642509381668593664?ref_src=twsrc%5Etfw">April 2, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    # Django ModelBackend is the default authentication backend.
-    &#39;django.contrib.auth.backends.ModelBackend&#39;,
-]
-</code></pre><p>MIDDLEWARE の一番下に「axes.middleware.AxesMiddleware」を記載します。</p>
-<pre tabindex="0"><code>MIDDLEWARE = [
-    (中略) 
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【自民党幹事長・茂木敏充】「外国人に地方参政権を付与すべき」と主張していたことが発覚し、中共スパイであることが完全にバレる「21世紀の日本を“多様性のある多民族社会”に」<a href="https://t.co/DOgomTlowx">https://t.co/DOgomTlowx</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1642504081301450752?ref_src=twsrc%5Etfw">April 2, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    # AxesMiddleware should be the last middleware in the MIDDLEWARE list.
-    # It only formats user lockout messages and renders Axes lockout responses
-    # on failed user authentication attempts from login views.
-    # If you do not want Axes to override the authentication response
-    # you can skip installing the middleware and use your own views.
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">岸田総理、外務大臣時代に『統一教会』の関連団体にODA資金を供与していたことが発覚<a href="https://t.co/7VbeQkOse6">https://t.co/7VbeQkOse6</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1642485641501085696?ref_src=twsrc%5Etfw">April 2, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    &#39;axes.middleware.AxesMiddleware&#39;,
-]
-</code></pre><p>その後、「python manage.py check」で確認し、「python manage.py migrate」を実行します。</p>
-<p><a href="https://django-axes.readthedocs.io/en/latest/2_installation.html">2. Installation</a></p>
-<hr>
-<p>AXES_FAILURE_LIMIT：ロックされるまでのログイン回数（整数）デフォルト（3）</p>
-<p>AXES_LOCK_OUT_AT_FAILURE：この値がTrueの時、AXES_FAILURE_LIMIT の件数を超えるとロックが有効になる。デフォルト True</p>
-<p>AXES_COOLOFF_TIME：自動でロックが解除されるまでの時間(単位は時間)</p>
-<p>AXES_ONLY_USER_FAILURES：Trueにしたら、ロック対象をIPアドレスではなくユーザ名で判断する。デフォルト False</p>
-<p>AXES_USE_USER_AGENT：Trueの場合、IPアドレスとユーザーエージェントに基づきロックアウトとログを記録する。これは、同じIPからの異なるユーザーからの要求が、別に扱われる。(AXES_ONLY_USER_FAILURES設定時は無効化)
-デフォルト False</p>
-<p>AXES_LOCKOUT_TEMPLATE：ロック画面のテンプレートを指定する。</p>
-<p>AXES_LOCKOUT_URL：ロック画面のURLを指定する。(AXES_LOCKOUT_TEMPLATEを設定したらそちらを優先)</p>
-<p>AXES_VERBOSE：Trueにしたら、Axesの詳細ログを見ることができる。</p>
-<p>AXES_IP_BLACKLIST：ブラックリストにするIPアドレスを指定。</p>
-<p>AXES_IP_WHITELIST：ホワイトリストにするIPアドレスを指定。</p>
-<p>AXES_RESET_ON_SUCCESS：Trueのとき、ログイン成功で失敗回数リセット。</p>
-<p><a href="https://django-axes.readthedocs.io/en/latest/4_configuration.html">4. Configuration</a></p>
-<p>Axes と Django REST Framework, Django Allauth, Django Simple Captcha, Django OAuth Toolkit, Django Reversion を併用するには、幾つかの設定が必要なようですが、別の機会に記載したいと思います。詳細は、「6.Integration」 をご確認ください。</p>
-<p><a href="https://django-axes.readthedocs.io/en/latest/6_integration.html">6. Integration</a></p>
-<p>その他、参考にしたサイト。</p>
-<p><a href="https://create-it-myself.com/know-how/how-to-use-django-axes/">Djangoでログイン試行回数制限を付けられる「django-axes」の使い方</a></p>
-<p><a href="https://create-it-myself.com/know-how/add-login-attempts-limit-to-django-user-authentication/">Djangoのユーザ認証機能にログイン試行回数制限を追加する</a></p>
-<p><a href="https://medium.com/creditengine-tech/django-axes%E3%81%A7%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%AD%E3%83%83%E3%82%AF%E6%A9%9F%E8%83%BD%E4%BB%98%E3%81%8Ddjango%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E9%96%8B%E7%99%BA%E3%81%99%E3%82%8B-e5414cc674e0">アカウントロック機能を追加するライブラリdjango-axesの紹介</a></p>
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">河野デジタル大臣、コンビニでの証明書交付サービスで他人の住民票が発行された事案について「マイナカードの信頼性に影響しない」と述べ、かえって信頼回復不能に<a href="https://t.co/HTJeAXs4NS">https://t.co/HTJeAXs4NS</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1642145854697127939?ref_src=twsrc%5Etfw">April 1, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">時代と共に、神様を知らない人たちの苦しみは増し加わり、神様を信じて生きる私たちの喜びは増し加わっていく（十二弟子・KAWATAさんの証）<a href="https://t.co/XqfMC8lZ8N">https://t.co/XqfMC8lZ8N</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1641760156173357057?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RAPTさんの教会で飼っている動物たちは、他の動物たちとは全く次元が違う!!　テグーマウスに起きた不思議なしるしと奇跡（十二弟子・NANAさんの証）<a href="https://t.co/OJByEmcx9L">https://t.co/OJByEmcx9L</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1641420314109427712?ref_src=twsrc%5Etfw">March 30, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ </p>
+<p>
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/@rapt-plusalpha:6/Minaラジオ2:0?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+
+ </p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/6W9hPx3hH5s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+ </p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/dZusTa6srSw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+ </p>
 		</div>
 		<footer class="post__footer">
 			
@@ -232,7 +225,16 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/django/" rel="tag">django</a>
+			<a class="tags__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" rel="tag">薬害</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" rel="tag">コロナワクチン</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" rel="tag">ワクチン</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E6%80%A7%E6%84%9F%E6%9F%93%E7%97%87/" rel="tag">性感染症</a>
 		</li>
 	</ul>
 </div>
@@ -247,10 +249,10 @@ if (!doNotTrack) {
 </div>
 
 <nav class="pager flex">
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/django-simple-captcha/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Django Simple Captcha</p>
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/medical/vaccine_injuries/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">コロナワクチンの副反応は、1200種類以上。</p>
 		</a>
 	</div>
 </nav>
