@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>【Django】テンプレートで多重リストから要素を取り出す方法 - ImageDiagnosis &amp; Program</title>
+	<title>「コロナワクチンDNA混入疑惑で、遺伝子改造人間に!?」という妄想。 - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="【Django】テンプレートで多重リストから要素を取り出す方法" />
-<meta property="og:description" content="リスト、多重リストから要素を取り出すには、リスト名の後にインデックス番号を記述します。" />
+		<meta property="og:title" content="「コロナワクチンDNA混入疑惑で、遺伝子改造人間に!?」という妄想。" />
+<meta property="og:description" content="コロナワクチンにDNAが混入されている疑惑についてです。 疑惑の発端は、Kevin McKernan氏の元に、ファイザーとモデルナのコロナワクチンが届けられ、kevin氏がワクチンを調べたところ、DNAが検出されたということです。 問題は、研究対" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/multi-list/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-10-27T11:18:23+09:00" />
-<meta property="article:modified_time" content="2022-10-27T11:18:23+09:00" />
+<meta property="og:url" content="https://progress-advance.com/medical/horizontal-gene-transfer/" /><meta property="article:section" content="medical" />
+<meta property="article:published_time" content="2023-05-24T19:30:13+09:00" />
+<meta property="article:modified_time" content="2023-05-24T19:30:13+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="【Django】テンプレートで多重リストから要素を取り出す方法"/>
-<meta name="twitter:description" content="リスト、多重リストから要素を取り出すには、リスト名の後にインデックス番号を記述します。"/>
+<meta name="twitter:title" content="「コロナワクチンDNA混入疑惑で、遺伝子改造人間に!?」という妄想。"/>
+<meta name="twitter:description" content="コロナワクチンにDNAが混入されている疑惑についてです。 疑惑の発端は、Kevin McKernan氏の元に、ファイザーとモデルナのコロナワクチンが届けられ、kevin氏がワクチンを調べたところ、DNAが検出されたということです。 問題は、研究対"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,136 +130,107 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">【Django】テンプレートで多重リストから要素を取り出す方法</h1>
+			<h1 class="post__title">「コロナワクチンDNA混入疑惑で、遺伝子改造人間に!?」という妄想。</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-10-27T11:18:23&#43;09:00">October 27, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-05-24T19:30:13&#43;09:00">May 24, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/medical/" rel="category">medical</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>リスト、多重リストから要素を取り出すには、リスト名の後にインデックス番号を記述します。</p>
-<p>以下のようなリストがあった場合、</p>
-<pre tabindex="0"><code>number = 100
-sample_list = [[&#34;a&#34;,&#34;b&#34;,&#34;c&#34;,&#34;d&#34;],
-               [&#34;e&#34;,&#34;f&#34;,&#34;g&#34;,&#34;h&#34;],
-               [&#34;i&#34;,&#34;j&#34;,&#34;k&#34;,&#34;l&#34;],
-               number,
-              None,
-              []]
-</code></pre><p>sample_list[0]と記載すると、[&lsquo;a&rsquo;, &lsquo;b&rsquo;, &lsquo;c&rsquo;, &rsquo;d&rsquo;]を、sample_list[2]と記載すると、[&lsquo;i&rsquo;, &lsquo;j&rsquo;, &lsquo;k&rsquo;, &rsquo;l&rsquo;]を取得することができます。</p>
-<p>また、sample_list[0][0]と記載すると、&lsquo;a&rsquo;を取得することができます。</p>
-<p>sample_list[3]と記載するとnumberの100を取得することができます。</p>
-<p>sample_list[4]はNoneなので何も返ってきませんが、sample_list[5]では空のリスト[]が返ってきます。</p>
-<p>Djangoのviews.pyにてsample_listを作り、テンプレートで表示する場合は次のようにします。</p>
-<pre tabindex="0"><code>{{ sample_list.0 }}  ## [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;]
-
-{{ sample_list.0.0 }}  ## &#39;a&#39;
-
-{{ sample_list.0.0 }}  ## &#39;a&#39;
-
-{{ sample_list.3 }}  ## 100
-</code></pre><p>views.pyにて複数のクエリセットや変数をリストに入れてテンプレートで取り出したい場合、次のようにすると要素を取得することができます。</p>
-<p><code>views.py</code></p>
-<pre tabindex="0"><code>qs_list = [qs0, qs1, number]
-</code></pre><p>qs0, qs1 のフィールドに<code>title,contents,date</code>があった場合、</p>
-<p><code>template</code></p>
-<pre tabindex="0"><code>##qs0
-
-{% for qs0 in qs_list.0 %}
-
-  {{ qs0.title }} 
-
-  {{ qs0.contents }}
-
-  {{ qs0.date }}
-
-{% endfor %}
-
-##qs1
-
-{% for qs1 in qs_list.1 %}
-
-  {{ qs1.title }}
-
-  {{ qs1.contents }}
-
-  {{ qs1.date }}
-
-{% endfor %}
-
-## number
-
-{{ qs_list.2 }}
-</code></pre><p>あまり使う機会はないかもしれませんが、views.pyのリストが以下のように多重リストの場合。</p>
-<pre tabindex="0"><code>qs_lists =　[[qs0, qs1, number], 
-            [qs0, qs1, number], 
-            [qs0, qs1, number], 
-            [qs0, qs1, number], 
-            ...]
-</code></pre><p><code>template</code></p>
-<pre tabindex="0"><code>{% for qs_list in qs_lists %}
-
-    {% for qs0 in qs_list.0 %}
-
-        {{ qs0.title }} 
-
-        {{ qs0.contents }}
-
-        {{ qs0.date }}
-
-    {% endfor %}
-
-    {% for qs1 in qs_list.1 %}
-
-        {{ qs1.title }}
-
-        {{ qs1.contents }}
-
-        {{ qs1.date }}
-
-    {% endfor %}
-
-    {{ qs_list.2 }}　## number
-
-{% endfor %}
-</code></pre><p>以上になります。</p>
-<h5 id="参考記事">参考記事</h5>
-<p><a href="https://www.headboost.jp/python-list-how-to-grab-a-value/">Pythonのリストからの要素の取り出し（抽出）方法のまとめ</a></p>
-<p><a href="https://sleepless-se.net/2018/07/09/django-template/">[Django]テンプレートでobjectsの配列番号を指定する方法</a></p>
-<h5 id="お薦め">お薦め</h5>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">コロナワクチンを接種した自衛隊員のうち、400人が接種後に死亡<a href="https://t.co/hPJ0FGGdSI">https://t.co/hPJ0FGGdSI</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1584862349399556098?ref_src=twsrc%5Etfw">October 25, 2022</a></blockquote>
+			<p>コロナワクチンにDNAが混入されている疑惑についてです。</p>
+<p>疑惑の発端は、Kevin McKernan氏の元に、ファイザーとモデルナのコロナワクチンが届けられ、kevin氏がワクチンを調べたところ、DNAが検出されたということです。</p>
+<p>問題は、研究対象のワクチンバイアルの出所が不明で、匿名で郵送されてきたもので、本物のコロナワクチンかどうか分かりません。</p>
+<p><a href="https://osf.io/b9t7m/">Sequencing of bivalent Moderna and Pfizer mRNA vaccines reveals nanogram to microgram quantities of expression vector dsDNA per dose</a></p>
+<p>その後、kevin氏は、8本の新しいコロナワクチンを調べ、やはりワクチン内にDNAが検出されたそうです。</p>
+<p>そして、そのDNAによって癌になったり、炎症が起きたり、ヒトの遺伝子が変化するという意見があります。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Kevin McKernan氏の研究をBhakdi博士が分析し、皆さんに警告している。<br><br>「外来遺伝子が、人間の細胞に入り込みめば、人間が遺伝子的に変化してしまう」… <a href="https://t.co/Wppvm5mCxv">https://t.co/Wppvm5mCxv</a> <a href="https://t.co/GHl7OZhJqc">pic.twitter.com/GHl7OZhJqc</a></p>&mdash; You (@You3_JP) <a href="https://twitter.com/You3_JP/status/1657758788181712904?ref_src=twsrc%5Etfw">May 14, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【名古屋】河村たかし市長、国に「マイナ保険証」義務化撤回を求める「任意のはずのカード取得が強制的に取得を求められることは、法治国家として許されない」<a href="https://t.co/ZOs3ll6t3o">https://t.co/ZOs3ll6t3o</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1585247741890166784?ref_src=twsrc%5Etfw">October 26, 2022</a></blockquote>
+<p>一方、別の研究者によると、コロナワクチンには遺伝物質はほとんど入っておらず、人々をミスリードするためにごくわずか入っているだけで、むしろ酸化グラフェンやその他の物質のほうが問題だと言っています。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">We lost a lot of time. It probably introduced as a smoke screen to confound part of dissidents. &quot;There is absolutely nothing.&quot;<br><br>我々は多くの時間を無駄にした。恐らくは、一部反対派を混乱させる目的で、煙幕として仕組まれたのだろう。スパイクタンパク質もmRNAも無い。 <a href="https://t.co/qcmn3oqej0">pic.twitter.com/qcmn3oqej0</a></p>&mdash; purplepearl (@purplep76858690) <a href="https://twitter.com/purplep76858690/status/1534751487175274497?ref_src=twsrc%5Etfw">June 9, 2022</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【BuzzFeed Newsの闇】元朝日新聞記者が「コロナワクチンを接種した自衛隊員のうち、400人が接種後に死亡」との情報を“フェイク”と主張し、言論弾圧を図る　背後に中共のスパイ「孫正義」の影<a href="https://t.co/oaAKrEvVmw">https://t.co/oaAKrEvVmw</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1585239610464284672?ref_src=twsrc%5Etfw">October 26, 2022</a></blockquote>
+<p>はてさて、コロナワクチンに本当にmRNAやDNAが入っているのかどうか。</p>
+<p>そもそも、コロナウイルスは存在していないので、スパイクタンパク質を作るmRNAとやらも何のことかさっぱり分かりませんし、それはDNAも同じことです。</p>
+<p>また、癌という病気も医療利権が作り出した嘘の病気で、無限に大きくなるデキモノはありませんし、癌ウイルスなんてものも存在しません。</p>
+<p>こうしてDNA混入問題を捏造して、がん利権を存続させようと悪あがきしているようにしか見えません。</p>
+<p>しかし、一応、DNAやmRNAが外から細胞の中に入ったらどうなるのか調べてみました。</p>
+<p>外来のDNAが細胞に入ったとき、そのDNAをどうやって核まで運んで、細胞のDNAに組み込むのか。</p>
+<p>外来のDNAを運んでくれるタンパク質は存在していないのではないでしょうか。</p>
+<p>遺伝子の水平伝播は嘘と考えられるので、自然にDNAが結合するということはないと思います。</p>
+<p><a href="https://progress-advance.com/medical/drug-resistant-bacteria-and-plandemic/">「薬剤耐性菌によるパンデミックの恐れ」という大嘘。
+</a></p>
+<p>それでも無理やり、外来DNAが細胞のDNAに組み込まれたと仮定します。</p>
+<p>今度は、外来DNAが作ったmRNAからタンパク質を作るタンパク質（リボソーム）を、細胞は持っていません。</p>
+<p>これは外来mRNAにも言えることで、外来mRNAからタンパク質を作るリボソームを、細胞は持っていません。</p>
+<p>外来mRNAからタンパク質を作らないという根拠は、枯草菌のDNAに人為的に別の菌のDNAを組み込んだ実験にあります。</p>
+<p><a href="https://www.brh.co.jp/publication/journal/056/research_21_2">生きものの多様性を支えるゲノムの水平伝播
+</a></p>
+<p>この実験によると、枯草菌に別の菌の遺伝子を入れた際、別の菌の「mRNAからタンパク質を作るための遺伝子」を枯草菌に入れると、枯草菌は生育できなくなったそうです。</p>
+<p>そして、その「タンパク質を作るための遺伝子」を入れないと、枯草菌は遺伝子を組み替えられたものの、枯草菌のままであり、枯草菌のタンパク質しか作らなかったそうです。</p>
+<p>これをコロナワクチンとヒトの細胞に当てはめると、細胞にワクチンのmRNAを入れても、スパイクタンパク質は作られないし、DNAが混入されていたとしても、ヒトの細胞の性質は変わらず、スパイクタンパク質も作られないということになります。</p>
+<p>また、仮に何らかのタンパク質が作られたとしても、そのタンパク質を細胞膜に運ぶ機能がヒトの細胞にあるのかどうかも疑問です。</p>
+<p>こちらの記事によると、細胞の機能は数千種類のタンパク質が協調的に働くことで達成されるそうです。</p>
+<p><a href="https://katosei.jsbba.or.jp/view_html.php?aid=631">細胞のタンパク質発現リソース配分とタンパク質発現キャパシティ</a></p>
+<p>タンパク質合成は細胞にとって最もエネルギーを必要とするプロセスだそうです。</p>
+<p>また、タンパク質の発現量は「必要なときに必要な量発現する」という原理が働いており、細胞は合成速度を最適化することで必要なときに必要な量のタンパク質を作り、最も効率的に無駄なく細胞の機能を営んでいるそうです。</p>
+<p>さらに、タンパク質の合成にはキャパシティがあるそうです。</p>
+<p>外来mRNAやDNAが好き勝手にタンパク質を作ろうとしてもできませんし、もし無尽蔵にタンパク質を作り続けたら、細胞が生きるために必要な機能が阻害されて、細胞は死ぬのではないでしょうか。</p>
+<p>そう考えると、mRNAワクチンそのものが詐欺ではないかと思うのですが、どうでしょう。</p>
+<p>本当にコロナワクチンにmRNAが入っていて、そのmRNAを細胞に入れた際にタンパク質が作られるのであれば、どのくらいの量のタンパク質が作られて細胞膜に発現されるのか、研究データがあるはずですが、誰かそのデータを見た人はいるのでしょうか。</p>
+<p>「スパイクタンパク質が無限に作られる」、「遺伝子組み換え人間になる」、「癌ができる」と言う人がいますが、ただの妄想にすぎないと私は思います。</p>
+<p>なお、免疫染色などで検出された「スパイクタンパク質」は、その人に元々あるタンパク質を検出しているだけだと、私は考えています。</p>
+<p><a href="https://progress-advance.com/medical/covid-19/no-mrna-no-spikeprotein/">スパイクタンパク質は存在しない。免疫染色はインチキの可能性大。
+</a></p>
+<h5 id="お勧め">お勧め</h5>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【モラルなき一族】岸田翔太郎が親戚を招き、首相公邸で忘年会を開き大はしゃぎ「公邸で宴会なんて聞いたことがない。常識的には考えられません」<a href="https://t.co/0IZZSwcsbK">https://t.co/0IZZSwcsbK</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1661720927103758336?ref_src=twsrc%5Etfw">May 25, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【崩壊する日本の教育現場】心の病で休職する20代教員が2020年度までの5年間で1.5倍増 激務に追われて自殺するケースも<a href="https://t.co/Ucw4bJby7G">https://t.co/Ucw4bJby7G</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1585236564216381440?ref_src=twsrc%5Etfw">October 26, 2022</a></blockquote>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">コロナ対策用の検温カメラから、記録されていた顔画像が漏洩するトラブル　カメラを製造した『東亜産業』の創業者は逮捕歴を持つ中国人<a href="https://t.co/rsriBcdMnd">https://t.co/rsriBcdMnd</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1661706203133775874?ref_src=twsrc%5Etfw">May 25, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RAPTブログとの出会いによって、様々な病が治り、仕事のスピードも早くなって、はつらつと充実した人生を生きられるようになった（十二弟子・サキさんの証）<a href="https://t.co/jEpRZ3iGrz">https://t.co/jEpRZ3iGrz</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1585228213575262208?ref_src=twsrc%5Etfw">October 26, 2022</a></blockquote>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">徳島大学法医学教授、3回目のコロナワクチン接種後に死亡した女子中学生について、ワクチンが死因と発表　国内で2例目<a href="https://t.co/0eCHio15p6">https://t.co/0eCHio15p6</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1661686625884344320?ref_src=twsrc%5Etfw">May 25, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【中共のスパイ・菅直人】「日本が必要とする年間1兆キロワットの電力全てを、太陽光発電で生み出すプロジェクトを発足させたい」と主張し、批判殺到<a href="https://t.co/DhG3fQ5cjD">https://t.co/DhG3fQ5cjD</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1585220368855633920?ref_src=twsrc%5Etfw">October 26, 2022</a></blockquote>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">世の中の常識に囚われて生きると人生が地獄のようになり、神様の言葉に従って生きると人生が天国のようになる（十二弟子・KAWATAさんの証）<a href="https://t.co/HZIhEJQjxZ">https://t.co/HZIhEJQjxZ</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1661684595644071936?ref_src=twsrc%5Etfw">May 25, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【コロナワクチン接種の結果】2022年8月度の超過死亡数が激増 前年同月比で1万7845人も多い13万5649人に<a href="https://t.co/xuB8uTeleu">https://t.co/xuB8uTeleu</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1585217783667003393?ref_src=twsrc%5Etfw">October 26, 2022</a></blockquote>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【三重県】マイナンバー41人分を含む個人情報400件あまりが流出　遠隔操作ソフトが不正にインストール<a href="https://t.co/1PPTDa9iS8">https://t.co/1PPTDa9iS8</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1661682780634488832?ref_src=twsrc%5Etfw">May 25, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RAPTブログとの出会いにより、「誰かの役に立ちたい」という心の願いを叶えて、自分でも真に価値を感じられる人生を生きられるようになった（十二弟子・KAWATAさんの証）<a href="https://t.co/qsv1jI8rVE">https://t.co/qsv1jI8rVE</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1584505105256427522?ref_src=twsrc%5Etfw">October 24, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/6W9hPx3hH5s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+ 
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/jTSexPQhtUM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+ 
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/zvac-dxonQM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+ 
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/PQv2PlyjhbE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
 
  </p>
+
 		</div>
 		<footer class="post__footer">
 			
@@ -267,10 +238,13 @@ sample_list = [[&#34;a&#34;,&#34;b&#34;,&#34;c&#34;,&#34;d&#34;],
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/django/" rel="tag">django</a>
+			<a class="tags__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" rel="tag">薬害</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
+			<a class="tags__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" rel="tag">ワクチン</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" rel="tag">コロナワクチン</a>
 		</li>
 	</ul>
 </div>
@@ -286,15 +260,9 @@ sample_list = [[&#34;a&#34;,&#34;b&#34;,&#34;c&#34;,&#34;d&#34;],
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/tweet-shortcode/" rel="prev">
+		<a class="pager__link" href="/medical/drug-resistant-bacteria-and-plandemic/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">【HUGO】twitter のショートコードの修正</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/id-duplication/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">HTMLでid属性の重複を防ぐ</p>
+			<p class="pager__title">「薬剤耐性菌によるパンデミックの恐れ」という大嘘。</p>
 		</a>
 	</div>
 </nav>
