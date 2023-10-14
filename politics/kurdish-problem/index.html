@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>JavaScriptで要素のIDを取得 - ImageDiagnosis &amp; Program</title>
+	<title>【埼玉県】クルド人たちが日本人女性を強姦。被害者多数。 - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="JavaScriptで要素のIDを取得" />
-<meta property="og:description" content="ボタンや要素をクリックしたとき、動画、オーディオの終了時、あるいは querySelectorall() を用いて要素の ID を取得する方法のメモ。" />
+		<meta property="og:title" content="【埼玉県】クルド人たちが日本人女性を強姦。被害者多数。" />
+<meta property="og:description" content="あるツイッターユーザーの証言によると、埼玉県のクルド人たちが日本人女性をレイプしまくっているそうです。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/js-onclick-getid/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-10-07T15:29:19+09:00" />
-<meta property="article:modified_time" content="2022-10-07T15:29:19+09:00" />
+<meta property="og:url" content="https://progress-advance.com/politics/kurdish-problem/" /><meta property="article:section" content="politics" />
+<meta property="article:published_time" content="2023-10-14T11:36:02+09:00" />
+<meta property="article:modified_time" content="2023-10-14T11:36:02+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="JavaScriptで要素のIDを取得"/>
-<meta name="twitter:description" content="ボタンや要素をクリックしたとき、動画、オーディオの終了時、あるいは querySelectorall() を用いて要素の ID を取得する方法のメモ。"/>
+<meta name="twitter:title" content="【埼玉県】クルド人たちが日本人女性を強姦。被害者多数。"/>
+<meta name="twitter:description" content="あるツイッターユーザーの証言によると、埼玉県のクルド人たちが日本人女性をレイプしまくっているそうです。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,105 +130,93 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">JavaScriptで要素のIDを取得</h1>
+			<h1 class="post__title">【埼玉県】クルド人たちが日本人女性を強姦。被害者多数。</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-10-07T15:29:19&#43;09:00">October 07, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-10-14T11:36:02&#43;09:00">October 14, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/politics/" rel="category">Politics</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>ボタンや要素をクリックしたとき、動画、オーディオの終了時、あるいは <code>querySelectorall()</code> を用いて要素の ID を取得する方法のメモ。</p>
-<p>以下のコードは、stack overflow から。</p>
-<pre tabindex="0"><code>&lt;button id=&#34;btn1&#34; onClick=&#34;reply_click(this.id)&#34;&gt;B1&lt;/button&gt;
-&lt;button id=&#34;btn2&#34; onClick=&#34;reply_click(this.id)&#34;&gt;B2&lt;/button&gt;
-&lt;button id=&#34;btn3&#34; onClick=&#34;reply_click(this.id)&#34;&gt;B3&lt;/button&gt;
-    
-&lt;script type=&#34;text/javascript&#34;&gt;
-  function reply_click(clicked_id)
-  {
-      alert(clicked_id);
-  }
-&lt;/script&gt;
-</code></pre><p><a href="https://stackoverflow.com/questions/4825295/onclick-to-get-the-id-of-the-clicked-button">onClick to get the ID of the clicked button</a></p>
-<p>python のテンプレートで、ID にオブジェクトの uuid を付与して、javascript で uuid を取り出す方法。</p>
-<pre tabindex="0"><code>&lt;button id=&#34;btn1_{{ test.id }}&#34; onClick=&#34;myFunction(this.id)&#34;&gt;B1&lt;/button&gt;
-&lt;button id=&#34;btn2_{{ test.id }}&#34; onClick=&#34;myFunction(this.id)&#34;&gt;B2&lt;/button&gt;
-&lt;button id=&#34;btn3_{{ test.id }}&#34; onClick=&#34;myFunction(this.id)&#34;&gt;B3&lt;/button&gt;
-    
-&lt;script type=&#34;text/javascript&#34;&gt;
-  function myFunction(id)
-  {
-    const target = id.slice(-36);
-    console.log(target); // test.id(uuid)
-  }
-&lt;/script&gt;
-</code></pre><p>その他、videoタグやaudioタグで、再生終了時や停止時に id を取得。</p>
-<pre tabindex="0"><code>&lt;video id=&#34;video&#34; controls onpause=&#34;myFunction(this.id)&#34; onended=&#34;myFunction(this.id)&#34;&gt;
-
-// &lt;audio id=&#34;audio&#34; controls onpause=&#34;myFunction(this.id)&#34; onended=&#34;myFunction(this.id)&#34;&gt;
-
-&lt;script&gt;
-function myFunction(pk) {
-    console.log(pk);
-}
-&lt;/script&gt;
-</code></pre><p><code>querySelectorall()</code> を使用して、複数の要素のidを取得。</p>
-<pre tabindex="0"><code>&lt;div id=&#34;test1&#34; class=&#34;sample&#34;&gt;test1&lt;/div&gt;
-&lt;div id=&#34;test2&#34; class=&#34;sample&#34;&gt;test2&lt;/div&gt;
-&lt;div id=&#34;test3&#34; class=&#34;sample&#34;&gt;test3&lt;/div&gt;
-&lt;div id=&#34;test4&#34; class=&#34;sample&#34;&gt;test4&lt;/div&gt;
-
-&lt;script&gt;
-var t = document.querySelectorAll(&#34;.sample&#34;);
-
-t.forEach(function(item){
-    let id = item.getAttribute(&#39;id&#39;);
-    console.log(id);
-});
-
-&lt;/script&gt;
-</code></pre><h5 id="参考記事">参考記事</h5>
-<p><a href="https://qiita.com/amamamaou/items/25e8b4e1b41c8d3211f4">要素の取得方法まとめ</a></p>
-<h5 id="お薦め">お薦め</h5>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【狙われる高齢者】大阪府などで65歳以上のインフルワクチン接種を無償化「まだまだ殺るつもりか」「タダほど怖いものはない」と批判殺到<a href="https://t.co/cNy0Q8Svsi">https://t.co/cNy0Q8Svsi</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1578015931372294145?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【コロナとインフル同時流行への政府対策案】発熱したら自己検査、陽性なら「コロナ患者」陰性なら「インフル患者」とする方針を発表 「発熱はコロナかインフルしかないのか」と批判殺到<a href="https://t.co/DRcH5TlpE5">https://t.co/DRcH5TlpE5</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1578004178852786177?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【CDCのデータ公開】コロナワクチン接種したアメリカ人1000万人中78万人が診察・救急治療・入院、約250万人以上が日常生活に支障を来す<a href="https://t.co/qHBP3D7jxG">https://t.co/qHBP3D7jxG</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577989205573394433?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">聖書に書かれた「罪」をなくしていくことで、人生が180度変化し、どこまでも幸福に生きられるようになった（十二弟子・KAWATAさんの証）<a href="https://t.co/IYj6fXLf5T">https://t.co/IYj6fXLf5T</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577975622366040064?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【日本人最年長の宇宙詐欺師】宇宙が存在しないとバレても尚、「若田光一」が「イーロン・マスク」の宇宙船で5回目の宇宙飛行に成功<a href="https://t.co/NoHSg0oOx6">https://t.co/NoHSg0oOx6</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577967660134203393?ref_src=twsrc%5Etfw">October 6, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">天国も地獄も存在している!! そしてズバリ、天国に行く方法を教えてくれるのはRAPTブログだけ!! （十二弟子・ミナさんの証）<a href="https://t.co/jMUi3ClM8V">https://t.co/jMUi3ClM8V</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577630300594925568?ref_src=twsrc%5Etfw">October 5, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">神様を信じて祈り求めることで、全ての不安や心配、絶望から解放され、「心の病」が治った奇跡の体験!!（十二弟子・ヒロさんの証）<a href="https://t.co/NnmxHSYgeV">https://t.co/NnmxHSYgeV</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1577249469883523072?ref_src=twsrc%5Etfw">October 4, 2022</a></blockquote>
+			<p>あるツイッターユーザーの証言によると、埼玉県のクルド人たちが日本人女性をレイプしまくっているそうです。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">※クルド人ナンパ被害について編集再掲<br><br>仕事が終わって帰宅<br>蕨駅についたら、階段を下って中程で吉野家前の様子を見る<br>大丈夫なら下まで降りて、さらに注意<br>いつでも全速力で逃げられるように<br>スカート履かない<br>ヒールの高い靴もダメ<br><br>ナンパといっても、日本人が考えるようなナンパと違う。…</p>&mdash; 四季🇯🇵 (@clover189437) <a href="https://twitter.com/clover189437/status/1712005743417966841?ref_src=twsrc%5Etfw">October 11, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-<p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/FXr2626vR58" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+<blockquote>
+<p>※クルド人ナンパ被害について編集再掲</p>
+<p>仕事が終わって帰宅
+蕨駅についたら、階段を下って中程で吉野家前の様子を見る
+大丈夫なら下まで降りて、さらに注意
+いつでも全速力で逃げられるように
+スカート履かない
+ヒールの高い靴もダメ</p>
+<p>ナンパといっても、日本人が考えるようなナンパと違う。
+無理やり腕を掴む、肩を抱く
+数人で囲む
+逃げて、近くのお店に飛び込んでも中まで追ってくる
+無理やり車に押し込めようとする。
+ほとんど拉致に近い。
+別に盛場や暗い道というわけじゃない
+ごく普通の駅前だったり通りだったり、コンビニだったり。</p>
+<p>こんなのが毎日。</p>
+<p>彼らのナンパ手口はものすごく危険なんだけど。
+あと、特徴が年齢層。
+広いんです
+中学生からおばさんまで、ヘタすると小学生とかも。
+とにかく手当たり次第
+これは、とにかく結婚とか、何らかの法的縁を手に入れて在留許可ほしくて焦っているんだと思う。</p>
+<p>で、警察はどうしてるかと言うと、今は事態が広く知れ渡ったせいか、以前よりはマシ。
+以前は市も警察も、何かあれば通報をと言うけど何もしてくれなかった。</p>
+<p>殺人未遂まで不起訴で釈放だもの、あとは察して知るべしでしょ？</p>
+<p>上記は、私が日常のように経験してきている事だけど、友だちの中には自分だけで抱えている子、墓場まで持っていくと決めた子もいる。
+表に出る話しなんてほんの一握り。</p>
+<p>良いクルド人もいるとか、クルド人だけじゃないとか、嘘だとか擁護する人いるけど関係ない。</p>
+<p>蕨には色んな国の人がいるけど、生まれて今までクルド人以外から被害を受けたことはない。</p>
+<p>いくら市に訴えたところで、国が不法滞在を黙認同様に良しとしているのだから市も警察もどうしようもない。
+だから声をあげてるの。</p>
+<p>地域によって色々な被害があるけど、そんなことに曝される住民の人たちも限界なんですよね。</p>
+<p>蕨、川口がクルド人自治区になってしまう前に何とかして下さい。</p>
+</blockquote>
+<p>クルド人たちは、不法滞在（犯罪）で難民申請を繰り返して日本に居座り続けていますが、在日クルド人グループのリーダーは「川口市を自治区にしたい」と語っているそうです。</p>
+<blockquote>
+<p>山本太郎率いるれいわ新選組は、中国共産党の隠れ蓑（＝工作機関）であり、移民政策を推進し、中国人らによる侵略工作に大きく加担してきました。</p>
+<p>また、日本で不法滞在を続けるクルド人の中には、共産主義思想を持ち、独立国家樹立を目論む「PKK」というテロ組織のメンバーらが紛れ込んでおり、現に、在日クルド人グループのリーダーは「川口市を自治区にしたい」などと大っぴらに語っています。</p>
+<p><a href="https://rapt-plusalpha.com/85432/">【れいわ新選組】クルド人グループと交流会を開催し、「クルド人のヘイトは許されない」「我々は結となれる存在」と主張　クルド人は山本太郎支持を表明
+</a></p>
+</blockquote>
+<p>彼らは日本人女性を襲い、子供を作るか結婚するかして、日本に居座る法的根拠を得ようとしているのかもしれません。</p>
+<p>彼らは池袋や新宿でもナンパ行為をしているそうです。</p>
+<p>クルド人の数が増えて活動範囲が広がると、さらに多くの日本人女性が被害に遭います。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">いきなり車に連れ込もうとする。<br>複数人で囲んでくる。<br>店に逃げ込んでも追いかけて来る。<br>こんな野蛮な、拉致と同義のナンパ？をクルド人はやらかすそうだ。<br>難民申請中に日本人女性をレイプしたクルド人もいたな。<br>感覚がマヒしてなきゃ、ほとんどの女性は「怖い」と感じると思うがな。 <a href="https://t.co/lE4vBtzMbQ">https://t.co/lE4vBtzMbQ</a> <a href="https://t.co/xhjHFpBaSk">pic.twitter.com/xhjHFpBaSk</a></p>&mdash; T．M (@TM47383445) <a href="https://twitter.com/TM47383445/status/1712301897548451858?ref_src=twsrc%5Etfw">October 12, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">とにかく、もう既に何もかもが遅い。<br><br>既にクルド人による集団レイプ被害も起こってるし、ナンパ、ストーカー被害も拡大している。<br><br>犯罪が起こってからではなく、クルド人を厳しい監視下に置かないとダメ。<br>できないなら追い出せ。<br><br>車は全て止めて免許証確認しろ。違反してたら引きずりおろせ。</p>&mdash; 蘇我のイルカ (@TCminicooper) <a href="https://twitter.com/TCminicooper/status/1712672681487987016?ref_src=twsrc%5Etfw">October 13, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">池袋とか新宿にも迷惑なクルド人のナンパ本当に多い…日本に長くいる人ほど酷い。</p>&mdash; Mintia🇯🇵 (@minmin051010) <a href="https://twitter.com/minmin051010/status/1712092138207604921?ref_src=twsrc%5Etfw">October 11, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">じわじわと活動エリアが拡大していってクルドカーは川口ナンバー以外に大宮、春日部、越谷、足立がある。今朝は超特盛だわ。<a href="https://twitter.com/hashtag/%E3%82%AF%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC?src=hash&amp;ref_src=twsrc%5Etfw">#クルドカー</a> <a href="https://t.co/nf4qn7Hu5I">pic.twitter.com/nf4qn7Hu5I</a></p>&mdash; つよぽん (@sasharusrus) <a href="https://twitter.com/sasharusrus/status/1711857881790996497?ref_src=twsrc%5Etfw">October 10, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
  </p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ynhVt5evdDc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+<p>不法滞在を続け日本を侵略し、治安を破壊するクルド人と、彼らに与する政治家・中国人スパイたちが一人残らず裁かれますように、不法滞在者が速やかに強制送還されますようにお祈りします。</p>
+<p><a href="https://rapt-plusalpha.com/85550/">【赤い羽根共同募金】集めた寄付金をクルド人支援団体に支給していたことが判明
+</a></p>
+<p><a href="https://rapt-plusalpha.com/84992/">【治安崩壊】さいたま地検、クルド人100人の乱闘事件で逮捕された計7人全員を不起訴処分　理由は公表せず　
+</a></p>
+<p><a href="https://rapt-plusalpha.com/82175/">埼玉県川口市の乱闘事件で逮捕されたクルド人、既に保釈されていることが判明　大手メディアはこの件を報道せず
+</a></p>
+<p><a href="https://rapt-plusalpha.com/81162/">埼玉県川口市に2000人以上のクルド人が住み着く　欧州の国々でクルド人が暴徒化、日本も二の舞に
+</a></p>
+<p><a href="https://rapt-plusalpha.com/80315/">【難民の現実】AbemaNews出演の難民申請中のクルド人『マヒルジャン』、ランボルギーニやフェラーリなど高級車を購入、税金を払わず日本で贅沢暮らしを満喫
+</a></p>
+<p><a href="https://rapt-plusalpha.com/78811/">【埼玉県川口市】市長の『奥ノ木信夫』、人民日報の取材を受け中国を大絶賛 「多くの中国人・外国人の方々に定住していただきたいというのが正直な気持ちです」と多文化共生を推進
+</a></p>
 		</div>
 		<footer class="post__footer">
 			
@@ -236,13 +224,7 @@ t.forEach(function(item){
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/django/" rel="tag">django</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/javascript/" rel="tag">JavaScript</a>
+			<a class="tags__link btn" href="/tags//" rel="tag"></a>
 		</li>
 	</ul>
 </div>
@@ -258,15 +240,9 @@ t.forEach(function(item){
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/dropna/" rel="prev">
+		<a class="pager__link" href="/politics/goverment-is-milking-the-tax/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">リストからNoneを削除</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/tweet-shortcode/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【HUGO】twitter のショートコードの修正</p>
+			<p class="pager__title">【消費税は国のピンハネ】堀江貴文「これまで消費税を『着服』してたくせによー言うわ」は間違い。</p>
 		</a>
 	</div>
 </nav>
