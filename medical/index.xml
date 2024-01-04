@@ -6,7 +6,16 @@
     <description>Recent content in Medicals on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 01 Jan 2024 11:52:51 +0900</lastBuildDate><atom:link href="https://progress-advance.com/medical/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jan 2024 10:35:10 +0900</lastBuildDate><atom:link href="https://progress-advance.com/medical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化（その2）。</title>
+      <link>https://progress-advance.com/medical/covid-19/vaccine-side-effect/</link>
+      <pubDate>Thu, 04 Jan 2024 10:35:10 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/medical/covid-19/vaccine-side-effect/</guid>
+      <description>今回も、厚生労働省に報告された「コロナワクチン副反応疑い」のデータのうち、ファイザー（コミナティ筋注：起源株）のデータから解析しました。 脳神経、血栓、血管炎と「接種から発生までの日数」の関係を調べてみました。 〇 脊髄炎・急性散在性脳脊髄炎・視</description>
+    </item>
+    
     <item>
       <title>コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化。</title>
       <link>https://progress-advance.com/medical/covid-19/sah-caused-by-vaccine/</link>
