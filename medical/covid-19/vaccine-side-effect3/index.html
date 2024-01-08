@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化（その4） - ImageDiagnosis &amp; Program</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化（その4）" />
+<meta property="og:description" content="今回も、厚生労働省に報告された「コロナワクチン副反応疑い」のデータのうち、ファイザー（コミナティ筋注：起源株）のデータから解析しました。
+今回は、麻痺、ギランバレー症候群、視力障害についてです。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://progress-advance.com/medical/covid-19/vaccine-side-effect3/" /><meta property="article:section" content="medical" />
+<meta property="article:published_time" content="2024-01-08T11:21:12+09:00" />
+<meta property="article:modified_time" content="2024-01-08T11:21:12+09:00" />
+
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化（その4）"/>
+<meta name="twitter:description" content="今回も、厚生労働省に報告された「コロナワクチン副反応疑い」のデータのうち、ファイザー（コミナティ筋注：起源株）のデータから解析しました。
+今回は、麻痺、ギランバレー症候群、視力障害についてです。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120164090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+	
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M5T5SG5');</script>
+    
+
+
+</head>
+<body class="body">
+	
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5T5SG5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+	
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="ImageDiagnosis &amp; Programming" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">ImageDiagnosis &amp; Programming</div>
+					<div class="logo__tagline">学んだことをひたすら書くブログ</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">ホーム</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/programming/">
+				
+				<span class="menu__text">プログラミング</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/medical/">
+				
+				<span class="menu__text">医療</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/life/">
+				
+				<span class="menu__text">Life</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/politics/">
+				
+				<span class="menu__text">政治経済</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about_us/">
+				
+				<span class="menu__text">About us</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化（その4）</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-01-08T11:21:12&#43;09:00">January 08, 2024</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/medical/" rel="category">medical</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>今回も、<a href="https://www.mhlw.go.jp/stf/shingi2/0000208910_00070.html">厚生労働省</a>に報告された「コロナワクチン副反応疑い」のデータのうち、ファイザー（コミナティ筋注：起源株）のデータから解析しました。</p>
+<p>今回は、麻痺、ギランバレー症候群、視力障害についてです。</p>
+<h4 id="-麻痺">〇 麻痺</h4>
+<p><img src="/img/graph/%E9%BA%BB%E7%97%BA.png" alt="麻痺"></p>
+<p>麻痺の報告数は336件で、発生日時が不明のもの（12件）を除き、324件で解析しました。</p>
+<p>接種日から2日間で160件（49.4%）、7日間で242件（74.7%）、28日間で302件（93.2%）、40日間で312件（96.3%）発生していました。</p>
+<p>報告されていた症状（麻痺）の内訳です。</p>
+<ul>
+<li>ベル麻痺（1）</li>
+<li>三叉神経麻痺（2）</li>
+<li>不全単麻痺（4）</li>
+<li>不全片麻痺（34）</li>
+<li>不全麻痺（4）</li>
+<li>両麻痺（8）</li>
+<li>単麻痺（40）</li>
+<li>動眼神経麻痺（18）</li>
+<li>反回神経麻痺（4）</li>
+<li>呼吸麻痺（2）</li>
+<li>四肢不全麻痺（2）</li>
+<li>四肢麻痺（14）</li>
+<li>外転神経麻痺（2）</li>
+<li>多発性脳神経麻痺（3）</li>
+<li>脳神経麻痺（1）</li>
+<li>対麻痺（6）</li>
+<li>尺骨神経麻痺（10）</li>
+<li>末梢性麻痺（1）</li>
+<li>橈骨神経麻痺（6）</li>
+<li>注視麻痺（16）</li>
+<li>片麻痺（140）</li>
+<li>球麻痺（2）</li>
+<li>発作後麻痺（2）</li>
+<li>眼筋麻痺（2）</li>
+<li>顔面麻痺（157）</li>
+<li>麻痺（42）</li>
+</ul>
+<blockquote>
+<p><img src="/img/graph/mahi.PNG" alt="麻痺"></p>
+<p><a href="https://kasotuukablog.com/mahitigai/">片麻痺、対麻痺、単麻痺、四肢麻痺、不完全麻痺、完全麻痺の違いは？</a></p>
+</blockquote>
+<p><a href="https://rapt-plusalpha.com/86187/">〇 【薬害】声優・姫野つばさ、2回目のコロナワクチン接種後に『ラムゼイ・ハント症候群』を発症　片方の顔面の動きが麻痺
+</a></p>
+<p><a href="https://rapt-plusalpha.com/15577/">〇ファイザーワクチンの接種者が、耐え難い神経痛、リンパ腫の腫れ、筋力低下、痙攣、失神、下半身麻痺、排尿困難、月経異常などを発症したと訴える
+</a></p>
+<h4 id="-ギランバレー症候群">〇 ギランバレー症候群</h4>
+<p><img src="/img/graph/%E3%82%AE%E3%83%A9%E3%83%B3%E3%83%90%E3%83%AC%E3%83%BC%E7%97%87%E5%80%99%E7%BE%A4.png" alt="ギランバレー症候群"></p>
+<p>麻痺の報告数は142件で、発生日時が不明のもの（6件）を除き、136件で解析しました。</p>
+<p>接種日から2日間で42件（30.9%）、7日間で74件（54.4%）、28日間で132件（97.1%）、40日間で133件（97.8%）発生していました。</p>
+<p>〇 ギランバレー症候群</p>
+<blockquote>
+<p>神経が障害されることで、手足の感覚がわからなくなったり、力が入りにくくなったりする。</p>
+<p>筋力低下は手足から体の中心へとじわじわと広がっていく</p>
+<ul>
+<li>胴体（体幹）の筋肉が麻痺すると呼吸が弱くなる</li>
+<li>脳神経へ達するとしゃべりづらくなったり、飲み込みづらくなったり、顔の筋肉が麻痺したりする
+その他の症状</li>
+<li>高血圧・低血圧</li>
+<li>頻脈・徐脈</li>
+<li>顔面紅潮</li>
+<li>発汗</li>
+<li>息苦しさ　</li>
+</ul>
+<p><a href="https://medley.life/diseases/54d30c106ef458a0020bd41e/">https://medley.life/diseases/54d30c106ef458a0020bd41e/</a></p>
+</blockquote>
+<p><a href="https://rapt-plusalpha.com/66444/">〇 【4人の子供の母】コロナワクチン接種後に急変『ギラン・バレー症候群』を発症し、体の自由が効かず、歩くことすら困難に 治療費120万円は自己負担
+</a></p>
+<h4 id="-視力障害">〇 視力障害</h4>
+<p><img src="/img/graph/%E8%A6%96%E5%8A%9B%E9%9A%9C%E5%AE%B3.png" alt="視力障害"></p>
+<p>視力障害の報告数は95件で、発生日時が不明のもの（4件）を除き、91件で解析しました。</p>
+<p>接種日から2日間で77件（84.6%）、7日間で84件（92.3%）、28日間で90件（98.9%）、40日間で90件（98.9%）発生していました。</p>
+<p><a href="https://rapt-plusalpha.com/64768/">〇 コロナワクチン3回接種の『和田アキ子』、持病悪化により歩行困難、右目の視力ほぼ喪失、関節リウマチ発症　毎日憂鬱で泣きながら食事していると明かす
+</a></p>
+<p><a href="https://rapt-plusalpha.com/45445/">〇 キングコング梶原が原因不明の頭痛・視力低下・強烈なめまいなどの体調不良で、メインチャンネルの更新を休止 コロナワクチンの副反応の疑い
+</a></p>
+<p>いずれも接種日近傍に発症していますので、ワクチン接種が原因で発症したと考えられます。</p>
+<p>コロナ茶番を起こした人たち、茶番に加担した人たち、コロナワクチン接種を推奨した人たちが、裁かれますように。</p>
+<p>
+<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/@rapt-plusalpha:6/04:a1?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
+
+ </p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/fOXf34SDVw8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+ </p>
+<h5 id="おすすめ">おすすめ</h5>
+<p>能登半島地震で、市内の避難所に避難していた被災者1人が、低体温症（疑い）で死亡したそうです。
+<a href="https://www.chunichi.co.jp/article/833974">https://www.chunichi.co.jp/article/833974</a></p>
+<p>作業着を着て「やっている感」だけ出して、その実、全く被災者を救助する気がなく、新年会をハシゴする岸田文雄とその仲間が裁かれますように。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【狂気の沙汰】災害対策本部の会議を早々に切り上げ、報道番組に出演、新年会を“はしご”　震災で自国民が生き埋めの中、総裁選への意欲を笑顔で語る<a href="https://t.co/KYCZ5PgDnS">https://t.co/KYCZ5PgDnS</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1743590932619132951?ref_src=twsrc%5Etfw">January 6, 2024</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">内閣府大臣政務官・神田潤一、能登半島地震の翌日に正月休みを満喫している様子をXに投稿「どーなってんの、この国は？」<a href="https://t.co/qgb0hWrrYg">https://t.co/qgb0hWrrYg</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1743968120681988339?ref_src=twsrc%5Etfw">January 7, 2024</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">自民・公明・立憲民主・日本維新の会・共産・国民民主の6党、能登半島地震の被災地視察を当面『自粛』することを“作業着”で表明　復旧作業は遅々として進まず<a href="https://t.co/jH9kbaLoZ6">https://t.co/jH9kbaLoZ6</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1743956123982680565?ref_src=twsrc%5Etfw">January 7, 2024</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【やはり北朝鮮は日本の敵ではなかった!!】金正恩、能登半島地震について岸田総理に見舞いの電報を送る!!　金正恩と岸田総理は親戚どうし<a href="https://t.co/980yJhFuZ2">https://t.co/980yJhFuZ2</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1743946052020117664?ref_src=twsrc%5Etfw">January 7, 2024</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【第36回】ミナのラジオ – 世の中に出回っている『犬の飼い方』は根本的に間違っている!!　犬たちが元気いっぱいに育つ“正しい犬の飼い方”とは? – ゲスト・NANAさん<a href="https://t.co/LZz5EVhp77">https://t.co/LZz5EVhp77</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1743943636554064158?ref_src=twsrc%5Etfw">January 7, 2024</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+ </p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【連載小説】プレトとルリスの冒険 – 「第5話・別れの挨拶」by RAPT×TOPAZ<a href="https://t.co/bx3bkaGVHV">https://t.co/bx3bkaGVHV</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1743224070764945850?ref_src=twsrc%5Etfw">January 5, 2024</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+ 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「楽に」「簡単に」「すぐに」を先に求めるより、実際に成長して、実力をつければ、全てを「楽に」「簡単に」「すぐに」できるようになった!!（RAPTブログ読者・ユキさんの証）<a href="https://t.co/eE1qWTVcYY">https://t.co/eE1qWTVcYY</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1743581253629296826?ref_src=twsrc%5Etfw">January 6, 2024</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+ </p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" rel="tag">薬害</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" rel="tag">ワクチン</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" rel="tag">コロナワクチン</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<div class="authorbox__header">
+		<span class="authorbox__name">About ImageDiagnosis</span>
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/medical/covid-19/vaccine-side-effect2/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化（その3）</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://progress-advance.com" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine-side-effect3/">コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化（その4）</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine-side-effect2/">コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化（その3）</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vaccine-side-effect/">コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化（その2）。</a></li>
+			<li class="widget__item"><a class="widget__link" href="/politics/noto-earthquake/">能登半島地震の火災は、レーザー兵器によるテロの可能性大。</a></li>
+			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/sah-caused-by-vaccine/">コロナワクチン副反応疑いの症状と「接種から発生までの日数」の関係をグラフ化。</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/life/">life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/medical/">medical</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/politics/">Politics</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/programming/">programming</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/chatgpt/" title="chatGPT">chatGPT (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cocaine/" title="Cocaine">Cocaine (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/covid19/" title="COVID19">COVID19 (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" title="C言語">C言語 (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/defaultdict/" title="defaultdict">defaultdict (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/django/" title="django">django (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ffmpeg/" title="ffmpeg">ffmpeg (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="Javascript">Javascript (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mediarecorder/" title="MediaRecorder">MediaRecorder (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/modaldialog/" title="modaldialog">modaldialog (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/moviepy/" title="MoviePy">MoviePy (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/netlify/" title="Netlify">Netlify (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/numpy/" title="numpy">numpy (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pandas/" title="pandas">pandas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pillow/" title="Pillow">Pillow (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (18)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rapt-blog/" title="RAPT BLOG">RAPT BLOG (18)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/testimony/" title="testimony">testimony (23)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webm/" title="Webm">Webm (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%81%8C%E3%82%93/" title="がん">がん (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A2%E3%83%9E%E3%83%AB%E3%82%AC%E3%83%A0/" title="アマルガム">アマルガム (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF/" title="エナジードリンク">エナジードリンク (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B1%E3%83%A0%E3%83%88%E3%83%AC%E3%82%A4%E3%83%AB/" title="ケムトレイル">ケムトレイル (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A/" title="コロナ">コロナ (19)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="コロナワクチン">コロナワクチン (55)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BF%E3%82%B3%E3%82%A4%E3%83%9C%E8%83%83%E7%82%8E/" title="タコイボ胃炎">タコイボ胃炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9D%E3%83%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%BC/" title="ポリファーマシー">ポリファーマシー (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9E%E3%83%A9%E3%83%AA%E3%82%A2/" title="マラリア">マラリア (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" title="ワクチン">ワクチン (52)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88/" title="ワクチンハラスメント">ワクチンハラスメント (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%8B%95%E8%84%88%E7%A1%AC%E5%8C%96/" title="動脈硬化">動脈硬化 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B0%8F%E5%85%90%E5%A4%9A%E7%B3%BB%E7%B5%B1%E7%82%8E%E7%97%87%E6%80%A7%E7%97%87%E5%80%99%E7%BE%A4/" title="小児多系統炎症性症候群">小児多系統炎症性症候群 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%B7%9D%E5%B4%8E%E7%97%85/" title="川崎病">川崎病 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%BF%83%E7%AD%8B%E7%82%8E/" title="心筋炎">心筋炎 (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%83%86%E5%9A%A2%E7%82%8E/" title="急性胆嚢炎">急性胆嚢炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A5%E6%80%A7%E8%85%B9%E7%97%87/" title="急性腹症">急性腹症 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%80%A7%E6%84%9F%E6%9F%93%E7%97%87/" title="性感染症">性感染症 (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%B5%90%E6%A0%B8/" title="結核">結核 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%9D%E6%A9%9F%E8%83%BD%E9%9A%9C%E5%AE%B3/" title="肝機能障害">肝機能障害 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%82%BA%E7%82%8E/" title="肺炎">肺炎 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%82%E8%B3%AA%E7%95%B0%E5%B8%B8%E7%97%87/" title="脂質異常症">脂質異常症 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%84%B3%E5%8D%92%E4%B8%AD/" title="脳卒中">脳卒中 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" title="薬害">薬害 (94)</a>
+	</div>
+</div><div style="height:50vh; overflow-y:auto;">
+    <a class="twitter-timeline" href="https://twitter.com/GLnoIrjwa7omiK7?ref_src=twsrc%5Etfw">Tweets by GLnoIrjwa7omiK7</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	<a class="footer__link" href="/privacy/">Privacy</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2024 ImageDiagnosis &amp; Program.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
