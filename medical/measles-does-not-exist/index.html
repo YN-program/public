@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>C言語－超基本その1－ - ImageDiagnosis &amp; Program</title>
+	<title>麻しんウイルスは存在しない。 - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="C言語－超基本その1－" />
-<meta property="og:description" content="一からC言語の勉強を始めたので、後で復習できるように残しておこうと思います。" />
+		<meta property="og:title" content="麻しんウイルスは存在しない。" />
+<meta property="og:description" content="タイから観光のため京都市や、奈良市に訪れた外国籍の男性が、はしかに感染していたということで、奈良市は、男性と接触した可能性があり、3週間以内に発熱などの症状がある人は、事前に医療機関に相談の上、受診するよう呼びかけています。 【はしかに感染】" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/c_1/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-06-05T09:32:02+09:00" />
-<meta property="article:modified_time" content="2022-06-05T09:32:02+09:00" />
+<meta property="og:url" content="https://progress-advance.com/medical/measles-does-not-exist/" /><meta property="article:section" content="medical" />
+<meta property="article:published_time" content="2024-02-27T09:19:12+09:00" />
+<meta property="article:modified_time" content="2024-02-27T09:19:12+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="C言語－超基本その1－"/>
-<meta name="twitter:description" content="一からC言語の勉強を始めたので、後で復習できるように残しておこうと思います。"/>
+<meta name="twitter:title" content="麻しんウイルスは存在しない。"/>
+<meta name="twitter:description" content="タイから観光のため京都市や、奈良市に訪れた外国籍の男性が、はしかに感染していたということで、奈良市は、男性と接触した可能性があり、3週間以内に発熱などの症状がある人は、事前に医療機関に相談の上、受診するよう呼びかけています。 【はしかに感染】"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,135 +130,30 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">C言語－超基本その1－</h1>
+			<h1 class="post__title">麻しんウイルスは存在しない。</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-06-05T09:32:02&#43;09:00">June 05, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-02-27T09:19:12&#43;09:00">February 27, 2024</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/medical/" rel="category">medical</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>一からC言語の勉強を始めたので、後で復習できるように残しておこうと思います。</p>
-<pre tabindex="0"><code>#include &lt;stdio.h&gt;
-int main (void){
-  printf(&#34;Hello World&#34;);
-  return 0;
-}
-</code></pre><p><code>stdio</code>は、Standard Input Output （標準出力）の略。</p>
-<p><code>.h</code>は、ヘッダーファイルで、関数が沢山はいっている。</p>
-<p><code>#include &lt;stdio.h&gt;</code>は、標準的な入出力の機能が入ったファイル（関数）を取り込んでいる。</p>
-<h5 id="c言語のデータ型">C言語のデータ型。</h5>
-<p>データ型は、これから使用するメモリのスペースを確保するために必要。</p>
-<ul>
-<li>char : 1 byte</li>
-<li>short : 2</li>
-<li>int : 4</li>
-<li>long : 4</li>
-<li>float : 4</li>
-<li>double : 8</li>
-</ul>
-<h5 id="少数の計算">少数の計算</h5>
-<pre tabindex="0"><code>int main (void){
-  printf(&#34;%f&#34;, 3.14*3*3);　# %d（整数の型） にするとエラーになる。
-  return 0;
-}
-</code></pre><h5 id="少数を整数として表示する場合-キャスト変換">少数を、整数として表示する場合 (キャスト変換)</h5>
-<ul>
-<li>整数→少数へ</li>
-<li>少数→整数へ</li>
-</ul>
-<pre tabindex="0"><code>int main (void){
-  printf(&#34;%d&#34;, (int) 3.14); # ターミナルには 3 と表示される。
-  return 0;
-}
-</code></pre><pre tabindex="0"><code>int main (void){
-  printf(&#34;%d&#34;, (int) (3.14*3*3) );　# 計算を（）で括らないと、3.14が先に int に変換されてしまう。
-  return 0;
-}
-</code></pre><h5 id="キーボードから入力">キーボードから入力。</h5>
-<p>scanf関数</p>
-<p>scanf(&ldquo;入力変換指定子&rdquo;,&amp;変数名);</p>
-<pre tabindex="0"><code>int main (void){
-  int suuti;
-  scanf(&#34;%d&#34;, &amp;suuti);
-  printf(&#34;入力された値は、%d です。&#34;, suuti); #実行するとターミナルは、入力待ちになる。
-  return 0;
-}
-</code></pre><p>少数の場合</p>
-<pre tabindex="0"><code>int main (void){
-  double suuti;
-  scanf(&#34;%lf&#34;, &amp;suuti);
-  printf(&#34;入力された値は、%lf です。&#34;, suuti);
-  return 0;
-}
-</code></pre><h5 id="if-else文">if else文</h5>
-<pre tabindex="0"><code>int main (void){
-  int suuti;
-  scanf(&#34;%d&#34;, &amp;suuti);
-  if (suuti == 10)
-    printf(&#34;10と同じです。&#34;);
-  else
-    printf(&#34;10ではありません。&#34;);
-  return 0;
-}
-</code></pre><h5 id="swith-case">swith case</h5>
-<pre tabindex="0"><code>int main (void){
-  int no;
-  scanf(&#34;%d&#34;, &amp;no);
-  switch (no){
-    case 1:
-      printf(&#34;1&#34;);
-      break;
-    case 2:
-      printf(&#34;2&#34;);
-      break;    
-    case 3:
-      printf(&#34;3&#34;);
-      break;
-    case 4:
-      printf(&#34;4&#34;);
-      break;
-    default:
-      printf(&#34;どれにも当てはまらない場合。&#34;);
-      break;
-  return 0;
-}
-//ターミナルで 1を入力すると1が表示される。
-</code></pre><h5 id="for文">for文</h5>
-<pre tabindex="0"><code>int main (void){
-  int i;
-  for(i = 1; i &lt;= 10; i++){
-    printf(&#34;%d&#34;, i);
-  }
-  return 0; 
-}
-//ターミナルに12345678910と表示される。
-</code></pre><h5 id="while文">while文</h5>
-<pre tabindex="0"><code>int main (void){
-  int year = 1;
-  double money = 1000000;
-  while (money &lt; 100000000){
-    year++;
-    money *= 1.05;
-  }
-  printf(&#34;%d 年目：%f 円となり、資産が1億円を超えます&#34;, year, money);
-  return 0; 
-}
-</code></pre><pre tabindex="0"><code>int main (void){
-  int year = 1;
-  double money = 1000000;
-  while (money &lt; 100000000){
-    year++;
-    money = (money + 600000) * 1.05;
-  }
-  printf(&#34;%d 年目：%f 円となり、資産が1億円を超えます&#34;, year, money);
-  return 0; 
-}
-</code></pre><p>以上、こちらの動画を参考にしました。</p>
+			<p>タイから観光のため京都市や、奈良市に訪れた外国籍の男性が、はしかに感染していたということで、奈良市は、男性と接触した可能性があり、3週間以内に発熱などの症状がある人は、事前に医療機関に相談の上、受診するよう呼びかけています。</p>
+<p><a href="https://news.yahoo.co.jp/articles/1eae295568bbe3bcb9147c6c73da26bbf87c29d1?source=sns&amp;dv=pc&amp;mid=other&amp;date=20240227&amp;ctg=loc&amp;bt=tw_up">【はしかに感染】タイから観光に訪れた男性が感染　京都や奈良を周遊</a></p>
+<p>また、米ＣＤＣ（疾病対策センター）も「コロナの影響により、はしかのワクチン接種が遅れたことで、世界中で感染拡大のリスクが高まっている」と発表しているそうです（<a href="https://www.msn.com/ja-jp/health/other/%E5%A4%96%E5%9B%BD%E7%B1%8D%E3%81%AE%E7%94%B7%E6%80%A7%E3%81%8C%E9%BA%BB%E3%81%97%E3%82%93-%E3%81%AF%E3%81%97%E3%81%8B-%E3%81%AB%E6%84%9F%E6%9F%93-%E5%A5%88%E8%89%AF%E5%B8%82%E3%81%AA%E3%81%A9%E3%81%AB%E6%BB%9E%E5%9C%A8-%E4%B8%8D%E7%89%B9%E5%AE%9A%E5%A4%9A%E6%95%B0%E3%81%AE%E4%BA%BA%E3%81%A8%E6%8E%A5%E8%A7%A6%E3%81%97%E3%81%9F%E5%8F%AF%E8%83%BD%E6%80%A7-%E7%B1%B3%EF%BD%83%EF%BD%84%EF%BD%83-%E4%B8%96%E7%95%8C%E4%B8%AD%E3%81%AB%E6%84%9F%E6%9F%93%E6%8B%A1%E5%A4%A7%E3%81%AE%E3%83%AA%E3%82%B9%E3%82%AF/ar-BB1iTjcJ?ocid=msedgdhp&amp;pc=U531&amp;cvid=a124a7d306d6496d9b1203db8a7f0d31&amp;ei=9">こちら</a>）。</p>
+<p>しかし、ウイルスは存在しておらず、麻しんウイルスもこれまでその存在を証明した人はいません。</p>
+<p><a href="https://rapt-plusalpha.com/11932/">シュタイナー「ウイルスは存在しない」 「ワクチンを打つと、人間は霊的なものを知覚できないロボットと化す」
+</a></p>
+<p>こちらの記事によると、「ウイルス学者は、細胞の普通の成分を麻疹ウイルスの一部と誤解していた」とのことです。</p>
+<p><a href="https://oneradionetwork.com/health-articles/biologist-proves-measles-isnt-virus-wins-supreme-court-case-doctor/">Biologist Proves Measles Isn’t A Virus, Wins Supreme Court Case Against Doctor</a></p>
+<p>病気を捏造し、世界中を混乱に陥れた悪人が、一人残らず裁かれ滅びますように、お祈りします。</p>
+<p><a href="https://rapt-plusalpha.com/96001/">【WHO・テドロス事務局長】新たなパンデミックを警告『疾病X、疾病Y、疾病Zが発生するだろう』
+</a></p>
+<p><a href="https://rapt-plusalpha.com/96348/">テドロス事務局長「WHOはコロナパンデミックの際に誰にも何も強制してない、ロックダウンもマスク着用の義務もコロナワクチン接種の義務も…その決定を下したのは各国政府だ」と述べ批判殺到
+</a></p>
+<p><a href="https://rapt-plusalpha.com/34009/">【WHO＝中国共産党の傀儡】2024年までに「パンデミック条約」創設を目論む　感染対策を装ったWHOの独裁体制が敷かれる可能性大
+</a></p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/UWI4ultTvI8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
 		</div>
 		<footer class="post__footer">
 			
@@ -266,7 +161,10 @@ int main (void){
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/c%E8%A8%80%E8%AA%9E/" rel="tag">C言語</a>
+			<a class="tags__link btn" href="/tags/%E8%96%AC%E5%AE%B3/" rel="tag">薬害</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3/" rel="tag">ワクチン</a>
 		</li>
 	</ul>
 </div>
@@ -282,15 +180,9 @@ int main (void){
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/modal/" rel="prev">
+		<a class="pager__link" href="/medical/vaccine-autism-alzheimer/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">for文でのモーダルダイアログ</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/c_2/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">C言語－超基本その2－</p>
+			<p class="pager__title">【動画】ワクチンで自閉症、アルツハイマー病になる!!</p>
 		</a>
 	</div>
 </nav>
