@@ -130,6 +130,34 @@ if (!doNotTrack) {
 <main class="main list" role="main">
 	<article class="list__item post">
 	
+		
+		
+	<figure class="list__thumbnail thumbnail">
+		<a class="thumbnail__link" href="/medical/vaccine_injuries/">
+		<img class="thumbnail__image" src="/img/thumb/dr-and-jab.jpg" alt="コロナワクチンの副反応は、1200種類以上。">
+		</a>
+	</figure>
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/medical/vaccine_injuries/" rel="bookmark">
+			コロナワクチンの副反応は、1200種類以上。
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-03-24T10:25:56&#43;09:00">March 24, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/medical/" rel="category">medical</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>厚生労働省が、コロナワクチンによる健康被害の一部について、因果関係を認めました。</p>
+<p>その疾病・障害は非常に沢山ありますが、公表されたものは実際には氷山の一角で、ファイザーが裁判に敗訴して公開したコロナワクチンのデータには、1291種類の副反応があるそうです。</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/medical/vaccine_injuries/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
 	<figure class="list__thumbnail thumbnail">
 		<a class="thumbnail__link" href="/life/ai-art-culture/">
 		<img class="thumbnail__image" src="/img/thumb/%e3%83%87%e3%82%b8%e3%82%bf%e3%83%ab%e9%a2%a8.jpg" alt="AIと文化・芸術">
@@ -340,195 +368,6 @@ if (!doNotTrack) {
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/medical/gout-vaccine/">Read more…</a>
 	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/programming/range-without-input/" rel="bookmark">
-			Inputタグを使わないrange slider
-			</a>
-		</h2>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-20T16:38:52&#43;09:00">January 20, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>inputタグを使わないレンジスライダーを自作しました。</p>
-<p> 
-
-
-<style>
-
-.slider_wrapper {
-    width:100%;
-    height:30px;
-    background:rgba(246,246,255,1);
-    border-radius:15px;
-    position:relative;
-    box-shadow:2px 5px 3px gray;
-}
-.slider_subwrapper {
-    width:90%;
-    height:30px;
-    display:block;
-    position:relative;
-    margin:0 auto;
-    cursor:pointer;
-    background:inherit;
-    z-index:200;
-}
-.slider_baloon {
-    position: absolute;
-    display: none;
-    text-align:center;
-    padding: 0 2px;
-    background-color: rgba(82, 82, 82, 0.5);
-    color:#fff;
-    left : 5%;
-    bottom : 100%;
-    margin-bottom : 5px;
-    font-size:;
-    border-radius:7px;
-}
-.slider_wrapper:hover .slider_baloon {
-    display:block;
-}
-.slider_thumb {
-    position: absolute;
-    display: block;
-    text-align:center;
-    background: rgba(163,163,255,1);
-    width:12px;
-    height:12px;
-    left : 0%;
-    top : 10px;
-    border-radius:50%;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    cursor:pointer;
-    z-index:100;
-}
-.slider {
-    width:100%;
-    height:4px;
-    background:#fff;
-    cursor:pointer;
-    position:absolute;
-    top:13px;
-    left:0%;
-}
-.slider_progress {
-    height:4px;
-    background: rgba(163,163,255,1);
-    cursor:pointer;
-}
-
-</style>
-<body>
-
-
-<div id="slider_wrapper"  class="slider_wrapper">
-    <div id="slider_subwrapper" class="slider_subwrapper">
-        <span id="slider_baloon" class="slider_baloon"></span>
-        <div id="slider" class="slider" role="slider">
-            <div id="progress_slider"></div>
-        </div>
-        <span id="slider_thumb" class="slider_thumb"></span>
-    </div>
-</div>
-
-
-</body>
-
-<script>
-
-const progressSlider    = document.getElementById("progress_slider"),
-      slider            = document.getElementById("slider"),
-      sliderSubWrapper  = document.getElementById("slider_subwrapper"),
-      sliderThumb       = document.getElementById("slider_thumb"),
-      text              = document.getElementById("slider_baloon");
-
-let WidthX, rect, thumbRate;
-let x = 0;
-let mousedownFlag = false;
-
-sliderSubWrapper.ontouchstart =
-sliderSubWrapper.onmousedown  = mousedownSlider;
-
-sliderSubWrapper.ontouchend    =
-sliderSubWrapper.onmouseup     =
-sliderSubWrapper.onmouseleave  =
-sliderSubWrapper.ontouchcancel = mouseupSlider;
-
-sliderSubWrapper.onmouseenter =
-sliderSubWrapper.ontouchmove  =
-sliderSubWrapper.onmousemove  = moveSlider;
-
-
-function mouseX(e) {
-    rect = sliderSubWrapper.getBoundingClientRect();
-    if (e.touches && e.touches[0]) {
-        x = (e.touches[0].clientX - window.pageXOffset - rect.left)
-    } else if (e.clientX && e.clientY) {
-        x = (e.clientX - window.pageXOffset - rect.left) //e.offsetXではマウスがthumbの上にあるときにうまく行かない。
-    }
-    if ( x < 0 ){
-        WidthX = 0
-    } else if ( x > sliderSubWrapper.clientWidth){
-        WidthX = 100
-    } else {
-        WidthX = Math.round(x / sliderSubWrapper.clientWidth * 100);
-    }
-    return WidthX;
-}
-function setProgressSlider (WidthX) {
-    progressSlider.style.width =  WidthX + '%';
-    progressSlider.classList.add("slider_progress");
-    sliderThumb.style.left = WidthX * thumbRate + "%";
-}
-function mousedownSlider(e){
-    e.preventDefault();
-    slider.style.background = `#fff`;
-    mousedownFlag = true;
-    WidthX = mouseX(e);
-    setProgressSlider(WidthX);
-    text.style.left = WidthX + "%";
-    text.innerText  = WidthX + "%";
-}
-function mouseupSlider(e){
-    e.preventDefault();
-    if (mousedownFlag){
-        mousedownFlag = false;
-        setProgressSlider(WidthX);
-    }else{
-        slider.style.background = `#fff`;
-        mousedownFlag = false;
-    }
-}
-function moveSlider(e){
-    e.preventDefault();
-    WidthX = mouseX(e);
-    text.style.left = WidthX + "%";
-    text.innerText  = WidthX + "%";
-    if(mousedownFlag){
-        setProgressSlider(WidthX);
-    } else {
-        slider.style.background = `linear-gradient(to right, rgba(163,163,255,0.4) 0%, rgba(163,163,255,0.4) ${WidthX}%, #fff ${WidthX}%, #fff 100%)`
-    }
-}
-
-thumbRate = sliderSubWrapper.clientWidth / ( sliderSubWrapper.clientWidth + sliderThumb.clientWidth);
-
-
-</script>
-
-
-</p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/programming/range-without-input/">Read more…</a>
-	</div>
 </article>
 </main>
 
@@ -552,11 +391,11 @@ thumbRate = sliderSubWrapper.clientWidth / ( sliderSubWrapper.clientWidth + slid
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/politics/judical-collapse/">【犯罪天国】準強姦未遂罪で起訴された難民申請中のトルコ国籍男性(クルド人)に無罪判決。</a></li>
 			<li class="widget__item"><a class="widget__link" href="/politics/noto-earthquake2/">【能登半島】地震被災者が避難所から追い出される。</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/aoyama-chinen/">作家の知念氏に賠償命令　ツイッター投稿で名誉毀損　原告はコロナワクチン国賠訴訟弁護士「青山まさゆき」氏</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vax-and-microplastics/">【動画】コロナワクチンとケミカル臭・アルデヒド臭、白い血栓（紐状物質）、マイクロ・ナノプラスチック</a></li>
 			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/suit/">コロナワクチン国賠訴訟 八百長の可能性大</a></li>
-			<li class="widget__item"><a class="widget__link" href="/medical/covid-19/vax-sln-microplastics/">コロナワクチンと脂質ナノ粒子（PEG）とマイクロプラスチック</a></li>
 		</ul>
 	</div>
 </div>
