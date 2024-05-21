@@ -4,20 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ffmpegで動画に縁取りを付けてみた。 - ImageDiagnosis &amp; Program</title>
+	<title>RAPT BLOG - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="ffmpegで動画に縁取りを付けてみた。" />
-<meta property="og:description" content="前回記事で、ffmpeg を用いて動画にワイプ動画を重ねましたが、ワイプ動画に縁取りが欲しいと思いましたので、トライしてみました。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/ffmpeg-watermark/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2022-07-26T08:49:56+09:00" />
-<meta property="article:modified_time" content="2022-07-26T08:49:56+09:00" />
+		<meta property="og:title" content="RAPT BLOG" />
+<meta property="og:description" content="学んだことをひたすら書くブログ" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://progress-advance.com/tags/rapt-blog/" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="ffmpegで動画に縁取りを付けてみた。"/>
-<meta name="twitter:description" content="前回記事で、ffmpeg を用いて動画にワイプ動画を重ねましたが、ワイプ動画に縁取りが欲しいと思いましたので、トライしてみました。"/>
+<meta name="twitter:title" content="RAPT BLOG"/>
+<meta name="twitter:description" content="学んだことをひたすら書くブログ"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -26,6 +24,7 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/custom.css">
+	<link rel="alternate" type="application/rss+xml" href="/tags/rapt-blog/index.xml" title="ImageDiagnosis & Program">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
@@ -127,91 +126,40 @@ if (!doNotTrack) {
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="post__title">ffmpegで動画に縁取りを付けてみた。</h1>
-			<div class="post__meta meta">
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">RAPT BLOG</h1>
+	</header><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/life/testimony1/" rel="bookmark">
+			RAPT ブログに出会い、世の中の出来事に振り回されなくなった。
+			</a>
+		</h2>
+		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-07-26T08:49:56&#43;09:00">July 26, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-05-09T12:04:56&#43;09:00">May 09, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/life/" rel="category">life</a>
 	</span>
 </div></div>
-		</header>
-		
-		
-		<div class="content post__content clearfix">
-			<p><a href="https://progress-advance.com/programming/ffmpeg-add-audio2video/">前回記事</a>で、ffmpeg を用いて動画にワイプ動画を重ねましたが、ワイプ動画に縁取りが欲しいと思いましたので、トライしてみました。</p>
-<p>動画にランダムな色で 2px の縁取りを付けるコードです。</p>
-<pre tabindex="0"><code>ffmpeg -i input.mp4 -vf &#34;pad=iw+4:ih+4:2:2:random@1&#34; output.mp4
-</code></pre><p><code>random@1</code>を<code>white</code>,<code>color=blue</code>のように色を指定することもできます。</p>
-<p><code>iw+4</code>は、video width + 4px、<code>ih+4</code>は、video height + 4px、<code>pad=iw+4:ih+4:2:2</code>の「2」で、上下左右に2pxの縁取りを追加します。</p>
-<p>
-<video width=100% controls>
-    <source src="/img/video/watermark.mp4" type="video/mp4">
-    Your browser does not support the video tag.  
-</video>
-
- </p>
-<h5 id="参考">参考</h5>
-<p><a href="https://ffmpeg.org/ffmpeg-filters.html#pad-1">FFmpeg Filters Documentation</a></p>
-<p><a href="https://stackoverflow.com/questions/56815993/ffmpeg-set-padding-with-different-top-and-bottom-bar-background-colors">ffmpeg set padding with different top and bottom bar background colors</a>
- </p>
-<p><a href="https://stackoverflow.com/questions/52998126/add-unique-color-watermark-per-frame-with-ffmpeg">Add unique color watermark per frame with FFMpeg</a></p>
-<p><a href="https://stackoverflow.com/questions/66615701/ffmpeg-padding-bottom-of-image">FFMPEG - Padding bottom of image</a></p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/uLMCrotl1CU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<p> </p>
-<h5 id="お薦め">お薦め</h5>
-<p><a href="https://rapt-plusalpha.com/49492/">【ガーシー大誤算】YouTubeで切り抜き部隊が続々と一発BAN　苦肉の策で動画配信サロンを計画するも、中国企業アリババのサーバーを利用、かつ月10万円の会費に批判殺到</a></p>
-<p><a href="https://rapt-plusalpha.com/49442/">【じげもんの常識をブッ壊せ!!】Vol.17 – 群馬人脈の最重要人物・笹川良一　中国共産党と結託し、日本にユダヤ人国家の建国を目論む</a></p>
-<p><a href="https://rapt-plusalpha.com/49414/">「堀江貴文」がコロナワクチン接種を拒んだとの理由からアーティストの「CEO（セオ）」と絶縁 「今からでも言うことを聞いてワクチンを打てばいい」と接種を強要</a>
- </p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/gNaZBg3jl9g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-		</div>
-		<footer class="post__footer">
-			
-<div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
-	<ul class="tags__list">
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/ffmpeg/" rel="tag">ffmpeg</a>
-		</li>
-	</ul>
-</div>
-		</footer>
-	</article>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		こんにちは。 今回は、箸休め記事になります。 コロナ禍や無意味な感染症対策のせいだと思いますが、世の中イライラしている人が増えているように思います。 一日中、マスクを着けていたり、消毒やソーシャルディスタンスを押し付けられたら、当然ですよね。 それ
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/life/testimony1/">Read more…</a>
+	</div>
+</article>
 </main>
 
-<div class="authorbox clearfix">
-	<div class="authorbox__header">
-		<span class="authorbox__name">About ImageDiagnosis</span>
-	</div>
+<div class="pagination">
+	<a class="pagination__item pagination__item--prev btn" href="/tags/rapt-blog/page/2/">«</a>
+	<span class="pagination__item pagination__item--current">3/3</span>
 </div>
 
-<nav class="pager flex">
-	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/ffmpeg-add-audio2video/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">【ffmpeg】画像と音源から動画作成・動画と動画の合成・動画と音声の合成</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/ffmpeg-watermark-video-audio-mix/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【ffmpeg】音声付き動画の合成</p>
-		</a>
-	</div>
-</nav>
-
-
 			</div>
-			<aside class="sidebar"><div class="widget-search widget">
+			
+<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
 		<label>
 			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
