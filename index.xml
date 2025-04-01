@@ -6,7 +6,23 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 24 Mar 2025 09:18:11 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Apr 2025 09:41:16 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAPTさんの Music Video 第3弾 「神はすぐ傍にいる」</title>
+      <link>https://progress-advance.com/life/rapt-music-video-vol3/</link>
+      <pubDate>Tue, 01 Apr 2025 09:41:16 +0900</pubDate>
+      
+      <guid>https://progress-advance.com/life/rapt-music-video-vol3/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/TlPMJ8YeXzM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+ &lt;/p&gt;
+&lt;p&gt;歌詞はこちら&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rapt-plusalpha.com/121295/&#34;&gt;〇 RAPT『神はすぐ傍にいる』MUSIC VIDEO&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>ノロウイルスによる感染性胃腸炎　ー本当の原因は？ー</title>
       <link>https://progress-advance.com/medical/norovirus/</link>
@@ -2855,10 +2871,10 @@ thumbRate = sliderSubWrapper.clientWidth / ( sliderSubWrapper.clientWidth + slid
     
     <item>
       <title>Ubuntu20.10にnpmをインストールしようとして躓いたこと・気付いたこと。</title>
-      <link>https://progress-advance.com/programming/update_upgrade/</link>
+      <link>https://progress-advance.com/life/update_upgrade/</link>
       <pubDate>Sun, 03 Jul 2022 12:02:25 +0900</pubDate>
       
-      <guid>https://progress-advance.com/programming/update_upgrade/</guid>
+      <guid>https://progress-advance.com/life/update_upgrade/</guid>
       <description>Ubuntuにnpmをインストールしようとするも、エラーがでてインストールができませんでした。 原因は極めて単純で、Ubuntuのupdate,upgradeをしていなかったからで、以下の記事と同じようなエラーが出ていました。 Ubuntu 20.10でa</description>
     </item>
     
