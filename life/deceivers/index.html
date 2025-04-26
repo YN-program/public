@@ -4,20 +4,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>【CSS】grid layout -その１- - ImageDiagnosis &amp; Program</title>
+	<title>詐欺師の巧妙な手口 - ImageDiagnosis &amp; Program</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="【CSS】grid layout -その１-" />
-<meta property="og:description" content="グリッドレイアウトが便利なので、基本的なことから学んだことを複数回に分けて記載していきたいと思います。" />
+		<meta property="og:title" content="詐欺師の巧妙な手口" />
+<meta property="og:description" content="以前、「自分は大丈夫」と思っている人ほど騙されやすいという記事を書きました。
+詐欺師に騙されないために。「自分は大丈夫」と思っている人ほど、騙されやすい。
+私は、「東出融（ひがしで　とおる）」という詐欺師に騙されて、イヤシロチというボッタクリ商品を買ったことがあります。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://progress-advance.com/programming/grid1/" /><meta property="article:section" content="programming" />
-<meta property="article:published_time" content="2023-01-30T23:33:32+09:00" />
-<meta property="article:modified_time" content="2023-01-30T23:33:32+09:00" />
+<meta property="og:url" content="https://progress-advance.com/life/deceivers/" /><meta property="article:section" content="life" />
+<meta property="article:published_time" content="2025-04-26T12:06:51+09:00" />
+<meta property="article:modified_time" content="2025-04-26T12:06:51+09:00" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="【CSS】grid layout -その１-"/>
-<meta name="twitter:description" content="グリッドレイアウトが便利なので、基本的なことから学んだことを複数回に分けて記載していきたいと思います。"/>
+<meta name="twitter:title" content="詐欺師の巧妙な手口"/>
+<meta name="twitter:description" content="以前、「自分は大丈夫」と思っている人ほど騙されやすいという記事を書きました。
+詐欺師に騙されないために。「自分は大丈夫」と思っている人ほど、騙されやすい。
+私は、「東出融（ひがしで　とおる）」という詐欺師に騙されて、イヤシロチというボッタクリ商品を買ったことがあります。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,256 +134,53 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">【CSS】grid layout -その１-</h1>
+			<h1 class="post__title">詐欺師の巧妙な手口</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-30T23:33:32&#43;09:00">January 30, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/programming/" rel="category">programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2025-04-26T12:06:51&#43;09:00">April 26, 2025</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/life/" rel="category">life</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>グリッドレイアウトが便利なので、基本的なことから学んだことを複数回に分けて記載していきたいと思います。</p>
-<h4 id="hahahugoshortcode-s0-hbhb"><span style="color:#ea5549;">〇 grid-containerの記載例</span></h4>
-<pre tabindex="0"><code>.grid-container {
-    grid-template-columns:;
-    /*
-    1fr 1fr 1f
-    minmax(100px, 1fr) 1fr
-    repeat(3, 1fr)
-    100px auto 100px 1fr
-    */
-
-    grid-template-rows:;
-    /*
-    min-content min-content 1fr
-    max-content 100px 1fr    
-    70% 30%
-    50% 100px auto
-    */
-
-    grid-template-areas:;
-    /*
-    &#34;header header header&#34;
-    &#34;main main . sidebar&#34;
-    &#34;footer footer footer&#34;;
-    */
-
-    gap: 20px 50px;
-}
-.item1 { grid-area: header;}
-.item2 { grid-area: main;}
-.item3 { grid-area: sidebar;}
-.item4 { grid-area: footer;}
-</code></pre><p>fr は外枠のサイズに合わせてグリッドを分割して、サイズを自動的に調節してくれる。</p>
-<p><code>1fr 1fr 1fr</code>は3分割になる。</p>
-<p>auto は、同じ行列にfrがある場合は、グリッド内のコンテンツに合わせてサイズを調節し、frがない場合は、1frと同じ働きをする。</p>
-<p><code>grid-template-areas</code>は、grid-area で指定されたグリッド領域の名前を参照し、グリッドテンプレートを定義する。グリッドエリア名を繰り返すと、そのセルにまたがってコンテンツが表示さる。ピリオドは空のセルを表す。</p>
-<p><code>gap</code>は<code>row-gap</code>, <code>column-gap</code>の短縮形で、値は一つでも可。<code>gap:20px 50px;</code> は<code>row-gap:20px; column-gap:50px;</code>と同じ。</p>
-<h4 id="hahahugoshortcode-s1-hbhb"><span style="color:#ea5549;">〇 使用例</span></h4>
-
-
-  <style>
-      @charset "utf-8"
-
-      @supports (grid-area: auto) {
-          body {
-              display: grid;
-          }
-      } 
-
-      *, *::before, *::after{
-          box-sizing: border-box;
-      }
-      main {
-          margin:50px;
-          place-items: center;
-      }
-
-      .grid_container{
-          display: grid; /* 又は inline-glid */
-          grid-template-columns:1fr 1fr 1fr;
-          grid-template-rows:repeat(3, 100px);
-          grid-template-areas:"a a c" "a a c" "b b c";
-          gap: 20px 50px;
-          background:#fff;
-          margin: 20px;
-          padding:20px;
-          text-align:center;
-          position: relative;
-          overflow:scroll;
-      }
-      .grid_container div {
-          font-size:20px;
-          font-weight:bold;
-          overflow:hidden;
-      }
-      .grid_container .a {
-          background:#fff4ff;
-          grid-area:a;
-      }
-      .grid_container .b {
-          grid-area:b;
-          background:#f9f4ff;
-      }
-      .grid_container .c {
-          grid-area:c;
-          background:#f4f4ff;
-      }
-      @media screen and (max-width:900px){
-          .grid_container{
-              grid-template-rows:repeat(4, 100px);
-              grid-template-columns:1fr;
-              grid-template-areas:"a a a" "a a a" "b b b" "c c c";
-          }  
-
-      }
-  </style>
-
-  <main>
-      <div class="grid_container">            
-          <div class="a">
-              <p>text1</p>
-          </div>        
-          <div class="b">
-              <p>text2</p>
-          </div>
-          <div class="c">
-              <p>text3</p>
-          </div>
-      </div>
-  </main>
-
-<p><code>html</code></p>
-<pre tabindex="0"><code>&lt;main&gt;
-    &lt;div class=&#34;grid_container&#34;&gt;            
-        &lt;div class=&#34;a&#34;&gt;
-            &lt;p&gt;text1&lt;/p&gt;
-        &lt;/div&gt;        
-        &lt;div class=&#34;b&#34;&gt;
-            &lt;p&gt;text2&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;c&#34;&gt;
-            &lt;p&gt;text3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/main&gt;
-</code></pre><p><code>css</code></p>
-<pre tabindex="0"><code>main {
-    margin:50px;
-    place-items: center;
-}
-
-.grid_container{
-    display: grid; /* 又は inline-glid */
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:repeat(3, 100px);
-    grid-template-areas:&#34;a a c&#34; &#34;a a c&#34; &#34;b b c&#34;;
-    gap: 20px 50px;
-    background:#fff;
-    margin: 20px;
-    padding:20px;
-    text-align:center;
-    position: relative;
-    overflow:scroll;
-}
-.grid_container div {
-    font-size:20px;
-    font-weight:bold;
-    overflow:hidden;
-}
-.grid_container .a {
-    background:#fff4ff;
-    grid-area:a;
-}
-.grid_container .b {
-    grid-area:b;
-    background:#f9f4ff;
-}
-.grid_container .c {
-    grid-area:c;
-    background:#f4f4ff;
-}
-@media screen and (max-width:760px){
-    .grid_container{
-        grid-template-rows:repeat(4, 100px);
-        grid-template-columns:1fr;
-        grid-template-areas:&#34;a a a&#34; &#34;a a a&#34; &#34;b b b&#34; &#34;c c c&#34;;
-    }  
-}     
-</code></pre>
-<style>
-    .sample{ 
-        width:min-content;
-        background:lightgray;
-        margin:0.25rem;
-    }
-    .sample2{
-        width:max-content;
-        background:lightgray;
-        margin:0.25rem;
-    }
-    .sample3{
-        width:fit-content;
-        background:lightgray;
-        margin:0.25rem;
-    }
-</style>
-<li>widthがmin-contentの場合、要素のコンテンツで最も長い単語の幅に合わせる。</li>
-<div class="sample">テキスト</div>
-<div class="sample">min-conten</div>
-<div class="sample">sample text</div>
-<hr>
-<li>widthがmax-contentの場合、要素の幅はコンテンツの幅になる。コンテンツがオーバーフローしても、テキストは折り返されない。</li>
-<div class="sample2">テキスト</div>
-<div class="sample2">max-content</div>
-<div class="sample2">sample text.sample text.sample text.sample text.sample text.sample text.</div>
-<hr>
-<li>widthがfit-contentの場合、要素の幅はコンテンツの幅になる。利用可能な領域を使い、max-contentを超えることはない。</li>
-<li>width ・ height ・ min-width ・ min-height ・ max-width ・ max-height のレイアウトボックスサイズとして使う場合、 最大 ・ 最小サイズはコンテンツのサイズに対応する。</li>
-<div class="sample3">テキスト</div>
-<div class="sample3">fit-content</div>
-<div class="sample3">sample text. sample text. sample text. sample text. sample text. sample text. </div>
-
-
-<p> </p>
-<h5 id="参考記事">参考記事</h5>
-<p><a href="https://kumonosublog.com/coding/css/grid_layout_fr_auto/">https://kumonosublog.com/coding/css/grid_layout_fr_auto/</a></p>
-<p><a href="https://css-tricks.com/snippets/css/complete-guide-grid/#top-of-site">A Complete Guide to CSS Grid</a></p>
-<p><a href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-content">https://developer.mozilla.org/en-US/docs/Web/CSS/min-content</a></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-content">https://developer.mozilla.org/en-US/docs/Web/CSS/max-content</a></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content">https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content</a></p>
-<h5 id="お薦め">お薦め</h5>
-<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">太陽光発電への投資を募ってきた『竹田恒泰』、巨額詐欺容疑の『三浦瑠麗の夫』と懇意で「仕事の関係でご一緒する機会が多々ある」と明かしていたことが判明<a href="https://t.co/39QbRyPeoF">https://t.co/39QbRyPeoF</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1620053311394287617?ref_src=twsrc%5Etfw">January 30, 2023</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">年齢を重ねるごとに新しく生まれ変わり、進化されているRAPTさんから学んだこと（十二弟子・ミナさんの証）<a href="https://t.co/hpNzCBy7xu">https://t.co/hpNzCBy7xu</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1620036390242381825?ref_src=twsrc%5Etfw">January 30, 2023</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">イギリス政府が50歳未満の追加ワクチン接種を中止すると発表　Googleがこのニュースを検索できないよう操作していたことも判明<a href="https://t.co/2CZ9nKFN1A">https://t.co/2CZ9nKFN1A</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1620024546727456768?ref_src=twsrc%5Etfw">January 30, 2023</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">国民の味方のはずの自民党『小野田紀美』議員、Twitter上で国民のアカウントを次々とブロック　自ら『ブロック小野田』と名乗り開き直る　『ブロック太郎』とも昵懇<a href="https://t.co/a4QoxpCl6O">https://t.co/a4QoxpCl6O</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1620007146736992257?ref_src=twsrc%5Etfw">January 30, 2023</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">前澤友作監修の『シングルマザー限定マッチングアプリ』が、幼児虐待を助長すると批判殺到　リリースからわずか1日で配信停止<a href="https://t.co/yaFrPfqKd6">https://t.co/yaFrPfqKd6</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1619683930025918464?ref_src=twsrc%5Etfw">January 29, 2023</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
- 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RAPT理論を知ることで、複雑な世の中のカラクリが理解できるようになり、あらゆる分野の要点を理解できるようになった（十二弟子・サキさんの証）<a href="https://t.co/3FAeLwavYO">https://t.co/3FAeLwavYO</a></p>&mdash; RAPT理論+α (@Rapt_plusalpha) <a href="https://twitter.com/Rapt_plusalpha/status/1619654744896856065?ref_src=twsrc%5Etfw">January 29, 2023</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
- </p>
+			<p>以前、「自分は大丈夫」と思っている人ほど騙されやすいという記事を書きました。</p>
+<p><a href="https://progress-advance.com/life/testimony26/">詐欺師に騙されないために。「自分は大丈夫」と思っている人ほど、騙されやすい。</a></p>
+<p>私は、「東出融（ひがしで　とおる）」という詐欺師に騙されて、イヤシロチというボッタクリ商品を買ったことがあります。</p>
+<p>幸いRAPT氏が「東出融」の正体を暴いてくださり、イヤシロチグッズのカラクリまで解明してくださったので、深みにはまることはありませんでしたが、詐欺師は本当にいい人を装うのが上手く、さまざまな詐欺の手口を知っておかないと簡単に騙されるということを学びました。</p>
+<p><a href="https://rapt-neo.com/?p=36445">東出融氏がどれだけ読者に嘘をついているかを示す確固たる証拠。</a></p>
+<p><a href="https://rapt-neo.com/?p=36090">RAPT×読者対談〈第75弾〉あらえびす・東出融の正体（1）</a></p>
+<p><a href="https://rapt-neo.com/?p=36160">RAPT×読者対談〈第76弾〉あらえびす・東出融の正体（2）</a></p>
+<p><a href="https://rapt-neo.com/?p=36121">イヤシロチグッズが効果はあっても、とんでもないぼったくり商品である確たる根拠。</a></p>
+<p><a href="https://rapt-neo.com/?p=36966">RAPT×読者対談〈第83弾〉アーシング、イヤシロチ、ヨガ……。余りに巨大な悪魔崇拝への入り口。</a></p>
+<p><a href="https://rapt-neo.com/?p=48647">TALK RADIO 〈Vol.10〉 北海道地震と大阪地震は100%人工地震である。 （真犯人は麻生太郎・安倍晋三・東出融）</a></p>
+<p>また、誰かがツイッターに「電話をしたら返金してもらえた」と投稿していたのを見て、私もその流れに便乗して返金してもらうことができました。</p>
+<p>電話をかけて返品・返金を要求したら、女性のスタッフに延々と愚痴を聞かされましたが、悪人は情に訴えてくることを学んでいたので、全部聞き流して、一通り向うが愚痴を言い終えた段階で返金を要求し、無事に返してもらえました。</p>
+<p><a href="https://rapt-neo.com/?p=34927">RAPT有料記事32（2016年1月4日 ）サタンも「愛」と「情」を使う。</a></p>
+<p>世の中には「デート商法」というものもあって、詐欺・悪徳商法評論家「多田文明」氏の『「絶対騙されない人」ほど騙される』という本には、著者の多田氏すらこの手に引っかかりそうになったそうです。</p>
+<p>*デート商法とは、恋愛感情を利用して、契約を締結させる悪徳商法のひとつ。「恋人商法」または「恋愛商法」とも表される（<a href="https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%83%88%E5%95%86%E6%B3%95">こちら</a>）</p>
+<p>男も女も異性に弱いので、悪人はそこを突いてきます。</p>
+<p>中国共産党は、男性だけではなく女性にも罠を仕掛けてくることがあるそうですから、どれだけ警戒してもし過ぎということはありません。</p>
+<p><a href="https://rapt-plusalpha.com/43634/">【第27回】ミナのラジオ – 中国共産党のハニートラップにやられて滅亡に向かう日本 – ゲスト・RAPTさん
+</a></p>
+<p>もう手遅れな人たちもいますが。</p>
+<p><a href="https://rapt-plusalpha.com/62821/">【岸田総理の息子・翔太郎】秘書官に起用されるもフジテレビの女性記者にハニトラにかけられ、機密情報を漏洩した疑い浮上 “親バカ人事”が大きな仇に
+</a></p>
+<p><a href="https://rapt-plusalpha.com/110882/">【石破茂】拉致議連会長時代、金日成の生誕80年を祝う式典に出席し、北朝鮮のハニトラにかかっていたことが判明　
+</a></p>
+<p><a href="https://rapt-plusalpha.com/108296/">【ハニトラ疑惑】秋篠宮家と親密なイギリス人男性が中国人スパイ女性と不倫関係に　皇室の機密情報を漏洩させている疑いが浮上
+</a></p>
+<p><a href="https://rapt-plusalpha.com/96394/">【中共スパイ】自民党・松下新平議員“元秘書”の中国人の女がコロナ給付金の不正受給で書類送検　女は『中国秘密警察』の常務理事、松下議員も高級顧問に　ハニトラで妻とは離婚調停へ
+</a></p>
+<p><a href="https://rapt-plusalpha.com/49011/">【新企画・KAWATA とNANAのトークルーム】ガーシーは中共のハニトラ工作員!! NHK党は中国共産党の工作機関
+</a></p>
+<p><a href="https://rapt-plusalpha.com/84226/">【高須克弥】中国に美容整形の技術を伝授していたことを暴露　中共のハニトラ工作に加担か?
+</a></p>
+<p>また、宗教アレルギーの多い日本人ですが、宗教の知識がないために騙されるということもあります。</p>
+<p><a href="https://rapt-neo.com/?p=37092">RAPT×読者対談〈第84弾〉自己啓発もスピリチャル系も悪魔崇拝。</a></p>
+<p><a href="https://rapt-neo.com/?p=37426">RAPT×読者対談〈第88弾〉悪魔崇拝を世界中に広めたニューエイジ・ムーブメントの恐怖。</a></p>
+<p><a href="https://rapt-neo.com/?p=37507">RAPT×読者対談〈第89弾〉ニューエイジと満州と大本教と蝦夷共和国。背後にいるのは同じ一族。</a></p>
+<p><a href="https://rapt-plusalpha.com/81338/">RAPTさんが世の中の闇を全て暴いたくださった今こそ、神様が人類に手を差し伸べてくださっている救いの時!!（十二弟子・KAWATAさんの証）
+</a></p>
+<p>皆さん、RAPT理論を学び、詐欺師に騙されないように、ハニトラに引っかからないようにしましょう。</p>
 		</div>
 		<footer class="post__footer">
 			
@@ -387,7 +188,7 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/css/" rel="tag">CSS</a>
+			<a class="tags__link btn" href="/tags/rapt-blog/" rel="tag">RAPT BLOG</a>
 		</li>
 	</ul>
 </div>
@@ -403,15 +204,9 @@ if (!doNotTrack) {
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/programming/range-without-input/" rel="prev">
+		<a class="pager__link" href="/life/testimony27/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Inputタグを使わないrange slider</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/programming/grid2/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">【CSS】grid layout -その２-</p>
+			<p class="pager__title">自分の力で何かを得ようとしなくても、神様を愛しさえすれば全てが与えられる。</p>
 		</a>
 	</div>
 </nav>
