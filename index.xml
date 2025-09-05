@@ -6,19 +6,7 @@
     <description>Recent content on ImageDiagnosis &amp; Program</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 24 Aug 2025 11:36:34 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>騙されていた!! 教科書が語らない日中戦争 ― プロパガンダの影で</title>
-      <link>https://progress-advance.com/politics/behind-the-news-in-china/</link>
-      <pubDate>Sun, 24 Aug 2025 11:36:34 +0900</pubDate>
-      
-      <guid>https://progress-advance.com/politics/behind-the-news-in-china/</guid>
-      <description>&lt;p&gt;明日の9月3日は、中国の「抗日戦争勝利記念日」です。&lt;/p&gt;
-&lt;p&gt;今回は、共産主義が悪で、中国人・中国共産党が嘘つきで残虐・残忍で、日本の歴史教育がデタラメだということがよくわかる本を読みましたので、翻訳したものをブログに残しておくことにしました。機械翻訳ですが、ブログに掲載するにあたり原文にも目を通しましたので、内容に間違いはないと思います。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://babel.hathitrust.org/cgi/pt?id=uc1.b4518375&amp;amp;seq=7&#34;&gt;Behind the news in China / by Frederick Vincent Williams&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;この世から嘘が無くなることを願います。&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Sat, 16 Aug 2025 13:22:48 +0900</lastBuildDate><atom:link href="https://progress-advance.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>厚労省－国立感染症研究所の HPV ワクチンファクトシートの最大の裏切り</title>
       <link>https://progress-advance.com/medical/hpv-vaccine-is-useless/</link>
@@ -3679,6 +3667,18 @@ do while文、関数について。&lt;/p&gt;</description>
       <guid>https://progress-advance.com/programming/django-axes%E3%81%A7%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E8%A9%A6%E8%A1%8C%E5%9B%9E%E6%95%B0%E3%82%92%E5%88%B6%E9%99%90%E3%81%99%E3%82%8B/</guid>
       <description>&lt;p&gt;Webサイトにて、不正ログインを防ぐための django-axes。
 ブルートフォース攻撃やパスワードリスト攻撃、辞書攻撃などの対策になる。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>騙されていた!! 教科書が語らない日中戦争 ― プロパガンダの影で</title>
+      <link>https://progress-advance.com/politics/behind-the-news-in-china/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://progress-advance.com/politics/behind-the-news-in-china/</guid>
+      <description>&lt;p&gt;明日の9月3日は、中国の「抗日戦争勝利記念日」です。&lt;/p&gt;
+&lt;p&gt;今回は、共産主義が悪で、中国人・中国共産党が嘘つきで残虐・残忍で、日本の歴史教育がデタラメだということがよくわかる本を読みましたので、翻訳したものをブログに残しておくことにしました。機械翻訳ですが、ブログに掲載するにあたり原文にも目を通しましたので、内容に間違いはないと思います。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://babel.hathitrust.org/cgi/pt?id=uc1.b4518375&amp;amp;seq=7&#34;&gt;Behind the news in China / by Frederick Vincent Williams&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;この世から嘘が無くなることを願います。&lt;/p&gt;</description>
     </item>
     
   </channel>
