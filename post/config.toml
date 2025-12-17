@@ -1,0 +1,86 @@
+baseurl = "https://progress-advance.com"
+title = "ImageDiagnosis"
+languageCode = "ja"
+# paginate = "30" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+# googleAnalytics = "UA-120164090-1" # Enable Google Analytics by entering your tracking id
+hasCJKLanguage = true
+summaryLength = 120
+ignoreErrors = ["error-remote-getjson"]
+timeout = 120000
+
+[pagination]
+  pagerSize = 30
+
+# [services.googleAnalytics]
+#   ID = "UA-120164090-1"
+
+
+[Params]
+  author = "ImageDiagnosis" 
+  highlightColor = "#EB9E2A"
+  description = "学んだことをひたすら書くブログ" # Description of your site
+  opengraph = true
+  twitter_cards = true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = true
+  pager = true
+  post_meta = ["date", "categories"] # Order of post meta information
+  mainSections = ["programming", "medical", "life", "politics"]
+  customCSS = ["custom.css"]
+
+
+[Params.logo]
+  title    = "ImageDiagnosis & Programming"
+  subtitle = "学んだことをひたすら書くブログ" # Logo subtitle
+  # image   = ""
+
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = true   # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent","categories", "taglist", "twitter"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+
+[Params.widgets.social]
+twitter = "https://x.com/GLnoIrjwa7omiK7"
+
+[[Menus.main]]
+Name = "ホーム"
+URL = "/"
+weight = 1
+
+[[Menus.main]]
+Name = "プログラミング"
+URL = "/categories/programming/"
+weight = 2
+
+[[Menus.main]]
+Name = "医療"
+URL = "/categories/medical/"
+weight = 3
+
+[[Menus.main]]
+Name = "Life"
+URL = "/categories/life/"
+weight = 4
+
+[[Menus.main]]
+Name = "政治経済"
+URL = "/categories/politics/"
+weight = 5
+
+
+[[Menus.footer]]
+Name = "Privacy"
+URL = "/privacy/"
+
+[build]
+  ignoreLogs = ["shortcode-twitter-getremote"]
