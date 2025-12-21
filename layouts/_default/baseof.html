@@ -48,6 +48,7 @@
         */}}
         
 	{{ partial "gtm/gtm-head" . }}
+	{{ partial "cloudflare-analytics.html" . }}
 
 </head>
 <body class="body">
@@ -74,5 +75,25 @@
 <script src="{{ . | relURL }}"></script>
 {{- end }}
 {{- partial "mathjax.html" . -}}
+
+<script>
+	(function () {
+	  if (window.twttr) {
+		window.twttr.widgets.load();
+		return;
+	  }
+	  var s = document.createElement("script");
+	  s.src = "https://platform.twitter.com/widgets.js";
+	  s.async = true;
+	  s.onload = function () {
+		if (window.twttr) {
+		  window.twttr.widgets.load();
+		}
+	  };
+	  document.body.appendChild(s);
+	})();
+</script>
+
+
 </body>
 </html>
