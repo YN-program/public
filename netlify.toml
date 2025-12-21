@@ -2,6 +2,5 @@
   publish = "public"
   command = "hugo"
 
-[build.environment]
-  HUGO_VERSION = "0.123.8"
-  HUGO_ENABLEGITINFO = "true"
+[context.production.environment]
+  HUGO_VERSION = "0.152.2" # ローカルと同じバージョンにする
