@@ -1,4 +1,4 @@
-{{ if not hugo.IsServer }}
+{{ if ne hugo.Environment "development" }}
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' 
         data-cf-beacon='{"token": "aae7d442aae046eca05fa7a1b1854e4b"}'></script>
