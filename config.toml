@@ -83,3 +83,7 @@ weight = 5
 [[Menus.footer]]
 Name = "Privacy"
 URL = "/privacy/"
+
+[privacy]
+  [privacy.twitter]
+    disableInlineCard = true
