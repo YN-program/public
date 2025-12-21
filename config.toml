@@ -12,6 +12,14 @@ timeout = 120000
 
 ignoreLogs = ["shortcode-twitter-getremote"]
 
+[privacy]
+  [privacy.twitter]
+    disableInlineCard = true
+    
+[services]
+  [services.twitter]
+    disableInlineCard = true
+
 [pagination]
   pagerSize = 30
 
@@ -84,6 +92,3 @@ weight = 5
 Name = "Privacy"
 URL = "/privacy/"
 
-[privacy]
-  [privacy.twitter]
-    disableInlineCard = true
