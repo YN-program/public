@@ -4,7 +4,7 @@ languageCode = "ja"
 # paginate = "30" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
-# googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+# googleAnalytics = "UA-120164090-1" # Enable Google Analytics by entering your tracking id
 hasCJKLanguage = true
 summaryLength = 120
 ignoreErrors = ["error-remote-getjson"]
@@ -23,8 +23,8 @@ ignoreLogs = ["shortcode-twitter-getremote"]
 [pagination]
   pagerSize = 30
 
-# [services.googleAnalytics]
-#   ID = ""
+[services.googleAnalytics]
+  ID = "UA-120164090-1"
 
 
 [Params]
