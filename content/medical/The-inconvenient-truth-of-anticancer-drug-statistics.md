@@ -158,6 +158,25 @@ OSを確認するには、患者さんが亡くなるまで待つ必要があり
 * **事例のまとめ（FDA）：** [Withdrawn Cancer Accelerated Approvals](https://www.fda.gov/drugs/resources-information-approved-drugs/withdrawn-cancer-accelerated-approvals)
 * このリストには、承認後にOSの改善を示せなかったために市場から消えた「薬と対象疾患の組み合わせ」が並んでいます。
 
+
+（追記：20015/12/28）
+
+「まさかアバスチンの乳癌に対する承認取り消ししか根拠がないんですか？」という反論があったので、追加でリンクを貼っておきます。
+
+[Availability of evidence of benefits on overall survival and quality of life of cancer drugs approved by European Medicines Agency: retrospective cohort study of drug approvals 2009-13](https://pmc.ncbi.nlm.nih.gov/articles/PMC5627352/)
+
+[Evaluation of progression-free survival as a surrogate endpoint for overall survival in locally advanced or metastatic differentiated thyroid cancer: a systematic review
+](https://pubmed.ncbi.nlm.nih.gov/37702900/)
+
+[スペシャリストが推す必見論文！その見解と考察 -14 がん治療文献を読むときは，真のエンドポイントのOS（全生存期間）をやっぱり重要視すべし](https://webview.isho.jp/journal/detail/abs/10.15104/th.2025020017)
+
+以下の論文は、「PFS は現代のがん化学療法・分子標的療法において OS の代替指標として信頼できないことが多い」ということを実証的に示した論文です。
+
+[Objective response rate and progression-free survival as surrogates for overall survival treatment effect: A meta-analysis across diverse tumour groups and contemporary therapies
+](https://pubmed.ncbi.nlm.nih.gov/38134560/)
+
+（追記ここまで）
+
 ---
 
 **数字の定義に注意**
