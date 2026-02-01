@@ -1,5 +1,5 @@
 ---
-title: "「症状がないなら病人ではない」という、忘れ去られた真実 ―― 診断が奪う心の平和について"
+title: "-prognostic-factor.."
 description: ""
 date: "2026-01-31T11:39:28+09:00"
 thumbnail: 
