@@ -7,13 +7,13 @@ thumbnail:
   visibility:
     - list
 categories:
-  - "medical"
+  - "Politics"
 tags:
   - "肺炎"
 menu:
 main:
-  name: 医療
-  weight: 3
+  name: 政治経済
+  weight: 5
 ---
 大阪万博に行った後、咳が止まらなくなった人や肺炎になった人が沢山いるようです。
 
