@@ -70,10 +70,10 @@ RAPT氏は、この世から悪を無くすために、不公平や理不尽な�
 ##### おすすめ
 
 
-{{<tweet user="Rapt_plusalpha" id="1840711401813541082">}}
+{{<x user="Rapt_plusalpha" id="1840711401813541082">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1860632137885679917">}}
+{{<x user="Rapt_plusalpha" id="1860632137885679917">}}
 &nbsp;
 
 {{<youtube HJwcF6f36jk>}}

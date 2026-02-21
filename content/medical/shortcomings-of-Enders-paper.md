@@ -336,17 +336,17 @@ Q: ウイルスを含む培養液には抗生物質などの添加物が入っ�
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1934771356115325434">}}
+{{<x user="Rapt_plusalpha" id="1934771356115325434">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1934572136058003712">}}
+{{<x user="Rapt_plusalpha" id="1934572136058003712">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1934571187650310222">}}
+{{<x user="Rapt_plusalpha" id="1934571187650310222">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1934548651646562467">}}
+{{<x user="Rapt_plusalpha" id="1934548651646562467">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1934204262030201163">}}
+{{<x user="Rapt_plusalpha" id="1934204262030201163">}}
 &nbsp;

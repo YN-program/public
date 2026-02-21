@@ -34,22 +34,22 @@ https://github.com/gohugoio/hugo/releases
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1638884266871488512">}}
+{{<x user="Rapt_plusalpha" id="1638884266871488512">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1638882795065061377">}}
+{{<x user="Rapt_plusalpha" id="1638882795065061377">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1638876066818445312">}}
+{{<x user="Rapt_plusalpha" id="1638876066818445312">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1638874327818059781">}}
+{{<x user="Rapt_plusalpha" id="1638874327818059781">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1638858805604921344">}}
+{{<x user="Rapt_plusalpha" id="1638858805604921344">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1638844252284424193">}}
+{{<x user="Rapt_plusalpha" id="1638844252284424193">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1638841881231753217">}}
+{{<x user="Rapt_plusalpha" id="1638841881231753217">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1638487089766604800">}}
+{{<x user="Rapt_plusalpha" id="1638487089766604800">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1638133188341170176">}}
+{{<x user="Rapt_plusalpha" id="1638133188341170176">}}
 &nbsp;

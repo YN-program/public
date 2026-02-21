@@ -85,7 +85,7 @@ main:
 > 
 > コスタリカからの積み荷にはオレンジ果汁の濃縮液が入っているはずだったが、代わりに末端価格5500万ドル（約57億円）相当のコカインが入っていた。
 >
-> {{<tweet user="DirectMarseille" id="770798229193576448">}}
+> {{<x user="DirectMarseille" id="770798229193576448">}}
 > 
 > 地元の検察官ザビエル・タラボー 氏はBBCの取材に、「これは非常に悪質なプレゼント」だと語った。
 > 
@@ -131,17 +131,17 @@ RAPT氏の言葉を借りるなら、「お飲みになるのは自由ですが�
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1678751474577457152">}}
+{{<x user="Rapt_plusalpha" id="1678751474577457152">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1678729684308328453">}}
+{{<x user="Rapt_plusalpha" id="1678729684308328453">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1678717749420503042">}}
+{{<x user="Rapt_plusalpha" id="1678717749420503042">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1678714065571700736">}}
+{{<x user="Rapt_plusalpha" id="1678714065571700736">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1678358931121516549">}}
+{{<x user="Rapt_plusalpha" id="1678358931121516549">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1677632221174444034">}}
+{{<x user="Rapt_plusalpha" id="1677632221174444034">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1677271856284602371">}}
+{{<x user="Rapt_plusalpha" id="1677271856284602371">}}
 &nbsp;

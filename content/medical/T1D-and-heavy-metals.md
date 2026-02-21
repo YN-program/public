@@ -140,20 +140,20 @@ AI（Felo Search）によると、アルミニウムは水銀やヒ素に比べ�
 {{<youtube s2n_StwlxQI>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1887821661208216056">}}
+{{<x user="Rapt_plusalpha" id="1887821661208216056">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1887818448182583333">}}
+{{<x user="Rapt_plusalpha" id="1887818448182583333">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1887813256913264851">}}
+{{<x user="Rapt_plusalpha" id="1887813256913264851">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1887798605689532818">}}
+{{<x user="Rapt_plusalpha" id="1887798605689532818">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1887800284791058684">}}
+{{<x user="Rapt_plusalpha" id="1887800284791058684">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1864243280617328857">}}
+{{<x user="Rapt_plusalpha" id="1864243280617328857">}}
 &nbsp;

@@ -15,7 +15,7 @@ main:
 ---
 RAPT氏が手掛けられた写真集「RAPT×PHOTO 闇に浮かび上がる光」が発売されました。
 
-{{<tweet user="Rapt_plusalpha" id="1803728421224366312">}}
+{{<x user="Rapt_plusalpha" id="1803728421224366312">}}
 
 <!--more-->
 
@@ -41,4 +41,4 @@ RAPT氏が手掛けられた写真集「RAPT×PHOTO 闇に浮かび上がる光�
 
 また、私自身も頑張らないといけないのですが、悪なる支配者を滅ぼす一人ひとりになれますようにお祈りします。
 
-{{<tweet user="Rapt_plusalpha" id="1804453439528960297">}}
+{{<x user="Rapt_plusalpha" id="1804453439528960297">}}

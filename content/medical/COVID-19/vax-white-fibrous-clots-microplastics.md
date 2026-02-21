@@ -26,7 +26,7 @@ main:
 
 このひも状の物質は、防腐剤と共に容器に入れて冷蔵庫に保管したところ、2，3日後には3から4倍に増大したそうです。
 
-{{<tweet user="kuu331108" id="1525639261596266498">}}
+{{<x user="kuu331108" id="1525639261596266498">}}
 &nbsp;
 
 [Remember Those Fibrous Clots That Came Out Of The Jabbed? They Seem To Be Alive And Growing!!
@@ -34,7 +34,7 @@ main:
 
 また、コロナワクチン接種者から、ケミカル臭、アルデヒド系臭がするそうです。
 
-{{<tweet user="GContinues" id="1686273607956328448">}}
+{{<x user="GContinues" id="1686273607956328448">}}
 &nbsp;
 
 [アルデヒド](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%87%E3%83%92%E3%83%89)は強い刺激臭を持ち、例えばホルムアルデヒドだと、べニア版の臭い、ビニールのシールなどに付着している匂い、ツンとくる酸っぱいニオイなど鼻にツンとくる匂いがするそうです（[こちら](https://niimoblog.com/what-kindof-smell-does-formaldehyde-have/)）。
@@ -102,13 +102,13 @@ main:
 ##### おすすめ
 
 
-{{<tweet user="Rapt_plusalpha" id="1776204619984851117">}}
+{{<x user="Rapt_plusalpha" id="1776204619984851117">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1776203205938209042">}}
+{{<x user="Rapt_plusalpha" id="1776203205938209042">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1776201347911835784">}}
+{{<x user="Rapt_plusalpha" id="1776201347911835784">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1776196052749848910">}}
+{{<x user="Rapt_plusalpha" id="1776196052749848910">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1775852690222071899">}}
+{{<x user="Rapt_plusalpha" id="1775852690222071899">}}
 &nbsp;

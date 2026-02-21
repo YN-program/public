@@ -96,18 +96,18 @@ main:
 {{<youtube s2n_StwlxQI>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1884569382044762491">}}
+{{<x user="Rapt_plusalpha" id="1884569382044762491">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1884560687390994475">}}
+{{<x user="Rapt_plusalpha" id="1884560687390994475">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1884555691693871601">}}
+{{<x user="Rapt_plusalpha" id="1884555691693871601">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1884547168125464870">}}
+{{<x user="Rapt_plusalpha" id="1884547168125464870">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1884545264628998638">}}
+{{<x user="Rapt_plusalpha" id="1884545264628998638">}}
 &nbsp;
 

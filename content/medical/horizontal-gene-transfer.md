@@ -25,12 +25,12 @@ main:
 
 そして、そのDNAによって癌になったり、炎症が起きたり、ヒトの遺伝子が変化するという意見があります。
 
-{{<tweet user="You3_JP" id="1657758788181712904">}}
+{{<x user="You3_JP" id="1657758788181712904">}}
 &nbsp;
 
 一方、別の研究者によると、コロナワクチンには遺伝物質はほとんど入っておらず、人々をミスリードするためにごくわずか入っているだけで、むしろ酸化グラフェンやその他の物質のほうが問題だと言っています。
 
-{{<tweet user="purplep76858690" id="1534751487175274497">}}
+{{<x user="purplep76858690" id="1534751487175274497">}}
 &nbsp;
 
 はてさて、コロナワクチンに本当にmRNAやDNAが入っているのかどうか。
@@ -96,19 +96,19 @@ main:
 
 ##### お勧め
 
-{{<tweet user="Rapt_plusalpha" id="1661720927103758336">}}
+{{<x user="Rapt_plusalpha" id="1661720927103758336">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1661706203133775874">}}
+{{<x user="Rapt_plusalpha" id="1661706203133775874">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1661686625884344320">}}
+{{<x user="Rapt_plusalpha" id="1661686625884344320">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1661684595644071936">}}
+{{<x user="Rapt_plusalpha" id="1661684595644071936">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1661682780634488832">}}
+{{<x user="Rapt_plusalpha" id="1661682780634488832">}}
 &nbsp;
 
 {{<youtube 6W9hPx3hH5s>}}

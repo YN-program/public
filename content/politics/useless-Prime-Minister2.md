@@ -18,12 +18,12 @@ main:
 
 <!--more-->
 
-{{<tweet user="kishida230" id="1836601094555996539">}}
+{{<x user="kishida230" id="1836601094555996539">}}
 &nbsp;
 
 この被災地を見捨て、見せかけだけのパフォーマンスを繰り返す首相に対して、批判が殺到しています。
 
-{{<tweet user="roma_ooryaaa" id="1837402059664249285">}}
+{{<x user="roma_ooryaaa" id="1837402059664249285">}}
 &nbsp;
 
 ![岸田批判](/img/politics/岸田批判4.PNG)

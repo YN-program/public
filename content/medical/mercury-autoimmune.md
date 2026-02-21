@@ -20,7 +20,7 @@ main:
 
 <!--more-->
 
-{{<tweet user="MIMA7273741" id="1637802740075364352">}}
+{{<x user="MIMA7273741" id="1637802740075364352">}}
 &nbsp;
 
 そして、ワクチンには水銀が含まれていますが、水銀によって炎症がおきること、自己抗体が作られることが知られています（陰謀論ではありません）。
@@ -39,7 +39,7 @@ main:
 
 また、コロナワクチン接種後にANCA関連血管炎の報告がありますが、自己抗体の一つである抗好中球細胞質抗体（ANCA）は、いくつかの薬剤やコカインと関連があります。
 
-{{<tweet user="sabuchanhakoda1" id="1509320117209174016">}}
+{{<x user="sabuchanhakoda1" id="1509320117209174016">}}
 &nbsp;
 
 [〇 コロナワクチンと胸水、心嚢液貯留](https://progress-advance.com/medical/cocaine/anca-vasculitis/)
@@ -58,14 +58,14 @@ main:
 {{<youtube 3fBUR9DBOfM>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1642861580080783360">}}
+{{<x user="Rapt_plusalpha" id="1642861580080783360">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1642843198585450502">}}
+{{<x user="Rapt_plusalpha" id="1642843198585450502">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1642834691601608705">}}
+{{<x user="Rapt_plusalpha" id="1642834691601608705">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1642509381668593664">}}
+{{<x user="Rapt_plusalpha" id="1642509381668593664">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1642145854697127939">}}
+{{<x user="Rapt_plusalpha" id="1642145854697127939">}}
 &nbsp;
 

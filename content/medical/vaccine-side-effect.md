@@ -29,7 +29,7 @@ main:
 ![vaccine-side-effect](/img/vaccine/vaccine-side-effect.jpg)
 &nbsp;
 
-{{<tweet user="greekgoddess232" id="1331964633939230728">}}
+{{<x user="greekgoddess232" id="1331964633939230728">}}
 &nbsp;
 
 この論文が撤回されたのは、"安全性の研究を妨げる"圧力がかかった可能性があります。

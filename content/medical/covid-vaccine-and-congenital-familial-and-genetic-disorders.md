@@ -71,21 +71,21 @@ RAPTブログ、RAPT理論+αでは、これまで隠されてきた真実の他
 
 出来るだけ沢山の方が、真実を知り、心も体も健康になってほしいと思います。
 
-{{<tweet user="Rapt_plusalpha" id="1509874533003526147">}}
+{{<x user="Rapt_plusalpha" id="1509874533003526147">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1447171352813658113">}}
+{{<x user="Rapt_plusalpha" id="1447171352813658113">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1618939234978766850">}}
-&nbsp;
-
-{{<tweet user="Rapt_plusalpha" id="1747952358515200166">}}
+{{<x user="Rapt_plusalpha" id="1618939234978766850">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1747930158185812417">}}
+{{<x user="Rapt_plusalpha" id="1747952358515200166">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1747919453021765909">}}
+
+{{<x user="Rapt_plusalpha" id="1747930158185812417">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1746484450391920835">}}
+{{<x user="Rapt_plusalpha" id="1747919453021765909">}}
+&nbsp;
+{{<x user="Rapt_plusalpha" id="1746484450391920835">}}
 &nbsp;
 
 

@@ -112,23 +112,23 @@ main:
 
 この世から、悪が一掃されますように。
 
-{{<tweet user="esrun202105" id="1747648606524551485">}}
+{{<x user="esrun202105" id="1747648606524551485">}}
 &nbsp;
 
 
 ##### おすすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1749409458240065910">}}
+{{<x user="Rapt_plusalpha" id="1749409458240065910">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1749376004030947784">}}
+{{<x user="Rapt_plusalpha" id="1749376004030947784">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1749048197992137067">}}
+{{<x user="Rapt_plusalpha" id="1749048197992137067">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1749037411429171374">}}
-&nbsp;
-
-{{<tweet user="Rapt_plusalpha" id="1749021022819582176">}}
+{{<x user="Rapt_plusalpha" id="1749037411429171374">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1749006941735817519">}}
+{{<x user="Rapt_plusalpha" id="1749021022819582176">}}
+&nbsp;
+
+{{<x user="Rapt_plusalpha" id="1749006941735817519">}}
 &nbsp;

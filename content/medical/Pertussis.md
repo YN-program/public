@@ -42,7 +42,7 @@ main:
 
 大気中からは、ホスゲンという毒ガスの他、ホスゲンから作られるイソシアネート、シックハウス症候群の原因となるホルムアルデヒド（HCHO）などの総揮発性有機化合物（TVOC）が検出されています。
 
-{{<tweet user="canario9314" id="1648259241747316736">}}
+{{<x user="canario9314" id="1648259241747316736">}}
 &nbsp;
 
 仮にこれらの化学物質が空から撒かれると、特に低濃度の場合、百日咳のような呼吸器症状を引き起こす可能性があります。
@@ -59,17 +59,17 @@ main:
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1916448615762903243">}}
+{{<x user="Rapt_plusalpha" id="1916448615762903243">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1916432711805460607">}}
+{{<x user="Rapt_plusalpha" id="1916432711805460607">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1916090971739095084">}}
+{{<x user="Rapt_plusalpha" id="1916090971739095084">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1916082944202182847">}}
+{{<x user="Rapt_plusalpha" id="1916082944202182847">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1916068323932205075">}}
+{{<x user="Rapt_plusalpha" id="1916068323932205075">}}
 &nbsp;

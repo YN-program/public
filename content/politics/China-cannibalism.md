@@ -26,7 +26,7 @@ main:
 > [遺体4千体を違法入手　中国、医療関連企業を捜査
 ](https://news.livedoor.com/article/detail/26955554/)
 
-{{<tweet user="xinwendiaocha" id="1821778123417120984">}}
+{{<x user="xinwendiaocha" id="1821778123417120984">}}
 
 ![中国人肉食](/img/politics/china-cannibalism.PNG)
 

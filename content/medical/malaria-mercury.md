@@ -65,15 +65,15 @@ main:
 
 [コロナワクチンと心筋炎](https://rapt-plusalpha.com/?s=%E5%BF%83%E7%AD%8B%E7%82%8E)
 
-{{<tweet user="Rapt_plusalpha" id="1581260600252198917">}}
+{{<x user="Rapt_plusalpha" id="1581260600252198917">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1581250607977238529">}}
+{{<x user="Rapt_plusalpha" id="1581250607977238529">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1581240538548035584">}}
+{{<x user="Rapt_plusalpha" id="1581240538548035584">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1581238517887545344">}}
+{{<x user="Rapt_plusalpha" id="1581238517887545344">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1581227682934968321">}}
+{{<x user="Rapt_plusalpha" id="1581227682934968321">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1580891111065030656">}}
+{{<x user="Rapt_plusalpha" id="1580891111065030656">}}
 &nbsp;

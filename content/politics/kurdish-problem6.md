@@ -18,16 +18,16 @@ main:
 [クルド人、川口自警団へ殺害予告メールを送信　警察は一切の捜査をせず　一方、埼玉県警はクルド人支援団体に脅迫メールを送信した男性を書類送検
 ](https://rapt-plusalpha.com/108991/)
 
-{{<tweet user="ishiitakaaki" id="1830880173828514088">}}
+{{<x user="ishiitakaaki" id="1830880173828514088">}}
 &nbsp;
 
-{{<tweet user="ishiitakaaki" id="1830875366942257493">}}
+{{<x user="ishiitakaaki" id="1830875366942257493">}}
 &nbsp;
 
-{{<tweet user="ishiitakaaki" id="1831162751336481260">}}
+{{<x user="ishiitakaaki" id="1831162751336481260">}}
 &nbsp;
 
-{{<tweet user="kawaguchi_safe" id="1829119830387253338">}}
+{{<x user="kawaguchi_safe" id="1829119830387253338">}}
 &nbsp;
 
 また、NHKが「在日クルド人が日本人から苦しめられている」との内容を報道し、多くの日本人が怒りを表しています。
@@ -44,7 +44,7 @@ main:
 
 [キリスト教プロテスタントも悪魔崇拝者に乗っ取られている可能性大です。「日本基督教団」は在日･反日勢力と同一体でした。](https://rapt-neo.com/?p=16236)
 
-{{<tweet user="bsx3OFpqArGH8eA" id="1831213021085245590">}}
+{{<x user="bsx3OFpqArGH8eA" id="1831213021085245590">}}
 &nbsp;
 
 そして、日本基督教団は、中国共産党の隠れ蓑である創価学会や日本共産党と密接に繋がっています。

@@ -65,7 +65,7 @@ RAPTブログにて、「砂糖は体に悪い」はイルミナティの洗脳�
 
 この世から間違った情報がなくなり、本当に正しい情報だけが広まることを願います。
 
-{{<tweet user="takejiroabc1968" id="1890254676479860948">}}
+{{<x user="takejiroabc1968" id="1890254676479860948">}}
 &nbsp;
 
 ##### おすすめ
@@ -79,17 +79,17 @@ RAPTブログにて、「砂糖は体に悪い」はイルミナティの洗脳�
 [『内海聡』が片目に“あざ”のできた姿でライブ配信に登場　イルミナティの「痛みに耐える儀式」に参加した可能性大　自身もイルミナティの下部組織サイエントロジーとのつながりを認める
 ](https://rapt-plusalpha.com/97302/)
 
-{{<tweet user="Rapt_plusalpha" id="1939271343750705209">}}
+{{<x user="Rapt_plusalpha" id="1939271343750705209">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1939264806898618439">}}
+{{<x user="Rapt_plusalpha" id="1939264806898618439">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1939259009682612328">}}
+{{<x user="Rapt_plusalpha" id="1939259009682612328">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1938903357407768960">}}
+{{<x user="Rapt_plusalpha" id="1938903357407768960">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1938907129014034773">}}
+{{<x user="Rapt_plusalpha" id="1938907129014034773">}}
 &nbsp;

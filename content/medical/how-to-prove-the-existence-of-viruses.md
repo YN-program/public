@@ -326,17 +326,17 @@ Q:以下の事例について教えて下さい。
 ##### おすすめ
 
 
-{{<tweet user="Rapt_plusalpha" id="1663498680270487553">}}
+{{<x user="Rapt_plusalpha" id="1663498680270487553">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1922961461585862736">}}
+{{<x user="Rapt_plusalpha" id="1922961461585862736">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1922250829391593595">}}
+{{<x user="Rapt_plusalpha" id="1922250829391593595">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1751194051318300908">}}
+{{<x user="Rapt_plusalpha" id="1751194051318300908">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1921867642513596645">}}
+{{<x user="Rapt_plusalpha" id="1921867642513596645">}}
 &nbsp;

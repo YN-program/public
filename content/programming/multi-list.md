@@ -142,26 +142,26 @@ qs_lists =　[[qs0, qs1, number],
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1584862349399556098">}}
+{{<x user="Rapt_plusalpha" id="1584862349399556098">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1585247741890166784">}}
+{{<x user="Rapt_plusalpha" id="1585247741890166784">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1585239610464284672">}}
+{{<x user="Rapt_plusalpha" id="1585239610464284672">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1585236564216381440">}}
+{{<x user="Rapt_plusalpha" id="1585236564216381440">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1585228213575262208">}}
+{{<x user="Rapt_plusalpha" id="1585228213575262208">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1585220368855633920">}}
+{{<x user="Rapt_plusalpha" id="1585220368855633920">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1585217783667003393">}}
+{{<x user="Rapt_plusalpha" id="1585217783667003393">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1584505105256427522">}}
+{{<x user="Rapt_plusalpha" id="1584505105256427522">}}
 &nbsp;

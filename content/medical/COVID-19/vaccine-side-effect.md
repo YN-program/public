@@ -107,17 +107,17 @@ main:
 
 この世から悪が消え去りますように。
 
-{{<tweet user="Rapt_plusalpha" id="1742518352776749140">}}
+{{<x user="Rapt_plusalpha" id="1742518352776749140">}}
 
-{{<tweet user="Rapt_plusalpha" id="1742491680509776085">}}
+{{<x user="Rapt_plusalpha" id="1742491680509776085">}}
 
-{{<tweet user="Rapt_plusalpha" id="1742158406323151288">}}
+{{<x user="Rapt_plusalpha" id="1742158406323151288">}}
 
-{{<tweet user="Rapt_plusalpha" id="1742124535187636383">}}
+{{<x user="Rapt_plusalpha" id="1742124535187636383">}}
 
-{{<tweet user="Rapt_plusalpha" id="1741776581310484712">}}
+{{<x user="Rapt_plusalpha" id="1741776581310484712">}}
 
-{{<tweet user="Rapt_plusalpha" id="1741432991669444761">}}
+{{<x user="Rapt_plusalpha" id="1741432991669444761">}}
 
 
 

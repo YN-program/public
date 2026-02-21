@@ -758,19 +758,19 @@ parseIntをMath.floor()の代用として使用してはいけない。
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1604424547159011328">}}
+{{<x user="Rapt_plusalpha" id="1604424547159011328">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1604420441031839744">}}
+{{<x user="Rapt_plusalpha" id="1604420441031839744">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1604098755124682752">}}
+{{<x user="Rapt_plusalpha" id="1604098755124682752">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1604086070009659393">}}
+{{<x user="Rapt_plusalpha" id="1604086070009659393">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1604058845521006592">}}
+{{<x user="Rapt_plusalpha" id="1604058845521006592">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1604057319188615168">}}
+{{<x user="Rapt_plusalpha" id="1604057319188615168">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1603714497608183808">}}
+{{<x user="Rapt_plusalpha" id="1603714497608183808">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1603341600389677056">}}
+{{<x user="Rapt_plusalpha" id="1603341600389677056">}}
 &nbsp;

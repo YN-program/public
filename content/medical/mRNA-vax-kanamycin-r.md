@@ -27,7 +27,7 @@ main:
 
 この実験結果に対して、色々な解釈があり、一部の人たちの間でもめているようですが、それは脇に置いておきます。
 
-{{<tweet user="hudikaha" id="1652827241070620672">}}
+{{<x user="hudikaha" id="1652827241070620672">}}
 &nbsp;
 
 実験した人は、コロナワクチンに重金属が含まれていることを恐らく知らないので、コロナワクチンに暴露された大腸菌から、重金属耐性菌が出てくるとは考えていないと思いますが、実際にはコロナワクチンには重金属が含まれているので、重金属耐性菌が出てきます。
@@ -59,13 +59,13 @@ main:
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1618891557566038016">}}
+{{<x user="Rapt_plusalpha" id="1618891557566038016">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1674771021436706817">}}
+{{<x user="Rapt_plusalpha" id="1674771021436706817">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1674736643281129472">}}
+{{<x user="Rapt_plusalpha" id="1674736643281129472">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1674731092870582278">}}
+{{<x user="Rapt_plusalpha" id="1674731092870582278">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1674722709106991104">}}
+{{<x user="Rapt_plusalpha" id="1674722709106991104">}}
 &nbsp;

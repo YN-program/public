@@ -81,13 +81,13 @@ RAPT ブログは、まさに人類の宝で、人生のありとあらゆる問
 
 [「日本基督教団」は大本教と創価学会によって設立された、キリスト教を破壊する工作員養成所!!](https://rapt-plusalpha.com/5064/)
 
-{{<tweet user="Rapt_plusalpha" id="1566040515711467522">}}
+{{<x user="Rapt_plusalpha" id="1566040515711467522">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1562405470236975109">}}
+{{<x user="Rapt_plusalpha" id="1562405470236975109">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1462376495179993091">}}
+{{<x user="Rapt_plusalpha" id="1462376495179993091">}}
 &nbsp;
 
 

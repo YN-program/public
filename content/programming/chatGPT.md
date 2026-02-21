@@ -35,21 +35,21 @@ https://app-story.net/chat-gpt-can-do-summary/#i-26
 
 機械ですから、間違いがあることは想定済みかもしれませんが、情報の捏造や情報統制も行われている可能性があります。
 
-{{<tweet user="mokopomme" id="1629198711313031170">}}
+{{<x user="mokopomme" id="1629198711313031170">}}
 &nbsp;
 
-{{<tweet user="hudikaha" id="1623146058183512065">}}
+{{<x user="hudikaha" id="1623146058183512065">}}
 &nbsp;
 
-{{<tweet user="taniyan1215" id="1626804133285203972">}}
+{{<x user="taniyan1215" id="1626804133285203972">}}
 &nbsp;
 
-{{<tweet user="DrEliDavid" id="1627714427586740227">}}
+{{<x user="DrEliDavid" id="1627714427586740227">}}
 &nbsp;
 
 こちらのツイートでは、chatGPTはすでに中国共産党の洗脳装置で、人々にとって何の益ももたらさず、使うだけ時間の無駄で、chatGPTの奴隷になると警告されています。
 
-{{<tweet user="NFSC_HAGnews" id="1626548228337586176">}}
+{{<x user="NFSC_HAGnews" id="1626548228337586176">}}
 &nbsp;
 
 

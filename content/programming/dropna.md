@@ -97,13 +97,13 @@ test2
 {{<youtube FXr2626vR58>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1575846871674736640">}}
+{{<x user="Rapt_plusalpha" id="1575846871674736640">}}
 
-{{<tweet user="Rapt_plusalpha" id= "1575837298461052928">}}
+{{<x user="Rapt_plusalpha" id= "1575837298461052928">}}
 
-{{<tweet user="Rapt_plusalpha" id= "1575820191019061248">}}
+{{<x user="Rapt_plusalpha" id= "1575820191019061248">}}
 
-{{<tweet user="Rapt_plusalpha" id= "1575795141658308610">}}
+{{<x user="Rapt_plusalpha" id= "1575795141658308610">}}
 
-{{<tweet user="Rapt_plusalpha" id= "1575449677847179266">}}
+{{<x user="Rapt_plusalpha" id= "1575449677847179266">}}
 

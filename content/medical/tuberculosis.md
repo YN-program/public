@@ -69,10 +69,10 @@ main:
 
 また、髄膜炎菌の存在は証明されておらず、存在していない可能性もあります。
 
-{{<tweet user="sambadouro" id="1469939389862408195">}}
+{{<x user="sambadouro" id="1469939389862408195">}}
 &nbsp;
 
-{{<tweet user="sambadouro" id="1403783613695479808">}}
+{{<x user="sambadouro" id="1403783613695479808">}}
 
 ***
 

@@ -19,7 +19,7 @@ main:
 
 <!--more-->
 
-{{<tweet user="notosuzudesu" id="1785248453632950316">}}
+{{<x user="notosuzudesu" id="1785248453632950316">}}
 &nbsp;
 
 ![Noto](/img/politics/noto.PNG)

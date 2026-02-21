@@ -64,15 +64,15 @@ RAPT理論＋αの十二弟子・ミナさんの証にて、神様に感謝し�
 
 [RAPT有料記事411(2019年10月7日）主が遣わした中心者はサタンと戦って勝利した人だ。だから、中心者の言葉に従ってこそサタンに勝利することができる。](https://rapt-neo.com/?p=51768)
 
-{{<tweet user="Rapt_plusalpha" id="1589935279691137024">}}
+{{<x user="Rapt_plusalpha" id="1589935279691137024">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1590663675672940545">}}
+{{<x user="Rapt_plusalpha" id="1590663675672940545">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1589223031662338048">}}
+{{<x user="Rapt_plusalpha" id="1589223031662338048">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1589609013377126401">}}
+{{<x user="Rapt_plusalpha" id="1589609013377126401">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1588489831109496832">}}
+{{<x user="Rapt_plusalpha" id="1588489831109496832">}}
 &nbsp;
 
 [〇 悪魔を拝んで人生を破壊する生き方から、神様を拝んで人生を幸福にする生き方へ。](https://rapt-neo.com/?p=26065)

@@ -94,20 +94,20 @@ https://progress-advance.com/medical/heavy-metal-r-and-drug-r/
 {{<youtube HeOL88CShp8>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1899055003333276047">}}
+{{<x user="Rapt_plusalpha" id="1899055003333276047">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1899045600324378691">}}
+{{<x user="Rapt_plusalpha" id="1899045600324378691">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1898693165626065315">}}
+{{<x user="Rapt_plusalpha" id="1898693165626065315">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1899049714966004143">}}
+{{<x user="Rapt_plusalpha" id="1899049714966004143">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1898686246777651529">}}
+{{<x user="Rapt_plusalpha" id="1898686246777651529">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1898680229897343131">}}
+{{<x user="Rapt_plusalpha" id="1898680229897343131">}}
 &nbsp;

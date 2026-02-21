@@ -51,13 +51,13 @@ UZH president
 
 ![UZH President statement](/img/politics/uzh2.jfif)
 
-{{<tweet user="whyyoutouzhele" id="1841476513213874402">}}
+{{<x user="whyyoutouzhele" id="1841476513213874402">}}
 &nbsp;
 
 
 この声明に対して、チューリッヒ大学に在籍する中国人留学生らは、「中国人差別だ！政治色の通達文を許さない！中国を書くな！」と抗議したとのことです。
 
-{{<tweet user="sonkoubun" id="1841641290997628957">}}
+{{<x user="sonkoubun" id="1841641290997628957">}}
 &nbsp;
 
 これのどこが差別なのか全く理解できませんが、彼らには差別に聞こえるのでしょう。

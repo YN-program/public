@@ -20,7 +20,7 @@ main:
 
 <!--more-->
 
-{{<tweet user="MHLWitter" id="1586916115397369856">}}
+{{<x user="MHLWitter" id="1586916115397369856">}}
 &nbsp;
 
 「小さな注射一本で健康な乳幼児が死亡するほどの猛毒が入っていますが、皆さん子どもにワクチン接種してくださいね」と、政府・厚労省は言っています。
@@ -49,23 +49,23 @@ main:
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1550056956546539520">}}
+{{<x user="Rapt_plusalpha" id="1550056956546539520">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1462007219646435331">}}
+{{<x user="Rapt_plusalpha" id="1462007219646435331">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1404799191981887508">}}
+{{<x user="Rapt_plusalpha" id="1404799191981887508">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1582317977512210432">}}
+{{<x user="Rapt_plusalpha" id="1582317977512210432">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1587073251192119296">}}
+{{<x user="Rapt_plusalpha" id="1587073251192119296">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1587045683793891329">}}
+{{<x user="Rapt_plusalpha" id="1587045683793891329">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1587044620462006272">}}
+{{<x user="Rapt_plusalpha" id="1587044620462006272">}}
 &nbsp;

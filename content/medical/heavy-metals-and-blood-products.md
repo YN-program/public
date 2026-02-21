@@ -99,17 +99,17 @@ main:
 [RAPT×読者対談〈第130弾〉エボラ熱を広めた犯人は麻生太郎である。（現代日本を支配する藤原家=麻生家の闇）](https://rapt-neo.com/?p=43856)
 
 
-{{<tweet user="Rapt_plusalpha" id="1974070773297131634">}}
+{{<x user="Rapt_plusalpha" id="1974070773297131634">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1974055386203500953">}}
+{{<x user="Rapt_plusalpha" id="1974055386203500953">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1974053623589175753">}}
+{{<x user="Rapt_plusalpha" id="1974053623589175753">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1973704915072733312">}}
+{{<x user="Rapt_plusalpha" id="1973704915072733312">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1504424488330731525">}}
+{{<x user="Rapt_plusalpha" id="1504424488330731525">}}
 &nbsp;

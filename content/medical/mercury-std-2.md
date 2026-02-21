@@ -42,10 +42,10 @@ main:
 
 コロナワクチン後に尿道炎や膣炎になった人がいるようですが、その他の水銀を含むワクチンでも発症する可能性があります。
 
-{{<tweet user="ahnanak" id="1437987896712069120">}}
+{{<x user="ahnanak" id="1437987896712069120">}}
 &nbsp;
 
-{{<tweet user="popumi__" id="1440727110331494409">}}
+{{<x user="popumi__" id="1440727110331494409">}}
 &nbsp;
 
 梅毒だけでなく、これまで性病と診断されてきた人は、実はワクチンなどによる重金属中毒が原因なのかもしれないと思いました。
@@ -62,17 +62,17 @@ main:
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1642509381668593664">}}
+{{<x user="Rapt_plusalpha" id="1642509381668593664">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1642504081301450752">}}
+{{<x user="Rapt_plusalpha" id="1642504081301450752">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1642485641501085696">}}
+{{<x user="Rapt_plusalpha" id="1642485641501085696">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1642145854697127939">}}
+{{<x user="Rapt_plusalpha" id="1642145854697127939">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1641760156173357057">}}
+{{<x user="Rapt_plusalpha" id="1641760156173357057">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1641420314109427712">}}
+{{<x user="Rapt_plusalpha" id="1641420314109427712">}}
 &nbsp;
 
 {{<file>}}

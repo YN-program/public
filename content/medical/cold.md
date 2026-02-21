@@ -73,26 +73,26 @@ RAPT氏は、酸素を沢山吸うと風邪が治ると仰っています。こ�
 
 ***
 
-{{<tweet user="Rapt_plusalpha" id="1583787911384018944">}}
+{{<x user="Rapt_plusalpha" id="1583787911384018944">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583786944374669315">}}
+{{<x user="Rapt_plusalpha" id="1583786944374669315">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583451801311150080">}}
+{{<x user="Rapt_plusalpha" id="1583451801311150080">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583441268583301120">}}
+{{<x user="Rapt_plusalpha" id="1583441268583301120">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583429820545134593">}}
+{{<x user="Rapt_plusalpha" id="1583429820545134593">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583081722379661312">}}
+{{<x user="Rapt_plusalpha" id="1583081722379661312">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583048666138685445">}}
+{{<x user="Rapt_plusalpha" id="1583048666138685445">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1582323719518949377">}}
+{{<x user="Rapt_plusalpha" id="1582323719518949377">}}
 &nbsp;

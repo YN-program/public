@@ -156,7 +156,7 @@ main:
 
 また、水銀やアルミニウムとの相互作用もあるかもしれません。
 
-{{<tweet user="kinoshitayakuhi" id="1748335938051469683">}}
+{{<x user="kinoshitayakuhi" id="1748335938051469683">}}
 &nbsp;
 
 おたふくかぜのワクチンには、エリスロマイシン、カナマイシンという抗生物質が含まれていますが、抗生物質には重金属が含まれている可能性が高いので、おたふくかぜワクチンにも何らかの重金属が含まれている可能性が高いです。もちろん毒です。
@@ -211,16 +211,16 @@ main:
 {{<youtube dZusTa6srSw>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1752676179000394170">}}
+{{<x user="Rapt_plusalpha" id="1752676179000394170">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1752642433295507730">}}
+{{<x user="Rapt_plusalpha" id="1752642433295507730">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1752313374950781174">}}
+{{<x user="Rapt_plusalpha" id="1752313374950781174">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1752281053505679384">}}
+{{<x user="Rapt_plusalpha" id="1752281053505679384">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1751949649211228450">}}
+{{<x user="Rapt_plusalpha" id="1751949649211228450">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1751914945422454894">}}
+{{<x user="Rapt_plusalpha" id="1751914945422454894">}}
 &nbsp;

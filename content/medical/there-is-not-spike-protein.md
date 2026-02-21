@@ -39,24 +39,24 @@ main:
 
 [〇 コロナワクチンのmRNAやスパイクタンパク質が危険というデマ](https://progress-advance.com/medical/no-mrna-no-spikeprotein2/)
 
-{{<tweet user="ShortShort_News" id="1624041962541293569">}}
+{{<x user="ShortShort_News" id="1624041962541293569">}}
 &nbsp;
 
 ウイルスの存在を証明できないのにウイルスがあるという前提で話し続け、スパイクタンパク質が産生される根拠がないのにスパイクタンパク質が危険と言い続け、医学と科学を無視した医者、学者は一体どこへ向かっていくのでしょうか。
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1704433149063864816">}}
+{{<x user="Rapt_plusalpha" id="1704433149063864816">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1702986627373748270">}}
+{{<x user="Rapt_plusalpha" id="1702986627373748270">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1704122662208077858">}}
+{{<x user="Rapt_plusalpha" id="1704122662208077858">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1704077259777409252">}}
+{{<x user="Rapt_plusalpha" id="1704077259777409252">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1703716952940920960">}}
+{{<x user="Rapt_plusalpha" id="1703716952940920960">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1703011948022186005">}}
+{{<x user="Rapt_plusalpha" id="1703011948022186005">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1704817533059219940">}}
+{{<x user="Rapt_plusalpha" id="1704817533059219940">}}
 &nbsp;

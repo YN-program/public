@@ -259,15 +259,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1620053311394287617">}}
+{{<x user="Rapt_plusalpha" id="1620053311394287617">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1620036390242381825">}}
+{{<x user="Rapt_plusalpha" id="1620036390242381825">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1620024546727456768">}}
+{{<x user="Rapt_plusalpha" id="1620024546727456768">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1620007146736992257">}}
+{{<x user="Rapt_plusalpha" id="1620007146736992257">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1619683930025918464">}}
+{{<x user="Rapt_plusalpha" id="1619683930025918464">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1619654744896856065">}}
+{{<x user="Rapt_plusalpha" id="1619654744896856065">}}
 &nbsp;

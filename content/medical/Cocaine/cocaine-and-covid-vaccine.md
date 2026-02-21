@@ -145,7 +145,7 @@ main:
 
 そして、中国共産党とズブズブのハンガリーが、コロナワクチンの高接種率を祝って、「COCAINE」というロゴの入ったTシャツを着た女性の画像を、フェイスブックに投稿しました。意味深ですね。
 
-{{<tweet user="panyiszabolcs" id="1381965278871838723">}}
+{{<x user="panyiszabolcs" id="1381965278871838723">}}
 
 コロナワクチンは得体のしれない大変危険なものですから、絶対に接種しないようにしましょう。
 
@@ -157,22 +157,22 @@ main:
 
 [「警告!! 日本は既に中国共産党に乗っ取られている」](http://rapt-plusalpha.com/34533/)
 
-{{<tweet user="tigerhouse1978" id="1492054797045829632">}}
+{{<x user="tigerhouse1978" id="1492054797045829632">}}
 
-{{<tweet user="GLnoIrjwa7omiK7" id="1522765068584493056">}}
+{{<x user="GLnoIrjwa7omiK7" id="1522765068584493056">}}
 
-{{<tweet user="GLnoIrjwa7omiK7" id="1522438963637620736">}}
+{{<x user="GLnoIrjwa7omiK7" id="1522438963637620736">}}
 
-{{<tweet user="GLnoIrjwa7omiK7" id="1522034105092743168">}}
+{{<x user="GLnoIrjwa7omiK7" id="1522034105092743168">}}
 &nbsp;
-{{<tweet user="GLnoIrjwa7omiK7" id="1521823481729789953">}}
+{{<x user="GLnoIrjwa7omiK7" id="1521823481729789953">}}
 &nbsp;
-{{<tweet user="GLnoIrjwa7omiK7" id="1521817530591227904">}}
+{{<x user="GLnoIrjwa7omiK7" id="1521817530591227904">}}
 &nbsp;
-{{<tweet user="GLnoIrjwa7omiK7" id="1521713768170135552">}}
+{{<x user="GLnoIrjwa7omiK7" id="1521713768170135552">}}
 &nbsp;
-{{<tweet user="GLnoIrjwa7omiK7" id="1521694113112150016">}}
+{{<x user="GLnoIrjwa7omiK7" id="1521694113112150016">}}
 &nbsp;
-{{<tweet user="GLnoIrjwa7omiK7" id="1521687213356232704">}}
+{{<x user="GLnoIrjwa7omiK7" id="1521687213356232704">}}
 &nbsp;
 

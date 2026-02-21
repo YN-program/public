@@ -69,21 +69,21 @@ main:
 [【動画】ガン利権に騙されるな！癌という病気は存在しない
 ](https://rapt-plusalpha.com/26985/)
 
-{{<tweet user="Rapt_plusalpha" id="1657700163425812480">}}
+{{<x user="Rapt_plusalpha" id="1657700163425812480">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1657698947438379008">}}
+{{<x user="Rapt_plusalpha" id="1657698947438379008">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1657692694859378689">}}
+{{<x user="Rapt_plusalpha" id="1657692694859378689">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1657377607049162752">}}
+{{<x user="Rapt_plusalpha" id="1657377607049162752">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1657332249740853254">}}
+{{<x user="Rapt_plusalpha" id="1657332249740853254">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1656991532992585734">}}
+{{<x user="Rapt_plusalpha" id="1656991532992585734">}}
 &nbsp;
 

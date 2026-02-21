@@ -92,19 +92,19 @@ t.forEach(function(item){
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1578015931372294145">}}
+{{<x user="Rapt_plusalpha" id="1578015931372294145">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1578004178852786177">}}
+{{<x user="Rapt_plusalpha" id="1578004178852786177">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1577989205573394433">}}
+{{<x user="Rapt_plusalpha" id="1577989205573394433">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1577975622366040064">}}
+{{<x user="Rapt_plusalpha" id="1577975622366040064">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1577967660134203393">}}
+{{<x user="Rapt_plusalpha" id="1577967660134203393">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1577630300594925568">}}
+{{<x user="Rapt_plusalpha" id="1577630300594925568">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1577249469883523072">}}
+{{<x user="Rapt_plusalpha" id="1577249469883523072">}}
 &nbsp;
 
 {{<youtube FXr2626vR58>}}

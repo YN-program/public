@@ -128,26 +128,26 @@ if (target.classList.contains('classA') ){
 
 [悪魔が一夜にして滅びることを望むよりも先に、あなた自身がこの世の改革者になることを私は望みます。](https://rapt-neo.com/?p=26034)
 
-{{<tweet user="Rapt_plusalpha" id="1595380387458347008">}}
+{{<x user="Rapt_plusalpha" id="1595380387458347008">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1595368117881929730">}}
+{{<x user="Rapt_plusalpha" id="1595368117881929730">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1595775124393062400">}}
+{{<x user="Rapt_plusalpha" id="1595775124393062400">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1595746829668585472">}}
+{{<x user="Rapt_plusalpha" id="1595746829668585472">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1595732057702993923">}}
+{{<x user="Rapt_plusalpha" id="1595732057702993923">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1595723087051300864">}}
+{{<x user="Rapt_plusalpha" id="1595723087051300864">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1595717085883404290">}}
+{{<x user="Rapt_plusalpha" id="1595717085883404290">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1595415593259511809">}}
+{{<x user="Rapt_plusalpha" id="1595415593259511809">}}
 &nbsp;

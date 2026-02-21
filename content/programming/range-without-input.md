@@ -371,23 +371,23 @@ thumbRate = sliderSubWrapper.clientWidth / ( sliderSubWrapper.clientWidth + slid
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1616765149142216706">}}
+{{<x user="Rapt_plusalpha" id="1616765149142216706">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1616753589929807873">}}
+{{<x user="Rapt_plusalpha" id="1616753589929807873">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1616742790943375367">}}
+{{<x user="Rapt_plusalpha" id="1616742790943375367">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1616739903823577090">}}
+{{<x user="Rapt_plusalpha" id="1616739903823577090">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1616412297890758658">}}
+{{<x user="Rapt_plusalpha" id="1616412297890758658">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1616397839638364161">}}
+{{<x user="Rapt_plusalpha" id="1616397839638364161">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1616046859377864705">}}
+{{<x user="Rapt_plusalpha" id="1616046859377864705">}}
 &nbsp;

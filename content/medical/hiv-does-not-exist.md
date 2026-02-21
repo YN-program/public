@@ -39,7 +39,7 @@ main:
 
 ![HIVは存在しない。公文書開示](/img/vaccine/HIV.jfif)
 
-{{<tweet user="un4yRFGlfQRAIZD" id="1832636048796692514">}}
+{{<x user="un4yRFGlfQRAIZD" id="1832636048796692514">}}
 &nbsp;
 
 医療利権は病気を捏造して暴利をむさぼっています。

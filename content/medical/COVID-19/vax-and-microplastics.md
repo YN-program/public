@@ -63,26 +63,26 @@ https://beforeitsnews.com/alternative/2022/05/remember-those-fibrous-clots-that-
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1781995963089035745">}}
+{{<x user="Rapt_plusalpha" id="1781995963089035745">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1781985764890628098">}}
-&nbsp;
-
-
-{{<tweet user="Rapt_plusalpha" id="1781660688089510287">}}
+{{<x user="Rapt_plusalpha" id="1781985764890628098">}}
 &nbsp;
 
 
-{{<tweet user="Rapt_plusalpha" id="1781659468851216868">}}
+{{<x user="Rapt_plusalpha" id="1781660688089510287">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1781646345339806009">}}
+
+{{<x user="Rapt_plusalpha" id="1781659468851216868">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1781296060616626545">}}
+{{<x user="Rapt_plusalpha" id="1781646345339806009">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1781273710521123051">}}
+{{<x user="Rapt_plusalpha" id="1781296060616626545">}}
+&nbsp;
+
+{{<x user="Rapt_plusalpha" id="1781273710521123051">}}
 &nbsp;
 

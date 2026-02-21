@@ -66,7 +66,7 @@ main:
 
 くれぐれも、このようなヤブ医者には騙されないようにしてください。
 
-{{<tweet user="KDystopia" id="1603888048085037056">}}
+{{<x user="KDystopia" id="1603888048085037056">}}
 &nbsp;
 
 
@@ -114,23 +114,23 @@ main:
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1607006732462747648">}}
+{{<x user="Rapt_plusalpha" id="1607006732462747648">}}
 &nbsp;
 
 
-{{<tweet user="Rapt_plusalpha" id="1606989117073788928">}}
+{{<x user="Rapt_plusalpha" id="1606989117073788928">}}
 &nbsp;
 
 
-{{<tweet user="Rapt_plusalpha" id="1606987840742916098">}}
+{{<x user="Rapt_plusalpha" id="1606987840742916098">}}
 &nbsp;
 
 
-{{<tweet user="Rapt_plusalpha" id="1606957585009344513">}}
+{{<x user="Rapt_plusalpha" id="1606957585009344513">}}
 &nbsp;
 
 
-{{<tweet user="Rapt_plusalpha" id="1606613846588002305">}}
+{{<x user="Rapt_plusalpha" id="1606613846588002305">}}
 &nbsp;
 
 {{<file>}}

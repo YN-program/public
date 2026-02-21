@@ -17,26 +17,26 @@ Hugo のtwitter のショートコードについて、"The "tweet" shortcode wi
 
 config.toml の`baseurl`や`title`が書いてあるところに、ignoreErrors = ["error-remote-getjson"]を追記すれば、取り敢えずエラーは出なくなりました。
 
-{{<tweet user="kz_morita" id="1485082588968796163">}}
+{{<x user="kz_morita" id="1485082588968796163">}}
 
 以上。
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1581643042078871554">}}
+{{<x user="Rapt_plusalpha" id="1581643042078871554">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1581620620697038848">}}
+{{<x user="Rapt_plusalpha" id="1581620620697038848">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1581603744755896321">}}
+{{<x user="Rapt_plusalpha" id="1581603744755896321">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1581580343584645120">}}
+{{<x user="Rapt_plusalpha" id="1581580343584645120">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1581238517887545344">}}
+{{<x user="Rapt_plusalpha" id="1581238517887545344">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1580891111065030656">}}
+{{<x user="Rapt_plusalpha" id="1580891111065030656">}}
 &nbsp;

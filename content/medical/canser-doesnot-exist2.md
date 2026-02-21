@@ -19,7 +19,7 @@ main:
 
 <!--more-->
 
-{{<tweet user="JimFergusonUK" id="1912756097875652764">}}
+{{<x user="JimFergusonUK" id="1912756097875652764">}}
 &nbsp;
 
 > （機械翻訳）
@@ -133,7 +133,7 @@ main:
 
 日本にも「癌の原因は寄生虫」だと言う人たちがいます。
 
-{{<tweet user="FjokKtr" id="1913851470811959299">}}
+{{<x user="FjokKtr" id="1913851470811959299">}}
 &nbsp;
 
 動画に出てくる「奥野卓志」は、統一教会や中国共産党との関わりが指摘されています。
@@ -148,7 +148,7 @@ main:
 
 また、Qアノン(QAJF)と名乗る人たちが、癌の中に寄生虫が見えると言っていますが、顕微鏡でみてもそのようなものは見えません（[こちら](https://www.jsccr.jp/atlas/atl_35.html)）
 
-{{<tweet user="chakodon7" id="1906339653655126399">}}
+{{<x user="chakodon7" id="1906339653655126399">}}
 &nbsp;
 
 Qアノンもまた、中国共産党と繋がっています。
@@ -165,20 +165,20 @@ Qアノンもまた、中国共産党と繋がっています。
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1911729231488598193">}}
+{{<x user="Rapt_plusalpha" id="1911729231488598193">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1913916618905890846">}}
+{{<x user="Rapt_plusalpha" id="1913916618905890846">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1913910825922044140">}}
+{{<x user="Rapt_plusalpha" id="1913910825922044140">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1913898238614311032">}}
+{{<x user="Rapt_plusalpha" id="1913898238614311032">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1913894324489896293">}}
+{{<x user="Rapt_plusalpha" id="1913894324489896293">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1913892611406151843">}}
+{{<x user="Rapt_plusalpha" id="1913892611406151843">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1845416484966965727">}}
+{{<x user="Rapt_plusalpha" id="1845416484966965727">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1913172531697356838">}}
+{{<x user="Rapt_plusalpha" id="1913172531697356838">}}
 &nbsp;

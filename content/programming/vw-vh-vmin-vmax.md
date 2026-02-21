@@ -358,20 +358,20 @@ NANAさんの歌　「もうひとつの実を望まれ」
 {{<youtube _Rdwgjp8W88>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1612058290216923137">}}
+{{<x user="Rapt_plusalpha" id="1612058290216923137">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1612055127581683712">}}
+{{<x user="Rapt_plusalpha" id="1612055127581683712">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1612042758218473473">}}
+{{<x user="Rapt_plusalpha" id="1612042758218473473">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1612031051223945218">}}
+{{<x user="Rapt_plusalpha" id="1612031051223945218">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1611690904271880192">}}
+{{<x user="Rapt_plusalpha" id="1611690904271880192">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1611680868350980097">}}
+{{<x user="Rapt_plusalpha" id="1611680868350980097">}}
 &nbsp;

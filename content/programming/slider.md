@@ -253,7 +253,7 @@ function Scroll(pk, next){
 
 [〇 RAPT有料記事426(2019年12月7日）真に人生を成功させたいと願うなら、常に主とつながって、沢山の閃きを得られるように努力しなさい。](https://rapt-neo.com/?p=52075)
 
-{{<tweet user="Rapt_plusalpha" id="1596799110517903361">}}
+{{<x user="Rapt_plusalpha" id="1596799110517903361">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1596793284286107652">}}
+{{<x user="Rapt_plusalpha" id="1596793284286107652">}}
 &nbsp;

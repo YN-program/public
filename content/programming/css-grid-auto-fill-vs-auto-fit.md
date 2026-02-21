@@ -123,23 +123,23 @@ main:
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1622566802952982528">}}
+{{<x user="Rapt_plusalpha" id="1622566802952982528">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1622565446670249984">}}
+{{<x user="Rapt_plusalpha" id="1622565446670249984">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1622556016184524807">}}
+{{<x user="Rapt_plusalpha" id="1622556016184524807">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1622552123769769986">}}
+{{<x user="Rapt_plusalpha" id="1622552123769769986">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1622546290671489024">}}
+{{<x user="Rapt_plusalpha" id="1622546290671489024">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1622544866193571840">}}
+{{<x user="Rapt_plusalpha" id="1622544866193571840">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1622543396765331457">}}
+{{<x user="Rapt_plusalpha" id="1622543396765331457">}}
 &nbsp;

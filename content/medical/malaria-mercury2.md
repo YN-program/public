@@ -69,22 +69,22 @@ main:
 
 [ワクチンに含まれる「水銀」は脳を破壊する最強の毒 イルミナティによる人口削減の実態を専門家が暴露](https://rapt-plusalpha.com/14279/)
 
-{{<tweet user="Rapt_plusalpha" id="1583451801311150080">}}
+{{<x user="Rapt_plusalpha" id="1583451801311150080">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583441268583301120">}}
+{{<x user="Rapt_plusalpha" id="1583441268583301120">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583429820545134593">}}
+{{<x user="Rapt_plusalpha" id="1583429820545134593">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583426396923506689">}}
+{{<x user="Rapt_plusalpha" id="1583426396923506689">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583404446369075200">}}
+{{<x user="Rapt_plusalpha" id="1583404446369075200">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583081722379661312">}}
+{{<x user="Rapt_plusalpha" id="1583081722379661312">}}
 &nbsp;
 
 {{<file>}}

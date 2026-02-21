@@ -52,7 +52,7 @@ main:
 ![extra](/img/cocaine/covid-arm.png)
 &nbsp;
  
-{{<tweet user="You3_JP" id="1525807412136972288">}}
+{{<x user="You3_JP" id="1525807412136972288">}}
 &nbsp;
  
 

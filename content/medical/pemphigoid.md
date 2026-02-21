@@ -20,15 +20,15 @@ main:
 
 <!--more-->
 
-{{<tweet user="yakuyaku89ya" id="1489133073262596096">}}
+{{<x user="yakuyaku89ya" id="1489133073262596096">}}
 
-{{<tweet user="sltlike" id="1511302741896794121">}}
+{{<x user="sltlike" id="1511302741896794121">}}
 
-{{<tweet user="dhBGGFoCRYyPo4u" id="1496477680984010752">}}
+{{<x user="dhBGGFoCRYyPo4u" id="1496477680984010752">}}
 
-{{<tweet user="K9FCR" id="1509063617328877568">}}
+{{<x user="K9FCR" id="1509063617328877568">}}
 
-{{<tweet user="Tamama0306" id="1508791835397062665">}}
+{{<x user="Tamama0306" id="1508791835397062665">}}
 
 &nbsp;
  

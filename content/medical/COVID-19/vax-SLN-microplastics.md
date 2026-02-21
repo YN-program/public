@@ -112,20 +112,20 @@ PEGを投与して細胞内部の水分がPEGと交換されてしまったら�
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1779819286602948881">}}
+{{<x user="Rapt_plusalpha" id="1779819286602948881">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1779490036905594966">}}
+{{<x user="Rapt_plusalpha" id="1779490036905594966">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1776583492404474203">}}
+{{<x user="Rapt_plusalpha" id="1776583492404474203">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1776561080304795860">}}
+{{<x user="Rapt_plusalpha" id="1776561080304795860">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1776550977757384862">}}
+{{<x user="Rapt_plusalpha" id="1776550977757384862">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1776204619984851117">}}
+{{<x user="Rapt_plusalpha" id="1776204619984851117">}}
 &nbsp;

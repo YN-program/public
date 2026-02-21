@@ -113,20 +113,20 @@ https://www.env.go.jp/chemi/end/endocrine/1guide/intro_q4.html
 {{<youtube jTSexPQhtUM>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1689262604563456000">}}
+{{<x user="Rapt_plusalpha" id="1689262604563456000">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1689255172781010945">}}
+{{<x user="Rapt_plusalpha" id="1689255172781010945">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1689228158195941381">}}
+{{<x user="Rapt_plusalpha" id="1689228158195941381">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1689220608041922560">}}
+{{<x user="Rapt_plusalpha" id="1689220608041922560">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1689217982843740160">}}
+{{<x user="Rapt_plusalpha" id="1689217982843740160">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1689198602093277184">}}
+{{<x user="Rapt_plusalpha" id="1689198602093277184">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1688869940705775617">}}
+{{<x user="Rapt_plusalpha" id="1688869940705775617">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1688864189929132033">}}
+{{<x user="Rapt_plusalpha" id="1688864189929132033">}}
 &nbsp;
 

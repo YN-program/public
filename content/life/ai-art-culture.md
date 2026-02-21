@@ -86,35 +86,35 @@ AIがどんどん進化していますが、新しいものを吸収して使い
 
 そして、AIには絶対に作ることができない作品がこちらになります。
 
-{{<tweet user="Rapt_plusalpha" id="1591416188713992194">}}
+{{<x user="Rapt_plusalpha" id="1591416188713992194">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1596457823776346112">}}
+{{<x user="Rapt_plusalpha" id="1596457823776346112">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1601530942275072000">}}
+{{<x user="Rapt_plusalpha" id="1601530942275072000">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1606613846588002305">}}
+{{<x user="Rapt_plusalpha" id="1606613846588002305">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1611690904271880192">}}
+{{<x user="Rapt_plusalpha" id="1611690904271880192">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1616765149142216706">}}
+{{<x user="Rapt_plusalpha" id="1616765149142216706">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1621830479946350592">}}
+{{<x user="Rapt_plusalpha" id="1621830479946350592">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1627256390145425410">}}
+{{<x user="Rapt_plusalpha" id="1627256390145425410">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1632342447849357312">}}
+{{<x user="Rapt_plusalpha" id="1632342447849357312">}}
 &nbsp;
 
 {{<youtube 3fBUR9DBOfM>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1624736010239348737">}}
+{{<x user="Rapt_plusalpha" id="1624736010239348737">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1602263197146570755">}}
+{{<x user="Rapt_plusalpha" id="1602263197146570755">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1601180093526986752">}}
+{{<x user="Rapt_plusalpha" id="1601180093526986752">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1474332106755289089">}}
+{{<x user="Rapt_plusalpha" id="1474332106755289089">}}
 &nbsp;
 
 

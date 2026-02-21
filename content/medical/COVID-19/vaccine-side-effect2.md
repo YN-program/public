@@ -79,22 +79,22 @@ RAPT理論＋αで伝えられている通り、ワクチンの毒性がロッ�
 コロナ茶番を起こし、ワクチンでの大量殺戮を行った中国共産党とそれに与する者が、一人残らず裁かれますようにお祈りします。
 
 ##### おすすめ
-{{<tweet user="Rapt_plusalpha" id="1742518352776749140">}}
+{{<x user="Rapt_plusalpha" id="1742518352776749140">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1742898244055863469">}}
+{{<x user="Rapt_plusalpha" id="1742898244055863469">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1742871325100888216">}}
+{{<x user="Rapt_plusalpha" id="1742871325100888216">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1742851980270399758">}}
-&nbsp;
-
-{{<tweet user="Rapt_plusalpha" id="1742491680509776085">}}
+{{<x user="Rapt_plusalpha" id="1742851980270399758">}}
 &nbsp;
 
-
-{{<tweet user="Rapt_plusalpha" id="1742158406323151288">}}
+{{<x user="Rapt_plusalpha" id="1742491680509776085">}}
 &nbsp;
 
 
-{{<tweet user="Rapt_plusalpha" id="1742125099510304781">}}
+{{<x user="Rapt_plusalpha" id="1742158406323151288">}}
+&nbsp;
+
+
+{{<x user="Rapt_plusalpha" id="1742125099510304781">}}
 &nbsp;

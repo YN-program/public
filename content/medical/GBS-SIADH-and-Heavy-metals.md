@@ -68,17 +68,17 @@ SIADHは、ギラン・バレー症候群の発症後数日から数週間の間
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1872234517098033397">}}
+{{<x user="Rapt_plusalpha" id="1872234517098033397">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1872225984470225373">}}
+{{<x user="Rapt_plusalpha" id="1872225984470225373">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1872221818960122193">}}
+{{<x user="Rapt_plusalpha" id="1872221818960122193">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1871871108812853618">}}
+{{<x user="Rapt_plusalpha" id="1871871108812853618">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1871859206808359326">}}
+{{<x user="Rapt_plusalpha" id="1871859206808359326">}}
 &nbsp;

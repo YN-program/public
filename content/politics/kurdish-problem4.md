@@ -97,10 +97,10 @@ main:
 > 
 > 是非ともご協力のほど、よろしくお願いいたします。
 
-{{<tweet user="kawaguchi_safe" id="1829119830387253338">}}
+{{<x user="kawaguchi_safe" id="1829119830387253338">}}
 &nbsp;
 
-{{<tweet user="SyunOota3" id="1827670756723171486">}}
+{{<x user="SyunOota3" id="1827670756723171486">}}
 &nbsp;
 
 殺害予告があっても埼玉県警は動かないのでしょうか。

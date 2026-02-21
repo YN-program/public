@@ -67,7 +67,7 @@ final_clip.write_videofile("final.mp4")
 
 出来た動画（安倍晋三銃撃動画）は、ツイッターに投稿。
 
-{{<tweet user="GLnoIrjwa7omiK7" id="1546683779322097664">}}
+{{<x user="GLnoIrjwa7omiK7" id="1546683779322097664">}}
 
 &nbsp;
 

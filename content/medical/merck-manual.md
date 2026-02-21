@@ -21,7 +21,7 @@ main:
 
 <!--more-->
 
-{{<tweet user="You3_JP" id="1699771577418866860">}}
+{{<x user="You3_JP" id="1699771577418866860">}}
 &nbsp;
 
 しかし、「福島雅典」教授が監修・監訳した「MSDマニュアル（メルクマニュアル）」には、コロナワクチンについて次にように記載されています。
@@ -62,7 +62,7 @@ main:
 
 福島教授は以下の動画の中で、「このワクチンについて学術的にきちっとした洞察もせずに扇動した人間は、これは断罪だよ」と語っていますが、自分が監修・監訳を務めたメルクマニュアルでは、コロナワクチン接種が推奨されています。
 
-{{<tweet user="Novaccinekita11" id="1628983661193474048">}}
+{{<x user="Novaccinekita11" id="1628983661193474048">}}
 &nbsp;
 
 メルクマニュアルは、医師にとって教科書のようなもので、福島教授は日本の医師達にコロナワクチン接種のお墨付きを与えたようなものです。
@@ -129,17 +129,17 @@ main:
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1713153699600814511">}}
+{{<x user="Rapt_plusalpha" id="1713153699600814511">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1713142453224825339">}}
+{{<x user="Rapt_plusalpha" id="1713142453224825339">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1712427258898710836">}}
+{{<x user="Rapt_plusalpha" id="1712427258898710836">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1710617741697396803">}}
+{{<x user="Rapt_plusalpha" id="1710617741697396803">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1710609514016440755">}}
+{{<x user="Rapt_plusalpha" id="1710609514016440755">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1709886868773634421">}}
+{{<x user="Rapt_plusalpha" id="1709886868773634421">}}
 &nbsp;
 

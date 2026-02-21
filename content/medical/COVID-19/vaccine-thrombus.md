@@ -33,7 +33,7 @@ main:
 
 これらの毒物が原因とはいわれていませんが、ワクチン接種後に血管壁に炎症が起きて血栓ができて死亡したという法医学論文が最近発表されました。
 
-{{<tweet user="kazuchancocone" id="1599613203289616384">}}
+{{<x user="kazuchancocone" id="1599613203289616384">}}
 &nbsp;
 
 [Histopathologically TMA-like distribution of multiple organ thromboses following the initial dose of the BNT162b2 mRNA vaccine (Comirnaty, Pfizer/BioNTech): an autopsy case report
@@ -45,7 +45,7 @@ main:
 
 [赤血球の凝集現象（血液凝固障害）](https://eiwareed.jp/data/d_red-blood-cell/erythrocyte.html)
 
-{{<tweet user="MdJpn" id="1595617688935538688">}}
+{{<x user="MdJpn" id="1595617688935538688">}}
 &nbsp;
 
 ワクチンとは関係ありませんが、アーシングで体内の余分な電気を逃がすと、くっついている赤血球がバラバラに離れるという動画があります。
@@ -92,14 +92,14 @@ main:
 [肉と油は、頭の回転を速くするために必須だった!! RAPTさんから教わった真の健康情報（十二弟子・エリカさんの証）
 ](https://rapt-plusalpha.com/52333/)
 
-{{<tweet user="Rapt_plusalpha" id="1593569796028649472">}}
+{{<x user="Rapt_plusalpha" id="1593569796028649472">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1558789539984187392">}}
+{{<x user="Rapt_plusalpha" id="1558789539984187392">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1437384899707617292">}}
+{{<x user="Rapt_plusalpha" id="1437384899707617292">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1466019586269085699">}}
+{{<x user="Rapt_plusalpha" id="1466019586269085699">}}
 &nbsp;

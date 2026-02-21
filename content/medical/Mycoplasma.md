@@ -26,7 +26,7 @@ main:
 
 しかし、どなたかが米CDCに問い合わせたところ、マイコプラズマやその他の細菌が肺炎を引き起こすことを示す実験記録がないということが判明しました。
 
-{{<tweet user="sambadouro" id="1752001140575907863">}}
+{{<x user="sambadouro" id="1752001140575907863">}}
 
 [Do health and science institutions have studies proving that bacteria CAUSE disease?](https://www.fluoridefreepeel.ca/do-health-authorities-have-studies-proving-that-bacteria-cause-disease-lets-find-out-via-freedom-of-information/)
 
@@ -38,7 +38,7 @@ main:
 > 
 > 善玉菌と悪玉菌というものは存在しない。すべての細菌は、蓄積された毒素や残骸（病気や死にかけの細胞や組織を含む）の分解と除去を助けるために存在する。健康な細胞や組織を攻撃することはない！さらに、細菌は多形性、つまり環境に適応し、その過程で形を変える。ある病気を引き起こすとされる細菌が、単離され精製された状態で健康な生物に侵入し、その病気を引き起こすことが証明されたことはない。
 > 
-> {{<tweet user="sambadouro" id="1589515849551204353">}}
+> {{<x user="sambadouro" id="1589515849551204353">}}
 
 細菌は、人から人に移るのではなく、体内に自然に発生するものです。
 
@@ -69,24 +69,24 @@ main:
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1860632137885679917">}}
+{{<x user="Rapt_plusalpha" id="1860632137885679917">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1862462587482619969">}}
+{{<x user="Rapt_plusalpha" id="1862462587482619969">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1862442479716610440">}}
+{{<x user="Rapt_plusalpha" id="1862442479716610440">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1862439334697476236">}}
+{{<x user="Rapt_plusalpha" id="1862439334697476236">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1862088927236264378">}}
+{{<x user="Rapt_plusalpha" id="1862088927236264378">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1862086987244802062">}}
+{{<x user="Rapt_plusalpha" id="1862086987244802062">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1862076658909610013">}}
+{{<x user="Rapt_plusalpha" id="1862076658909610013">}}
 &nbsp;
 

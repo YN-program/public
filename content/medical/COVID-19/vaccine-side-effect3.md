@@ -129,22 +129,22 @@ https://www.chunichi.co.jp/article/833974
 
 作業着を着て「やっている感」だけ出して、その実、全く被災者を救助する気がなく、新年会をハシゴする岸田文雄とその仲間が裁かれますように。
 
-{{<tweet user="Rapt_plusalpha" id="1743590932619132951">}}
+{{<x user="Rapt_plusalpha" id="1743590932619132951">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1743968120681988339">}}
+{{<x user="Rapt_plusalpha" id="1743968120681988339">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1743956123982680565">}}
+{{<x user="Rapt_plusalpha" id="1743956123982680565">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1743946052020117664">}}
+{{<x user="Rapt_plusalpha" id="1743946052020117664">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1743943636554064158">}}
+{{<x user="Rapt_plusalpha" id="1743943636554064158">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1743224070764945850">}}
+{{<x user="Rapt_plusalpha" id="1743224070764945850">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1743581253629296826">}}
+{{<x user="Rapt_plusalpha" id="1743581253629296826">}}
 &nbsp;

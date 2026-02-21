@@ -57,20 +57,20 @@ randomモジュールは乱数を生成するほか、リストやタプル、�
 ](https://rapt-neo.com/?p=52143)
 
 
-{{<tweet user="Rapt_plusalpha" id="1593948062589689856">}}
+{{<x user="Rapt_plusalpha" id="1593948062589689856">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1593941227736829952">}}
+{{<x user="Rapt_plusalpha" id="1593941227736829952">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1593937153578655744">}}
+{{<x user="Rapt_plusalpha" id="1593937153578655744">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1593930275733766146">}}
+{{<x user="Rapt_plusalpha" id="1593930275733766146">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1593916913360326656">}}
+{{<x user="Rapt_plusalpha" id="1593916913360326656">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1593560210601168896">}}
+{{<x user="Rapt_plusalpha" id="1593560210601168896">}}
 &nbsp;

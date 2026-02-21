@@ -141,17 +141,17 @@ main:
 
 市場から有害な食品が排除されますように、全てのワクチンプログラムが廃止されますように、お祈りします。
 
-{{<tweet user="Rapt_plusalpha" id="1864243280617328857">}}
+{{<x user="Rapt_plusalpha" id="1864243280617328857">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1868239993258512864">}}
+{{<x user="Rapt_plusalpha" id="1868239993258512864">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1860632137885679917">}}
+{{<x user="Rapt_plusalpha" id="1860632137885679917">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1868975370525098345">}}
+{{<x user="Rapt_plusalpha" id="1868975370525098345">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1868966178506600778">}}
+{{<x user="Rapt_plusalpha" id="1868966178506600778">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1868959635908313466">}}
+{{<x user="Rapt_plusalpha" id="1868959635908313466">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1868953170023739682">}}
+{{<x user="Rapt_plusalpha" id="1868953170023739682">}}
 &nbsp;

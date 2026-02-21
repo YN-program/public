@@ -22,17 +22,17 @@ main:
 ![黄熱](/img/article/ウイルス嘘証明.jpg)
 &nbsp;
  
-{{<tweet user="chieburkina"  id="1531324275109806081">}}
+{{<x user="chieburkina"  id="1531324275109806081">}}
 &nbsp;
 
 では、マラリアはどうなのかと言うと、これも嘘の可能性があります。
 
 アフリカに住んでいる方の話によると、蚊に刺されてもマラリアに罹らないけれども、黄熱病のワクチンを打った後に、マラリアに罹ったそうです。
 
-{{<tweet user="chieburkina" id="1511255225230888961">}}
+{{<x user="chieburkina" id="1511255225230888961">}}
 &nbsp;
 
-{{<tweet user="chieburkina" id="1571991503962263553">}}
+{{<x user="chieburkina" id="1571991503962263553">}}
 
 [マラリア](https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%A9%E3%83%AA%E3%82%A2#top-page)は、結核、HIVと共に「世界三大感染症」と呼ばれています。
 

@@ -85,15 +85,15 @@ Nタンパク質とはコロナウイルスの殻のことで、mRNAワクチン
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1601192040187822082">}}
+{{<x user="Rapt_plusalpha" id="1601192040187822082">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1601180093526986752">}}
+{{<x user="Rapt_plusalpha" id="1601180093526986752">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1601156330181754880">}}
+{{<x user="Rapt_plusalpha" id="1601156330181754880">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1600475623776227328">}}
+{{<x user="Rapt_plusalpha" id="1600475623776227328">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1600442656488034305">}}
+{{<x user="Rapt_plusalpha" id="1600442656488034305">}}
 &nbsp;
 
 {{<file>}}

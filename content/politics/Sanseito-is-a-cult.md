@@ -37,13 +37,13 @@ main:
 
 ![参政党の主要政策4](/img/politics/sanseito/sanseito4.jpg)
 
-{{<tweet user="masjp72" id="1940747065937875185">}}
+{{<x user="masjp72" id="1940747065937875185">}}
 
-{{<tweet user="aradnekopon" id="1941564665504596085">}}
+{{<x user="aradnekopon" id="1941564665504596085">}}
 
-{{<tweet user="kuroyasu17" id="1940438160531734994">}}
+{{<x user="kuroyasu17" id="1940438160531734994">}}
 
-{{<tweet user="yurioruu" id="1893225986734375108">}}
+{{<x user="yurioruu" id="1893225986734375108">}}
 
 [元参政党員・井田雅彦が党の内情を暴露「目的達成のためには倫理観を捨てる」 創価学会員が多数所属していることも判明
 ](https://rapt-plusalpha.com/126332/)
@@ -81,18 +81,18 @@ main:
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1945080367985078595">}}
+{{<x user="Rapt_plusalpha" id="1945080367985078595">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1662778241457987584">}}
+{{<x user="Rapt_plusalpha" id="1662778241457987584">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1945053294939824429">}}
+{{<x user="Rapt_plusalpha" id="1945053294939824429">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1944714329770877420">}}
+{{<x user="Rapt_plusalpha" id="1944714329770877420">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1850493113422471589">}}
+{{<x user="Rapt_plusalpha" id="1850493113422471589">}}
 &nbsp;
 

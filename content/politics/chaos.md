@@ -60,19 +60,19 @@ https://www.expo2025.or.jp/wp/wp-content/uploads/1.pdf
 
 石丸伸二がどのような人物であるかは、安芸高田市時代の発言を聞くとよく分かります。
 
-{{<tweet user="shuzaibusoku7" id="1806551430628855935">}}
+{{<x user="shuzaibusoku7" id="1806551430628855935">}}
 &nbsp;
 
-{{<tweet user="shuzaibusoku7" id="1806841301276774540">}}
+{{<x user="shuzaibusoku7" id="1806841301276774540">}}
 &nbsp;
 
-{{<tweet user="shuzaibusoku7" id="1806525501634396534">}}
+{{<x user="shuzaibusoku7" id="1806525501634396534">}}
 &nbsp;
 
-{{<tweet user="shuzaibusoku7" id="1806354981848822045">}}
+{{<x user="shuzaibusoku7" id="1806354981848822045">}}
 &nbsp;
 
-{{<tweet user="shuzaibusoku7" id="1806242248658706593">}}
+{{<x user="shuzaibusoku7" id="1806242248658706593">}}
 &nbsp;
 
 {{<youtube PKTWPCIV62U>}}

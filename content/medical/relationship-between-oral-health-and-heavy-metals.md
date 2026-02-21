@@ -92,20 +92,20 @@ main:
 
 {{<youtube 6W9hPx3hH5s>}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1890350593778106745">}}
+{{<x user="Rapt_plusalpha" id="1890350593778106745">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1890347494468399534">}}
+{{<x user="Rapt_plusalpha" id="1890347494468399534">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1890339145664639402">}}
+{{<x user="Rapt_plusalpha" id="1890339145664639402">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1890337042812600618">}}
+{{<x user="Rapt_plusalpha" id="1890337042812600618">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1890002605931458942">}}
+{{<x user="Rapt_plusalpha" id="1890002605931458942">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1889622728027640007">}}
+{{<x user="Rapt_plusalpha" id="1889622728027640007">}}
 &nbsp;

@@ -21,7 +21,7 @@ main:
 
 (ツイートは削除されました)
 
-{{<tweet user="imatsuta" id="1335745623950168064">}}
+{{<x user="imatsuta" id="1335745623950168064">}}
 &nbsp;
 
 [大手生保各社、コロナでの死亡者に保険金増額支払い](https://www.asahi.com/articles/ASN4J64JWN4JULFA00W.html)

@@ -40,7 +40,7 @@ https://congrant.com/project/npokakekomidera/9683
 
 また、チーム日本のメンバーと中国共産党、統一教会の繋がりも疑われます。
 
-{{<tweet user="GLnoIrjwa7omiK7" id="1623847529547972608">}}
+{{<x user="GLnoIrjwa7omiK7" id="1623847529547972608">}}
 &nbsp;
 
 今回の国賠訴訟は、支援しているメンバーを見る限り、八百長、ガス抜きの可能性があります。
@@ -73,17 +73,17 @@ https://congrant.com/project/npokakekomidera/9683
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1781296060616626545">}}
+{{<x user="Rapt_plusalpha" id="1781296060616626545">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1781273710521123051">}}
+{{<x user="Rapt_plusalpha" id="1781273710521123051">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1780893252826345625">}}
+{{<x user="Rapt_plusalpha" id="1780893252826345625">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1780539198770209222">}}
+{{<x user="Rapt_plusalpha" id="1780539198770209222">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1780177139679301848">}}
+{{<x user="Rapt_plusalpha" id="1780177139679301848">}}
 &nbsp;

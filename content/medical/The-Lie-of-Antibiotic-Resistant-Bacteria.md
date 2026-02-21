@@ -39,7 +39,7 @@ main:
 
 また、抗生物質以外の薬にも金属・重金属が含まれていますから、何らかの薬を内服することで、薬剤耐性菌が発生する可能性があります。
 
-{{<tweet user="GLnoIrjwa7omiK7" id="1881869275490836536">}}
+{{<x user="GLnoIrjwa7omiK7" id="1881869275490836536">}}
 &nbsp;
 
 [モデルナ製コロナワクチンにはイタイイタイ病の原因となった重金属「カドミウム」が含有　脳神経に悪影響を及ぼすアルミニウムも](https://rapt-plusalpha.com/20315/)
@@ -68,14 +68,14 @@ main:
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1864243280617328857">}}
+{{<x user="Rapt_plusalpha" id="1864243280617328857">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1882380859044663536">}}
+{{<x user="Rapt_plusalpha" id="1882380859044663536">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1882373882180682123">}}
+{{<x user="Rapt_plusalpha" id="1882373882180682123">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1882012618006921414">}}
+{{<x user="Rapt_plusalpha" id="1882012618006921414">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1881664458260689314">}}
+{{<x user="Rapt_plusalpha" id="1881664458260689314">}}
 &nbsp;

@@ -97,17 +97,17 @@ https://harvest7777.hatenablog.com/entry/2020/12/30/133432
 
 ##### お勧め
 
-{{<tweet user="Rapt_plusalpha" id="1666079513510580227">}}
+{{<x user="Rapt_plusalpha" id="1666079513510580227">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1666052348530278400">}}
+{{<x user="Rapt_plusalpha" id="1666052348530278400">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1666037911555567617">}}
+{{<x user="Rapt_plusalpha" id="1666037911555567617">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1666030296440111106">}}
+{{<x user="Rapt_plusalpha" id="1666030296440111106">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1665694450121846790">}}
+{{<x user="Rapt_plusalpha" id="1665694450121846790">}}
 &nbsp;

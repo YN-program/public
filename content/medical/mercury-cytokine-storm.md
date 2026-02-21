@@ -19,7 +19,7 @@ main:
 
 <!--more-->
 
-{{<tweet user="ikeyo1965" id="1643707055247859720">}}
+{{<x user="ikeyo1965" id="1643707055247859720">}}
 &nbsp;
 
 ワクチンには水銀が含まれていますが、水銀は様々な病気を引き起こします。
@@ -76,17 +76,17 @@ main:
 {{</file>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1645010058420551680">}}
+{{<x user="Rapt_plusalpha" id="1645010058420551680">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1645052533944238081">}}
+{{<x user="Rapt_plusalpha" id="1645052533944238081">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1645045956885504000">}}
+{{<x user="Rapt_plusalpha" id="1645045956885504000">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1645032877028167681">}}
+{{<x user="Rapt_plusalpha" id="1645032877028167681">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1645017148954394625">}}
+{{<x user="Rapt_plusalpha" id="1645017148954394625">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1645015296540045312">}}
+{{<x user="Rapt_plusalpha" id="1645015296540045312">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1644311703654637576">}}
+{{<x user="Rapt_plusalpha" id="1644311703654637576">}}
 &nbsp;

@@ -70,19 +70,19 @@ RAPT氏は、何年も前からこのような苦難が来ることを予言し�
 
 これから沢山の方が、人に頼るのでもなく、神でもない神に頼るのでもなく、本物の神様に頼って救われてほしいと心から願います。
 
-{{<tweet user="Rapt_plusalpha" id="1644666417768452097">}}
+{{<x user="Rapt_plusalpha" id="1644666417768452097">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1644311703654637576">}}
+{{<x user="Rapt_plusalpha" id="1644311703654637576">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1643932108291977216">}}
+{{<x user="Rapt_plusalpha" id="1643932108291977216">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1643201138261630976">}}
+{{<x user="Rapt_plusalpha" id="1643201138261630976">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1642856049387642880">}}
+{{<x user="Rapt_plusalpha" id="1642856049387642880">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1642124193713246209">}}
+{{<x user="Rapt_plusalpha" id="1642124193713246209">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1641760156173357057">}}
+{{<x user="Rapt_plusalpha" id="1641760156173357057">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1641420314109427712">}}
+{{<x user="Rapt_plusalpha" id="1641420314109427712">}}
 &nbsp;

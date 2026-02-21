@@ -182,18 +182,18 @@ window.addEventListener('DOMContentLoaded',function(){
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1596457823776346112">}}
+{{<x user="Rapt_plusalpha" id="1596457823776346112">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1591416188713992194">}}
+{{<x user="Rapt_plusalpha" id="1591416188713992194">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1596456009555329024">}}
+{{<x user="Rapt_plusalpha" id="1596456009555329024">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1596453699081363457">}}
+{{<x user="Rapt_plusalpha" id="1596453699081363457">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1596437032913731584">}}
+{{<x user="Rapt_plusalpha" id="1596437032913731584">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1596434766118912000">}}
+{{<x user="Rapt_plusalpha" id="1596434766118912000">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1595380387458347008">}}
+{{<x user="Rapt_plusalpha" id="1595380387458347008">}}
 &nbsp;

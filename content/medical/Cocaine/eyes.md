@@ -20,11 +20,11 @@ main:
 
 <!--more-->
 
-{{<tweet user="Minami78965421" id="1437681405937405953">}}
+{{<x user="Minami78965421" id="1437681405937405953">}}
 
-{{<tweet user="maria_5xxx1" id="1415652603841581058">}}
+{{<x user="maria_5xxx1" id="1415652603841581058">}}
 
-{{<tweet user="SHINOMETAL" id="1417378679781433347">}}
+{{<x user="SHINOMETAL" id="1417378679781433347">}}
 &nbsp;
 
 散瞳を起こす薬は以下の通りです。
@@ -47,7 +47,7 @@ main:
 
 また、コロナワクチン接種後に、目の充血を訴える人もいますが、覚醒剤やコカインでも目の充血が起こります。
 
-{{<tweet user="2325Wase" id="1413067806262788100">}}
+{{<x user="2325Wase" id="1413067806262788100">}}
 &nbsp;
 
 >Aside from making dilated eyes, cocaine can also cause bloodshot eyes. This happens because cocaine triggers the constriction of blood vessels. In turn, blood pressure increases, leading to bloodshot eyes.
@@ -59,9 +59,9 @@ main:
 
 さらにおかしなことに、コロナワクチン接種後に、多幸感、万能感、全能感を感じる人、幻覚を見る人までいます。
 
-{{<tweet user="GLnoIrjwa7omiK7" id="1522438963637620736">}}
+{{<x user="GLnoIrjwa7omiK7" id="1522438963637620736">}}
 
-{{<tweet user="GLnoIrjwa7omiK7" id="1521701213687140352">}}
+{{<x user="GLnoIrjwa7omiK7" id="1521701213687140352">}}
 
 [コロナワクチン副作用とコカイン中毒の類似性](https://progress-advance.com/medical/cocaine/outline/)
 

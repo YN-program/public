@@ -51,22 +51,22 @@ RAPT氏は御言葉（神様の言葉）の中で、あきらめずに祈り続�
 
 [〇 RAPT有料記事166(2017年4月24日）あなたの病は必ず治るから、心配しないで祈りつづけなさい。](https://rapt-neo.com/?p=43267)
 
-{{<tweet user="Rapt_plusalpha" id="1504780054483836928">}}
+{{<x user="Rapt_plusalpha" id="1504780054483836928">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1587432749073567744">}}
+{{<x user="Rapt_plusalpha" id="1587432749073567744">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1587073251192119296">}}
+{{<x user="Rapt_plusalpha" id="1587073251192119296">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1587045683793891329">}}
+{{<x user="Rapt_plusalpha" id="1587045683793891329">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1584862349399556098">}}
+{{<x user="Rapt_plusalpha" id="1584862349399556098">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1585217783667003393">}}
+{{<x user="Rapt_plusalpha" id="1585217783667003393">}}
 &nbsp;
 
 [〇 生後6ヶ月〜4歳へのコロナワクチン接種を開始　一方、ファイザー社はワクチン試験に関わった乳児36人のうち、28人が死亡した事実を隠蔽](https://rapt-plusalpha.com/57959/)

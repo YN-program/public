@@ -19,9 +19,9 @@ main:
 
 <!--more-->
 
-{{<tweet user="yonashi_m" id="1419958145485402119">}}
+{{<x user="yonashi_m" id="1419958145485402119">}}
 &nbsp;
-{{<tweet user="cimadat" id="1420575071601524736">}}
+{{<x user="cimadat" id="1420575071601524736">}}
 &nbsp;
 
 また、糖尿病の症状に、口喝、多飲、多尿があり、原因は高血糖と考えられています。
@@ -94,13 +94,13 @@ main:
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1761337445826560080">}}
+{{<x user="Rapt_plusalpha" id="1761337445826560080">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1760973087942832589">}}
+{{<x user="Rapt_plusalpha" id="1760973087942832589">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1760618687281909766">}}
+{{<x user="Rapt_plusalpha" id="1760618687281909766">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1760264151388344767">}}
+{{<x user="Rapt_plusalpha" id="1760264151388344767">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1759883799796887819">}}
+{{<x user="Rapt_plusalpha" id="1759883799796887819">}}
 &nbsp;

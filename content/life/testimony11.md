@@ -68,12 +68,12 @@ RAPT氏は御言葉（神様から受けられた啓示）の中で、神様は�
 
 本当に、次々と恵みを与えて下さる神様と、RAPT氏とRAPT氏を支えてくださっている十二弟子の方々と兄弟姉妹たちに、心から感謝いたします。
 
-{{<tweet user="Rapt_plusalpha" id="1678717749420503042">}}
+{{<x user="Rapt_plusalpha" id="1678717749420503042">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1677632221174444034">}}
+{{<x user="Rapt_plusalpha" id="1677632221174444034">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1676916310511616002">}}
+{{<x user="Rapt_plusalpha" id="1676916310511616002">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1676551839972732928">}}
+{{<x user="Rapt_plusalpha" id="1676551839972732928">}}
 &nbsp;
 

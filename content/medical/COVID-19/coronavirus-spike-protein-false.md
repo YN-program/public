@@ -87,7 +87,7 @@ Sタンパク質やNタンパク質に対する抗体とは、ウイルスとは
 
 今、スパイクタンパク質がシェディングする、スパイクタンパク質が人から人に移ると言う人がいますが、馬鹿げています。
 
-{{<tweet user="Vivian2022N" id="1760589963911991305">}}
+{{<x user="Vivian2022N" id="1760589963911991305">}}
 &nbsp;
 
 スパイクタンパク質が検出されたということは、病気の細胞があるということです。
@@ -102,24 +102,24 @@ Sタンパク質やNタンパク質に対する抗体とは、ウイルスとは
 
 [【厚生労働省】コロナワクチンからスパイクタンパク質が作られることを立証できず。](https://progress-advance.com/medical/there-is-not-spike-protein/)
 
-{{<tweet user="purplep76858690" id="1534751487175274497">}}
+{{<x user="purplep76858690" id="1534751487175274497">}}
 
 ##### おすすめ
 
 
-{{<tweet user="Rapt_plusalpha" id="1762435214805279184">}}
+{{<x user="Rapt_plusalpha" id="1762435214805279184">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1762425638475141485">}}
+{{<x user="Rapt_plusalpha" id="1762425638475141485">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1762422676470235463">}}
+{{<x user="Rapt_plusalpha" id="1762422676470235463">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1762421885181276582">}}
+{{<x user="Rapt_plusalpha" id="1762421885181276582">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1762419548966547720">}}
+{{<x user="Rapt_plusalpha" id="1762419548966547720">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1762070876793831460">}}
+{{<x user="Rapt_plusalpha" id="1762070876793831460">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1761703443914461635">}}
+{{<x user="Rapt_plusalpha" id="1761703443914461635">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1738145688855449979">}}
+{{<x user="Rapt_plusalpha" id="1738145688855449979">}}
 &nbsp;

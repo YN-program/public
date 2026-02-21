@@ -344,8 +344,8 @@ main:
 [砂糖も塩も肉もたっぷりと食べて健康になる（十二弟子・ミナさんの証）
 ](https://rapt-plusalpha.com/22726/)
 
-{{<tweet user="Rapt_plusalpha" id="1860632137885679917">}}
+{{<x user="Rapt_plusalpha" id="1860632137885679917">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1861005791832211491">}}
+{{<x user="Rapt_plusalpha" id="1861005791832211491">}}
 &nbsp;

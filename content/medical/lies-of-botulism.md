@@ -216,7 +216,7 @@ SNAREタンパク質、SNAP-25は、細胞が神経伝達物質（ここでは�
 [【昆虫食】コオロギを食べるリスクについて、内閣府が2018年に既に注意喚起していた!!　アレルギー問題、加熱しても殺菌できず、神経疾患を引き起こす重金属が体内に蓄積
 ](https://rapt-plusalpha.com/67154/)
 
-{{<tweet user="Rapt_plusalpha" id="1867170699091259578">}}
+{{<x user="Rapt_plusalpha" id="1867170699091259578">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1866795206907154918">}}
+{{<x user="Rapt_plusalpha" id="1866795206907154918">}}

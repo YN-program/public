@@ -44,11 +44,11 @@ main:
 
 [RAPT有料記事414(2019年10月21日）人は悟りを積み重ねることで神のようになっていくし、神のようになれば自らの行いで自分に恵みを与えることができるので、何か特別なことが起きなくても毎日が幸せだ。](https://rapt-neo.com/?p=51821)
 
-{{<tweet user="Rapt_plusalpha" id="1592480774812753921">}}
+{{<x user="Rapt_plusalpha" id="1592480774812753921">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1592121005434343425">}}
+{{<x user="Rapt_plusalpha" id="1592121005434343425">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1591743934145101824">}}
+{{<x user="Rapt_plusalpha" id="1591743934145101824">}}
 &nbsp;

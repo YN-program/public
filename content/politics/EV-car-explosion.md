@@ -19,36 +19,36 @@ main:
 
 こちらは、爆発し宙を舞ったEV車です。不幸な事に、搭乗者まで飛んでしまいました。
 
-{{<tweet user="yukin_done" id="1807647571223155096">}}
+{{<x user="yukin_done" id="1807647571223155096">}}
 &nbsp;
 
 こちらは、渋滞中に発火炎上し、周囲の車を巻き込んでしまいました。
 
-{{<tweet user="Cameron_mk2" id="1807776289098760501">}}
+{{<x user="Cameron_mk2" id="1807776289098760501">}}
 &nbsp;
 
 EV車は、火の回りが早く、脱出できずに焼死してしまう事故が多発しています。
 
-{{<tweet user="amisweetheart" id="amisweetheart">}}
+{{<x user="amisweetheart" id="amisweetheart">}}
 &nbsp;
 
 
-{{<tweet user="max358japan" id="1801389089176097197">}}
+{{<x user="max358japan" id="1801389089176097197">}}
 &nbsp;
 
 新車ですら発火するので、販売店も運搬車も火災に要注意です。利益があっという間に吹き飛んでしまいそうですね。
 
-{{<tweet user="wake_neko" id="1791072094425641419">}}
+{{<x user="wake_neko" id="1791072094425641419">}}
 &nbsp;
 
 
-{{<tweet user="SoundOfHope_SOH" id="1791440176448761865">}}
+{{<x user="SoundOfHope_SOH" id="1791440176448761865">}}
 &nbsp;
 
 
 おまけに、中国EV車メーカーBYDの自動運転も中国クオリティで、非常に危険なようです。
 
-{{<tweet user="yukin_done" id="1808400444164825092">}}
+{{<x user="yukin_done" id="1808400444164825092">}}
 &nbsp;
 
 
@@ -56,17 +56,17 @@ EVバスも自然発火しますが、メタンガスが発生する大阪万博
 
 木造リングに燃え広がったら中にいる人は、脱出できないのではないでしょうか。
 
-{{<tweet user="mCppTe4SGhyn55S" id="1562787317106249729">}}
+{{<x user="mCppTe4SGhyn55S" id="1562787317106249729">}}
 &nbsp;
 
-{{<tweet user="MongolianAlan" id="1394267539820060673">}}
+{{<x user="MongolianAlan" id="1394267539820060673">}}
 &nbsp;
 
 危険なのは、中国製だけではありません。
 
 韓国製もなかなかのものです。
 
-{{<tweet user="yurunyan2023" id="1711598670729421214">}}
+{{<x user="yurunyan2023" id="1711598670729421214">}}
 &nbsp;
 
 爆発するだけでなく、ブレーキが利かず暴走することがあるそうです。

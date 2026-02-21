@@ -18,7 +18,7 @@ main:
 
 <!--more-->
 
-{{<tweet user="hasibiro_maga" id="1904008505440473456">}}
+{{<x user="hasibiro_maga" id="1904008505440473456">}}
 &nbsp;
 
 繰り返しお伝えしていますが、ウイルスの存在を確認した人は誰もいません。
@@ -111,14 +111,14 @@ main:
 {{<youtube HJwcF6f36jk>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1910648980028981464">}}
+{{<x user="Rapt_plusalpha" id="1910648980028981464">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1910646737322336428">}}
+{{<x user="Rapt_plusalpha" id="1910646737322336428">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1910635887035375763">}}
+{{<x user="Rapt_plusalpha" id="1910635887035375763">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1910645352711290910">}}
+{{<x user="Rapt_plusalpha" id="1910645352711290910">}}
 &nbsp;

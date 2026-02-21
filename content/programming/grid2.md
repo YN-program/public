@@ -337,16 +337,16 @@ https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named
 
 {{<youtube 4zYsDE5XH6s>}}
 
-{{<tweet user="Rapt_plusalpha" id="1618891557566038016">}}
+{{<x user="Rapt_plusalpha" id="1618891557566038016">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1621116511195926528">}}
+{{<x user="Rapt_plusalpha" id="1621116511195926528">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1621093652922769408">}}
+{{<x user="Rapt_plusalpha" id="1621093652922769408">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1621089024122454018">}}
+{{<x user="Rapt_plusalpha" id="1621089024122454018">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1621084561643040769">}}
+{{<x user="Rapt_plusalpha" id="1621084561643040769">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1620753941402365953">}}
+{{<x user="Rapt_plusalpha" id="1620753941402365953">}}
 &nbsp;

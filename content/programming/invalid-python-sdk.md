@@ -48,20 +48,20 @@ python3.8をインストールしたのですが、pathが通っていないと�
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1641054850787192834">}}
+{{<x user="Rapt_plusalpha" id="1641054850787192834">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1641040646801883136">}}
+{{<x user="Rapt_plusalpha" id="1641040646801883136">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1641020889759367168">}}
+{{<x user="Rapt_plusalpha" id="1641020889759367168">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1640682507019636736">}}
+{{<x user="Rapt_plusalpha" id="1640682507019636736">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1640336215055687682">}}
+{{<x user="Rapt_plusalpha" id="1640336215055687682">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1640320590015004673">}}
+{{<x user="Rapt_plusalpha" id="1640320590015004673">}}
 &nbsp;

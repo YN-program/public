@@ -47,22 +47,22 @@ main:
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1606271821459791872">}}
+{{<x user="Rapt_plusalpha" id="1606271821459791872">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1606257444123947008">}}
+{{<x user="Rapt_plusalpha" id="1606257444123947008">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1606255838913384449">}}
+{{<x user="Rapt_plusalpha" id="1606255838913384449">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1606242926094258177">}}
+{{<x user="Rapt_plusalpha" id="1606242926094258177">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1605914472605835264">}}
+{{<x user="Rapt_plusalpha" id="1605914472605835264">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1605903904750739456">}}
+{{<x user="Rapt_plusalpha" id="1605903904750739456">}}
 &nbsp;
 
 {{<youtube MXcQdZu7Fdw>}}

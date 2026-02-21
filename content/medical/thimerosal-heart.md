@@ -40,11 +40,11 @@ main:
 
 [【アメリカ疾病予防管理センター（CDC)の職員による内部告発】インフルエンザワクチンには25mgの水銀、コロナワクチンには25〜30mgの水銀が入っている](https://rapt-plusalpha.com/25593/)
 
-{{<tweet user="Rapt_plusalpha" id="1581986750742028288">}}
+{{<x user="Rapt_plusalpha" id="1581986750742028288">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1581984354083176448">}}
+{{<x user="Rapt_plusalpha" id="1581984354083176448">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1581959688488615937">}}
+{{<x user="Rapt_plusalpha" id="1581959688488615937">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1581942366654828544">}}
+{{<x user="Rapt_plusalpha" id="1581942366654828544">}}
 &nbsp;

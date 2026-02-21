@@ -142,17 +142,17 @@ Q:
 ##### おすすめ
 
 
-{{<tweet user="Rapt_plusalpha" id="1926238426954653863">}}
+{{<x user="Rapt_plusalpha" id="1926238426954653863">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1926228301799952453">}}
+{{<x user="Rapt_plusalpha" id="1926228301799952453">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1926222602122510846">}}
+{{<x user="Rapt_plusalpha" id="1926222602122510846">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1926215928817053816">}}
+{{<x user="Rapt_plusalpha" id="1926215928817053816">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1926212193122480289">}}
+{{<x user="Rapt_plusalpha" id="1926212193122480289">}}
 &nbsp;

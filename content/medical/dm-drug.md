@@ -72,23 +72,23 @@ RAPT 理論では、医療が嘘だらけであり、意図的に病気を作り
 <iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/@rapt-plusalpha:6/Minaラジオ2:0?r=7e4zsKjBG4r6s3UZ6JSSrPioHVwscbXX" allowfullscreen></iframe>
 {{</file>}}
 
-{{<tweet user="Rapt_plusalpha" id="1576158536978944000">}}
+{{<x user="Rapt_plusalpha" id="1576158536978944000">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1569635322274934784">}}
+{{<x user="Rapt_plusalpha" id="1569635322274934784">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1576918521946087424">}}
+{{<x user="Rapt_plusalpha" id="1576918521946087424">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1576903051763335168">}}
+{{<x user="Rapt_plusalpha" id="1576903051763335168">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1576889860593373184">}}
+{{<x user="Rapt_plusalpha" id="1576889860593373184">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1576525719999373312">}}
+{{<x user="Rapt_plusalpha" id="1576525719999373312">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1576549177080758272">}}
+{{<x user="Rapt_plusalpha" id="1576549177080758272">}}
 &nbsp;

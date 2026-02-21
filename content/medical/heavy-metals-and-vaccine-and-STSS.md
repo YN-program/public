@@ -63,7 +63,7 @@ X（旧ツイッター）では、コロナワクチン接種による免疫低�
 
 東京医科歯科大学の「菊池賢」教授によると、劇症化する菌の特徴として、菌の外側に「莢膜」というバリアを作り、免疫細胞を寄せ付けなくなるとのことです。（以下の動画 6:10～）
 
-{{<tweet user="Oneness_ringo" id="1794852070824239229">}}
+{{<x user="Oneness_ringo" id="1794852070824239229">}}
 &nbsp;
 
 莢膜：高分子からなるゲル状の粘質物が菌体表面にほぼ均一な厚さで付着して出来た層状の部分（[こちら](https://ja.wikipedia.org/wiki/%E8%8E%A2%E8%86%9C)）。
@@ -148,15 +148,15 @@ X（旧ツイッター）では、コロナワクチン接種による免疫低�
 {{<youtube 6W9hPx3hH5s>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1795062937695949238">}}
+{{<x user="Rapt_plusalpha" id="1795062937695949238">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1795056345986609364">}}
+{{<x user="Rapt_plusalpha" id="1795056345986609364">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1795043402083397918">}}
+{{<x user="Rapt_plusalpha" id="1795043402083397918">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1794698021583896617">}}
+{{<x user="Rapt_plusalpha" id="1794698021583896617">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1794683602653114673">}}
+{{<x user="Rapt_plusalpha" id="1794683602653114673">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1794663128158163267">}}
+{{<x user="Rapt_plusalpha" id="1794663128158163267">}}
 &nbsp;

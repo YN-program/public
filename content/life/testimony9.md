@@ -82,13 +82,13 @@ RAPT氏の御言葉や「RAPT理論＋α」に掲載されている十二弟子�
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1646112371755323393">}}
+{{<x user="Rapt_plusalpha" id="1646112371755323393">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1645389504570880008">}}
+{{<x user="Rapt_plusalpha" id="1645389504570880008">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1645015296540045312">}}
+{{<x user="Rapt_plusalpha" id="1645015296540045312">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1644666417768452097">}}
+{{<x user="Rapt_plusalpha" id="1644666417768452097">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1644311703654637576">}}
+{{<x user="Rapt_plusalpha" id="1644311703654637576">}}
 &nbsp;

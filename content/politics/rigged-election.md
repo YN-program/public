@@ -66,7 +66,7 @@ main:
 
 集計機不正について。とはいえ、マスコミが発表した通りになっている可能性が。
 
-{{<tweet user="smith_john87277" id="1938960904118501448">}}
+{{<x user="smith_john87277" id="1938960904118501448">}}
 &nbsp;
 
 [【衆院選】岸田文雄、河野太郎、菅義偉など、開票率0%で『当選確実』と報じられる
@@ -75,17 +75,17 @@ main:
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1938919407256039883">}}
+{{<x user="Rapt_plusalpha" id="1938919407256039883">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1938907129014034773">}}
+{{<x user="Rapt_plusalpha" id="1938907129014034773">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1938903357407768960">}}
+{{<x user="Rapt_plusalpha" id="1938903357407768960">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1938895468576284820">}}
+{{<x user="Rapt_plusalpha" id="1938895468576284820">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1938553945586331778">}}
+{{<x user="Rapt_plusalpha" id="1938553945586331778">}}
 &nbsp;

@@ -72,20 +72,20 @@ main:
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1886729414655840718">}}
+{{<x user="Rapt_plusalpha" id="1886729414655840718">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1886736800674406783">}}
+{{<x user="Rapt_plusalpha" id="1886736800674406783">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1886724766242943133">}}
+{{<x user="Rapt_plusalpha" id="1886724766242943133">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1886721832650465345">}}
+{{<x user="Rapt_plusalpha" id="1886721832650465345">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1886709344005210427">}}
+{{<x user="Rapt_plusalpha" id="1886709344005210427">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1886383327646786009">}}
+{{<x user="Rapt_plusalpha" id="1886383327646786009">}}
 &nbsp;

@@ -35,7 +35,7 @@ main:
 
 こちらは中国人がアメリカで盗みを働いている様子です。
 
-{{<tweet user="Parsonalsecret" id="1845974127804629130">}}
+{{<x user="Parsonalsecret" id="1845974127804629130">}}
 &nbsp;
 
 日本でもニュースにならないだけで、多くの人が被害に遭っているようです。
@@ -56,7 +56,7 @@ main:
 ![泥棒中国人](/img/politics/泥棒中国人4.PNG)
 &nbsp;
 
-{{<tweet user="bakusai_com" id="1836305442735288380">}}
+{{<x user="bakusai_com" id="1836305442735288380">}}
 &nbsp;
 
 外国人に対する警察の対応は甘く、司法は不起訴の連発。

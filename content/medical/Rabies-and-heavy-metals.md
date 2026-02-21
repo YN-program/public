@@ -222,4 +222,4 @@ main:
 
 [モデルナ製コロナワクチンにはイタイイタイ病の原因となった重金属「カドミウム」が含有　脳神経に悪影響を及ぼすアルミニウムも](https://rapt-plusalpha.com/20315/)
 
-{{<tweet user="Rapt_plusalpha" id="1864243280617328857">}}
+{{<x user="Rapt_plusalpha" id="1864243280617328857">}}

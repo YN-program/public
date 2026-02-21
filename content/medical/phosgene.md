@@ -28,14 +28,14 @@ main:
 
 ケムトレイルの成分は用途によって様々でしょうから、その時々で何がまかれているのか分かりませんが、あるツイッターユーザーが大気中の有害物質を測定したところ、ホスゲンという毒ガスの他、ホスゲンから作られるイソシアネート、シックハウス症候群の原因となるホルムアルデヒド（HCHO）などの総揮発性有機化合物（TVOC）が検出されました。
 
-{{<tweet user="canario9314" id="1648259241747316736">}}
+{{<x user="canario9314" id="1648259241747316736">}}
 &nbsp;
-{{<tweet user="canario9314" id="1645009832926380036">}}
+{{<x user="canario9314" id="1645009832926380036">}}
 &nbsp;
 
 また、液体を含んだマイクロカプセルも見つかりました。
 
-{{<tweet user="canario9314" id="1647435420450586624">}}
+{{<x user="canario9314" id="1647435420450586624">}}
 &nbsp;
 
 このマイクロカプセルには、医薬品や農薬を封入することができるようですから、マイクロカプセルに毒物を封入して撒いている可能性があります。
@@ -175,14 +175,14 @@ https://www.env.go.jp/chemi/report/h18-12/pdf/chpt1/1-2-2-23.pdf
 &nbsp;
 
 
-{{<tweet user="Rapt_plusalpha" id="1634509084564262912">}}
+{{<x user="Rapt_plusalpha" id="1634509084564262912">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1650128214755520512">}}
+{{<x user="Rapt_plusalpha" id="1650128214755520512">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1650118506850168832">}}
+{{<x user="Rapt_plusalpha" id="1650118506850168832">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1650093413424054273">}}
+{{<x user="Rapt_plusalpha" id="1650093413424054273">}}
 &nbsp;

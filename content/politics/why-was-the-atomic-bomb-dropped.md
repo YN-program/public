@@ -58,7 +58,7 @@ main:
 
 ![ルーズベルト大統領 日本の和平案を無視](/img/politics/atomic-bomb.jfif)
 
-{{<tweet user="piyococcochan2" id="1844555081821393112">}}
+{{<x user="piyococcochan2" id="1844555081821393112">}}
 &nbsp;
 
 第二次世界大戦は、中国が日本を乗っ取るために計画した戦争で、原爆を投下したのも中国人だったということがRAPT理論で暴かれています。

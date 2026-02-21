@@ -296,19 +296,19 @@ mark { margin:0.25rem;}
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1626190911150653441">}}
+{{<x user="Rapt_plusalpha" id="1626190911150653441">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1626181433479041026">}}
+{{<x user="Rapt_plusalpha" id="1626181433479041026">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1626173988811702275">}}
+{{<x user="Rapt_plusalpha" id="1626173988811702275">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1626171014941130754">}}
+{{<x user="Rapt_plusalpha" id="1626171014941130754">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1626158455638884353">}}
+{{<x user="Rapt_plusalpha" id="1626158455638884353">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1625800365701742592">}}
+{{<x user="Rapt_plusalpha" id="1625800365701742592">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1625797841309544449">}}
+{{<x user="Rapt_plusalpha" id="1625797841309544449">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1625443477696966656">}}
+{{<x user="Rapt_plusalpha" id="1625443477696966656">}}
 &nbsp;

@@ -99,23 +99,23 @@ https://www.vigiaccess.org/
 
 ##### おすすめ
 
-{{<tweet user="Rapt_plusalpha" id="1787064183240200524">}}
+{{<x user="Rapt_plusalpha" id="1787064183240200524">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1802648399067656542">}}
+{{<x user="Rapt_plusalpha" id="1802648399067656542">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1802645448051851412">}}
+{{<x user="Rapt_plusalpha" id="1802645448051851412">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1802644218600632389">}}
+{{<x user="Rapt_plusalpha" id="1802644218600632389">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1802315735613805022">}}
+{{<x user="Rapt_plusalpha" id="1802315735613805022">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1802303296029474896">}}
+{{<x user="Rapt_plusalpha" id="1802303296029474896">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1802298999334121705">}}
+{{<x user="Rapt_plusalpha" id="1802298999334121705">}}
 &nbsp;

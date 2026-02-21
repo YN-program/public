@@ -81,20 +81,20 @@ main:
 
 [「母子手帳」にコロナワクチンのスケジュールが追加　子供の病気の大半がワクチンによって引き起こされている可能性大](https://rapt-plusalpha.com/50986/)
 
-{{<tweet user="Rapt_plusalpha" id="1584165365587709952">}}
+{{<x user="Rapt_plusalpha" id="1584165365587709952">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1584144423834689536">}}
+{{<x user="Rapt_plusalpha" id="1584144423834689536">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1584141458344665088">}}
+{{<x user="Rapt_plusalpha" id="1584141458344665088">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583786944374669315">}}
+{{<x user="Rapt_plusalpha" id="1583786944374669315">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583426396923506689">}}
+{{<x user="Rapt_plusalpha" id="1583426396923506689">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1583048666138685445">}}
+{{<x user="Rapt_plusalpha" id="1583048666138685445">}}
 &nbsp;

@@ -21,7 +21,7 @@ main:
 
 <!--more-->
 
-{{<tweet user="mommyjoffour" id="1406868815342837764">}}
+{{<x user="mommyjoffour" id="1406868815342837764">}}
 
 &nbsp;
  

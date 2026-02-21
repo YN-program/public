@@ -27,9 +27,9 @@ main:
 
 出来るだけ沢山の方がこの写真集を手に取り、神様の存在を実感し、神様の愛に触れることができますようにお祈りします。
 
-{{<tweet user="Rapt_plusalpha" id="1825830395398496738">}}
+{{<x user="Rapt_plusalpha" id="1825830395398496738">}}
 &nbsp;
 
 
-{{<tweet user="Rapt_plusalpha" id="1826203194499932253">}}
+{{<x user="Rapt_plusalpha" id="1826203194499932253">}}
 &nbsp;

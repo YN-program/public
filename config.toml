@@ -1,5 +1,8 @@
 baseurl = "https://progress-advance.com"
 title = "ImageDiagnosis"
+
+ignoreLogs = ["shortcode-x-getremote"] 
+
 languageCode = "ja"
 # paginate = "30" # Number of posts per page
 theme = "mainroad"
@@ -7,17 +10,15 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
 # googleAnalytics = "UA-120164090-1" # Enable Google Analytics by entering your tracking id
 hasCJKLanguage = true
 summaryLength = 120
-ignoreErrors = ["error-remote-getjson"]
+ignoreErrors = ["error-remote-getjson", "shortcode-x-getremote"]
 timeout = 120000
 
-ignoreLogs = ["shortcode-twitter-getremote"]
-
 [privacy]
-  [privacy.twitter]
+  [privacy.x]
     disableInlineCard = true
-    
+
 [services]
-  [services.twitter]
+  [services.x]
     disableInlineCard = true
 
 [pagination]
@@ -28,7 +29,8 @@ ignoreLogs = ["shortcode-twitter-getremote"]
 
 
 [Params]
-  author = "ImageDiagnosis" 
+  [Params.Author]
+    name = "ImageDiagnosis"
   highlightColor = "#EB9E2A"
   description = "学んだことをひたすら書くブログ" # Description of your site
   opengraph = true

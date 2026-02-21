@@ -17,7 +17,7 @@ main:
 
 <!--more-->
 
-{{<tweet user="Tamama0306" id="1639865781109555200">}}
+{{<x user="Tamama0306" id="1639865781109555200">}}
 &nbsp;
 
 
@@ -75,13 +75,13 @@ main:
 
 ##### お勧め
 
-{{<tweet user="Rapt_plusalpha" id="1657377607049162752">}}
+{{<x user="Rapt_plusalpha" id="1657377607049162752">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1657371167307726849">}}
+{{<x user="Rapt_plusalpha" id="1657371167307726849">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1656632626277662720">}}
+{{<x user="Rapt_plusalpha" id="1656632626277662720">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1656616889496526848">}}
+{{<x user="Rapt_plusalpha" id="1656616889496526848">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1656255265522724865">}}
+{{<x user="Rapt_plusalpha" id="1656255265522724865">}}
 &nbsp;

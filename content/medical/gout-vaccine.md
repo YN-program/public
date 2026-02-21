@@ -93,15 +93,15 @@ main:
 
 ##### お薦め
 
-{{<tweet user="Rapt_plusalpha" id="1617503043574169601">}}
+{{<x user="Rapt_plusalpha" id="1617503043574169601">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1617483895733374977">}}
+{{<x user="Rapt_plusalpha" id="1617483895733374977">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1617456978875551747">}}
+{{<x user="Rapt_plusalpha" id="1617456978875551747">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1616397839638364161">}}
+{{<x user="Rapt_plusalpha" id="1616397839638364161">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1615305969877278720">}}
+{{<x user="Rapt_plusalpha" id="1615305969877278720">}}
 &nbsp;
 
 {{<file>}}

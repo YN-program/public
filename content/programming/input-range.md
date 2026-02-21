@@ -508,14 +508,14 @@ thumb.style.left = range.value * rate + "%";
 {{<youtube 1S7sU2wkmL4>}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1610954519470563328">}}
+{{<x user="Rapt_plusalpha" id="1610954519470563328">}}
 &nbsp;
 
-{{<tweet user="Rapt_plusalpha" id="1610228514942509057">}}
+{{<x user="Rapt_plusalpha" id="1610228514942509057">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1609870250467799044">}}
+{{<x user="Rapt_plusalpha" id="1609870250467799044">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1609144518527574020">}}
+{{<x user="Rapt_plusalpha" id="1609144518527574020">}}
 &nbsp;
-{{<tweet user="Rapt_plusalpha" id="1608806948488761350">}}
+{{<x user="Rapt_plusalpha" id="1608806948488761350">}}
 &nbsp;
