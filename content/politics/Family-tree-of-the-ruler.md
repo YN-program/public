@@ -95,6 +95,8 @@ main:
 
 [RAPT×読者対談〈第126弾〉麻生太郎と悪魔崇拝。麻生太郎がこの世界の中心になろうとしている現実。](https://rapt-neo.com/?p=43171)
 
+[RAPT×読者対談〈第132弾〉リチャード・コシミズの正体。（麻生太郎とアヘン貿易の仲間たち）](https://rapt-neo.com/?p=44742)
+
 ![hiroyuki](/img/family_tree/hiroyuki.png)
 
 ![麻原](/img/family_tree/asahara.png)
