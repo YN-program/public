@@ -7,7 +7,7 @@ thumbnail:
   visibility:
     - list
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - "神谷宗幣"
   - "参政党"

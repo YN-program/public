@@ -4,7 +4,7 @@ description: ""
 date: "2024-05-21T10:33:57+09:00"
 thumbnail: ""
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - "RAPT BLOG"
 main:

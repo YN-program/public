@@ -4,7 +4,7 @@ description: ""
 date: "2025-11-19T11:18:43+09:00"
 thumbnail: ""
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - "情報リテラシー"
 main:

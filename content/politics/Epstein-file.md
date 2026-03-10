@@ -4,7 +4,7 @@ description: ""
 date: "2026-02-14T11:36:10+09:00"
 thumbnail: ""
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - "エプスタイン"
 main:

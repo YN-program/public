@@ -4,7 +4,7 @@ description: ""
 date: "2022-07-09T11:05:35+09:00"
 thumbnail: "img/thumb/abeShot.png"
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - ""
 main:

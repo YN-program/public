@@ -4,7 +4,7 @@ description: ""
 date: "2022-07-18T09:02:51+09:00"
 thumbnail: "img/politics/安倍テレビ捏造1.jpg"
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - ""
 main:

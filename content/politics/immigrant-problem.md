@@ -4,7 +4,7 @@ description: ""
 date: "2024-05-27T10:43:33+09:00"
 thumbnail: ""
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - ""
 main:

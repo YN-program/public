@@ -7,7 +7,7 @@ thumbnail:
   visibility:
     - list
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - "教育勅語"
   - "高市早苗"

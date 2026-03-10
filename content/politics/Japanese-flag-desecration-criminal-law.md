@@ -7,7 +7,7 @@ thumbnail:
   visibility:
     - list
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - "高市早苗"
   - "ファシズム"

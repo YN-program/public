@@ -4,7 +4,7 @@ description: ""
 date: "2024-07-24T09:36:40+09:00"
 thumbnail: "img/politics/fake_video3.PNG"
 categories:
-  - "Politics"
+  - "politics"
 tags:
   - ""
 main:
