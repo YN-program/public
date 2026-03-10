@@ -6,6 +6,7 @@ ignoreLogs = ["shortcode-x-getremote"]
 languageCode = "ja"
 # paginate = "30" # Number of posts per page
 theme = "mainroad"
+
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 # googleAnalytics = "UA-120164090-1" # Enable Google Analytics by entering your tracking id
 hasCJKLanguage = true
@@ -29,18 +30,21 @@ timeout = 120000
 
 
 [Params]
-  [Params.Author]
-    name = "ImageDiagnosis"
   highlightColor = "#EB9E2A"
-  description = "学んだことをひたすら書くブログ" # Description of your site
+  description = "学んだことをひたすら書くブログ"
   opengraph = true
   twitter_cards = true
-  readmore = true # Show "Read more" button in list if true
+  readmore = true
   authorbox = true
   pager = true
-  post_meta = ["date", "categories"] # Order of post meta information
+  post_meta = ["date", "categories"]
   mainSections = ["programming", "medical", "life", "politics"]
-  customCSS = ["custom.css"]
+  customCSS = ["css/custom.css"]
+
+  [author]
+    name = "ImageDiagnosis"
+    avatar = "img/avatar.png" # もし画像があれば
+    bio = "学んだことをひたすら書くブログ"
 
 
 [Params.logo]
