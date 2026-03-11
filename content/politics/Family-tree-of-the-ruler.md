@@ -114,25 +114,18 @@ main:
 
 ![平井卓也](/img/family_tree/hirai.png)
 
+![高市早苗](/img/family_tree/takaichi_sanae.png)
 
-{{<x user="mikiko_ozawa" id="1976409872066560407">}}
-&nbsp;
+![藤圭子](/img/family_tree/fuji_keiko.png)
 
-{{<x user="mikiko_ozawa" id="1972868636911288501">}}
-&nbsp;
+![紀里谷和明](/img/family_tree/紀里谷和明.png)
 
+![カリアーノ](/img/family_tree/カリアーノ.png)
 
-{{<x user="mikiko_ozawa" id="1971602561078788579">}}
-&nbsp;
+![久本雅美](/img/family_tree/hisamoto.png)
 
-{{<x user="mikiko_ozawa" id="1965261370892701898">}}
-&nbsp;
+![伊藤穰一](/img/family_tree/伊藤穰一.png)
 
-{{<x user="mikiko_ozawa" id="1974544887459766580">}}
-&nbsp;
+![伊藤穰一2](/img/family_tree/伊藤穰一2.png)
 
-{{<x user="mikiko_ozawa" id="1995133763651858749">}}
-&nbsp;
-
-{{<x user="mikiko_ozawa" id="2022044837697216897">}}
-&nbsp;
+https://x.com/mikiko_ozawa/status/2029327673538036074
