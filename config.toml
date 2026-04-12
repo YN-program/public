@@ -41,10 +41,10 @@ timeout = 120000
   mainSections = ["programming", "medical", "life", "politics"]
   customCSS = ["css/custom.css"]
 
-  [author]
+  [Params.author]
     name = "ImageDiagnosis"
-    avatar = "img/avatar.png" # もし画像があれば
-    bio = "学んだことをひたすら書くブログ"
+    #avatar = "img/avatar.png" # もし画像があれば
+    bio = "医師。プログラミング歴5年"
 
 
 [Params.logo]

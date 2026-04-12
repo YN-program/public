@@ -1,0 +1,182 @@
+{{- $folder := .Get "folder" | default "ct" -}}
+{{- $count  := .Get "count"  | default 10 | int -}}
+{{- $start  := .Get "start"  | default 1  | int -}}
+{{- $prefix := .Get "prefix" | default "" -}}
+{{- $ext    := .Get "ext"    | default "jpg" -}}
+{{- $end    := add (sub $start 1) $count -}}
+{{- $id     := printf "sg-%s" $folder -}}
+
+<div class="scroll-gallery-wrap" id="{{ $id }}">
+  <div class="sg-viewport">
+    <div class="sg-stage">
+      {{- range $i := seq $start $end -}}
+        {{- $num := printf "%03d" $i -}}
+        <img
+          class="sg-img{{if eq $i $start}} active{{end}}"
+          src="/img/{{ $folder }}/{{ $prefix }}{{ $num }}.{{ $ext }}"
+          alt="image {{ $i }}"
+          loading="{{ if eq $i $start }}eager{{ else }}lazy{{ end }}"
+          draggable="false"
+        />
+      {{- end -}}
+    </div>
+    <div class="sg-overlay">
+      <span class="sg-counter"><span class="sg-cur">1</span> / {{ $count }}</span>
+      <div class="sg-progress-bar">
+        <div class="sg-progress-fill"></div>
+      </div>
+    </div>
+    <div class="sg-hint">↕ scroll</div>
+  </div>
+</div>
+
+<style>
+  #{{ $id }} {
+    --sg-accent: #e8d5b7;
+    --sg-bg: #111;
+    --sg-text: #fff;
+    --sg-radius: 4px;
+    --sg-count: {{ $count }};
+    margin: 2rem auto;
+    max-width: 860px;
+    font-family: 'Georgia', serif;
+  }
+
+  #{{ $id }} .sg-viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: var(--sg-bg);
+    border-radius: var(--sg-radius);
+    overflow: hidden;
+    cursor: ns-resize;
+    user-select: none;
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+  }
+
+  #{{ $id }} .sg-stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  #{{ $id }} .sg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .35s ease;
+    pointer-events: none;
+  }
+
+  #{{ $id }} .sg-img.active {
+    opacity: 1;
+  }
+
+  #{{ $id }} .sg-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .6rem 1rem .7rem;
+    background: linear-gradient(transparent, rgba(0,0,0,.65));
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+  }
+
+  #{{ $id }} .sg-counter {
+    color: var(--sg-accent);
+    font-size: .78rem;
+    letter-spacing: .12em;
+    white-space: nowrap;
+    min-width: 3.5rem;
+  }
+
+  #{{ $id }} .sg-progress-bar {
+    flex: 1;
+    height: 2px;
+    background: rgba(255,255,255,.2);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+
+  #{{ $id }} .sg-progress-fill {
+    height: 100%;
+    background: var(--sg-accent);
+    border-radius: 99px;
+    width: calc(100% / var(--sg-count));
+    transition: width .3s ease;
+  }
+
+  #{{ $id }} .sg-hint {
+    position: absolute;
+    top: .7rem;
+    right: .9rem;
+    color: rgba(255,255,255,.45);
+    font-size: .7rem;
+    letter-spacing: .1em;
+    pointer-events: none;
+    transition: opacity .5s;
+  }
+  #{{ $id }}.sg-used .sg-hint { opacity: 0; }
+</style>
+
+<script>
+(function () {
+  var wrap  = document.getElementById('{{ $id }}');
+  var imgs  = wrap.querySelectorAll('.sg-img');
+  var cur   = wrap.querySelector('.sg-cur');
+  var fill  = wrap.querySelector('.sg-progress-fill');
+  var total = imgs.length;
+  var idx   = 0;
+  var lock  = false;
+
+  function go(next) {
+    if (lock) return;
+    var n = Math.min(Math.max(next, 0), total - 1);
+    if (n === idx) return;
+    imgs[idx].classList.remove('active');
+    idx = n;
+    imgs[idx].classList.add('active');
+    cur.textContent = idx + 1;
+    fill.style.width = ((idx + 1) / total * 100) + '%';
+    lock = true;
+    setTimeout(function () { lock = false; }, 200);
+    wrap.classList.add('sg-used');
+  }
+
+  /* ── wheel ── */
+  var acc = 0;
+  wrap.addEventListener('wheel', function (e) {
+    e.preventDefault();
+    acc += e.deltaY;
+    if (Math.abs(acc) >= 60) {
+      go(acc > 0 ? idx + 1 : idx - 1);
+      acc = 0;
+    }
+  }, { passive: false });
+
+  /* ── touch ── */
+  var ty0 = null;
+  wrap.addEventListener('touchstart', function (e) { ty0 = e.touches[0].clientY; }, { passive: true });
+  wrap.addEventListener('touchend', function (e) {
+    if (ty0 === null) return;
+    var dy = ty0 - e.changedTouches[0].clientY;
+    if (Math.abs(dy) > 30) go(dy > 0 ? idx + 1 : idx - 1);
+    ty0 = null;
+  }, { passive: true });
+
+  /* ── keyboard ── */
+  wrap.setAttribute('tabindex', '0');
+  wrap.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { e.preventDefault(); go(idx + 1); }
+    if (e.key === 'ArrowUp'   || e.key === 'ArrowLeft')  { e.preventDefault(); go(idx - 1); }
+  });
+
+  /* init progress */
+  fill.style.width = (1 / total * 100) + '%';
+})();
+</script>
