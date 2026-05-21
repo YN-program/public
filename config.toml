@@ -3,7 +3,8 @@ title = "ImageDiagnosis"
 
 ignoreLogs = ["shortcode-x-getremote"] 
 
-languageCode = "ja"
+# languageCode = "ja"
+locale = "ja-JP"
 # paginate = "30" # Number of posts per page
 theme = "mainroad"
 

@@ -1,0 +1,191 @@
+{{- $folder  := .Get "folder"  | default "carousel" -}}
+{{- $count   := .Get "count"   | default 10 | int -}}
+{{- $start   := .Get "start"   | default 1  | int -}}
+{{- $prefix  := .Get "prefix"  | default "" -}}
+{{- $ext     := .Get "ext"     | default "jpg" -}}
+{{- $end     := add (sub $start 1) $count -}}
+{{- $safeId  := $folder | replaceRE "[^a-zA-Z0-9]" "-" -}}
+{{- $id      := printf "cg-%s-%d" $safeId $start -}}
+
+<div class="carousel-gallery" id="{{ $id }}">
+  <div class="cg-track-wrap">
+    <button class="cg-btn cg-prev" aria-label="前の画像">&#8249;</button>
+    <div class="cg-track">
+      {{- range $i := seq $start $end -}}
+        {{- $num := printf "%03d" $i -}}
+        <div class="cg-slide{{if eq $i $start}} active{{end}}">
+          <img
+            src="/img/{{ $folder }}/{{ $prefix }}{{ $num }}.{{ $ext }}"
+            alt="image {{ $i }}"
+            loading="{{ if eq $i $start }}eager{{ else }}lazy{{ end }}"
+            draggable="false"
+          />
+        </div>
+      {{- end -}}
+    </div>
+    <button class="cg-btn cg-next" aria-label="次の画像">&#8250;</button>
+  </div>
+  <div class="cg-dots">
+    {{- range $i := seq 1 $count -}}
+      <span class="cg-dot{{if eq $i 1}} active{{end}}" data-index="{{ sub $i 1 }}"></span>
+    {{- end -}}
+  </div>
+</div>
+
+<style>
+  #{{ $id }} {
+    --cg-accent: #ffa10b;
+    --cg-bg: #111;
+    --cg-btn-bg: rgba(255,255,255,0.15);
+    --cg-btn-hover: rgba(255,255,255,0.35);
+    --cg-dot-size: 7px;
+    --cg-dot-active-size: 11px;
+    margin: 2rem auto;
+    max-width: 860px;
+    font-family: 'Georgia', serif;
+  }
+
+  #{{ $id }} .cg-track-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: var(--cg-bg);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  #{{ $id }} .cg-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform .4s cubic-bezier(.4,0,.2,1);
+  }
+
+  #{{ $id }} .cg-slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #{{ $id }} .cg-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  #{{ $id }} .cg-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: var(--cg-btn-bg);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    transition: background .2s, transform .2s;
+  }
+  #{{ $id }} .cg-btn:hover {
+    background: var(--cg-btn-hover);
+    transform: translateY(-50%) scale(1.1);
+  }
+  #{{ $id }} .cg-btn:disabled {
+    opacity: 0.25;
+    cursor: default;
+    transform: translateY(-50%) scale(1);
+  }
+  #{{ $id }} .cg-prev { left: .7rem; }
+  #{{ $id }} .cg-next { right: .7rem; }
+
+  #{{ $id }} .cg-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .45rem;
+    padding: .75rem 0 .25rem;
+  }
+
+  #{{ $id }} .cg-dot {
+    width: var(--cg-dot-size);
+    height: var(--cg-dot-size);
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: width .25s, height .25s, background .25s;
+    flex-shrink: 0;
+  }
+
+  #{{ $id }} .cg-dot.active {
+    width: var(--cg-dot-active-size);
+    height: var(--cg-dot-active-size);
+    background: var(--cg-accent);
+  }
+</style>
+
+<script>
+(function () {
+  var wrap    = document.getElementById('{{ $id }}');
+  var track   = wrap.querySelector('.cg-track');
+  var slides  = wrap.querySelectorAll('.cg-slide');
+  var dots    = wrap.querySelectorAll('.cg-dot');
+  var btnPrev = wrap.querySelector('.cg-prev');
+  var btnNext = wrap.querySelector('.cg-next');
+  var total   = slides.length;
+  var idx     = 0;
+
+  function go(n) {
+    n = Math.min(Math.max(n, 0), total - 1);
+    if (n === idx) return;
+    slides[idx].classList.remove('active');
+    dots[idx].classList.remove('active');
+    idx = n;
+    slides[idx].classList.add('active');
+    dots[idx].classList.add('active');
+    track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+    btnPrev.disabled = idx === 0;
+    btnNext.disabled = idx === total - 1;
+  }
+
+  /* init */
+  track.style.transform = 'translateX(0)';
+  btnPrev.disabled = true;
+
+  btnPrev.addEventListener('click', function () { go(idx - 1); });
+  btnNext.addEventListener('click', function () { go(idx + 1); });
+
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function () {
+      go(parseInt(dot.dataset.index));
+    });
+  });
+
+  /* touch swipe */
+  var tx0 = null;
+  wrap.addEventListener('touchstart', function (e) { tx0 = e.touches[0].clientX; }, { passive: true });
+  wrap.addEventListener('touchend', function (e) {
+    if (tx0 === null) return;
+    var dx = tx0 - e.changedTouches[0].clientX;
+    if (Math.abs(dx) > 30) go(dx > 0 ? idx + 1 : idx - 1);
+    tx0 = null;
+  }, { passive: true });
+
+  /* keyboard */
+  wrap.setAttribute('tabindex', '0');
+  wrap.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(idx + 1); }
+    if (e.key === 'ArrowLeft')  { e.preventDefault(); go(idx - 1); }
+  });
+})();
+</script>
