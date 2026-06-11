@@ -9,7 +9,7 @@ thumbnail:
 categories:
   - "politics"
 tags:
-  - "エプスタイン"
+  - ""
 main:
   name: 政治経済
   weight: 5
