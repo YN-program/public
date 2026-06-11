@@ -11,6 +11,7 @@ tags:
 menu:
 main:
   name: 医療
+  weight: 3
 ---
 {{<file>}}
 <iframe id="odysee-iframe" style="width:100%; aspect-ratio:16 / 9;" src="https://odysee.com/$/embed/@ImageDiagnosis:6/vaccine-and-autism-Alzheimer&#039;s-disease:7?r=rG2YAQQfxtznvbhqvJaucX3p7QKbFwnt" allowfullscreen></iframe>
