@@ -323,9 +323,9 @@ https://cdn.website-editor.net/fbd2f2a8b1b04bdba97a21e6e5d356aa/files/uploaded/C
 
 # The Control Group: Pilot Survey of Unvaccinated Americans
 
-元ファイル: vax.pdf(85ページ)/ Case 2:20-cv-02470-WBS-JDP Document 31-2
+https://cdn.website-editor.net/fbd2f2a8b1b04bdba97a21e6e5d356aa/files/uploaded/Control%2520Group%2520-FULL-report-updated.pdf
 
-この文書は日本語訳(全85ページ)を先にまとめ、英語原文(OCR、全85ページ)を後半にまとめた構成です。各ページの見出しにあるリンクをクリックすると、対応する原文/訳文のページへジャンプできます。
+この文書は日本語訳(全85ページ)を先にまとめ、英語原文(全85ページ)を後半にまとめた構成です。各ページの見出しにあるリンクをクリックすると、対応する原文/訳文のページへジャンプできます。
 
 [▶ 日本語訳を読む](#section-ja) ｜ [▶ English original (OCR)](#section-en)
 
