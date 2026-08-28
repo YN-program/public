@@ -1800,11 +1800,11 @@ b. K-shotおよび/または母体ワクチン曝露が**ある**未接種者(�
 
 c. K-shot曝露**あり**かつ母体ワクチンなしの未接種者(出生後)における湿疹のリスク(379人中17人)…………………4.28%
 
-d. 母体ワクチン曝露率100%かつK-shotなし*の*未接種者(出生後)における湿疹のリスク(19人中2人)……………………………10.53%
+d. 母体ワクチン曝露率100%かつK-shotなしの未接種者(出生後)における湿疹のリスク(19人中2人)……………………………10.53%
 
-e. K-shot曝露の有無を問わず母体ワクチンに100%曝露した*未接種者(出生後)における湿疹のリスク(48人中6人)…………………….12.5%
+e. K-shot曝露の有無を問わず母体ワクチンに100%曝露した未接種者(出生後)における湿疹のリスク(48人中6人)…………………….12.5%
 
-f. K-shotと母体ワクチンの両方に100%曝露した*未接種者(出生後)における湿疹のリスク(29人中4人)…………………………………………13.79%
+f. K-shotと母体ワクチンの両方に100%曝露した未接種者(出生後)における湿疹のリスク(29人中4人)…………………………………………13.79%
 
 (b) 曝露別に見た湿疹のリスク増加率:108
 
@@ -1961,7 +1961,7 @@ b. K注射曝露によるリスク増加……………………………**161%*
 
 ¹¹⁴ リスク増加は、出生後・出生前のワクチンおよびK注射への曝露が全くない群と、特定された曝露群との比較に基づく。
 
-¹¹⁵ *注:本調査サンプルでは、食物アレルギーに関する限り、母親のワクチン接種*単独*ではリスクは増加しなかった。
+¹¹⁵ *注:本調査サンプルでは、食物アレルギーに関する限り、母親のワクチン接種単独ではリスクは増加しなかった。
 
 ¹¹⁶ 『米国成人における食物アレルギーの有病率と重症度』– 2019年1月4日発表 – JAMA
 
@@ -2029,7 +2029,7 @@ c. 未接種(出生後)で母親のワクチンとK注射*両方*に100%曝露�
 
 ¹²¹ CDC、『てんかん』。https://www.cdc.gov/epilepsy/data/index.html
 
-¹²² *注:母親のワクチンへの曝露が(K注射の有無を問わず)なかった群では、てんかんの報告はゼロであった。しかし、K注射単独への曝露、母親のワクチン単独への曝露、および/または両方への曝露があった群では、数多くの*他の*重篤な脳・神経系障害が見られた。この特定の部分集団におけるてんかんの発生率は全国平均の2倍を超えており、そのため極めて憂慮すべきものである。
+¹²² *注:母親のワクチンへの曝露が(K注射の有無を問わず)なかった群では、てんかんの報告はゼロであった。しかし、K注射単独への曝露、母親のワクチン単独への曝露、および/または両方への曝露があった群では、数多くの他の重篤な脳・神経系障害が見られた。この特定の部分集団におけるてんかんの発生率は全国平均の2倍を超えており、そのため極めて憂慮すべきものである。
 
 
 51ページ
@@ -2218,7 +2218,7 @@ e. 母体ワクチンとKショットの*両方*に曝露している未接種�
 
 **16. 滲出性中耳炎（OME）（99%がワクチン曝露済みの集団）：...........................................90%** ¹⁴¹
 
-*米国医療研究・品質庁（AHRQ）によれば、「滲出性中耳炎（OME）とは、耳感染の兆候や症状を伴わずに中耳に滲出液が貯留する状態と定義される…10歳までに子供の最大90パーセント（片耳単位では80%）が少なくとも1回はOMEを経験する〔  〕」とされる。*¹⁴²
+*米国医療研究・品質庁（AHRQ）によれば、「滲出性中耳炎（OME）とは、耳感染の兆候や症状を伴わずに中耳に滲出液が貯留する状態と定義される…10歳までに子供の最大90パーセント（片耳単位では80%）が少なくとも1回はOMEを経験する〔  〕」とされる。* ¹⁴²
 
 **調査データ：** ¹⁴³
 
@@ -2256,7 +2256,7 @@ b. Kショットおよび／または母体ワクチンへの曝露が**ある**
 
 **17. 慢性副鼻腔炎（99%がワクチン曝露済みの集団）：...................................14.6%** ¹⁴⁵
 
-*MedScapeによれば、「慢性副鼻腔炎は米国において最も一般的な慢性疾患の一つであり、あらゆる年齢層に影響を及ぼす。米国における慢性副鼻腔炎（CRS）の全体的な有病率は人口1000人あたり146人である」とされる。*¹⁴⁶（146/1000=14.6%）
+*MedScapeによれば、「慢性副鼻腔炎は米国において最も一般的な慢性疾患の一つであり、あらゆる年齢層に影響を及ぼす。米国における慢性副鼻腔炎（CRS）の全体的な有病率は人口1000人あたり146人である」とされる。* ¹⁴⁶（146/1000=14.6%）
 
 **調査データ：** 慢性副鼻腔炎、全年齢：
 
@@ -2310,7 +2310,7 @@ c. Kショットの有無を問わず母体ワクチンへの曝露が100%***あ
 
 **19. 米国におけるSIDS（乳幼児突然死症候群）（99%がワクチン曝露済みの乳児集団）.......................................0.04%**
 
-*「SIDSは米国において新生児後期の乳児死亡の主要な原因であり続けており、出生1,000人あたり0.40件のSIDS死亡という全体的な発生率である」*¹⁵⁰（0.4/1000=0.04%）。*SIDSの「診断」は実際の原因についての診断ではなく、むしろ死因が謎のままであることを示す呼称にすぎない。*¹⁵¹ ¹⁵²
+*「SIDSは米国において新生児後期の乳児死亡の主要な原因であり続けており、出生1,000人あたり0.40件のSIDS死亡という全体的な発生率である」* ¹⁵⁰（0.4/1000=0.04%）。*SIDSの「診断」は実際の原因についての診断ではなく、むしろ死因が謎のままであることを示す呼称にすぎない。* ¹⁵¹ ¹⁵²
 
 **調査データ：**
 
@@ -2335,9 +2335,9 @@ c. Kショットの有無を問わず母体ワクチンへの曝露が100%***あ
 ---
 ¹⁵⁰ 「乳幼児突然死症候群（SIDS）：過去・現在・未来における危険因子とバイオマーカー」Duncan JR、Byard RW編。アデレード（豪州）：アデレード大学出版局、2018年。https://www.ncbi.nlm.nih.gov/books/NBK513404
 
-¹⁵¹ 「乳幼児突然死症候群（SIDS）とは、通常は睡眠中に、一見健康に見える生後1年未満の乳児が原因不明で死亡することをいう。乳児がベビーベッドの中で死亡することが多いため、揺りかご死とも呼ばれることがある。」*メイヨークリニック、*所在：https://www.mayoclinic.org/diseases-conditions/sudden-infant-death-syndrome/symptoms-causes/syc-20352800
+¹⁵¹ 「乳幼児突然死症候群（SIDS）とは、通常は睡眠中に、一見健康に見える生後1年未満の乳児が原因不明で死亡することをいう。乳児がベビーベッドの中で死亡することが多いため、揺りかご死とも呼ばれることがある。」メイヨークリニック、所在：https://www.mayoclinic.org/diseases-conditions/sudden-infant-death-syndrome/symptoms-causes/syc-20352800
 
-¹⁵² 本報告書の後段にある、*あらゆる*健康関連原因による死亡・生存率についての危険度を参照。
+¹⁵² 本報告書の後段にある、あらゆる健康関連原因による死亡・生存率についての危険度を参照。
 
 ¹⁵³ 「**免疫介在性疾患としての癌**」－米国国立医学図書館・国立衛生研究所－Immunotargets Ther. 2012; 1: 1–6。2012年6月13日オンライン公開。doi: 10.2147/ITT.S29834－所在：https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4934149/
 
@@ -3142,7 +3142,7 @@ Case 2:20-cv-02470-WBS-JDP  文書 31-2  提出日 2021年2月15日  91ページ
 著者による利害関係の開示:
  ジョイ・ガーナー(The Control Group 創設者)
 
-1. 私は博士号(PhD)保持者でも、統計学者でもありません。私は単なる技術発明家(ハードウェア/ビデオゲーム)であり特許保有者で、平均以上のIQと多少の常識を持っているにすぎません。私は自分が医学や科学の「専門家」であると主張するつもりはありません。このデータセットおよび報告書に含まれる観察結果と数字が何を意味する*べき*かについて、*私を*信じて説明を受け入れてほしいと求めているのでもありません。私の論評がなくとも、この数字が何を意味するかは明白に***自明***です。どうか、ご自身で考えてください。*お願いします。*これは単に、数字を生み出した製品安全性に関する調査に過ぎません。あなたはこのクラスの製品のリスクを気に入っていますか? あなた自身は、それらが「リスクに見合う」ものだと信じていますか?
+1. 私は博士号(PhD)保持者でも、統計学者でもありません。私は単なる技術発明家(ハードウェア/ビデオゲーム)であり特許保有者で、平均以上のIQと多少の常識を持っているにすぎません。私は自分が医学や科学の「専門家」であると主張するつもりはありません。このデータセットおよび報告書に含まれる観察結果と数字が何を意味するべきかについて、私を信じて説明を受け入れてほしいと求めているのでもありません。私の論評がなくとも、この数字が何を意味するかは明白に***自明***です。どうか、ご自身で考えてください。お願いします。これは単に、数字を生み出した製品安全性に関する調査に過ぎません。あなたはこのクラスの製品のリスクを気に入っていますか? あなた自身は、それらが「リスクに見合う」ものだと信じていますか?
 
 2. 私の論評は本調査のテーマに関連する、すでに自明とされている多くの観察事項に言及していますが、この報告書に記載されている観察結果(数字)は、***決して***将来を予測するモデルや水晶玉的な「当て推量」ではなく、また、ワクチンがどれほど危険であるか、あるいは*仮に*どれほど多くの命を救ったかもしれないかについての主観的な「専門家の意見」でもありません。この報告書の数字は過去のデータ、すなわち観察・報告された医薬品への曝露と、観察された*結果*を表しています。私はこれらの数字に疑問を持つ人々に対して、*自分自身で*計算してみるよう求めています。¹⁹²
 
@@ -3384,7 +3384,7 @@ If you were under "surveillance" would you assume that *over* 99% of the time, *
 
 Case 2:20-cv-02470-WBS-JDP  Document 31-2  Filed 02/15/21  Page 15 of 91
 
-wrong impression, much like the word "safe". "Yes, we know Mr. V is a known killer. But don't worry, we've got him under *surveillance* and we're *tracking* him*.*"
+wrong impression, much like the word "safe". "Yes, we know Mr. V is a known killer. But don't worry, we've got him under *surveillance* and we're *tracking* him."
 
 The government's 'surveillance' of Mr. V, which is purportedly monitoring *how many* people he's maiming and killing, keeps track of him *less than 1% of the time* while he's busy injecting people. And we aren't sure *how much* *less than 1%* of that time they're watching him. How could anyone know how *often* Mr. V maims and kills people, let alone ascribe any adjectives to the *frequency* of those acts?
 
@@ -4872,7 +4872,7 @@ e. Risk of speech disorders in unvaccinated (post-birth) with exposure to *both*
 (b) Increased risk in vaccinated population...........................................***862%*** ¹⁴⁰
 
 **16. Ear fluid (OME) in the 99% vaccine-exposed population:...........................................90%** ¹⁴¹
-*According to Agency of Healthcare Research and Quality, "otitis media with effusion (OME) is defined as a collection of fluid in the middle ear without signs or symptoms of ear infection… As many as 90 percent of children (80% of individual ears) will have at least one episode of OME by age 10 [ ]."*¹⁴²
+*According to Agency of Healthcare Research and Quality, "otitis media with effusion (OME) is defined as a collection of fluid in the middle ear without signs or symptoms of ear infection… As many as 90 percent of children (80% of individual ears) will have at least one episode of OME by age 10 [ ]."* ¹⁴²
 
 **Survey Data:** ¹⁴³
 Ear fluid/OME under ten (10) years:
@@ -4906,7 +4906,7 @@ b. Risk of ear fluid in unvaccinated (post birth) **with** exposure to K-shot an
 (b) Increased risk in vaccinated (post-birth) population.................................***29,900%*** ¹⁴⁴
 
 **17. Chronic sinusitis in the 99% vaccine-exposed population:...................................14.6%** ¹⁴⁵
-*According to MedScape: "Chronic sinusitis is one of the more prevalent chronic illnesses in the United States, affecting persons of all age groups. The overall prevalence of CRS in the United States is 146 per 1000 population."*¹⁴⁶ (146/1000=14.6%)
+*According to MedScape: "Chronic sinusitis is one of the more prevalent chronic illnesses in the United States, affecting persons of all age groups. The overall prevalence of CRS in the United States is 146 per 1000 population."* ¹⁴⁶ (146/1000=14.6%)
 
 **Survey Data:** Chronic sinusitis, all ages:
 (a) Risk in unvaccinated (1 of 1,482)...................................................................**0.07%**
@@ -4949,7 +4949,7 @@ c. Risk of strabismus in unvaccinated (post-birth) ***with*** 100% exposure to m
 Case 2:20-cv-02470-WBS-JDP  Document 31-2  Filed 02/15/21  Page 65 of 91
 
 **19. SIDS in U.S. in 99% vaccine-exposed infant population.......................................0.04%**
-*"SIDS remains the leading cause of post-neonatal infant mortality in the United States, with an overall rate of 0.40 SIDS deaths per 1,000 live births."*¹⁵⁰ (0.4/1000=0.04%). *A SIDS "diagnosis" is not a diagnosis of any actual cause, but rather, a designation that the cause of death remains a mystery.*¹⁵¹ ¹⁵²
+*"SIDS remains the leading cause of post-neonatal infant mortality in the United States, with an overall rate of 0.40 SIDS deaths per 1,000 live births."* ¹⁵⁰ (0.4/1000=0.04%). *A SIDS "diagnosis" is not a diagnosis of any actual cause, but rather, a designation that the cause of death remains a mystery.* ¹⁵¹ ¹⁵²
 
 **Survey Data:**
 (a) There were no reports of SIDS in unvaccinated (post-birth) infants with or without K-shot and/or maternal vaccines.......................**0%**
