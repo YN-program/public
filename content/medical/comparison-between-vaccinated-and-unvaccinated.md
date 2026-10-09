@@ -1257,7 +1257,6 @@ Case 2:20-cv-02470-WBS-JDP 文書31-2 提出日2021年2月15日 91ページ中41
 [34ページからの脚注続き]「NSCHは世帯調査として実施され、回答者は調査対象児童について知識を持つ親または保護者である。」および「NSCHには何世帯が参加しているか。2018年には、親が30,530人の児童について年齢別アンケートに回答した。これらのデータは2017年の追加21,599人の児童のデータと組み合わせることができ、2017年から2018年で合計52,129人の児童のデータとなる。」注:本調査は3歳未満の児童(18歳未満の人口のうち約22.3%を占める)についての健康データを報告していない。 https://mchb.hrsa.gov/sites/default/files/mchb/Data/NSCH/NSCH-2018-factsheet.pdf
 
 33ページ
-</content>
 
 ---
 
@@ -2743,7 +2742,6 @@ Case 2:20-cv-02470-WBS-JDP 文書31-2 提出日 2021年2月15日 91ページ中7
 https://www.endocrineweb.com/conditions/hashimotos-thyroiditis/causes-hashimotos-thyroiditis
 
 68ページ
-</content>
 
 ---
 
@@ -4354,7 +4352,7 @@ Case 2:20-cv-02470-WBS-JDP  Document 31-2  Filed 02/15/21  Page 51 of 91
 
 not limited to, direct threats to contact CPS and falsely accuse these parents of medical neglect if they refuse these, or *any* injectable products pushed in these distribution centers.
 
-7. **No Other Data for Unvaccinated <u>without</u> the K-shot or pregnancy vaccines**
+7. **No Other Data for Unvaccinated *without* the K-shot or pregnancy vaccines**
 If other data establishing the numerical risk factors associated with avoidance of either the K-shot or pregnancy vaccines exists, (other than that found herein) it is currently concealed. Because close to 70% of the unvaccinated (post-birth) in this study reported no exposure to the K-shot at birth, nor exposure to maternal vaccines, the data collected here presented an unparalleled opportunity to enumerate the health outcomes specifically associated with refusal of the K-shot and/or maternal vaccines in those who have also received no *other* similar pharmaceutical injections, i.e., post-birth vaccinations. It also supplied a comparative opportunity between all of these groups.
 
 8. **K-shot & Maternal Vaccine Subsets and Effect on Sampling Rates:**
