@@ -6,7 +6,7 @@ thumbnail: ""
 categories:
   - "politics"
 tags:
-  - ""
+  - "移民問題"
 main:
   name: 政治経済
   weight: 5
