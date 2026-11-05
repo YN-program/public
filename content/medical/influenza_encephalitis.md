@@ -110,9 +110,9 @@ main:
 
 https://resou.osaka-u.ac.jp/ja/research/2024/20240507_1
 
-ウイルスは存在しないので、ウイルス蛋白と言われているものは病気の細胞が産生した異常なタンパク質を見ている可能性があります。
+ウイルスは存在しないので、ウイルス蛋白と言われているものは実はウイルスとは関係がない。
 
-で、どういうときに異常なタンパク質が産生され、蓄積するのかというと、金属や重金属に暴露したときです（[こちら](https://progress-advance.com/medical/heavy-metals-and-protein-misfolding/)）。
+では、どういうときに異常なタンパク質が産生され蓄積するのかというと、金属や重金属に暴露したときです（[こちら](https://progress-advance.com/medical/heavy-metals-and-protein-misfolding/)）。
 
 ワクチンと解熱剤のダブルパンチが、インフルエンザ脳症の最大のリスクと思われます。
 
